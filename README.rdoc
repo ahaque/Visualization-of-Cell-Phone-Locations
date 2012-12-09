@@ -12,4 +12,4 @@ Neat Features Using with Google Maps:
 * Parents can draw a geofence and be notified if the child's phone moves outside that region.
 * Phones locations are shown in a line with interval timestamps, indicating movement over time.
 * A layer for school zones will display circles 2 miles around all schools.Multiple phones (and their paths) can be viewed on the same map.
-* Master admin can view real-time location of every phone in the system
+* Master admin can view real-time location of every phone in the system.
