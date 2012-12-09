@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<installdata>
+	<action>
+		<file>index</file>
+		<menu>Requirements</menu>
+		<position>0</position>
+	</action>
+	<action>
+		<file>eula</file>
+		<menu>EULA</menu>
+		<position>1</position>
+	</action>
+	<action>
+		<file>apps</file>
+		<menu>Applications</menu>
+		<position>2</position>
+	</action>
+	<action>
+		<file>address</file>
+		<menu>Addresses</menu>
+		<position>3</position>
+	</action>
+	<action>
+		<file>db</file>
+		<menu>DB Details</menu>
+		<position>4</position>
+	</action>
+	<action>
+		<file>admin</file>
+		<menu>Admin Account</menu>
+		<position>5</position>
+	</action>
+	<action>
+		<file>install</file>
+		<menu>Installation</menu>
+		<position>6</position>
+	</action>
+	<action>
+		<file>done</file>
+		<menu>Finished</menu>
+		<position>7</position>
+	</action>
+</installdata>

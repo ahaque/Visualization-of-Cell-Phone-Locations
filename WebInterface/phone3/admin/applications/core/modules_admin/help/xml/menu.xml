@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Documentation</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Documentation</subitemtitle>
+					<subsection>quickhelp</subsection>
+					<subitemurl>do=redirect&amp;id=docs</subitemurl>
+					<subisredirect>1</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>IPS Knowledgebase</title>
+			<subitems>					
+				<subitem>
+					<subitemtitle>IPS Knowledgebase</subitemtitle>
+					<subsection>quickhelp</subsection>
+					<subitemurl>do=redirect&amp;id=kb</subitemurl>
+					<subisredirect>1</subisredirect>
+				</subitem>
+			</subitems>
+		</item>				
+		<item>
+			<title>Technical Support</title>
+			<subitems>				
+				<subitem>
+					<subitemtitle>Technical Support</subitemtitle>
+					<subsection>quickhelp</subsection>
+					<subitemurl>do=redirect&amp;id=support</subitemurl>
+					<subisredirect>1</subisredirect>
+				</subitem>
+			</subitems>
+		</item>				
+		<item>
+			<title>Additional Resources</title>
+			<subitems>				
+				<subitem>
+					<subitemtitle>Additional Resources</subitemtitle>
+					<subsection>quickhelp</subsection>
+					<subitemurl>do=redirect&amp;id=resources</subitemurl>
+					<subisredirect>1</subisredirect>
+				</subitem>
+			</subitems>
+		</item>				
+		<item>
+			<title>IPS Contact Information</title>
+			<subitems>				
+				<subitem>
+					<subitemtitle>IPS Contact Information</subitemtitle>
+					<subsection>quickhelp</subsection>
+					<subitemurl>do=redirect&amp;id=contact</subitemurl>
+					<subisredirect>1</subisredirect>
+				</subitem>
+			</subitems>
+		</item>				
+		<item>
+			<title>Feature Requests</title>
+			<subitems>				
+				<subitem>
+					<subitemtitle>Feature Requests</subitemtitle>
+					<subsection>quickhelp</subsection>
+					<subitemurl>do=redirect&amp;id=features</subitemurl>
+					<subisredirect>1</subisredirect>
+				</subitem>
+			</subitems>
+		</item>				
+		<item>
+			<title>Report a Bug</title>
+			<subitems>				
+				<subitem>
+					<subitemtitle>Report a Bug</subitemtitle>
+					<subsection>quickhelp</subsection>
+					<subitemurl>do=redirect&amp;id=bugs</subitemurl>
+					<subisredirect>1</subisredirect>
+				</subitem>
+			</subitems>
+		</item>		
+	</tabitems>
+</menu>

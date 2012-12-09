@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<permsexport exported="1168640949" versionid="2.1.0" type="master">
+	<permsgroup>
+		<perm>
+			<acpperm_bit>recache</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>admin</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>admin</acpperm_main>
+			<acpperm_child>adminlog</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>attach</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>attach</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>attach</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>export</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>attach</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>import</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>attach</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>stats</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>attach</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>search</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>attach</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>bw-add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>babw</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>bw-remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>babw</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>bw-edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>babw</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>bw-export</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>babw</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>bw-import</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>babw</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>ban-view</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>babw</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>ban-add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>babw</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>ban-remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>babw</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>bbcode</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>bbcode</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>bbcode</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>export</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>bbcode</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>import</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>bbcode</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>calendars</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>calendars</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>calendars</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>recache</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>calendars</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>admin</acpperm_main>
+			<acpperm_child>components</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>admin</acpperm_main>
+			<acpperm_child>components</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>export</acpperm_bit>
+			<acpperm_main>admin</acpperm_main>
+			<acpperm_child>components</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>import</acpperm_bit>
+			<acpperm_main>admin</acpperm_main>
+			<acpperm_child>components</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>do</acpperm_bit>
+			<acpperm_main>help</acpperm_main>
+			<acpperm_child>diag</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>admin</acpperm_main>
+			<acpperm_child>emailerror</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>admin</acpperm_main>
+			<acpperm_child>emaillog</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>export</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>emoticons</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>import</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>emoticons</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>emoticons</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>emoticons</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>emoticons</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>upload</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>emoticons</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>forum</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>forum</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>permedit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>forum</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>reorder</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>forum</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>forum</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>recount</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>forum</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>empty</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>forum</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>rules</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>forum</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>skin</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>forum</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>group</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>group</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>group</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>perms</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>group</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>help</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>help</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>help</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>lang</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>lang</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>lang</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>export</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>lang</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>import</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>lang</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>loginauth</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>loginauth</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>diagnostics</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>loginauth</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>export</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>loginauth</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>import</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>loginauth</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mem</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>suspend</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mem</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mem</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mem</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>title-view</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mem</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>title-edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mem</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>title-add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mem</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>title-remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mem</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>ban</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mem</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>view</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mtools</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>mod</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mtools</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mod</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mod</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>mod</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>admin</acpperm_main>
+			<acpperm_child>modlog</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>multimod</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>multimod</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>multimod</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>install</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>msubs</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>msubs</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>msubs</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>msubs</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>search</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>msubs</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>portal</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>postoffice</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>postoffice</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>send</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>postoffice</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>postoffice</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>field</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>field</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>field</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>recount</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>rebuild</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>rebuild</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>rebuild</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>rssexport</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>rssexport</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>recache</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>rssexport</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>rssexport</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>rssimport</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>rssimport</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>recache</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>rssimport</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>content</acpperm_main>
+			<acpperm_child>rssimport</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>op</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>op</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>op</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>export</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>op</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>search</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>op</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>import</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>op</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>recache</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>skintools</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>changemember</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>skintools</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>search</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>skintools</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>style</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>rundiff</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>skindiff</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>export</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>skindiff</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>skindiff</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>export</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>import</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>import</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>import</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>image</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>image</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>image</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>sets</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>sets</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>sets</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>rebuild</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>sets</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>templ</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>templ</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>templ</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>lookandfeel</acpperm_main>
+			<acpperm_child>wrap</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>admin</acpperm_main>
+			<acpperm_child>spiderlog</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>show</acpperm_bit>
+			<acpperm_main>admin</acpperm_main>
+			<acpperm_child>stats</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>view</acpperm_bit>
+			<acpperm_main>help</acpperm_main>
+			<acpperm_child>support</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>edit</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>task</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>add</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>task</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>task</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>runnow</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>task</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>log</acpperm_bit>
+			<acpperm_main>tools</acpperm_main>
+			<acpperm_child>task</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>view</acpperm_bit>
+			<acpperm_main>admin</acpperm_main>
+			<acpperm_child>warnlog</acpperm_child>
+		</perm>
+
+		<perm>
+			<acpperm_bit>remove</acpperm_bit>
+			<acpperm_main>admin</acpperm_main>
+			<acpperm_child>warnlog</acpperm_child>
+		</perm>
+	</permsgroup>
+
+</permsexport>

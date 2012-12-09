@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Report Center Plugins</grouptitle>
+		<items>
+			<item>
+				<key>plugins_manage</key>
+				<string>Can add/edit supported reported content plugins?</string>
+			</item>
+			<item>
+				<key>plugins_remove</key>
+				<string>Can remove reported content plugins?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Report Center Status and Severity Management</grouptitle>
+		<items>
+			<item>
+				<key>sands_manage</key>
+				<string>Can add/edit report center status and severity levels?</string>
+			</item>
+			<item>
+				<key>sands_remove</key>
+				<string>Can remove status and severity levels?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Report Center Statistics</grouptitle>
+		<items>
+			<item>
+				<key>stats_access</key>
+				<string>Can view statistics and charts of reported content management?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

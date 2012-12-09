@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Registration Stats</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Registration Stats</subitemtitle>
+					<subsection>stats</subsection>
+					<subitemurl>do=reg</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>New Topic Stats</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>New Topic Stats</subitemtitle>
+					<subsection>stats</subsection>
+					<subitemurl>do=topic</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Post Stats</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Post Stats</subitemtitle>
+					<subsection>stats</subsection>
+					<subitemurl>do=post</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Personal Message</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Personal Message</subitemtitle>
+					<subsection>stats</subsection>
+					<subitemurl>do=msg</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Topic Views</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Topic Views</subitemtitle>
+					<subsection>stats</subsection>
+					<subitemurl>do=views</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>					
+	</tabitems>
+</menu>

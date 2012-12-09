@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates application="core" templategroups="a:10:{s:12:&quot;skin_editors&quot;;s:5:&quot;exact&quot;;s:11:&quot;skin_emails&quot;;s:5:&quot;exact&quot;;s:11:&quot;skin_global&quot;;s:5:&quot;exact&quot;;s:17:&quot;skin_global_other&quot;;s:5:&quot;exact&quot;;s:9:&quot;skin_help&quot;;s:5:&quot;exact&quot;;s:10:&quot;skin_login&quot;;s:5:&quot;exact&quot;;s:13:&quot;skin_register&quot;;s:5:&quot;exact&quot;;s:12:&quot;skin_reports&quot;;s:5:&quot;exact&quot;;s:11:&quot;skin_search&quot;;s:5:&quot;exact&quot;;s:10:&quot;skin_stats&quot;;s:5:&quot;exact&quot;;}">
+  <templategroup group="skin_search">
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<result>
+	<icon>{$this->settings['public_dir']}style_extra/app_icons/forums.png</icon>
+	<type>Topic</type>
+	<url>{parse url="showtopic={$r['type_id_2']}&amp;view=<if test="$this->request['do']=='new_posts'">getnewpost<else /><if test="$r['misc']">findpost&amp;p={$r['misc']}</if></if>&amp;hl={$this->request['search_term']}&amp;fromsearch=1" base="public"}</url>
+	<title><!#^#|CDATA|{$r['content_title']}|#^#]></title>
+	<content><!#^#|CDATA|{$r['content']}|#^#]></content>
+<if test="$r['_forum_trail']">
+	<forums>
+	<foreach loop="$r['_forum_trail'] as $i => $f">
+		<forum>
+			<url>{parse url="{$f[1]}" template="showforum" seotitle="{$f[2]}" base="public"}</url>
+			<name>{$f[0]}</name>
+		</forum>
+	</foreach>
+	</forums>
+</if>
+	<replies>{$r['posts']}</replies>
+	<attachments>{$r['topic_hasattach']}</attachments>
+<if test="$this->request['do'] == 'new_posts'">
+	<date>{parse date="$r['last_post']" format="short"}</date>
+	<user>
+		<id>{$r['last_poster_id']}</id>
+		<name>{$r['last_poster_name']}</name>
+		<url>{parse url="showuser={$r['last_poster_id']}" base="public"}</url>
+	</user>
+<else />
+	<date>{parse date="$r['updated']" format="short"}</date>
+	<user>
+		<id>{$r['member_id']}</id>
+		<name>{$r['members_display_name']}</name>
+		<url>{parse url="showuser={$r['member_id']}" base="public"}</url>
+	</user>
+</if> 
+</result>]]></template_content>
+      <template_name>topicPostSearchResult</template_name>
+      <template_data>$r, $indent, $resultAsTitle=false</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<result>
+	<icon>{$this->settings['public_dir']}style_extra/app_icons/core.png</icon>
+	<type>Content</type>
+	<url></url>
+	<title><!#^#|CDATA|{$r['content_title']}|#^#]></title>
+	<content><!#^#|CDATA|{$r['content']}|#^#]></content>
+	<date>{parse date="$r['updated']" format="short"}</date>
+	<user>
+		<id>{$r['member_id']}</id>
+		<name>{$r['members_display_name']}</name>
+		<url>{parse url="showuser={$r['member_id']}" base="public"}</url>
+	</user>
+</result>]]></template_content>
+      <template_name>searchRowGenericFormat</template_name>
+      <template_data>$r, $resultAsTitle=false</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<search>
+	<term>{$search_term}</term>
+	<total>{$total}</total>
+<if test="$total">
+	<results>
+	<foreach loop="results:$results as $result">	
+		{$result['html']}
+	</foreach>
+	</results>	
+</if>
+{$pagination}
+</search>]]></template_content>
+      <template_name>searchResults</template_name>
+      <template_data>$results, $pagination, $total, $showing, $search_term, $url_string, $current_key, $removed_search_terms=array()</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content/>
+      <template_name>searchAdvancedForm</template_name>
+      <template_data><![CDATA[$filters='', $msg='', $removed_search_terms=array()]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<newcontent>
+	<total>{$total}</total>
+<if test="$total">
+	<results>
+	<foreach loop="results:$results as $result">	
+		{$result['html']}
+	</foreach>
+	</results>	
+</if>
+{$pagination}
+</newcontent>]]></template_content>
+      <template_name>newPostsView</template_name>
+      <template_data>$results, $pagination, $total</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<result>
+	<icon>{$this->settings['public_dir']}style_extra/app_icons/members.png</icon>
+	<type>Member</type>
+	<url>{parse url="showuser={$r['type_id_2']}" base="public"}</url>
+	<title><!#^#|CDATA|{$r['content_title']}|#^#]></title>
+	<content><!#^#|CDATA|{$r['content']}|#^#]></content>
+	<date>{parse date="$r['updated']" format="short"}</date>
+	<user>
+		<id>{$r['member_id']}</id>
+		<name>{$r['members_display_name']}</name>
+		<url>{parse url="showuser={$r['member_id']}" base="public"}</url>
+	</user>
+</result>]]></template_content>
+      <template_name>memberSearchResult</template_name>
+      <template_data>$r, $resultAsTitle=false</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<result>
+	<icon>{$this->settings['public_dir']}style_extra/app_icons/core.png</icon>
+	<type>Help File</type>
+	<url>{parse url="app=core&amp;module=help&amp;do=01&amp;HID={$r['type_id_2']}&amp;hl={$this->request['search_term']}" base="public"}</url>
+	<title><!#^#|CDATA|{$r['content_title']}|#^#]></title>
+	<content><!#^#|CDATA|{$r['content']}|#^#]></content>
+	<date>{parse date="$r['updated']" format="short"}</date>
+	<user>
+		<id>{$r['member_id']}</id>
+		<name>{$r['members_display_name']}</name>
+		<url>{parse url="showuser={$r['member_id']}" base="public"}</url>
+	</user>
+</result>]]></template_content>
+      <template_name>helpSearchResult</template_name>
+      <template_data>$r, $resultAsTitle=false</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<result>
+	<icon>{$this->settings['public_dir']}style_extra/app_icons/gallery.png</icon>
+	<type>Gallery Image</type>
+	<url>{parse url="app=gallery&amp;module=images&amp;img={$r['type_id_2']}&amp;hl={$this->request['search_term']}" base="public"}</url>
+	<title><!#^#|CDATA|{$r['content_title']}|#^#]></title>
+	<content><!#^#|CDATA|{$r['content']}|#^#]></content>
+	<date>{parse date="$r['updated']" format="short"}</date>
+	<user>
+		<id>{$r['member_id']}</id>
+		<name>{$r['members_display_name']}</name>
+		<url>{parse url="showuser={$r['member_id']}" base="public"}</url>
+	</user>
+</result>]]></template_content>
+      <template_name>galleryImageSearchResult</template_name>
+      <template_data>$r, $resultAsTitle=false</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<fieldset id='app_filter_forums' class='{parse striping="search"} extra_filter'>
+	<ul>
+		<li>
+			<label for='forums_filter'>Find in <strong>forum</strong>:</label>
+			<select name='search_app_filters[forums][]' class='input_select' size='6' multiple='multiple'>
+				{$forums}
+			</select>
+		</li>
+	</ul>
+</fieldset>]]></template_content>
+      <template_name>forumAdvancedSearchFilters</template_name>
+      <template_data>$forums</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<result>
+	<icon>{$this->settings['public_dir']}style_extra/app_icons/calendar.png</icon>
+	<type>Calendar Event</type>
+	<url>{parse url="app=calendar&amp;module=calendar&amp;cal_id={$r['type_id']}&amp;do=showevent&amp;event_id={$r['type_id_2']}&amp;hl={$this->request['search_term']}" base="public"}</url>
+	<title><!#^#|CDATA|{$r['content_title']}|#^#]></title>
+	<content><!#^#|CDATA|{$r['content']}|#^#]></content>
+	<date>{parse date="$r['updated']" format="short"}</date>
+	<user>
+		<id>{$r['member_id']}</id>
+		<name>{$r['members_display_name']}</name>
+		<url>{parse url="showuser={$r['member_id']}" base="public"}</url>
+	</user>
+</result>]]></template_content>
+      <template_name>calEventSearchResult</template_name>
+      <template_data>$r, $resultAsTitle=false</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<activecontent>
+	<total>{$total}</total>
+<if test="$total">
+	<results>
+	<foreach loop="results:$results as $result">	
+		{$result['html']}
+	</foreach>
+	</results>	
+</if>
+{$pagination}
+</activecontent>]]></template_content>
+      <template_name>activePostsView</template_name>
+      <template_data>$results, $pagination, $total</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<result>
+	<icon>{$this->settings['public_dir']}style_extra/app_icons/calendar.png</icon>
+	<type>Calendar Ranged Event</type>
+	<url>{parse url="app=calendar&amp;module=calendar&amp;cal_id={$r['type_id']}&amp;do=showevent&amp;event_id={$r['type_id_2']}&amp;hl={$this->request['search_term']}" base="public"}</url>
+	<title><!#^#|CDATA|{$r['content_title']} ({parse date="$r['updated']" format="short"} to {parse date="$r['misc']" format="short"})|#^#]></title>
+	<content><!#^#|CDATA|{$r['content']}|#^#]></content>
+	<date>{parse date="$r['updated']" format="short"}</date>
+	<user>
+		<id>{$r['member_id']}</id>
+		<name>{$r['members_display_name']}</name>
+		<url>{parse url="showuser={$r['member_id']}" base="public"}</url>
+	</user>
+</result>]]></template_content>
+      <template_name>calEventRangedSearchResult</template_name>
+      <template_data>$r, $resultAsTitle=false</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<result>
+	<icon>{$this->settings['public_dir']}style_extra/app_icons/forums.png</icon>
+	<type>Topic</type>
+	<url>{parse url="showtopic={$r['type_id_2']}&amp;view=<if test="$this->request['do']=='new_posts'">getnewpost<else /><if test="$r['misc']">findpost&amp;p={$r['misc']}</if></if>&amp;hl={$this->request['search_term']}&amp;fromsearch=1" base="public"}</url>
+	<title><!#^#|CDATA|{$r['content_title']}|#^#]></title>
+	<content><!#^#|CDATA|{$r['content']}|#^#]></content>
+<if test="$r['_forum_trail']">
+	<forums>
+	<foreach loop="$r['_forum_trail'] as $i => $f">
+		<forum>
+			<url>{parse url="{$f[1]}" template="showforum" seotitle="{$f[2]}" base="public"}</url>
+			<name>{$f[0]}</name>
+		</forum>
+	</foreach>
+	</forums>
+</if>
+	<replies>{$r['posts']}</replies>
+	<attachments>{$r['topic_hasattach']}</attachments>
+<if test="$this->request['do'] == 'new_posts'">
+	<date>{parse date="$r['last_post']" format="short"}</date>
+	<user>
+		<id>{$r['last_poster_id']}</id>
+		<name>{$r['last_poster_name']}</name>
+		<url>{parse url="showuser={$r['last_poster_id']}" base="public"}</url>
+	</user>
+<else />
+	<date>{parse date="$r['updated']" format="short"}</date>
+	<user>
+		<id>{$r['member_id']}</id>
+		<name>{$r['members_display_name']}</name>
+		<url>{parse url="showuser={$r['member_id']}" base="public"}</url>
+	</user>
+</if> 
+</result>]]></template_content>
+      <template_name>topicPostSearchResultAsForum</template_name>
+      <template_data>$r, $indent, $resultAsTitle=false</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content>{$content}</template_content>
+      <template_name>topicPostSubresultWrap</template_name>
+      <template_data>$content</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<usercontent>
+	<total>{$total}</total>
+<if test="$total">
+	<results>
+	<foreach loop="results:$results as $result">	
+		{$result['html']}
+	</foreach>
+	</results>	
+</if>
+{$pagination}
+</usercontent>]]></template_content>
+      <template_name>userPostsView</template_name>
+      <template_data>$results, $pagination, $total</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_global">
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content/>
+      <template_name>defaultHeader</template_name>
+      <template_data/>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content/>
+      <template_name>forum_jump</template_name>
+      <template_data>$html</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content><![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<ipb>
+$html
+</ipb>]]></template_content>
+      <template_name>globalTemplate</template_name>
+      <template_data>$html, $documentHeadItems, $css, $jsModules, $metaTags, $header_items=array(), $items=array(), $footer_items=array(), $stats=array()</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content/>
+      <template_name>include_highlighter</template_name>
+      <template_data/>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content><![CDATA[<if test="$work['pages'] > 1">
+	<pagination>
+		<total>{$work['pages']}</total>
+		<current>{$work['current_page']}</current>
+		<pages>
+	<foreach loop="pagination:$work['_pageNumbers'] as $_real => $_page">
+			<page>
+				<title>{$_page}</title>
+				<url>{parse url="{$data['baseUrl']}&amp;{$data['startValueKey']}={$_real}" base="public" seotitle="{$data['seoTitle']}" template="{$data['seoTemplate']}"}</url>
+			</page>
+	</foreach>
+		<if test="$work['current_page'] < $work['pages']">
+			<page>
+				<title>{$this->lang->words['tpl_next']}</title>
+				<url>{parse url="{$data['baseUrl']}&amp;{$data['startValueKey']}={parse expression="intval( $data['currentStartValue'] + $data['itemsPerPage'] )"}" base="public" seotitle="{$data['seoTitle']}" template="{$data['seoTemplate']}"}</url>
+			</page>
+		</if>
+		<if test="isset( $work['_showEndDots'] ) && $work['_showEndDots']">
+			<page>
+				<title>{$this->lang->words['tpl_gotolast']}</title>
+				<url>{parse url="{$data['baseUrl']}&amp;{$data['startValueKey']}={parse expression="intval( ( $work['pages'] - 1 ) * $data['itemsPerPage'] )"}" base="public" seotitle="{$data['seoTitle']}" template="{$data['seoTemplate']}"}</url>
+			</page>			
+		</if>
+		</pages>
+	</pagination>
+</if>]]></template_content>
+      <template_name>paginationTemplate</template_name>
+      <template_data>$work, $data</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content>$sig</template_content>
+      <template_name>signature_separator</template_name>
+      <template_data><![CDATA[$sig=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content><![CDATA[<details>	
+		<if test="$author['member_id'] AND $author['avatar']">
+			<avatar>{$author['avatar']}</avatar>
+		<else />
+			<avatar>{$author['avatar']}</avatar>
+		</if>
+		<if test="$author['title']">
+			<title>{$author['title']}</title>
+		</if>
+		<if test="$author['member_rank_img']">
+			<rank>{$author['member_rank_img']}</rank>
+		</if>
+		
+		<if test="$author['has_blog']">
+			<blog>{parse url="app=blog&amp;module=display&amp;section=blog&amp;mid={$author['member_id']}" base="public"}</blog>
+		</if>
+		<if test="$author['has_gallery']">
+			<gallery>{parse url="app=gallery&amp;module=user&amp;section=user&amp;user={$author['member_id']}" base="public"}</gallery>
+		</if>	
+			<group>{$author['_group_formatted']}</group>
+			<posts>{parse expression="$this->registry->getClass('class_localization')->formatNumber( intval( $author['posts'] ) )"}</posts>
+			<joined>{parse date="$author['joined']" format="joined"}</joined>
+		<if test="$author['custom_fields']['profile_info'] != """>
+			<customfields>
+			<foreach loop="$author['custom_fields']['profile_info'] as $field">
+				<field>{$field}</field>
+			</foreach>
+			</customfields>
+		</if>
+		</details>]]></template_content>
+      <template_name>userInfoPane</template_name>
+      <template_data>$author, $contentid, $options</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content/>
+      <template_name>user_popup</template_name>
+      <template_data><![CDATA[$memberid=0, $seoName='']]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_global_other">
+    <template>
+      <template_group>skin_global_other</template_group>
+      <template_content/>
+      <template_name>captchaGD</template_name>
+      <template_data>$captcha_unique_id</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global_other</template_group>
+      <template_content/>
+      <template_name>captchaRecaptcha</template_name>
+      <template_data><![CDATA[$html=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global_other</template_group>
+      <template_content><![CDATA[<offline>
+	<message>{$message}</message>
+</offline>]]></template_content>
+      <template_name>displayBoardOffline</template_name>
+      <template_data><![CDATA[$message=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global_other</template_group>
+      <template_content><![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<ipb>
+$html
+</ipb>]]></template_content>
+      <template_name>displayPopUpWindow</template_name>
+      <template_data><![CDATA[$documentHeadItems, $css, $jsLoaderItems, $title="", $output=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global_other</template_group>
+      <template_content><![CDATA[<error>
+	<code>{$code}</code>
+	<message>{$message}</message>
+</error>]]></template_content>
+      <template_name>Error</template_name>
+      <template_data><![CDATA[$message="",$code=0,$ad_email_one="",$ad_email_two="",$show_top_msg=0, $login="", $post=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global_other</template_group>
+      <template_content/>
+      <template_name>error_log_in</template_name>
+      <template_data><![CDATA[$q_string=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global_other</template_group>
+      <template_content/>
+      <template_name>error_post_textarea</template_name>
+      <template_data><![CDATA[$post=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global_other</template_group>
+      <template_content/>
+      <template_name>questionAndAnswer</template_name>
+      <template_data>$data</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global_other</template_group>
+      <template_content><![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<ipb>
+	<redirect>
+		<url>{parse url="$url" base="public"}</url>
+		<message>{$text}</message>
+	</redirect>
+</ipb>]]></template_content>
+      <template_name>redirectTemplate</template_name>
+      <template_data><![CDATA[$documentHeadItems, $css, $jsLoaderItems, $text="",$url="", $full=false]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_help">
+    <template>
+      <template_group>skin_help</template_group>
+      <template_content><![CDATA[<if test="!$this->request['xml']">
+<div class='topic_controls'>
+	<ul class='topic_buttons'>
+		<li><a href="{parse url="app=core&amp;module=help" base="public"}" title="{$this->lang->words['help_back_list_title']}"><img src='{$this->settings['img_url']}/back.png' alt='Icon' /> {$this->lang->words['help_return_list']}</a></li>
+	</ul>
+</div>
+</if>
+<if test="$this->request['xml']">
+<br />
+</if>
+<h2>$one_text: $three_text</h2>
+<div class='row2 help_doc bullets'>
+	$text
+</div>
+<br />
+<if test="!$this->request['xml']">
+<div class='topic_controls'>
+	<ul class='topic_buttons'>
+		<li><a href="{parse url="app=core&amp;module=help" base="public"}" title="{$this->lang->words['help_return_list_title']}"><img src='{$this->settings['img_url']}/back.png' alt='Icon' /> {$this->lang->words['help_return_list']}</a></li>
+	</ul>
+</div>
+</if>]]></template_content>
+      <template_name>helpShowSection</template_name>
+      <template_data><![CDATA[$one_text="",$two_text="",$three_text="", $text]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_help</template_group>
+      <template_content><![CDATA[{parse js_module="help"}
+<h2>{$this->lang->words['help_topics']}</h2>
+<p class='message unspecific'>$two_text</p>
+<ol id='help_topics'>
+	{parse striping="help" classes="row1,row2"}
+	<foreach loop="topics:$rows as $entry">
+	<li class='{parse striping="help"} helpRow'>
+		<h3><a href="{parse url="app=core&amp;module=help&amp;do=01&amp;HID={$entry['id']}" base="public"}" title="{$this->lang->words['help_read_document']}">{$entry['title']}</a></h3>
+		<p>
+			{$entry['description']}
+		</p>
+	</li>
+	</foreach>
+</ol>]]></template_content>
+      <template_name>helpShowTopics</template_name>
+      <template_data><![CDATA[$one_text="",$two_text="",$three_text="",$rows]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_login">
+    <template>
+      <template_group>skin_login</template_group>
+      <template_content/>
+      <template_name>errors</template_name>
+      <template_data><![CDATA[$data=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_login</template_group>
+      <template_content/>
+      <template_name>showLogInForm</template_name>
+      <template_data><![CDATA[$message="",$referer="",$extra_form="", $has_openid=false, $facebookOpts=array()]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_reports">
+    <template>
+      <template_group>skin_reports</template_group>
+      <template_content/>
+      <template_name>viewReport</template_name>
+      <template_data>$options=array(), $reports=array(), $comments=array()</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_reports</template_group>
+      <template_content/>
+      <template_name>basicReportForm</template_name>
+      <template_data><![CDATA[$name="", $url="", $extra_data=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_reports</template_group>
+      <template_content/>
+      <template_name>config_notif</template_name>
+      <template_data><![CDATA[$data=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_reports</template_group>
+      <template_content/>
+      <template_name>greenAlertImage</template_name>
+      <template_data/>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_reports</template_group>
+      <template_content/>
+      <template_name>redAlertImage</template_name>
+      <template_data/>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_reports</template_group>
+      <template_content/>
+      <template_name>reportsIndex</template_name>
+      <template_data><![CDATA[$reports=array(), $acts="", $pages="", $active=array()]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_register">
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>show_lostpass_form_auto</template_name>
+      <template_data><![CDATA[$aid="",$uid=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>show_lostpass_form_manual</template_name>
+      <template_data/>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>tmpl_form</template_name>
+      <template_data><![CDATA[$action="",$hidden="",$title="",$content=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>showPreview</template_name>
+      <template_data><![CDATA[$member=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>showRevalidated</template_name>
+      <template_data/>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>showRevalidateForm</template_name>
+      <template_data><![CDATA[$name="",$error=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>showLostpassForm</template_name>
+      <template_data>$error</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>showLostPassWaitRandom</template_name>
+      <template_data><![CDATA[$member=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>showManualForm</template_name>
+      <template_data><![CDATA[$type="reg"]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>registerCoppaStart</template_name>
+      <template_data/>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>registerCoppaTwo</template_name>
+      <template_data/>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>registerForm</template_name>
+      <template_data><![CDATA[$general_errors=array(), $data=array(), $inline_errors=array(), $time_select='', $custom_fields=array()]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>registerShowTerms</template_name>
+      <template_data><![CDATA[$text="",$coppa_user=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>showAuthorize</template_name>
+      <template_data><![CDATA[$member=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>completePartialLogin</template_name>
+      <template_data><![CDATA[$mid="",$key="",$custom_fields="",$errors="", $reg=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>lostPasswordForm</template_name>
+      <template_data><![CDATA[$error=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>lostPasswordWait</template_name>
+      <template_data><![CDATA[$member=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content/>
+      <template_name>registerCoppaForm</template_name>
+      <template_data/>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_editors">
+    <template>
+      <template_group>skin_editors</template_group>
+      <template_content/>
+      <template_name>ips_editor</template_name>
+      <template_data><![CDATA[$form_field="",$initial_content="",$images_path="",$rte_mode=0,$editor_id='ed-0',$smilies='', $bbcode='', $can_use_emos=1, $IPS_DOC_CHAR_SET=1]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_editors</template_group>
+      <template_content/>
+      <template_name>ajaxEditBox</template_name>
+      <template_data><![CDATA[$post="", $pid=0, $error_msg="", $extraData]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_editors</template_group>
+      <template_content/>
+      <template_name>editorJS</template_name>
+      <template_data><![CDATA[$emoticons='']]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_editors</template_group>
+      <template_content/>
+      <template_name>editorShell</template_name>
+      <template_data><![CDATA[$editor_id, $field='Post', $content='', $lite=0]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_emails">
+    <template>
+      <template_group>skin_emails</template_group>
+      <template_content/>
+      <template_name>boardRules</template_name>
+      <template_data><![CDATA[$title="",$body=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_emails</template_group>
+      <template_content/>
+      <template_name>errors</template_name>
+      <template_data><![CDATA[$data=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_emails</template_group>
+      <template_content/>
+      <template_name>forward_form</template_name>
+      <template_data><![CDATA[$title="",$text="",$lang=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_emails</template_group>
+      <template_content/>
+      <template_name>sendMailForm</template_name>
+      <template_data><![CDATA[$data=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_emails</template_group>
+      <template_content/>
+      <template_name>sentScreen</template_name>
+      <template_data><![CDATA[$member_name=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_emails</template_group>
+      <template_content/>
+      <template_name>show_address</template_name>
+      <template_data><![CDATA[$data=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_stats">
+    <template>
+      <template_group>skin_stats</template_group>
+      <template_content/>
+      <template_name>group_strip</template_name>
+      <template_data><![CDATA[$group="", $members=array()]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_stats</template_group>
+      <template_content/>
+      <template_name>top_posters</template_name>
+      <template_data>$rows</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_stats</template_group>
+      <template_content/>
+      <template_name>whoPosted</template_name>
+      <template_data><![CDATA[$tid=0, $title="", $rows=array()]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_stats</template_group>
+      <template_content/>
+      <template_name>whoPostedAjaxWrapper</template_name>
+      <template_data>$output</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+</templates>

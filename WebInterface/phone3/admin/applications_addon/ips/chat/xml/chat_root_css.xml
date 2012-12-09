@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<css>
+  <cssfile>
+    <css_set_id>0</css_set_id>
+    <css_updated>1251817153</css_updated>
+    <css_group>ipchat</css_group>
+    <css_content>#parachat, #parachat_help
+{
+	background: #eef3f8;
+	padding: 4px;
+}
+
+#parachat {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+#parachat_help {
+	
+}</css_content>
+    <css_position>1</css_position>
+    <css_app>chat</css_app>
+    <css_app_hide>1</css_app_hide>
+    <css_attributes><![CDATA[title="Main" media="screen"]]></css_attributes>
+    <css_removed>0</css_removed>
+    <css_modules/>
+    <css_user_added>0</css_user_added>
+    <css_user_edited>0</css_user_edited>
+  </cssfile>
+</css>

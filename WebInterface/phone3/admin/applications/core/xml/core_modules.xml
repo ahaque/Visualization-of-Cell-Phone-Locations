@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moduleexport>
+  <modulegroup>
+    <module>
+      <sys_module_title>Global</sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>global</sys_module_key>
+      <sys_module_description>Global functions such as logging in, registering, etc</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>1</sys_module_position>
+      <sys_module_admin>0</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>User CP</sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>usercp</sys_module_key>
+      <sys_module_description><![CDATA[The user&#39;s control panel]]></sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>2</sys_module_position>
+      <sys_module_admin>0</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Task Manager</sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>task</sys_module_key>
+      <sys_module_description>Runs the tasks</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>3</sys_module_position>
+      <sys_module_admin>0</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Attachments</sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>attach</sys_module_key>
+      <sys_module_description>Attachments handling</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>4</sys_module_position>
+      <sys_module_admin>0</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>My Control Panel</sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>mycp</sys_module_key>
+      <sys_module_description>View your tasks, calendars and topics</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>1</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title><![CDATA[Tools &amp; Settings]]></sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>tools</sys_module_key>
+      <sys_module_description>Manage tools and settings for this installtion</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>2</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title><![CDATA[Look &amp; Feel]]></sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>templates</sys_module_key>
+      <sys_module_description>Manage your templates and CSS</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>3</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title><![CDATA[Applications &amp; Modules]]></sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>applications</sys_module_key>
+      <sys_module_description>Manage tools and settings for this installtion</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>4</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Post Content</sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>posts</sys_module_key>
+      <sys_module_description>Manage BBCode, banned words and more</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>5</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Languages</sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>languages</sys_module_key>
+      <sys_module_description>Admin interface for managing languages</sys_module_description>
+      <sys_module_version>3.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>6</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Report Center</sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>report</sys_module_key>
+      <sys_module_description>Admin interface for managing reported content</sys_module_description>
+      <sys_module_version>3.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>7</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Logs</sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>logs</sys_module_key>
+      <sys_module_description>Various IP.Board Logs</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>8</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>System</sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>system</sys_module_key>
+      <sys_module_description>Manage your security center, languages, etc.</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>9</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Diagnostics</sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>diagnostics</sys_module_key>
+      <sys_module_description/>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>10</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>SQL Management</sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>sql</sys_module_key>
+      <sys_module_description/>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>11</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title><![CDATA[Help &amp; Support]]></sys_module_title>
+      <sys_module_application>core</sys_module_application>
+      <sys_module_key>help</sys_module_key>
+      <sys_module_description/>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>12</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+  </modulegroup>
+</moduleexport>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates application="portal" templategroups="a:1:{s:11:&quot;skin_portal&quot;;s:5:&quot;exact&quot;;}">
+  <templategroup group="skin_portal">
+    <template>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[<div class='general_box'>
+	<h3><img src='{$this->settings['img_url']}/comment_new.png' alt='{$this->lang->words['icon']}' /> {$this->lang->words['aff_title']}</h3>
+	<div>
+		{$this->settings['csite_fav_contents']}
+	</div>
+</div>
+<br />]]></template_content>
+      <template_name>affiliates</template_name>
+      <template_data><![CDATA[$links=""]]></template_data>
+      <template_updated>1251817154</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[{parse js_module="topic"}
+<foreach loop="articles:$articles as $entry">
+	<h2 class='maintitle'><a href='{parse url="showtopic={$entry['tid']}" base="public" seotitle="{$entry['title_seo']}" template="showtopic"}'>{$entry['title']}</a></h2>
+	<div class='generic_bar'></div>
+	<div class='post_block first hentry no_sidebar' id='announce_id_{$announce['announce_id']}'>
+		<div class='post_wrap'>
+			<if test="authorIsMember:|:$entry['member_id']">
+				<h3>
+			<else />
+				<h3 class='guest'>
+			</if>
+					<if test="authorMemberLink:|:$entry['member_id']">
+						<if test="authorIsOnline:|:$entry['_online']">
+							{parse replacement="user_online"}
+						<else />
+							{parse replacement="user_offline"}
+						</if> &nbsp;
+								<address class="author vcard"><a class="url fn" href='{parse url="showuser={$entry['member_id']}" template="showuser" seotitle="{$entry['members_seo_name']}" base="public"}'>{$entry['members_display_name']}</a>{parse template="user_popup" group="global" params="$entry['member_id']"}</address>
+					<else />
+						{$entry['members_display_name']}
+					</if>
+					 - {$entry['date']} - {parse format_number="$entry['posts']"} {$this->lang->words['comments_suffix']}
+				</h3>
+			<div class='post_body'>
+				<div class='post entry-content'>
+					{$entry['post']}
+					<!--IBF.ATTACHMENT_{$entry['pid']}-->
+				</div>
+			</div>
+			<div class='moderation_bar'>
+				<if test="entryHasPosts:|:$entry['posts']">
+					{$this->lang->words['read']} {parse format_number="$entry['views']"} {$this->lang->words['times_last']} <a href='{parse url="showtopic={$entry['tid']}&amp;view=getlastpost" base="public" seotitle="{$entry['title_seo']}" template="showtopic"}'>{$this->lang->words['article_comment']}</a> {$this->lang->words['portal_by']} <if test="entryLastPoster:|:$entry['last_poster_id']"><a href='{parse url="showuser={$entry['last_poster_id']}" template="showuser" seotitle="{$entry['seo_last_name']}" base="public"}'>{$entry['last_poster_name']}</a><else />{$entry['last_poster_name']}</if>
+				<else />
+					{$this->lang->words['read']} {parse format_number="$entry['views']"} {$this->lang->words['times_make']} <a href='{parse url="showtopic={$entry['tid']}&amp;view=getlastpost" base="public" seotitle="{$entry['title_seo']}" template="showtopic"}'>{$this->lang->words['article_comment']}</a>
+				</if>
+				{$bottom_string}
+				&nbsp;&nbsp;<a href='{parse url="app=forums&amp;module=forums&amp;section=printtopic&amp;client=printer&amp;f={$entry['forum_id']}&amp;t={$entry['tid']}" base="public"}'>{parse replacement="print_icon"}</a>&nbsp;&nbsp;
+				<a href='{parse url="app=forums&amp;module=extras&amp;section=forward&amp;f={$entry['forum_id']}&amp;t={$entry['tid']}" base="public"}'>{parse replacement="email_icon"}</a>
+			</div>
+		</div>			
+	</div>
+	<br />
+</foreach>]]></template_content>
+      <template_name>articles</template_name>
+      <template_data>$articles</template_data>
+      <template_updated>1251817154</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[{$content}
+<br />]]></template_content>
+      <template_name>calendarWrap</template_name>
+      <template_data><![CDATA[$content=""]]></template_data>
+      <template_updated>1251817154</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[<div class='general_box'>
+	<h3><img src='{$this->settings['img_url']}/comment_new.png' alt='{$this->lang->words['icon']}' /> {$this->lang->words['discuss_title']}</h3>
+	<ul class='hfeed'>
+		{parse striping="recent_topics" classes="row1,row2 altrow"}
+		<foreach loop="posts:$posts as $result">
+			<li class='hentry {parse striping="recent_topics"}'><a href='{parse url="showtopic={$result['tid']}" base="public" template="showtopic" seotitle="{$result['title_seo']}"}' rel='bookmark' title='{$this->lang->words['view_topic']}'>{$result['title_display']}</a> {$this->lang->words['portal_by']} <address class="author vcard"><a class="url fn" href="{parse url="showuser={$result['member_id']}" base="public" template="showuser" seotitle="{$result['members_seo_name']}"}" title='{$this->lang->words['view_profile']}'>{$result['members_display_name']}</a>{parse template="user_popup" group="global" params="$result['member_id']"}</address> <span class='date'>(<abbr class="published" title="{parse expression="date( 'c', $result['post_date'] )"}">{$result['date']}</abbr>)</span>
+			<br />{$this->lang->words['recent_read']}: {parse format_number="$result['views']"} &nbsp; {$this->lang->words['recent_comments']}: {parse format_number="$result['posts']"}</li>
+		</foreach>
+	</ul>
+</div>
+<br />]]></template_content>
+      <template_name>latestPosts</template_name>
+      <template_data>$posts=array()</template_data>
+      <template_updated>1251817154</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[<div class='general_box clearfix' id='portal_active_users'>
+	<h3><img src='{$this->settings['img_url']}/comment_new.png' alt='{$this->lang->words['icon']}' /> <a href="{parse url="app=members&amp;module=online&amp;section=online" base="public"}">{$this->lang->words['online_title']}</a></h3>
+	<div>
+		<!--<span>{parse expression="sprintf( $this->lang->words['online_breakdown'], intval($active['TOTAL']) )"}</span>-->
+		<span class='desc'>{parse expression="sprintf( $this->lang->words['online_split'], intval($active['MEMBERS']), intval($active['visitors']), intval($active['ANON']) )"}</span>
+		<br /><br />
+		<p>
+			<span class='name'>{parse expression="implode( ",</span> <span class='name'>", $active['NAMES'] )"}</span>					
+		</p>
+	</div>
+</div>
+<br />]]></template_content>
+      <template_name>onlineUsers</template_name>
+      <template_data>$active</template_data>
+      <template_updated>1251817154</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[{parse js_module="topic"}
+<div class='general_box'>
+	<h3><img src='{$this->settings['img_url']}/comment_new.png' alt='{$this->lang->words['icon']}' /> <a href='{parse url="showtopic={$tid}" base="public"}'>{$this->lang->words['poll_title']}</a></h3>
+	{$content}
+</div>
+<br />]]></template_content>
+      <template_name>pollWrapper</template_name>
+      <template_data><![CDATA[$content="",$tid=""]]></template_data>
+      <template_updated>1251817154</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[<div class='general_box'>
+	<h3><img src='{$this->settings['img_url']}/comment_new.png' alt='{$this->lang->words['icon']}' /> {$this->lang->words['links_title']}</h3>
+	<ul>
+		<foreach loop="links:$links as $link">
+			<li>&bull; <a href="{$link[1]}">{$link[2]}</a><li>		
+		</foreach>
+	</ul>
+</div>
+<br />]]></template_content>
+      <template_name>siteNavigation</template_name>
+      <template_data>$links=array()</template_data>
+      <template_updated>1251817154</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_portal</template_group>
+      <template_content><![CDATA[<!--
+	SKINNOTE: Remember boxes are also in skin_gallery_portal, skin_blog_portal and skin_downloads_external
+	-The striping doesn't add the proper padding like the board index does
+	-Poll is kinda ugly
+	-Print and Email should be icons.  Note that I also used "moderation_bar" class for that row, which isn't necessarily
+		semantic, but displays fine - your call on whether to change it
+-->
+<if test="disablelightbox:|:!$this->settings['disable_lightbox']">
+{parse template="include_lightbox" group="global" params=""}
+</if>
+<div id='portal_articles' class='left'>
+	<!--MAIN-->
+	 <!--::recent_topics_last_x::-->
+	 <!--END MAIN-->
+</div>
+<div id='index_stats' class='portal left'>
+	<!-- LEFT -->
+	 <!--::portal_sitenav::-->
+	 <!--::online_users_show::-->
+	 <!--::blogs_show_last_updated_x::-->
+	 <!--::recent_downloads_last_x::-->
+	 <!--::gallery_show_random_image::-->
+	 <!--::calendar_show_current_month::-->
+	 <!--::poll_show_poll::-->
+	 <!--::recent_topics_discussions_last_x::-->
+	 <!--::portal_affiliates::-->
+	 <!--END LEFT-->
+</div>
+{parse template="include_highlighter" group="global" params="1"}
+<script type='text/javascript'>
+	// Resize images
+	$$('.post', '.poll').each( function(elem){
+		ipb.global.findImgs( $( elem ) );
+	});
+</script>]]></template_content>
+      <template_name>skeletonTemplate</template_name>
+      <template_data/>
+      <template_updated>1251817154</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+</templates>

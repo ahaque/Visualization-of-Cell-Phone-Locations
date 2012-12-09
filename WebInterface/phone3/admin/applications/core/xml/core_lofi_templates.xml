@@ -1,0 +1,1866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates application="core" templategroups="a:10:{s:12:&quot;skin_editors&quot;;s:5:&quot;exact&quot;;s:11:&quot;skin_emails&quot;;s:5:&quot;exact&quot;;s:11:&quot;skin_global&quot;;s:5:&quot;exact&quot;;s:17:&quot;skin_global_other&quot;;s:5:&quot;exact&quot;;s:9:&quot;skin_help&quot;;s:5:&quot;exact&quot;;s:10:&quot;skin_login&quot;;s:5:&quot;exact&quot;;s:13:&quot;skin_register&quot;;s:5:&quot;exact&quot;;s:12:&quot;skin_reports&quot;;s:5:&quot;exact&quot;;s:11:&quot;skin_search&quot;;s:5:&quot;exact&quot;;s:10:&quot;skin_stats&quot;;s:5:&quot;exact&quot;;}">
+  <templategroup group="skin_stats">
+    <template>
+      <template_group>skin_stats</template_group>
+      <template_content/>
+      <template_name>group_strip</template_name>
+      <template_data><![CDATA[$group="", $members=array()]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_stats</template_group>
+      <template_content/>
+      <template_name>top_posters</template_name>
+      <template_data>$rows</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_stats</template_group>
+      <template_content/>
+      <template_name>whoPosted</template_name>
+      <template_data><![CDATA[$tid=0, $title="", $rows=array()]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_stats</template_group>
+      <template_content/>
+      <template_name>whoPostedAjaxWrapper</template_name>
+      <template_data>$output</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_search">
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<h2>{$this->lang->words['user_posts_title_all']} <if test="NPpostsOrTopics:|:$this->request['view_by_title'] && $this->request['search_app'] == 'forums'">{$this->lang->words['user_posts_title_topics']}<else />{$this->lang->words['user_posts_title_posts']}</if> {$this->lang->words['user_posts_title_member']} {$member['members_display_name']}</h2>
+<if test="NPhasResults:|:$total">
+	<p class='message'>
+		{$this->lang->words['user_posts_have_been']} <em><strong>{$total}</strong></em> <if test="NPresultsTitle:|:$this->request['view_by_title'] && $this->request['search_app'] == 'forums'">{$this->lang->words['user_posts_title_topics']}<else />{$this->lang->words['user_posts_title_posts']}</if> {$this->lang->words['user_posts_title_member']}
+	</p>
+	<br />
+</if>
+<div class='topic_controls'>
+	{$pagination}
+</div>
+<ol id='member_alpha' class='tab_bar no_title'>
+	<if test="NPAllTab:|:! in_array( $this->settings['search_method'], array( 'traditional', 'sphinx' ) )">
+		<if test="NPAllTabActive:|:isset( $this->request['search_filter_app'] ) && $this->request['search_filter_app']['all'] != 1">
+			<li><a href='{parse url="app=core&amp;module=search&amp;do=user_posts&amp;mid={$this->request['mid']}&amp;search_filter_app[all]=1&amp;view_by_title={$this->request['view_by_title']}" base="public"}'>{$this->lang->words['user_posts_all']}</a></li>
+		<else />
+			<li class='active'><strong>{$this->lang->words['user_posts_all']}</strong></li>
+		</if>
+	</if>
+	<foreach loop="UPapps:$this->registry->getApplications() as $app">
+		<if test="NPTabLoop:|:IPSSearchIndex::appIsSearchable( $app['app_directory'] ) && ! in_array( $app['app_directory'], array( 'core', 'members' ) )">
+			<if test="NPTabActive:|:$this->request['search_app'] == $app['app_directory']">
+				<li class='active'><strong>{$app['app_public_title']}</strong></li>
+			<else />				
+				<li><a href='{parse url="app=core&amp;module=search&amp;do=user_posts&amp;mid={$this->request['mid']}&amp;search_filter_app[{$app['app_directory']}]=1&amp;view_by_title={$this->request['view_by_title']}" base="public"}'>{$app['app_public_title']}</a></li>
+			</if>
+ 		</if>
+	</foreach>
+</ol>
+<if test="NPTotal:|:$total">
+	{parse striping="searchStripe" classes="row1,row2"}
+	<div id='search_results'>
+		<ol>
+			<foreach loop="UPresults:$results as $result">	
+				<if test="NPSub:|:$result['sub']">
+					<li class='{parse striping="searchStripe"} sub clear clearfix'>
+						{$result['html']}
+					</li>
+				<else />
+					<li class='{parse striping="searchStripe"} clear clearfix'>
+						{$result['html']}
+					</li>
+				</if>
+			</foreach>
+		</ol>
+	</div>
+<else />
+	<p class='no_messages'>{$this->lang->words['user_posts_none']}</p>
+</if>
+<div class='topic_controls'>
+	{$pagination}
+</div>]]></template_content>
+      <template_name>userPostsView</template_name>
+      <template_data>$results, $pagination, $total, $member</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<h2>{$this->lang->words['new_content']}</h2>
+<if test="NPhasResults:|:$total">
+	<p class='message'>
+		{$this->lang->words['new_content_there']} <strong>{$total}</strong> {$this->lang->words['new_content_entries']}
+	</p>
+	<br />
+	<div class='topic_controls'>
+		{$pagination}
+	</div>
+</if>
+<ol id='member_alpha' class='tab_bar no_title'>
+	<if test="NPAllTab:|:! in_array( $this->settings['search_method'], array( 'traditional', 'sphinx' ) )">
+		<if test="NPOnAllTab:|:isset( $this->request['search_filter_app'] ) && $this->request['search_filter_app']['all'] != 1">
+			<li><a href='{parse url="app=core&amp;module=search&amp;do=new_posts&amp;search_filter_app[all]=1" base="public"}'>{$this->lang->words['new_content_all']}</a></li>
+		<else />
+			<li class='active'><strong>{$this->lang->words['new_content_all']}</strong></li>
+		</if>
+	</if>
+	<foreach loop="NCapps:$this->registry->getApplications() as $app">
+		<if test="NPLoopApps:|:IPSSearchIndex::appIsSearchable( $app['app_directory'] )">
+			<if test="NPTabActive:|:$this->request['search_app'] == $app['app_directory']">
+				<li class='active'><strong><if test="NPActiveFixHelp:|:strtolower($app['app_title']) == 'system'">{$this->lang->words['livesearch_helpfiles']}<else />{$app['app_public_title']}</if></strong></li>
+			<else />				
+				<li><a href='{parse url="app=core&amp;module=search&amp;do=new_posts&amp;search_filter_app[{$app['app_directory']}]=1" base="public"}'><if test="NPInactiveFixHelp:|:strtolower($app['app_title']) == 'system'">{$this->lang->words['livesearch_helpfiles']}<else />{$app['app_public_title']}</if></a></li>
+			</if>
+ 		</if>
+	</foreach>
+</ol>
+<if test="NPTotal:|:$total">
+	{parse striping="searchStripe" classes="row1,row2"}
+	<div id='search_results'>
+		<ol>
+			<foreach loop="NCresults:$results as $result">	
+				<if test="NPsub:|:$result['sub']">
+					<li class='{parse striping="searchStripe"} sub clear clearfix'>
+						{$result['html']}
+					</li>
+				<else />
+					<li class='{parse striping="searchStripe"} clear clearfix'>
+						{$result['html']}
+					</li>
+				</if>
+			</foreach>
+		</ol>
+	</div>
+	{$pagination}
+<else />
+	<p class='no_messages'>{$this->lang->words['new_content_none']}</p>
+</if>]]></template_content>
+      <template_name>newPostsView</template_name>
+      <template_data>$results, $pagination, $total</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<h2>{$this->lang->words['active_content']}</h2>
+<p class='message'>
+	{$this->lang->words['active_have_been']} <em><strong>{$total}</strong></em> {$this->lang->words['active_entries']}
+</p>
+<br />
+<div class='topic_controls'>
+{$pagination}
+</div>
+<ol id='member_alpha' class='tab_bar no_title'>
+	<if test="ACAllTab:|:! in_array( $this->settings['search_method'], array( 'traditional', 'sphinx' ) )">
+		<if test="ACOnAllTab:|:isset( $this->request['search_filter_app'] ) && $this->request['search_filter_app']['all'] != 1">
+			<li><a href='{parse url="app=core&amp;module=search&amp;do=active&amp;search_filter_app[all]=1" base="public"}'>{$this->lang->words['active_all']}</a></li>
+		<else />
+			<li class='active'><strong>{$this->lang->words['active_all']}</strong></li>
+		</if>
+	</if>
+	<foreach loop="APapps:$this->registry->getApplications() as $app">
+		<if test="ACloopAll:|:IPSSearchIndex::appIsSearchable( $app['app_directory'] )">
+			<if test="ACOnThisTab:|:$this->request['search_app'] == $app['app_directory']">
+				<li class='active'><strong><if test="ACFixHelp:|:strtolower($app['app_title']) == 'system'">{$this->lang->words['livesearch_helpfiles']}<else />{$app['app_public_title']}</if></strong></li>
+			<else />				
+				<li><a href='{parse url="app=core&amp;module=search&amp;do=active&amp;search_filter_app[{$app['app_directory']}]=1" base="public"}'><if test="ACInactiveFixHelp:|:strtolower($app['app_title']) == 'system'">{$this->lang->words['livesearch_helpfiles']}<else />{$app['app_public_title']}</if></a></li>
+			</if>
+ 		</if>
+	</foreach>
+</ol>
+<if test="AChasResults:|:$total">
+	{parse striping="searchStripe" classes="row1,row2"}
+	<div id='search_results'>
+		<ol>
+			<foreach loop="APresults:$results as $result">	
+				<if test="ACsub:|:$result['sub']">
+					<li class='{parse striping="searchStripe"} sub clear clearfix'>
+						{$result['html']}
+					</li>
+				<else />
+					<li class='{parse striping="searchStripe"} clear clearfix'>
+						{$result['html']}
+					</li>
+				</if>
+			</foreach>
+		</ol>
+	</div>
+	{$pagination}
+<else />
+	<div class='no_messages'>{$this->lang->words['active_none']}</div>
+</if>]]></template_content>
+      <template_name>activePostsView</template_name>
+      <template_data>$results, $pagination, $total</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<h2 class='hide'>{$this->lang->words['search_results']}</h2>
+<if test="searchResultsTermsRemoved:|:is_array( $removed_search_terms ) && count( $removed_search_terms )">
+<p class='message error'>{$this->lang->words['removed_search_terms']} <strong>{parse expression="implode( ',', $removed_search_terms )"}</strong></p>
+<br />
+</if>
+	<if test="hasSearchResults:|:$total > 0 AND $search_term != ''">
+		<p class='message'>
+			{$this->lang->words['your_search']} <em><strong>{$search_term}</strong></em> {$this->lang->words['your_search_returned']} <strong>{$total}</strong> {$this->lang->words['your_search_results']}
+		</p>
+	</if>
+	<br />
+	<div class='topic_controls'>
+		{$pagination}
+	</div>
+	
+	<ol id='member_alpha' class='tab_bar'>
+		<if test="showMyResultsTab:|:! in_array( $this->settings['search_method'], array( 'traditional', 'sphinx' ) )">
+			<if test="notFiltering:|:$this->request['search_filter_app']['all'] != 1">
+				<li><a href='{parse url="{$url_string}" base="public"}'>{$this->lang->words['my_results']}</a></li>
+			<else />
+				<li class='active'><strong>{$this->lang->words['my_results']}</strong></li>
+			</if>
+		</if>
+		
+		<!--harcoded forums, members, system apps-->
+		<if test="forumsTab:|:isset( $this->request['search_filter_app']['forums'] ) && $this->request['search_filter_app']['forums'] == 1">
+			<li class='active'><strong>{$this->lang->words['search_tab_forums']}</strong></li>
+		<else />				
+			<li><a href='{parse url="{$url_string}&amp;search_filter_app[forums]=1" base="public"}'>{$this->lang->words['search_tab_forums']}</a></li>
+		</if>
+		<if test="membersTab:|:isset( $this->request['search_filter_app']['members'] ) && $this->request['search_filter_app']['members'] == 1">
+			<li class='active'><strong>{$this->lang->words['search_tab_members']}</strong></li>
+		<else />
+			<li><a href='{parse url="{$url_string}&amp;search_filter_app[members]=1" base="public"}'>{$this->lang->words['search_tab_members']}</a></li>
+		</if>
+		<if test="helpTab:|:isset( $this->request['search_filter_app']['core'] ) && $this->request['search_filter_app']['core'] == 1">
+			<li class='active'><strong>{$this->lang->words['livesearch_helpfiles']}</strong></li>
+		<else />				
+			<li><a href='{parse url="{$url_string}&amp;search_filter_app[core]=1" base="public"}'>{$this->lang->words['livesearch_helpfiles']}</a></li>
+		</if>
+		<foreach loop="apps:$this->registry->getApplications() as $app">
+			<if test="appIsSearchable:|:IPSSearchIndex::appIsSearchable( $app['app_directory'] ) AND !in_array( $app['app_directory'], array('core','forums','members') )">
+				<if test="appIsSearched:|:isset( $this->request['search_filter_app'][$app['app_directory']] ) && $this->request['search_filter_app'][$app['app_directory']] == 1">
+					<li class='active'><strong>{$app['app_public_title']}</strong></li>
+				<else />				
+					<li><a href='{parse url="{$url_string}&amp;search_filter_app[{$app['app_directory']}]=1" base="public"}'>{$app['app_public_title']}</a></li>
+				</if>
+	 		</if>
+		</foreach>
+	</ol>
+	<div class='tab_filters'>
+		<ul class='right'>
+			<if test="sortbyRelevance:|:$this->request['search_sort_by'] == 'relevence' || ! $this->request['search_sort_by']">
+				<li class='active'>{$this->lang->words['sort_by_relevance']}</li>
+			<else />
+				<li><a href='{parse url="{$url_string}&amp;search_sort_by=relevence&amp;search_filter_app[{$current_key}]=1" base="public"}'>{$this->lang->words['sort_by_relevance']}</a></li>
+			</if>
+	
+			<if test="sortByDate:|:$this->request['search_sort_by'] == 'date'">
+				<li class='active'>{$this->lang->words['sort_by_date']}</li>
+			<else />
+				<li><a href='{parse url="{$url_string}&amp;search_sort_by=date&amp;search_filter_app[{$current_key}]=1" base="public"}'>{$this->lang->words['sort_by_date']}</a></li>
+			</if>
+		</ul>
+	</div>
+	
+<if test="hasTotal:|:$total">
+	{parse striping="searchStripe" classes="row1,row2"}
+	<div id='search_results'>
+		<ol>
+			<foreach loop="results:$results as $result">	
+				<if test="subResult:|:$result['sub']">
+					<li class='{parse striping="searchStripe"} sub clearfix clear'>
+						{$result['html']}
+					</li>
+				<else />
+					<li class='{parse striping="searchStripe"} clearfix clear'>
+						{$result['html']}
+					</li>
+				</if>
+			</foreach>
+		</ol>
+	</div>
+	<br />
+	<div class='topic_controls'>
+		{$pagination}
+	</div>
+<else />
+	<p class='no_messages'>{$this->lang->words['no_results_found']}<if test="noResultsTerm:|:$search_term"> {$this->lang->words['no_results_found_for']} '{$search_term}'</if>.</div>
+</if>]]></template_content>
+      <template_name>searchResults</template_name>
+      <template_data>$results, $pagination, $total, $showing, $search_term, $url_string, $current_key, $removed_search_terms=array()</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<div class='result_info'>
+	<span class='icon'><img src='{parse url="gallery/{$r['misc']['directory']}/tn_{$r['misc']['masked_file_name']}" base="upload"}'></span>
+	
+	<h3><a href='{parse url="app=gallery&amp;module=images&amp;section=viewimage&amp;img={$r['type_id_2']}" base="public"}'>{$r['content_title']}</a></h3>
+	<if test="showGalleryImage:|:!$resultAsTitle">
+		<p>
+			{$r['content']}
+		</p>
+	</if>
+</div>
+<div class='result_details desc'>
+	<ul>
+		<li>{$r['comments']} {$this->lang->words['gallery_comments']}</li>
+		<li>{parse date="$r['updated']" format="short"}</li>
+		<li><a href='{parse url="showuser={$r['member_id']}" template="showuser" seotitle="{$r['members_seo_name']}" base="public"}' title='{$this->lang->words['view_profile']}'>{$r['members_display_name']}</a>{parse template="user_popup" group="global" params="$r['member_id'], $r['members_seo_name']"}</li>
+	</ul>
+</div>]]></template_content>
+      <template_name>galleryImageSearchResult</template_name>
+      <template_data>$r, $resultAsTitle=false</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<div class='result_info'>
+	<h3><a href='{parse url="app=calendar&amp;module=calendar&amp;cal_id={$r['type_id']}&amp;do=showevent&amp;event_id={$r['type_id_2']}&amp;hl={$this->request['search_higlight']}" base="public"}'>{$r['content_title']}</a> ({parse date="$r['updated']" format="short"} {$this->lang->words['to']} {parse date="$r['misc']" format="short"})</h3>
+	<if test="showCalendarContent:|:!$resultAsTitle">
+	<p>
+		{$r['content']}
+	</p>
+	</if>
+</div>
+<div class='result_details desc'>
+	<ul>
+		<li>By <a href='{parse url="showuser={$r['member_id']}" template="showuser" seotitle="{$r['members_seo_name']}" base="public"}' title='{$this->lang->words['view_profile']}'>{$r['members_display_name']}</a>{parse template="user_popup" group="global" params="$r['member_id']"}</li>
+	</ul>
+</div>]]></template_content>
+      <template_name>calEventSearchResult</template_name>
+      <template_data>$r, $resultAsTitle=false</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<div class='result_info'>
+	<h3><a href='{parse url="app=calendar&amp;module=calendar&amp;cal_id={$r['type_id']}&amp;do=showevent&amp;event_id={$r['type_id_2']}&amp;hl={$this->request['search_higlight']}" base="public"}'>{$r['content_title']}</a> ({parse date="$r['updated']" format="short"} {$this->lang->words['to']} {parse date="$r['misc']" format="short"})</h3>
+	<if test="showCalendarContent:|:!$resultAsTitle">
+	<p>
+		{$r['content']}
+	</p>
+	</if>
+</div>
+<div class='result_details desc'>
+	<ul>
+		<li>By <a href='{parse url="showuser={$r['member_id']}" template="showuser" seotitle="{$r['members_seo_name']}" base="public"}' title='{$this->lang->words['view_profile']}'>{$r['members_display_name']}</a>{parse template="user_popup" group="global" params="$r['member_id']"}</li>
+	</ul>
+</div>]]></template_content>
+      <template_name>calEventRangedSearchResult</template_name>
+      <template_data>$r, $resultAsTitle=false</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<fieldset id='app_filter_forums' class='{parse striping="search"} extra_filter'>
+	<ul>
+		<li>
+			<label for='forums_filter'>{$this->lang->words['find_forum']}:</label>
+			<select name='search_app_filters[forums][]' class='input_select' size='6' multiple='multiple'>
+				{$forums}
+			</select>
+		</li>
+	</ul>
+</fieldset>]]></template_content>
+      <template_name>forumAdvancedSearchFilters</template_name>
+      <template_data>$forums</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<div class='result_info'>
+	<span class='icon'>{parse replacement="{$r['_icon']}"}</span>
+	<h3><a href='{parse url="showtopic={$r['type_id_2']}&amp;view=<if test="isNewPost:|:$this->request['do']=='new_posts' OR $this->request['do']=='active'">getnewpost<else /><if test="resultIsPost:|:$r['misc']">findpost&amp;p={$r['misc']}</if></if>&amp;hl={$this->request['search_higlight']}&amp;fromsearch=1" seotitle="{$r['title_seo']}" template="showtopic" base="public"}' title='{$this->lang->words['view_result']}'>{$r['content_title']}</a></h3>
+	<if test="showTopicContent:|:!$resultAsTitle">
+	<p>
+		{$r['content']}
+	</p>
+	</if>
+	<if test="hasForumTrail:|:$r['_forum_trail']">
+		<span class='desc breadcrumb'>
+			<foreach loop="topicsForumTrail:$r['_forum_trail'] as $i => $f">
+			<a href='{parse url="{$f[1]}" template="showforum" seotitle="{$f[2]}" base="public"}'>{$f[0]}</a> <if test="notLastFt:|:$i+1 != count( $r['_forum_trail'] )">&gt;</if>
+			</foreach>
+		</span>
+	</if>
+</div>
+<div class='result_details desc'>
+	<ul>
+		<li>{$r['posts']} {$this->lang->words['forum_replies']}</li>
+		<li>
+			<if test="showTopicAsTitle:|:$resultAsTitle">
+				{parse date="$r['last_post']" format="short"} {$this->lang->words['search_by']} <a href='{parse url="showuser={$r['last_poster_id']}" seotitle="{$r['seo_last_name']}" template="showuser" base="public"}' title='{$this->lang->words['view_profile']}'>{$r['last_poster_name']}</a>{parse template="user_popup" group="global" params="$r['last_poster_id'], $r['seo_last_name']"}
+			<else />
+				{parse date="$r['updated']" format="short"} {$this->lang->words['search_by']} <a href='{parse url="showuser={$r['member_id']}" seotitle="{$r['members_seo_name']}" template="showuser" base="public"}' title='{$this->lang->words['view_profile']}'>{$r['members_display_name']}</a>{parse template="user_popup" group="global" params="$r['member_id'], $r['members_seo_name']"}
+			</if>
+		</li>
+		<if test="topicHasAttach:|:$r['topic_hasattach']">
+			<li><a href="{parse url="app=forums&amp;module=forums&amp;section=attach&amp;tid={$r['type_id_2']}" base="public"}">{$r['topic_hasattach']} {$this->lang->words['attach_header']}</a></li>
+		</if>
+	</ul>
+</div>]]></template_content>
+      <template_name>topicPostSearchResult</template_name>
+      <template_data>$r, $indent, $resultAsTitle=false</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_search</template_group>
+      <template_content><![CDATA[<form action="{parse url="app=core&amp;module=search&amp;section=search&amp;do=quick_search&amp;search_app={$this->registry->getCurrentApplication()}" base="public"}&amp;fromsearch=1" method="post" id='search-box' >
+<input type='hidden' name='search_filter_app[all]' value='1' />
+<p class='message'>
+	<strong>{$this->lang->words['optional_fields']}</strong>
+</p>
+<if test="searchTermsRemoved:|:is_array( $removed_search_terms ) && count( $removed_search_terms )">
+<br />
+<p class='message error'>{$this->lang->words['removed_search_terms']} <strong>{parse expression="implode( ',', $removed_search_terms )"}</strong></p>
+</if>
+<if test="searchError:|:$msg">
+<br />
+<p class='message error'>{$msg}</p>
+</if>
+<br />
+<h2 class='maintitle'>{$this->lang->words['search']}</h2>
+<div id='main_search_form' class='clear'>
+	
+	<div id='search_info' class='row1'>
+		<div class='generic_bar'></div>
+		<fieldset id='main_search' class='row2'>
+			<ul>
+				<li>
+					<label for='query'>{$this->lang->words['find_words']}:</label>
+					<input type='text' class='input_text' name='search_term' id='query' value='{$this->request['search_term']}' /><br />
+				</li>
+				<li>
+				<!--SKINNOTE: This isn't semantic - the text for the checkbox should be wrapped in the label, and label should be "for" the element-->
+					<label>&nbsp;</label>
+					<input type='checkbox' class='input_check' name='content_title_only' value='1'> {$this->lang->words['search_titles_only']}
+					<if test="canShowAsTitles:|:$this->settings['enable_show_as_titles']">
+						<label>&nbsp;</label>
+						<input type='checkbox' class='input_check' name='show_as_titles' value='1'> {$this->lang->words['show_as_titles']}
+					</if>
+				</li>
+				<li>
+					<label for='author'>{$this->lang->words['find_author']}:</label>
+					<input type='text' class='input_text' name='search_author' id='author' value='{$this->request['search_author']}' />
+				</li>
+				<li>			
+					<label for='date_start'>{$this->lang->words['find_date']}:</label>
+					<input type='text' class='input_text date' name='search_date_start' id='date_start' value='{$this->request['search_date_start']}' /><img src='{$this->settings['img_url']}/date.png' alt='{$this->lang->words['icon']}' id='date_start_icon' style='cursor: pointer' /> &nbsp;
+					<strong>{$this->lang->words['to']}</strong> &nbsp;<input type='text' class='input_text date' name='search_date_end' id='date_end' value='{$this->request['search_date_end']}' /><img src='{$this->settings['img_url']}/date.png' alt='{$this->lang->words['icon']}' id='date_end_icon' style='cursor: pointer' />
+				</li>
+			</ul>
+		</fieldset>
+		{$filters}
+		<fieldset class='submit'>
+			<input type='submit' name='submit' class='input_submit' value='{$this->lang->words['do_search']}'> {$this->lang->words['or']} <a href='{parse url="" base="public"}' title='{$this->lang->words['cancel']}' class='cancel'>{$this->lang->words['cancel']}</a>
+		</fieldset>
+	</div>
+</div>
+</form>
+<script type='text/javascript'>
+	ipb.search.initSearchForm();
+</script>]]></template_content>
+      <template_name>searchAdvancedForm</template_name>
+      <template_data><![CDATA[$filters='', $msg='', $removed_search_terms=array()]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_reports">
+    <template>
+      <template_group>skin_reports</template_group>
+      <template_content/>
+      <template_name>greenAlertImage</template_name>
+      <template_data/>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_reports</template_group>
+      <template_content/>
+      <template_name>redAlertImage</template_name>
+      <template_data/>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_reports</template_group>
+      <template_content/>
+      <template_name>basicReportForm</template_name>
+      <template_data><![CDATA[$name="", $url="", $extra_data=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_reports</template_group>
+      <template_content/>
+      <template_name>statusIcon</template_name>
+      <template_data>$img, $width, $height</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_reports</template_group>
+      <template_content/>
+      <template_name>reportsIndex</template_name>
+      <template_data><![CDATA[$reports=array(), $acts="", $pages="", $active=array(), $statuses=array()]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_reports</template_group>
+      <template_content/>
+      <template_name>config_notif</template_name>
+      <template_data><![CDATA[$data=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_reports</template_group>
+      <template_content/>
+      <template_name>viewReport</template_name>
+      <template_data>$options=array(), $reports=array(), $comments=array()</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_register">
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content><![CDATA[<option value="{$id}">$title ($duration) - $cost</option>]]></template_content>
+      <template_name>subsm_row</template_name>
+      <template_data><![CDATA[$id="",$title="",$cost="",$duration=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content><![CDATA[<br />
+<fieldset class="">
+<legend><b>{$this->lang->words['subsm_title']}</b></legend>
+	<div class="desc"> &nbsp;{$this->lang->words['cc_currency_in']} $cur</div>
+	<table class='ipbtable' cellspacing="0">
+		<tr>
+			<td width="1%">
+				<select class="dropdown" onchange='reg_get_more_check()' style='width:300px' name='subspackage' id="subspackage">]]></template_content>
+      <template_name>subsm_start</template_name>
+      <template_data><![CDATA[$cur=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content><![CDATA[</select>
+			<div style="display: none; position: absolute; border: 3px outset #000;width:300px;background-color:#FFF" class="tableborder" id="subspkdiv">
+				<div class='row1' style='padding:4px' id="pkdesc"></div>
+				<div class='row2' style='padding:4px' align="right"><a href="#" onclick='toggleview("subspkdiv"); return false;'>{$this->lang->words['subsm_close']}</a></div>
+			</div>
+		</td>
+		<td align="center">
+			<input type="button" class="button" onclick="get_more_info()" style='display:none' id='reg-get-more-info' value="{$this->lang->words['subsm_more']}" />
+		</td>
+	</tr>
+</table>
+</fieldset><br />]]></template_content>
+      <template_name>subsm_end</template_name>
+      <template_data/>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content><![CDATA[{parse js_module="register"}
+{parse js_module="facebook"}
+<script type='text/javascript'>
+//<!#^#|CDATA|
+	ipb.register.inSection = "mainform";
+	ipb.register.nameMaxLength = "{$this->settings['max_user_name_length']}";
+	ipb.register.allowedChars = "{$this->settings['username_characters']}";
+	ipb.templates['accept'] = "&nbsp;<span id='[id]_msg' class='reg_msg reg_accept' style='display: none'><img src='{$this->settings['img_url']}/accept.png' alt='{$this->lang->words['icon']}' /> [msg]</span>";
+	ipb.templates['error'] = "&nbsp;<span id='[id]_msg' class='reg_msg reg_error' style='display: none'><img src='{$this->settings['img_url']}/exclamation.png' alt='{$this->lang->words['icon']}' /> [msg]</span>";
+//|#^#]>
+</script>
+<!-- SKINNOTE TEMPORARY ERROR OUTPUT UNTIL RIKKI FIXES :) -->
+<if test="registerHasErrors:|:is_array( $general_errors ) && count( $general_errors )">
+<div class='message error'>
+	{$this->lang->words['following_errors']}
+	<ul>
+		<foreach loop="general_errors:$general_errors as $r">
+			<li>{$r}</li>
+		</foreach>
+	</ul>
+</div>
+</if>
+{parse striping="register" classes="row1,row2"}
+<form action="{parse url="app=core&amp;module=global&amp;section=register" base="public"}" method="post" name="REG" id='register'>
+	<input type="hidden" name="termsread" value="1" />
+	<input type="hidden" name="agree_to_terms" value="1" />
+	<input type="hidden" name="do" value="process_form" />
+	<input type="hidden" name="coppa_user" value="{$data['coppa_user']}" />
+	
+	<div id='register_info' class='right general_box'>
+		<if test="registerUsingFb:|:$this->settings['fbc_api_id']">
+			<h3 class='bar'>{$this->lang->words['reg_with_facebook']}</h3>
+			<p>
+				<div id='fbUserBox'>
+					{$this->lang->words['log_with_facebook']}
+					<br />
+					<fb:login-button size="medium" background="light" length="long" onlogin="ipb.facebook.register_loadUser();"></fb:login-button>
+				</div>
+				<br clear='both' />
+			</p>
+			<br />
+		</if>
+	
+		<h3>{$this->lang->words['why_register']}</h3>
+		{$this->settings['register_page_info']}
+	</div>
+	<div id='register_form' class='block_wrap left'>
+		<h2>{$this->lang->words['ready_register']}</h2>
+		
+		<p class='extra'>
+			{$this->lang->words['reg_free']}
+			<br />
+			{$this->lang->words['already_account']} <a href='{parse url="app=core&amp;module=global&amp;section=login" base="public"}' title='{$this->lang->words['goto_signin']}'>{$this->lang->words['sign_in_page']}</a>
+			<br />
+		</p>
+		<if test="registerHasInlineErrors:|:is_array( $inline_errors ) && ( $inline_errors['username'] || $inline_errors['dname'] || $inline_errors['email'] || $inline_errors['password'] )">
+			<p class='message error'>{$this->lang->words['reg_errors_found']}</p>	
+		</if>
+		
+		<div class='generic_bar'></div>
+		<fieldset class='{parse striping="register"}'>
+			<h3 class='bar'>{$this->lang->words['reg_step1']}</h3>
+			
+			<ul>
+				<if test="$data['requireName']">
+					<li class='field required <if test="ieUsernameClass:|:$inline_errors['username']">error</if>'>
+						<label for='login_name'>{$this->lang->words['reg_choose_user']}</label>
+						<input type='text' class='input_text' id='login_name' size='25' maxlength='{$this->settings['max_user_name_length']}' value='{$this->request['UserName']}' name='UserName' /><br />
+						<span class='desc'><if test="ieUsername:|:$inline_errors['username']"><span class='error'>{$inline_errors['username']}<br /></span></if>{$this->lang->words['char_cant_use']}</em></span>
+					</li>
+				</if>
+				<if test="registerAllowDnames:|:$this->settings['auth_allow_dnames'] == 1 OR !$data['requireName']">
+					<li class='field required <if test="ieDnameClass:|:$inline_errors['dname']">error</if>'>
+						<label for='display_name'>{$this->lang->words['reg_choose_dname']}</label>
+						<input type='text' class='input_text' id='display_name' size='25' maxlength='{$this->settings['max_user_name_length']}' value='{$this->request['members_display_name']}' name='members_display_name' /><br />
+						<span class='desc'><if test="ieDname:|:$inline_errors['dname']"><span class='error'>{$inline_errors['dname']}<br /></span></if>{$this->lang->words['dname_desc_one']} {$this->settings['max_user_name_length']} {$this->lang->words['dname_desc_two']}</span>
+					</li>
+				</if>
+			</ul>
+			<hr />
+			<ul>
+				<li class='field required <if test="ieEmailClass:|:$inline_errors['email']">error</if>'>
+					<label for='email_1'>{$this->lang->words['reg_enter_email']}</label>
+					<input type='text' id='email_1' class='input_text email' size='25' maxlength='150' name='EmailAddress' value='{$this->request['EmailAddress']}' /><br />
+					<span class='desc'><if test="ieEmail:|:$inline_errors['email']"><span class='error'>{$inline_errors['email']}<br /></span></if>{$this->lang->words['reg_enter_email_desc']}</span>
+				</li>
+				<li class='field nodesc required'>
+					<label for='email_2'>{$this->lang->words['reg_reenter_email']}</label>
+					<input type='text' id='email_2' class='input_text email' size='25' maxlength='150' name='EmailAddress_two' value='{$this->request['EmailAddress_two']}' />
+				</li>
+			</ul>
+			<hr />
+			<ul>
+				<li class='field required <if test="iePasswordClass:|:$inline_errors['password']">error</if>'>
+					<label for='password_1'>{$this->lang->words['reg_choose_password']}</label>
+					<input type='password' id='password_1' class='input_text password' size='25' maxlength='32' value='{$this->request['PassWord']}' name='PassWord' /><br />
+					<span class='desc'><if test="iePassword:|:$inline_errors['password']"><span class='error'>{$inline_errors['password']}<br /></span></if>{$this->lang->words['reg_choose_password_desc']}</span>
+				</li>
+				<li class='field nodesc required'>
+					<label for='password_2'>{$this->lang->words['reg_reenter_password']}</label>
+					<input type='password' id='password_2' class='input_text password' size='25' maxlength='32' value='{$this->request['PassWord_Check']}' name='PassWord_Check' /><br />
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset class='{parse striping="register"}'>
+			<h3 class='bar'>{$this->lang->words['reg_step2']}</h3>
+			
+			<ul>
+				<li class='field checkbox'>
+					<input type="checkbox" name="allow_admin_mail" id="allow_admin_mail" value="1" class="input_check" <if test="defaultAAE:|:$this->request['allow_admin_mail'] || !isset( $this->request['allow_admin_mail'] )">checked='checked'</if> />
+					<label for='allow_admin_mail'>{$this->lang->words['receive_admin_emails']}</label>
+				</li>
+				<li class='field checkbox nodesc'>
+					<input type="checkbox" name="allow_member_mail" id="allow_member_mail" value="1" class="input_check" <if test="deaultAME:|:$this->request['allow_member_mail']">checked='checked'</if> />
+					<label for="allow_member_mail">{$this->lang->words['receive_member_emails']}</label>
+				</li>
+				<li class='field'>
+					<label for='timezone'>{$this->lang->words['time_zone']}</label>
+					<select id='timezone' class='input_select' name='time_offset'>
+						<foreach loop="timezones:$time_select as $k => $v">
+						<option value='{$k}'<if test="defaultTimezone:|:$k == $this->request['time_offset']"> selected='selected'</if>>{$v}</option>
+						</foreach>
+					</select>
+				</li>
+				<li class='field checkbox'>
+					<input type='checkbox' id='dst' name='dst' value='1' class='input_check' <if test="defaultDst:|:$this->request['dst']">checked='checked'</if> /> <label for='dst' id='dst_label'>{$this->lang->words['auto_dst_detection']}</label>
+				</li>
+			</ul>
+		</fieldset>
+		<if test="hasCfields:|:( is_array( $custom_fields['required'] ) && count( $custom_fields['required'] ) ) || ( is_array( $custom_fields['optional'] ) && count( $custom_fields['optional'] ) )">
+		<fieldset class='{parse striping="register"}'>
+			<h3 class='bar'>{$this->lang->words['reg_step3']}</h3>
+			
+			<ul>
+			<if test="reqCfields:|:is_array( $custom_fields['required'] ) && count( $custom_fields['required'] )">
+				<foreach loop="custom_required:$custom_fields['required'] as $_field">
+					<if test="reqCfieldDesc:|:$_field['desc'] == ''">
+						<li class='field nodesc required {$_field['type']}'>
+					<else />
+						<li class='field required {$_field['type']}'>
+					</if>
+							<label for='cprofile_{$_field['id']}'>{$_field['name']}</label>
+							{$_field['field']}
+							<if test="reqCfieldDescSpan:|:$_field['desc'] != ''"><span class='desc'>{$_field['desc']}</span></if>
+						</li>
+				</foreach>
+			</if>
+			
+			<if test="optCfields:|:is_array( $custom_fields['optional'] ) && count( $custom_fields['optional'] )">
+				<foreach loop="custom_optional:$custom_fields['optional'] as $_field">
+					<if test="optCfieldDesc:|:$_field['desc'] == ''">
+						<li class='field nodesc optional {$_field['type']}'>
+					<else />
+						<li class='field optional {$_field['type']}'>
+					</if>
+							<label for='cprofile_{$_field['id']}'>{$_field['name']}</label>
+							{$_field['field']}
+							<if test="optCfieldDescSpan:|:$_field['desc'] != ''"><span class='desc'>{$_field['desc']}</span></if>
+						</li>
+				</foreach>
+			</if>
+			<!--{SUBS.MANAGER}-->
+			<!--IBF.MODULES.EXTRA-->
+		</fieldset>				
+		</if>
+		{$data['captchaHTML']}
+		{$data['qandaHTML']}
+		<fieldset class='submit'>
+			<input type='submit' class='input_submit' value='{$this->lang->words['register']}' /> {$this->lang->words['or']} <a href='{parse url="" base="public"}' title='{$this->lang->words['cancel_link']}' class='cancel'>{$this->lang->words['cancel']}</a>
+		</fieldset>	
+	</div>
+</form>
+<!--FB Template-->
+<div id='fb-template-main' style='display:none'>
+	<div style='float:left; margin-right:4px;margin-bottom:3px'>
+		<fb:profile-pic uid=loggedinuser facebook-logo=true></fb:profile-pic>
+	</div>
+	{$this->lang->words['fb_welcome']} <strong><fb:name uid=loggedinuser useyou=false></fb:name></strong>
+	<div class='desc'>
+		{$this->lang->words['fb_logged_in']}.
+		<br clear='both'/>
+		<br />
+		{$this->lang->words['fb_reg_with']}
+		<form action='{$this->settings['base_url']}app=core&amp;module=global&amp;section=login&amp;do=fbc_loginWithNew' method='post' name='linkNewAccForm' id='fbc_linkNewAccForm'>
+			<input type='button' class='input_submit' id='fbc_completeNewAcc'  value='{$this->lang->words['fb_complete_reg']}' />
+		</form>
+	</div>
+</div>
+<if test="fbcEnabled:|:IPSLib::fbc_enabled() === TRUE">
+<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
+<script type="text/javascript">
+	/* Init Facebook JS */
+	try
+	{
+		FB_RequireFeatures(["XFBML"], function()
+		{
+			FB.init("{$this->settings['fbc_api_id']}", "{$this->settings['fbc_xdlocation']}" );
+			FB.Facebook.get_sessionState().waitUntilReady(function()
+			{
+				FB.Connect.ifUserConnected( ipb.facebook.register_loadUser );
+			} );
+		} );
+	}
+	catch( error )
+	{
+		//alert( error );
+	}
+</script>
+</if>]]></template_content>
+      <template_name>registerForm</template_name>
+      <template_data>$general_errors=array(), $data=array(), $inline_errors=array(), $time_select=array(), $custom_fields=array()</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content><![CDATA[<h2>{$this->lang->words['dumb_header']}</h2>
+<form action="{parse url="" base="public"}" method="post" name="REG" onsubmit="return Validate()">
+<input type="hidden" name="act" value="Reg" />
+<input type="hidden" name="CODE" value="03" />
+<input type="hidden" name="type" value="$type" />
+<div class='generic_bar'></div>
+<div class='post_form'>
+	<fieldset class='row1'>
+		<h3 class='bar'>{$this->lang->words['complete_form']}</h3>
+		<ul>
+			<li class='field'>
+				<label for='userid'>{$this->lang->words['user_id']}</label>
+				<input type="text" size="32" maxlength="32" name="uid" id='userid' class='input_text' />
+			</li>
+			<li class='field'>
+				<label for='valkey'>{$this->lang->words['val_key']}</label>
+				<input type="text" size="32" maxlength="50" name="aid" id='valkey' class='input_text' />
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset class='submit'>
+		<input class='input_submit' type="submit" value="{$this->lang->words['dumb_submit']}" />
+	</fieldset>
+</div>
+</form>]]></template_content>
+      <template_name>showManualForm</template_name>
+      <template_data><![CDATA[$type="reg"]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content><![CDATA[<if test="partialLoginErrors:|:isset( $errors ) && $errors">
+	<p class='message error'>
+		<strong>{$this->lang->words['errors_found']}</strong><br />
+		{$errors}
+	</p>
+</if>
+<form action="{parse url="app=core&amp;module=global&amp;section=register&amp;do=complete_login_do&amp;key=$key&amp;mid=$mid" base="public"}" method="POST">
+	<input type="hidden" name="termsread" value="1" />
+	<input type="hidden" name="agree_to_terms" value="1" />
+	
+	<h2>{$this->lang->words['clogin_title']}</h2>
+	<p class='message'>{$this->lang->words['clogin_text']}</p>
+	<br />
+	<div class='post_form'>
+		<h3 class='bar'>{$this->lang->words['complete_form']}</h3>
+		<if test="partialAllowDnames:|:$this->settings['auth_allow_dnames'] == 1">
+			<fieldset class='row2'>
+				<ul>
+					<li class='field'>
+						<label for='dname'>{$this->lang->words['dname_name']}</label>
+						<input id='dname' type="text" size="50" maxlength="64" value="{$this->request['members_display_name']}" name="members_display_name" />
+					</li>
+				</ul>
+			</fieldset>
+		</if>
+		<if test="partialNoEmail:|:! $reg['partial_email_ok']">
+			<fieldset class='row1'>
+				<ul>
+					<li class='field'>
+						<label for='email'>{$this->lang->words['email_address']}</label>
+						<input id='email' type="text" size="25" maxlength="50" value="{$this->request['EmailAddress']}" name="EmailAddress" />
+					</li>
+					<li class='field'>
+						<label for='email_confirm'>{$this->lang->words['email_address_confirm']}</label>
+						<input id='email_confirm' type="text" size="25" maxlength="50"  value="{$this->request['EmailAddress_two']}" name="EmailAddress_two" />
+					</li>
+				</ul>
+			</fieldset>
+		</if>
+		<fieldset class='submit'>
+			<input type='submit' value='{$this->lang->words['clogin_submit']}' class='input_submit' />
+		</fieldset>
+	</div>
+	<if test="partialCustomFields:|:$custom_fields != ''">
+		<!-- SKINNOTE: need to add custom fields in too -->
+	</if>
+</form>]]></template_content>
+      <template_name>completePartialLogin</template_name>
+      <template_data><![CDATA[$mid="",$key="",$custom_fields="",$errors="", $reg=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content><![CDATA[<h2>{$this->lang->words['lost_pass_form']}</h2>
+<if test="lostPasswordErrors:|:isset( $errors ) && $errors">
+	<p class='message error'>
+		<strong>{$this->lang->words['errors_found']}</strong><br />
+		{$errors}
+	</p>
+</if>
+<p class='message unspecific'>
+	{$this->lang->words['lost_your_password']}
+	{$this->lang->words['lp_text']}
+</p>
+<form action="{parse url="app=core&module=global&section=lostpass" base="public"}" method="post">
+<input type="hidden" name="do" value="<if test="lpChooseMethod:|:$this->settings['lp_method'] == 'choose'">sendform<else />11</if>" />
+<div class='generic_bar'></div>
+<div id='lost_pass_form' class='post_form'>
+	<fieldset>
+		<h3 class='bar'>{$this->lang->words['recover_password']}</h3>
+		<ul>
+			<li class='field'>
+				<label for='member_name'>{$this->lang->words['lp_user_name']}</label>
+				<input type="text" size="32" name="member_name" id='member_name' class='input_text' />
+			</li>
+			<li class='field'>
+				<label for='email_addy'>{$this->lang->words['lp_email_or']}</label>
+				<input type="text" size="32" name="email_addy" id='email_addy' class='input_text' />
+			</li>
+		</ul>
+	</fieldset>
+	<!--{REG.ANTISPAM}-->
+	<fieldset class='submit'>
+			<input class='input_submit' type="submit" value="{$this->lang->words['lp_send']}" /> or <a href='{parse url="" base="public"}' title='{$this->lang->words['cancel']}' class='cancel'>{$this->lang->words['cancel']}</a>
+	</fieldset>
+</div>
+</form>]]></template_content>
+      <template_name>lostPasswordForm</template_name>
+      <template_data><![CDATA[$errors=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_register</template_group>
+      <template_content><![CDATA[{parse js_module="register"}
+<!--<script type="text/javascript" src="{$this->settings['public_dir']}js/ipb_register.js"></script>-->
+<script type="text/javascript">
+//<!#^#|CDATA|
+var coppa_bounce = '{$this->lang->words['coppa_bounce']}';
+//coppa_check();
+//|#^#]>
+</script>
+<script language="JavaScript" type="text/javascript">
+function contact_admin() {
+  // Very basic spam bot stopper
+  admin_email_one = '$ad_email_one';
+  admin_email_two = '$ad_email_two';
+  window.location = 'mailto:'+admin_email_one+'@'+admin_email_two+'?subject={$this->lang->words['coppa_email_subject']}';
+}
+</script>
+<h2>Register</h2>
+<p class='message unspecific'>
+	{$this->lang->words['coppa_form_text']}
+</p>
+<form action='{parse url="app=core&amp;module=global&amp;section=register&amp;do=coppa_two" base="public"}' method='post'>
+	<div class='post_form'>
+		<fieldset class='general_box'>
+			<h3>{$this->lang->words['coppa_info']}</h3>
+				<label for='month'>{$this->lang->words['coppa_link']}</label>
+				<select name='m' class='input_select'>
+				 	<option value='0'>{$this->lang->words['select_month']}</option>
+			 		<foreach loop="months:array(1,2,3,4,5,6,7,8,9,10,11,12) as $month">
+			 			<option value='{$month}'>{$this->lang->words['M_' . $month ]}</option>
+			 		</foreach>
+				</select>
+	
+				<select name='d' class='input_select'>
+			 		<option value='0'>{$this->lang->words['select_day']}</option>
+			 		<foreach loop="days:range(1,31) as $day">
+			 			<option value='{$day}'>{$day}</option>
+			 		</foreach>
+				</select>
+	
+				<select name='y' class='input_select'>
+			 		<option value='0'>{$this->lang->words['select_year']}</option>
+			 		<foreach loop="years:array_reverse(range( date('Y') - 130, date('Y') )) as $year">
+			 			<option value='{$year}'>{$year}</option>
+			 		</foreach>
+				</select>
+		</fieldset>
+		<fieldset class='submit'>
+			<input type='submit' value='{$this->lang->words['coppa_continue_button']}' class='input_submit' /> or <a href='{parse url="" base="public"}' title='Cancel' class='cancel'>Cancel</a>
+		</fieldset>
+	</div>
+</form>]]></template_content>
+      <template_name>registerCoppaStart</template_name>
+      <template_data/>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_global_other">
+    <template>
+      <template_group>skin_global_other</template_group>
+      <template_content><![CDATA[<input type="hidden" name="qanda_id" value="{$data['qa_id']}" />
+<fieldset class="GLB-table-row">
+<legend><strong>{$this->lang->words['qa_title']}</strong></legend>
+	<table class='ipbtable' cellspacing="0">
+		<tr>
+			<td width="30%"><strong>{$this->lang->words['qa_question_title']}</strong></td>
+			<td width="70%">{$this->lang->words['qa_question_desc']}</td>
+		</tr>
+		<tr>
+			<td style='padding-right:10px'>
+				{$data['qa_question']}
+			</td>
+			<td>
+				<input type="text" style='font-size:18px' size="20" maxlength="20" value="" name="qa_answer" tabindex='0' />
+			</td>
+		</tr>
+	</table>
+</fieldset>]]></template_content>
+      <template_name>questionAndAnswer</template_name>
+      <template_data>$data</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global_other</template_group>
+      <template_content><![CDATA[<h2>{$this->lang->words['error_title']}</h2>
+<if test="showerrortitle:|:$show_top_msg == 1">
+	<p>{$this->lang->words['exp_text']}</p>
+	<br />
+</if>
+<div class='message error'>
+	 <if test="haserrorcode:|:$code">[#{$code}] </if>{$message}
+</div>
+<br />
+{$login}
+<if test="savedpost:|:$post">
+	<div class='general_box alt'>
+		{$post}
+	</div>
+<br />
+</if>
+<div class='general_box alt'>	
+	<h3>{$this->lang->words['er_useful_links']}</h3>
+	<br />
+	<ul class='bullets'>
+		<li><a href="{parse url="app=core&amp;module=global&amp;section=lostpass&amp;do=10" base="public"}" title='{$this->lang->words['er_lost_pass']}'>{$this->lang->words['er_lost_pass']}</a></li>
+		<li><a href="{parse url="app=core&amp;module=global&amp;section=register&amp;do=00" base="public"}" title='{$this->lang->words['er_register']}'>{$this->lang->words['er_register']}</a></li>
+		<li><a href="{parse url="app=core&module=help" base="public"}" rel="help" title='{$this->lang->words['er_help_files']}'>{$this->lang->words['er_help_files']}</a></li>
+	</ul>
+	<br />
+	<p class="submit">
+		<strong><a href="{parse url="" base="public"}">{$this->lang->words['error_back']}</a></strong>
+	</p>
+</div>]]></template_content>
+      <template_name>Error</template_name>
+      <template_data><![CDATA[$message="",$code=0,$ad_email_one="",$ad_email_two="",$show_top_msg=0, $login="", $post=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global_other</template_group>
+      <template_content><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset={$this->settings['gb_char_set']}" />
+		<title>{$title}</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<if test="popupcssimport:|:is_array( $css['import'] )">
+			<if test="popupcssimportminify:|:$this->settings['use_minify']">
+				<php>$this->minify = array();</php>
+			</if>
+			<foreach loop="popupcssImport:$css['import'] as $data">
+				<php>
+					if( $this->settings['use_minify'] AND stripos( $data['attributes'], 'screen' ) )
+					{
+						$this->minify[] = "{$data['content']}";
+					}
+				</php>
+				<if test="popupcssimportnominify:|:!$this->settings['use_minify']">
+					<link rel="stylesheet" type="text/css" {$data['attributes']} href="{$data['content']}" />
+				<else />
+					<if test="popupcssnoscreen:|:!stripos( $data['attributes'], 'screen' )">
+						<link rel="stylesheet" type="text/css" {$data['attributes']} href="{$this->settings['public_dir']}min/index.php?f={parse expression="str_replace( $this->settings['public_dir'], 'public/', $data['content'] )"}" />
+					</if>
+				</if>
+			</foreach>
+			<if test="popupminifycss:|:$this->settings['use_minify'] AND count($this->minify)">
+				<link rel="stylesheet" type="text/css" media='screen' href="{$this->settings['public_dir']}min/index.php?f={parse expression="str_replace( $this->settings['public_dir'], 'public/', implode( ',', $this->minify ) )"}" />
+			</if>
+		</if>
+		<if test="popupcssinline:|:is_array( $css['inline'] ) AND count( $css['inline'] )">
+			<foreach loop="popupcssInline:$css['inline'] as $data">
+			<style type="text/css" {$data['attributes']}>
+				/* Inline CSS */
+				{$data['content']}
+			</style>
+			</foreach>
+		</if>
+		<!--[if lte IE 7]>
+			<link rel="stylesheet" type="text/css" title='Main' media="screen" href="{$this->settings['public_dir']}style_css/{$this->registry->output->skin['_csscacheid']}/ipb_ie.css" />
+		<![endif]-->
+		<if test="popupdocumenthead:|:count($documentHeadItems)">
+			<foreach loop="popupheaditemtype:$documentHeadItems as $type => $idx">
+				<foreach loop="popupdocumentHeadItems:$documentHeadItems[ $type ] as $idx => $data">
+					<if test="popupjavascript:|:$type == 'javascript'">
+						<script type="text/javascript" src="{$data}" charset="<% CHARSET %>"></script>
+					</if>
+					<if test="popuprss:|:$type == 'rss'">
+						<link rel="alternate feed" type="application/rss+xml" title="{$data['title']}" href="{$data['url']}" />
+					</if>
+					<if test="popuprss:|:$type == 'rsd'">
+						<link rel="EditURI" type="application/rsd+xml" title="{$data['title']}" href="{$data['url']}" />
+					</if>
+					<if test="popupraw:|:$type == 'raw'">
+						{$data}
+					</if>
+				</foreach>
+			</foreach>
+		</if>
+		
+		{parse template="includeRTL" group="global" params=""}
+	</head>
+	<body id='ipboard_body' style='padding: 20px'>
+		<div id='ipbwrapper'>
+			{$output}
+		</div>
+	</body>
+</html>]]></template_content>
+      <template_name>displayPopUpWindow</template_name>
+      <template_data><![CDATA[$documentHeadItems, $css, $jsLoaderItems, $title="", $output=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global_other</template_group>
+      <template_content><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+	    <meta http-equiv="content-type" content="text/html; charset=<% CHARSET %>" /> 
+		<title>{$this->lang->words['stand_by']}</title>
+		<if test="redirectfull:|:$full==true">
+			<meta http-equiv="refresh" content="2; url={parse url="$url" base="none"}" />
+		<else />
+			<meta http-equiv="refresh" content="2; url={parse url="$url" base="public"}" />
+		</if>
+		<link rel="shortcut icon" href='<if test="$this->registry->output->isHTTPS">{$this->settings['board_url_https']}<else />{$this->settings['board_url']}</if>/favicon.ico' />
+		<if test="redirectcssimport:|:is_array( $css['import'] )">
+			<foreach loop="redirectcssImport:$css['import'] as $data">
+				<link rel="stylesheet" type="text/css" {$data['attributes']} href="{$data['content']}">
+			</foreach>
+		</if>
+		<if test="redirectcssinline:|:is_array( $css['inline'] ) AND count( $css['inline'] )">
+			<foreach loop="redirctcssInline:$css['inline'] as $data">
+				<style type="text/css" {$data['attributes']}>
+					/* Inline CSS */
+					{$data['content']}
+				</style>
+			</foreach>
+		</if>
+		<!--[if lte IE 7]>
+			<link rel="stylesheet" type="text/css" title='Main' media="screen" href="{$this->settings['public_dir']}style_css/{$this->registry->output->skin['_csscacheid']}/ipb_ie.css" />
+		<![endif]-->
+		{parse template="includeRTL" group="global" params=""}
+		<if test="redirectdh:|:count($documentHeadItems)">
+			<foreach loop="redirectdocumentHeadItems:$documentHeadItems as $type => $idx">
+				<foreach loop="redirectdocumentHeadItemsSub:$documentHeadItems[ $type ] as $idx => $data">
+					<if test="redirectjs:|:$type == 'javascript'">
+						<script type="text/javascript" src="{$data}" charset="<% CHARSET %>"></script>
+					</if>
+					<if test="redirectrss:|:$type == 'rss'">
+						<link rel="alternate" type="application/rss+xml" title="{$data['title']}" href="{$data['url']}" />
+					</if>
+					<if test="redirectrsd:|:$type == 'rsd'">
+						<link rel="EditURI" type="application/rsd+xml" title="{$data['title']}" href="{$data['url']}" />
+					</if>
+					<if test="redirectraw:|:$type == 'raw'">
+						$data
+					</if>
+				</foreach>
+			</foreach>
+		</if>
+		<!--/CSS-->
+	</head>
+	<body  id='ipboard_body' class='redirector'>
+		<div id='ipbwrapper'>
+			<h1>{$this->settings['site_name']}</h1>
+			<h2>{$this->lang->words['thanks']}</h2>
+			<p class='message'>
+				<strong>{$text}</strong>
+				<br /><br />
+				{$this->lang->words['transfer_you']}
+				<br />
+				<span class='desc'>(<a href="<if test="redirectlink:|:$full==true">{parse url="{$url}" base="none"}<else />{parse url="{$url}" base="public"}</if>">{$this->lang->words['dont_wait']}</a>)</span>	
+			</p>
+		</div>
+	</body>
+</html>]]></template_content>
+      <template_name>redirectTemplate</template_name>
+      <template_data><![CDATA[$documentHeadItems, $css, $jsLoaderItems, $text="",$url="", $full=false]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_help">
+    <template>
+      <template_group>skin_help</template_group>
+      <template_content/>
+      <template_name>helpShowTopics</template_name>
+      <template_data><![CDATA[$one_text="",$two_text="",$three_text="",$rows]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_help</template_group>
+      <template_content/>
+      <template_name>helpShowSection</template_name>
+      <template_data><![CDATA[$one_text="",$two_text="",$three_text="", $text]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_login">
+    <template>
+      <template_group>skin_login</template_group>
+      <template_content><![CDATA[{parse js_module="signin"}
+{parse js_module="facebook"}
+<div id='login_form' class='clear'>
+	
+	<div id='member_login' class='left'>
+		<h2 class='maintitle'>{$this->lang->words['log_in']}</h2>
+		<div class='generic_bar'></div>
+		<form action="{parse url="app=core&amp;module=global&amp;section=login&amp;do=process" base="public"}" method="post" id='login'>
+			<if test="referer:|:$referer">
+			<input type="hidden" name="referer" value="{$referer}" />
+			</if>
+			<div id='regular_signin'>
+				<a id='_regularsignin'></a>
+				<h3 class='bar'>{$this->lang->words['enter_name_and_pass']}</h3>
+				<ul>
+					<li class='field'>
+						<label for='username'>{$this->lang->words['enter_name']}</label>
+						<input id='username' type='text' class='input_text' name='username' size='25' />
+					</li>
+					<li class='field'>
+						<label for='password'>{$this->lang->words['enter_pass']}</label>
+						<input id='password' type='password' class='input_text' name='password' size='25' /><br />
+						<a href='{parse url="app=core&amp;module=global&amp;section=lostpass" base="public"}' class='desc' title='{$this->lang->words['retrieve_pw']}'>{$this->lang->words['login_forgotten_pass']}</a>
+					</li>
+				</ul>
+				<if test="hasopenid:|:$has_openid">
+				<p class='extra'>{parse replacement="openid_small"} {$this->lang->words['have_openid']} <a href='#_openid' title='{$this->lang->words['use_openid']}' id='openid_open'>{$this->lang->words['sign_in_here']}</a></p>
+				</if>
+				<if test="extraform:|:is_array($extra_form) AND count($extra_form)">
+					<foreach loop="extrafields:$extra_form as $form_fields">
+						{$form_fields}
+					</foreach>
+				</if>
+			</div>
+			<if test="openidform:|:$has_openid">
+			<div id='openid_signin'>
+				<a id='_openid'></a>
+				<h3 class='bar'>{$this->lang->words['sign_in_openid']}</h3>
+				{parse replacement="openid_large"}
+				<ul>
+					<li class='field'>
+						<label for='openid'>{$this->lang->words['openid']}</label>
+						<input id='openid' type='text' class='input_text' name='openid_url' value='http://' size='30' /><br />
+						<span class='desc'>{$this->lang->words['openid_example']}</span>
+					</li>
+				</ul>
+				<p class='extra'>{parse replacement="signin_icon"} <a href='#_regularsignin' title='{$this->lang->words['regular_signin']}' id='openid_close'>{$this->lang->words['use_regular']}</a></p>
+			</div>
+			</if>
+			<hr />
+			<fieldset id='signin_options'>
+				<legend>{$this->lang->words['sign_in_options']}</legend>
+				<ul>
+					<li class='field checkbox'>
+						<input type='checkbox' id='remember' checked='checked' name='rememberMe' value='1' class='input_check' />
+						<label for='remember'>
+							{$this->lang->words['rememberme']}<br />
+							<span class='desc'>{$this->lang->words['notrecommended']}</span>
+						</label>
+					</li>
+					<if test="anonymous:|:!$this->settings['disable_anonymous']">
+						<li class='field checkbox'>
+							<input type='checkbox' id='invisible' name='anonymous' value='1' class='input_check' />
+							<label for='invisible'>
+								{$this->lang->words['form_invisible']}<br />
+								<span class='desc'>{$this->lang->words['anon_name']}</span>
+							</label>
+						</li>
+					</if>
+				</ul>
+			</fieldset>
+			<fieldset class='submit'>
+				<input type='submit' class='input_submit' value='{$this->lang->words['sign_in_button']}' /> {$this->lang->words['or']} <a href='{parse url="" base="public"}' title='{$this->lang->words['cancel']}' class='cancel'>{$this->lang->words['cancel']}</a>
+			</fieldset>
+		</form>
+	</div>
+	<div id='guest_register' class='right general_box'>
+		<if test="facebook:|:$this->settings['fbc_api_id']">
+			<h3 class='bar'>{$this->lang->words['fb_login_title']}</h3>
+			<p>
+				<div id='fbUserBox'>
+					{$this->lang->words['login_w_facebook']}
+					<br />
+					<fb:login-button size="medium" background="light" length="long" onlogin="ipb.facebook.login_loadUser();"></fb:login-button>
+				</div>
+				<br clear='both' />
+			</p>
+			<br />
+		</if>
+		<h3 class='bar'>{$this->lang->words['not_a_member']}</h3>
+		<p>
+			{$this->settings['login_page_info']}
+		</p>
+		<br />
+		<p style='text-align: center'>
+			<a href='{parse url="app=core&amp;module=global&amp;section=register" template="section=register" base="public"}'>{$this->lang->words['register_now']}</a>
+		</p>
+	</div>
+</div>
+<!--FB Template-->
+<div id='fb-template-main' style='display:none'>
+	<div style='float:left; margin-right:4px;margin-bottom:3px'>
+		<fb:profile-pic uid=loggedinuser facebook-logo=true></fb:profile-pic>
+	</div>
+	{$this->lang->words['welcome_prefix']} <strong><fb:name uid=loggedinuser useyou=false></fb:name></strong>
+</div>
+<div id='fb-template-notlinked' style='display:none'>
+	<div class='desc'>
+		{$this->lang->words['fb_logged_in']}
+		<br clear='both'/>
+		<br />{$this->lang->words['fb_no_forum_acct']}
+		<br />
+		<form action='{$this->settings['base_url']}app=core&amp;module=global&amp;section=login&amp;do=fbc_loginWithNew' method='post' name='linkNewAccForm' id='fbc_linkNewAccForm'>
+			<input type='button' class='input_submit' id='fbc_completeNewAcc' value='{$this->lang->words['fb_new_account']}' />
+		</form>
+		<br />
+		<br />
+		<strong>{$this->lang->words['or']}</strong> {$this->lang->words['fb_link_account']}
+		<div class='message error' id='fbc_linkError' style='display:none'></div>
+		<br />
+		<form action='{$this->settings['base_url']}app=core&amp;module=global&amp;section=login&amp;do=fbc_login' method='post' name='linkForm' id='fbc_linkForm'>
+		{$this->lang->words['fb_link_email']} <input type='text' name='emailaddress' id='fbc_emailAddress' size='25' />
+		<br />{$this->lang->words['fb_link_pass']} &nbsp;<input type='password' name='password' id='fbc_password' size='25' />
+		<input type='button' class='input_submit' id='fbc_completeWithLink' value='{$this->lang->words['fb_link_complete']}' />
+		</form>
+	</div>
+</div>
+<div id='fb-template-linked' style='display:none'>
+	<div class='desc'>
+		{$this->lang->words['fb_logged_in']}
+	</div>
+	<br clear='both'/>
+	<form action='{$this->settings['base_url']}app=core&amp;module=global&amp;section=login&amp;do=fbc_loginFromLinked' method='post' name='linkAlreadyForm' id='fbc_linkAlreadyForm'>
+		<input type='button' class='input_submit' id='fbc_complete' value='{$this->lang->words['fb_complete_login']}' />
+	</form>
+</div>
+<if test="fbcjavascript:|:IPSLib::fbc_enabled() === true">
+<script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
+<script type="text/javascript">
+	/* Init Facebook JS */
+	try
+	{
+		FB_RequireFeatures(["XFBML"], function()
+		{
+			FB.init("{$this->settings['fbc_api_id']}", "{$this->settings['fbc_xdlocation']}" );
+			FB.Facebook.get_sessionState().waitUntilReady(function()
+			{
+				FB.Connect.ifUserConnected( ipb.facebook.login_loadUser );
+			} );
+		} );
+	}
+	catch( error )
+	{
+		//alert( error );
+	}
+</script>
+</if>]]></template_content>
+      <template_name>showLogInForm</template_name>
+      <template_data><![CDATA[$message="",$referer="",$extra_form="", $has_openid=false, $facebookOpts=array()]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_global">
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content/>
+      <template_name>signature_separator</template_name>
+      <template_data><![CDATA[$sig=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content><![CDATA[<form id='forum_jump' action='{parse url="" base="public"}' method='post'>
+		<fieldset>
+			<select name='showforum' class='input_select'>
+				<optgroup label="{$this->lang->words['forum_jump']}">
+					{$html}
+				</optgroup>
+			</select>
+			<if test="$this->member->session_type != 'cookie'"><input type='hidden' name='s' value='{$this->member->session_id}' /></if>
+			<input type='submit' value='{$this->lang->words['jmp_go']}' class='input_submit alt' />
+		</fieldset>
+	</form>]]></template_content>
+      <template_name>forum_jump</template_name>
+      <template_data>$html</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content/>
+      <template_name>user_popup</template_name>
+      <template_data><![CDATA[$memberid=0, $seoName='']]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content><![CDATA[<!-- none -->]]></template_content>
+      <template_name>include_highlighter</template_name>
+      <template_data>$load_when_needed=0</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content><![CDATA[<!-- none -->]]></template_content>
+      <template_name>include_lightbox</template_name>
+      <template_data/>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content><![CDATA[<a href='{parse url="act=idx" base="public"}' title='{$this->lang->words['go_home']}' rel="home" accesskey='1'><img src='{parse replacement="logo_img"}' alt='{$this->lang->words['logo']}' /></a>]]></template_content>
+      <template_name>defaultHeader</template_name>
+      <template_data/>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content/>
+      <template_name>includeJS</template_name>
+      <template_data>$jsModules</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content/>
+      <template_name>includeVars</template_name>
+      <template_data/>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content/>
+      <template_name>userInfoPane</template_name>
+      <template_data>$author, $contentid, $options</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content><![CDATA[<if test="haspages:|:$work['pages'] > 1">
+	<ul class='pagination left'>
+		<li class='total'>({$work['pages']} {$this->lang->words['tpl_pages']})</li>
+		<li class='pagejump clickable pj{$data['uniqid']}'>
+			{parse replacement="dropdown"}
+		</li>
+		<if test="firstpage:|:1 < ($work['current_page'] - $data['dotsSkip'])">
+			<li class='first'><a href='{parse url="{$data['baseUrl']}&amp;{$data['startValueKey']}=0" base="public" seotitle="{$data['seoTitle']}" template="{$data['seoTemplate']}"}' title='{$this->lang->words['tpl_gotofirst']}' rel='start'>&laquo; {$this->lang->words['ps_first']}</a></li>
+		</if>
+		<if test="prevpage:|:$work['current_page'] > 1">
+			<li class='prev'><a href="{parse url="{$data['baseUrl']}&amp;{$data['startValueKey']}={parse expression="intval( $data['currentStartValue'] - $data['itemsPerPage'] )"}" base="public" seotitle="{$data['seoTitle']}" template="{$data['seoTemplate']}"}" title="{$this->lang->words['tpl_prev']}" rel='prev'>&larr;</a></li>
+		</if>
+		<if test="normalpages:|:is_array( $work['_pageNumbers'] ) && count( $work['_pageNumbers'] )">
+			<foreach loop="pagination:$work['_pageNumbers'] as $_real => $_page">
+				<if test="activepage:|:$_real == $data['currentStartValue']">
+					<li class='active'>{$_page}</li>
+				<else />
+					<li><a href="{parse url="{$data['baseUrl']}&amp;{$data['startValueKey']}={$_real}" base="public" seotitle="{$data['seoTitle']}" template="{$data['seoTemplate']}"}" title="$_page">{$_page}</a></li>
+				</if>
+			</foreach>
+		</if>
+		<if test="nextpage:|:$work['current_page'] < $work['pages']">
+			<li class='next'><a href="{parse url="{$data['baseUrl']}&amp;{$data['startValueKey']}={parse expression="intval( $data['currentStartValue'] + $data['itemsPerPage'] )"}" base="public" seotitle="{$data['seoTitle']}" template="{$data['seoTemplate']}"}" title="{$this->lang->words['tpl_next']}" rel='next'>&rarr;</a></li>
+		</if>
+		<if test="lastpage:|:isset( $work['_showEndDots'] ) && $work['_showEndDots']">
+			<li class='last'><a href="{parse url="{$data['baseUrl']}&amp;{$data['startValueKey']}={parse expression="intval( ( $work['pages'] - 1 ) * $data['itemsPerPage'] )"}" base="public" seotitle="{$data['seoTitle']}" template="{$data['seoTemplate']}"}" title="{$this->lang->words['tpl_gotolast']}" rel='last'>{$this->lang->words['ps_last']} &raquo;</a></li>
+		</if>
+	</ul>
+<else />
+	<span class='pagination no_pages left'>{$this->lang->words['page_1_of_1']}</span>
+</if>]]></template_content>
+      <template_name>paginationTemplate</template_name>
+      <template_data>$work, $data</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_global</template_group>
+      <template_content><![CDATA[<php>$this->memberData['members_editor_choice'] = 'std';</php>
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml"<if test="fbcenabled:|:IPSLib::fbc_enabled() === TRUE"> xmlns:fb="http://www.facebook.com/2008/fbml"</if>>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset={$this->settings['gb_char_set']}" />
+		<title>{$header_items['title']}<if test="pagenumberintitle:|:$header_items['page']"> {$this->lang->words['page_title_page']} {$header_items['page']}</if></title>
+		<link rel="shortcut icon" href='<if test="$this->registry->output->isHTTPS">{$this->settings['board_url_https']}<else />{$this->settings['board_url']}</if>/favicon.ico' />
+		{parse template="includeCSS" group="global" params="$css"}
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=7" />-->
+		{parse template="includeMeta" group="global" params="$metaTags"}
+		{parse template="includeFeeds" group="global" params="$documentHeadItems"}
+		{parse template="includeRTL" group="global" params=""}		
+	</head>
+	<body id='ipboard_body'>
+		<div id='ipbwrapper'>
+			<p id='content_jump'><a id='top'></a><a href='#j_content' title='{$this->lang->words['jump_to_content']}' accesskey='m'>{$this->lang->words['jump_to_content']}</a></p>
+			<div id='header'>
+				<div id='branding'>
+					<h1><a href='{$this->settings['board_url']}' title='{$this->settings['board_name']}'>{$this->settings['board_name']}</a>: {$header_items['title']}</h1>
+				</div>
+						
+				<if test="memberbox:|:$this->memberData['member_id']">
+					<div id='user_navigation' class='logged_in'>
+						<div id='user_info'>
+							<p>
+								<span class='hide'>{$this->lang->words['logged_in_as']} </span>
+								<a id='user_link' class='ipbmenu' href="{parse url="showuser={$this->memberData['member_id']}" seotitle="{$this->memberData['members_seo_name']}" template="showuser" base="public"}"  title='{$this->lang->words['your_profile']}'>{$this->memberData['members_display_name']}</a>
+							</p>
+							<ul id='user_link_menucontent'>
+								<li id='user_profile'><a href='{parse url="showuser={$this->memberData['member_id']}" seotitle="{$this->memberData['members_seo_name']}" template="showuser" base="public"}' title='{$this->lang->words['your_profile']}'>{$this->lang->words['my_profile']}</a></li>
+								<li id='user_ucp'><a href="{parse url="app=core&amp;module=usercp" base="public"}" title="{$this->lang->words['cp_tool_tip']}">{$this->lang->words['your_cp']}</a></li>
+								<if test="bloglink:|:$this->memberData['has_blog'] AND IPSLib::appIsInstalled( 'blog' )">
+									<li id='user_blog'><a href='{parse url="app=blog&amp;module=display&amp;section=blog&amp;mid={$this->memberData['member_id']}" base="public"}' title="{$this->lang->words['go_to_my_blog']}">{$this->lang->words['my_blog']}</a></li>
+								</if>
+								<if test="gallerylink:|:$this->memberData['has_gallery'] AND IPSLib::appIsInstalled( 'gallery' )">
+									<li id='user_gallery'><a href='{parse url="app=gallery&amp;module=user&amp;section=user&amp;user={$this->memberData['member_id']}" base="public"}' title="{$this->lang->words['go_to_my_gallery']}">{$this->lang->words['my_gallery']}</a></li>
+								</if>
+							</ul>
+							<ul id='user_other'>
+								<li><a href="{parse url="app=core&amp;module=global&amp;section=login&amp;do=logout&amp;k={$this->member->form_hash}" base="public"}">{$this->lang->words['log_out']}</a></li>
+								<if test="authenticating:|:$this->memberData['member_group_id'] == $this->settings['auth_group']">
+									<li><strong><a href="{parse url="app=core&amp;module=global&amp;section=register&amp;do=reval" base="public"}" title='{$this->lang->words['resend_val']}'>{$this->lang->words['resend_val']}</a></strong></li>
+								</if>
+							</ul>
+						</div>
+					</div>
+				<else />
+					<div id='user_navigation' class='not_logged_in'>
+						<a href='{parse url="app=core&amp;module=global&amp;section=login" base="public"}' title='{$this->lang->words['sign_in']}'>{parse replacement="signin_icon"} {$this->lang->words['sign_in']}</a>
+						<a href="{parse url="app=core&amp;module=global&amp;section=register" base="public"}" title='{$this->lang->words['register']}'>{parse replacement="register_icon"} {$this->lang->words['register']}</a>
+					</div>
+				
+				</if>
+				
+				<div id='primary_nav'>
+					<ul>
+						<if test="showhomeurl:|:$this->settings['home_url']">
+							<li id='nav_home' class='left'><a href='{$this->settings['home_url']}' title='{$this->lang->words['homepage_title']}' rel="home">{$this->settings['home_name']}</a></li>
+						</if>
+						{parse variable="forumActive" default="" oncondition="IPS_APP_COMPONENT == 'forums'" value="active"}
+						{parse variable="membersActive" default="" oncondition="IPS_APP_COMPONENT == 'members'" value="active"}
+						{parse variable="helpActive" default="" oncondition="IPS_APP_COMPONENT == 'core' AND $this->request['module'] == 'help'" value="active"}
+						<li id='nav_discussion' class='left {parse variable="forumActive"}'><a href='{parse url="act=idx" seotitle="false" base="public"}' title='{$this->lang->words['go_to_discussion']}'>{$this->lang->words['discussion']}</a></li>
+						<li id='nav_members' class='left {parse variable="membersActive"}'><a href='{parse url="app=members&amp;section=view&amp;module=list" base="public"}' title='{$this->lang->words['go_to_memberlist']}'>{$this->lang->words['tb_mlist']}</a></li>
+						<if test="applicationsloop:|:is_array($header_items['applications']) AND count($header_items['applications'])">
+							<foreach loop="applications:$header_items['applications'] as $data">
+								<if test="showingapp:|:$data['app_show']">
+									{parse variable="appActive" default="" oncondition="$data['app_active']" value="active"}
+									<li id='nav_app_{$data['app_dir']}' class="left {parse variable="appActive"}"><a href='{parse url="app={$data['app_dir']}" seotitle="false" base="public"}' title='{$this->lang->words['go_to_prefix']}{IPSLib::getAppTitle( $data['app_dir'] )}'>{IPSLib::getAppTitle( $data['app_dir'] )}</a></li>
+								</if>
+							</foreach>
+						</if>
+					</ul>
+				</div>
+			
+				<div id='secondary_nav'>
+					<ul id='breadcrumb' class='left'>
+						<php>$this->did_first = 0;</php>
+						<if test="switchnavigation:|:!$this->settings['remove_forums_nav'] OR ipsRegistry::$current_application == 'forums'">
+							<li class='first'><a href='{parse url="act=idx" seotitle="false" base="public"}'>{$this->settings['board_name']}</a></li>
+							<if test="didfirstnav:|:$this->did_first=1"></if>
+						</if>
+						<foreach loop="navigation:$items['navigation'] as $idx => $data">
+							<li<if test="notdonefirstapp:|:!$this->did_first"> class='first'</if>><if test="didfirstappnow:|:$this->did_first"><span class='nav_sep'>&gt;</span></if> <if test="navigationlink:|:$data[1]"><a href='{parse url="{$data[1]}" base="public" seotitle="$data[2]" template="$data[3]"}' title='{$this->lang->words['nav_return_to']}{$data[0]}'></if>{$data[0]}<if test="closenavigationlink:|:$data[1]"></a></if></li>
+							<if test="forsuredidfirstnav:|:$this->did_first=1"></if>
+						</foreach>
+					</ul>
+				</div>
+			</div>
+			<div id='content'>
+				<a id='j_content'></a>
+				<if test="mainpageContent:|:$html">{$html}</if>
+				<br class='clear' />
+			</div>
+			<div id='footer_utilities' class='clearfix clear rounded'>
+				<h2 class='hide'>{$this->lang->words['skin_and_lang']}</h2>
+				<if test="skinchanger:|:$this->settings['allow_skins']">
+					<if test="uagentlocked:|:$this->memberData['userAgentLocked'] AND ! $this->memberData['userAgentBypass']">
+						<p id='useragent_msg'>
+							{$this->lang->words['skin_browser_set']} <a href='{parse url="{$this->settings['query_string_formatted']}&amp;unlockUserAgent=1" base="public"}'>{$this->lang->words['override_browser_theme']}</a>
+						</p>
+					<else />
+						<if test="hasskins:|:$footer_items['skin_chooser']">
+							<form action="{parse url="{$this->settings['query_string_formatted']}" base="public"}" method="post" class='left'>
+								<fieldset>
+									<input type='hidden' name='k' value='{$this->member->form_hash}' />
+									<label for='newSkin' class='hide'>{$this->lang->words['theme_prefix']}</label>
+									<select name="settingNewSkin" id='newSkin'>
+										{$footer_items['skin_chooser']}
+									</select>
+									<input type='submit' value='{$this->lang->words['jmp_go']}' class='input_submit alt' id='newSkinSubmit' />
+								</fieldset>
+							</form>
+						</if>
+					</if>
+				</if>
+				<form action="{parse url="{$this->settings['query_string_formatted']}" base="public"}" method="post" class='left'>
+					<fieldset>
+						<input type='hidden' name='k' value='{$this->member->form_hash}' />
+						<input type='hidden' name='setlanguage' value='1' />
+						<input type="hidden" name="langurlbits" value="{$this->settings['query_string_safe']}&amp;cal_id={$this->request['cal_id']}" />
+						<label for='newLang' class='hide'>{$this->lang->words['language_prefix']}</label>
+						<select name="langid" id='newLang'>
+								{$footer_items['lang_chooser']}
+						</select>
+						<input type='submit' class='input_submit alt' value='{$this->lang->words['jmp_go']}' id='newLangSubmit' />
+					</fieldset>
+				</form>
+			</div>
+			<!-- __FOOTER__ -->
+			<!-- /__FOOTER__ -->
+			<!--DEBUG_STATS-->
+			<div id='board_footer'>
+				<ul id='utility_links' class='left'>
+					<li><a href='#top' title='{$this->lang->words['go_to_top']}'>{$this->lang->words['back_to_top']}</a></li>
+					<li><a href='{parse url="" base="public"}' title='{$this->lang->words['sj_home']}'>{$this->lang->words['sj_home']}</a></li>
+					<li><a href="{parse url="app=core&amp;module=global&amp;section=login&amp;do=deleteCookies&amp;k={$this->member->form_hash}" base="public"}" title='{$this->lang->words['delete_all_cookies_title']}'>{$this->lang->words['delete_my_cookies']}</a></li>
+					<li><a href="{parse url="app=forums&amp;module=forums&amp;section=markasread&amp;marktype=all&amp;k={$this->member->form_hash}" base="public"}" title='{$this->lang->words['mark_all_as_read']}'>{$this->lang->words['mark_board_as_read']}</a></li>
+				</ul>
+				{$footer_items['copyright']}
+			</div>
+			{$stats['task']}
+		</div>
+	</body>
+</html>]]></template_content>
+      <template_name>globalTemplate</template_name>
+      <template_data>$html, $documentHeadItems, $css, $jsModules, $metaTags, $header_items=array(), $items=array(), $footer_items=array(), $stats=array()</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_editors">
+    <template>
+      <template_group>skin_editors</template_group>
+      <template_content><![CDATA[<!--top-->
+<input type='hidden' name='{$editor_id}_wysiwyg_used' id='{$editor_id}_wysiwyg_used' value='0' />
+<input type='hidden' name='editor_ids[]' value='{$editor_id}' />
+<div class='ips_editor' id='editor_{$editor_id}'>
+	<div id='{$editor_id}_wrap' class='editor'>
+		<textarea name="{$form_field}" class="input_rte" id="{$editor_id}_textarea" rows="10" cols="60" tabindex="0">{$initial_content}</textarea>
+	</div>
+</div>]]></template_content>
+      <template_name>ips_editor</template_name>
+      <template_data><![CDATA[$form_field="",$initial_content="",$images_path="",$rte_mode=0,$editor_id='ed-0',$smilies='',$allow_sidebar=1]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_editors</template_group>
+      <template_content/>
+      <template_name>editorJS</template_name>
+      <template_data><![CDATA[$emoticons='']]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_editors</template_group>
+      <template_content><![CDATA[<div class='ips_editor <if test="hassidebar:|:!$no_sidebar">with_sidebar<else />no_sidebar</if>'>
+		<div id='{$editor_id}_wrap' class='editor'>
+			<textarea name="{$field}" class="input_rte" id="{$editor_id}_textarea" rows="10" cols="60" tabindex="0">{$content}</textarea>
+		</div>
+	</div>]]></template_content>
+      <template_name>editorShell</template_name>
+      <template_data><![CDATA[$editor_id, $field='Post', $content='', $no_sidebar=1, $lightweight=0]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_editors</template_group>
+      <template_content/>
+      <template_name>ajaxEditBox</template_name>
+      <template_data><![CDATA[$post="", $pid=0, $error_msg="", $extraData]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_emails">
+    <template>
+      <template_group>skin_emails</template_group>
+      <template_content/>
+      <template_name>boardRules</template_name>
+      <template_data><![CDATA[$title="",$body=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_emails</template_group>
+      <template_content><![CDATA[<form action="{parse url="app=forums&amp;module=extras&amp;section=forward" base="public"}" method="post" name='REPLIER'>
+	<input type="hidden" name="do" value="01" />
+	<input type="hidden" name="st" value="{$this->request['st']}" />
+	<input type="hidden" name="f" value="{$this->request['f']}" />
+	<input type="hidden" name="t" value="{$this->request['t']}" />
+	<input type='hidden' name='k' value='{$this->member->form_hash}' />
+	
+	<p class='message'>{$this->lang->words['email_friend']}</p><br />
+	
+	<h2 class='maintitle'>{$this->lang->words['title']}</h2>
+	<div class='generic_bar'></div>
+	<div class='post_form'>
+		<fieldset>
+			<h3 class='bar'>{$this->lang->words['email_recepient']}</h3>
+			<ul>
+				<li class='field'>
+					<label for='to_lang'>{$this->lang->words['send_lang']}</label>
+					<select name='lang' class='input_select' id='to_lang'>
+						<foreach loop="lang:$this->caches['lang_data'] as $l">
+							<option value='{$l['lang_id']}' <if test="language:|:$l['lant_id'] == $this->memberData['language']">selected='selected'</if>>{$l['lang_title']}</option>
+						</foreach>
+					</select>
+				</li>
+				<li class='field'>
+					<label for='to_name'>{$this->lang->words['to_name']}</label>
+					<input type="text" id='to_name' class='input_text' name="to_name" value="" size="30" maxlength="100" />
+				</li>
+				<li class='field'>
+					<label for='to_email'>{$this->lang->words['to_email']}</label>
+					<input type="text" id='to_email' class='input_text' name="to_email" value="" size="30" maxlength="100" />
+				</li>
+				<li class='field'> 
+					<label for='subject'>{$this->lang->words['subject']}</label>
+					<input type="text" id="subject" class="input_text" name="subject" value="{$title}" size="30" maxlength="120" />
+				</li> 				
+				<li class='field'>
+					<label for='to_message'>{$this->lang->words['message']}</label>
+					<textarea id='to_message' cols="60" rows="12" wrap="soft" name="message" class="input_text">{$text}</textarea>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset class='submit'>
+			<input class='input_submit' type="submit" value="{$this->lang->words['submit_send']}" /> or <a href='{parse url="showtopic={$this->request['t']}" base="public"}' title='{$this->lang->words['cancel']}' class='cancel'>{$this->lang->words['cancel']}</a>
+		</fieldset>
+	</div>
+</form>]]></template_content>
+      <template_name>forward_form</template_name>
+      <template_data><![CDATA[$title="",$text="",$lang=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+</templates>

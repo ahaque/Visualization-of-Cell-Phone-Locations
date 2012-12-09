@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates application="members" templategroups="a:5:{s:14:&quot;skin_messaging&quot;;s:5:&quot;exact&quot;;s:10:&quot;skin_mlist&quot;;s:5:&quot;exact&quot;;s:11:&quot;skin_online&quot;;s:5:&quot;exact&quot;;s:12:&quot;skin_profile&quot;;s:5:&quot;exact&quot;;s:8:&quot;skin_ucp&quot;;s:5:&quot;exact&quot;;}">
+  <templategroup group="skin_ucp">
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<if test="usercp_form:|:$hide_form == 0">
+	<if test="has_max_upload:|:$maxUpload">
+		<form method='post' enctype="multipart/form-data" action='{$this->settings['base_url']}app=core&amp;module=usercp&amp;tab={$current_tab}&amp;area={$current_area}' id='userCPForm'>
+	<else />
+		<form method='post' action='{$this->settings['base_url']}app=core&amp;module=usercp&amp;tab={$current_tab}&amp;area={$current_area}' id='userCPForm'>
+	</if>
+</if>
+	<fieldset>
+		<input type="hidden" name="MAX_FILE_SIZE" value="$maxUpload" />
+		<input type='hidden' name='do' value='save' />
+		<input type='hidden' name='secure_hash' value='{$this->member->form_hash}' />
+		<input type='hidden' name='s' value='{$this->request['s']}' />
+	</fieldset>
+<h2>{$this->lang->words['ucp_title']}</h2>
+<ul class='tab_bar no_title'>
+	<foreach loop="tabs:$tabs as $tab_app => $tab">
+		<if test="active_tab:|:$tab_app == $current_tab">
+			<li class='active'>{$tab['_name']}</li>
+		<else />
+			<li><a href="{parse url="module=usercp&amp;tab={$tab_app}" base="publicWithApp"}" title="{$this->lang->words['settings_for_ucp']} {$tab['_name']}">{$tab['_name']}</a></li>
+		</if>
+	</foreach>
+</ul>
+<div class='tab_body usercp_body'>
+	<ul id='usercp_menu'>
+		<if test="tabsMenus:|:is_array( $tabs[ $current_tab ]['_menu'] ) AND count( $tabs[ $current_tab ]['_menu'] )">
+			<foreach loop="items:$tabs[ $current_tab ]['_menu'] as $idx => $item">
+				<if test="tabsMenus_active:|:$item['area'] == $current_area">
+					<li class='active'>{$item['title']}</li>
+				<else />
+					<li><a href="{parse url="module=usercp&amp;tab={$current_tab}&amp;{$item['url']}" base="publicWithApp"}">{$item['title']}</a></li>
+				</if>
+			</foreach>
+		</if>
+	</ul>
+	<div id='usercp_content'>
+		<if test="has_errors:|:is_array( $errors ) AND count( $errors )">
+			<p class='message error'>
+				<foreach loop="errors:$errors as $error">
+					$error<br />
+				</foreach>
+			</p>
+		</if>
+		<if test="didSave:|:$this->request['saved'] == 1">
+			<p class='message'>{$this->lang->words['ucp__settings_saved']}</p>
+		</if>
+		$html
+		
+		<if test="submit_button:|:$hide_form == 0">
+		<fieldset class='submit'>
+			<input type='submit' class='input_submit' name='submit' value='{$this->lang->words['ucp__save_changes']}' /> {$this->lang->words['or']} <a href='{$this->settings['base_url_with_app']}module=usercp&amp;tab={$current_tab}&amp;area={$current_area}' title='{$this->lang->words['cancel_edit']}' class='cancel'>{$this->lang->words['cancel']}</a>
+		</fieldset>
+		</if>
+	</div>
+</div>
+<if test="end_form:|:$hide_form == 0">
+</form>
+</if>]]></template_content>
+      <template_name>userCPTemplate</template_name>
+      <template_data>$current_tab, $html, $tabs, $current_area, $errors=array(), $hide_form=0, $maxUpload=0</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[{parse striping="usercp" classes="row1,row2"}
+<if test="$preview_about_me">
+	<fieldset class='{parse striping="usercp"}'>
+		<h3>{$this->lang->words['cp_current_aboutme']}</h3>
+		<div class='signature'>
+			{$preview_about_me}
+		</div>
+	</fieldset>
+</if>
+<fieldset class='{parse striping="usercp"}'>
+	<h3>{$this->lang->words['cp_edit_aboutme']}</h3>
+	<div>
+		{$editor_html}
+	</div>
+</fieldset>]]></template_content>
+      <template_name>membersAboutMeForm</template_name>
+      <template_data><![CDATA[$preview_about_me="",$editor_html=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>coreAttachments</template_name>
+      <template_data><![CDATA[$info="",$pages="",$attachments]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<fieldset class='{parse striping="row1"}'>
+	<h3>{$this->lang->words['m_notes']}</h3>
+	<div class='message unspecified'>{$this->lang->words['note_pad_empty']}</div>
+	<div>
+		{$editor_html}
+	</div>
+</fieldset>]]></template_content>
+      <template_name>coreNotesForm</template_name>
+      <template_data><![CDATA[$editor_html=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>forumsInlineAvatarImages</template_name>
+      <template_data>$images=array(), $dir</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>memberAvatarForm</template_name>
+      <template_data><![CDATA[$data=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<fieldset class='row1'>
+	<h3>{$this->lang->words['change_email_title']}</h3>
+	<br />
+	<p class='message unspecific'>
+		$txt
+		<if test="emailIsAdmin:|:$this->memberData['g_access_cp']">
+			<br /><br />{$this->lang->words['admin_emailpassword']}
+		</if>
+	</p>
+	<if test="emailIsNotAdmin:|:!$this->memberData['g_access_cp']">
+		<ul>
+			<li class='field'>
+				<label for='in_email_1'>{$this->lang->words['ce_new_email']}</label>
+				<input type="text" name="in_email_1" id='in_email_1' class='input_text' value="" />
+			</li>
+			<li class='field'>
+				<label for='in_email_2'>{$this->lang->words['ce_new_email2']}</label>
+				<input type="text" name="in_email_2" id='in_email_2' class='input_text' value="" />
+			</li>
+			<li class='field'>
+				<label for='password'>{$this->lang->words['ec_passy']}</label>
+				<input type="password" id='password' class='input_text' name="password" value="" />
+			</li>
+		</ul>
+	</if>
+</fieldset>
+<if test="emailCaptcha:|:$captchaHTML != '' AND !$this->memberData['g_access_cp']">
+	<br />
+	$captchaHTML
+</if>]]></template_content>
+      <template_name>emailChangeForm</template_name>
+      <template_data>$txt, $_message, $captchaHTML</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>watchedForums</template_name>
+      <template_data>$forumArray</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>membersIgnoredUsersForm</template_name>
+      <template_data>$members</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>membersModFindUser</template_name>
+      <template_data><![CDATA[$inlineMsg=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>membersModIPFormMembers</template_name>
+      <template_data><![CDATA[$pages="",$members]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>membersModIPFormPosts</template_name>
+      <template_data><![CDATA[$count=0, $pageLinks='', $results]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>membersModIPForm</template_name>
+      <template_data><![CDATA[$ip="", $inlineMsg='']]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>membersFacebookConnect</template_name>
+      <template_data>$fbuid, $fbUserData, $linkedMemberData</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>membersPhotoForm</template_name>
+      <template_data><![CDATA[$cur_photo="",$show_size="",$p_max=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<php>$this->hasOpenID = false;</php>
+<foreach loop="loginmethods:$this->cache->getCache('login_methods') as $method">
+	<if test="hasOpenid:|:$method['login_folder_name'] == 'openid'">
+		<if test="setHasOpenid:|:$this->hasOpenID = true"></if>
+	</if>
+</foreach>
+<if test="weDoHaveOpenid:|:$this->hasOpenID">
+	<fieldset class='row2'>
+		<h3>{$this->lang->words['identity_url_h3']}</h3>
+		<ul>
+			<li class='field'>
+				<label for='identity_url'>{$this->lang->words['identity_url']}</label><input class='input_text' size='30' type="text" name="identity_url" id="identity_url" value="{$this->memberData['identity_url']}" /> <br />
+				<span class='desc'>{$this->lang->words['identity_url_desc']}</span>
+			</li>
+		</ul>
+	</fieldset>
+</if>
+<fieldset class='row1'>
+	<h3>{$this->lang->words['privacy_settings']}</h3>
+	<ul>
+		<li class='field checkbox'>
+			<input class='input_check' type="checkbox" name="hide_email" id="hide_email" value="1"<if test="hidingEmail:|:$this->memberData['hide_email']"> checked="checked"</if>/> <label for='hide_email'>{$this->lang->words['hide_email']}</label><br />
+			<span class='desc'>{$this->lang->words['hide_email_desc']}</span>
+		</li>
+		<li class='field checkbox'>
+			<input type='checkbox' class='input_check' id='admin_updates' name='admin_send' value='1'<if test="allowAdminMails:|:$this->memberData['allow_admin_mails']"> checked="checked"</if>/> <label for='admin_updates'>{$this->lang->words['admin_send']}</label><br />
+			<span class='desc'>{$this->lang->words['admin_send_desc']} $time</span>
+		</li>
+	</ul>
+</fieldset>
+<fieldset class='row2'>
+	<h3>{$this->lang->words['settings_time']}</h3>
+	<ul>
+		<li class='field'>
+			<label for='timezone'>{$this->lang->words['ucp_timzeone']}</label>
+			<select name='timeZone' id='timezone' class='input_select'>
+			<foreach loop="timezones:$times as $off => $words">
+				<option value='{$off}' <if test="isOurTimezone:|:$off == $this->memberData['time_offset']"> selected="selected"</if>>{$words}</option>
+			</foreach>
+			</select>
+			<span class='desc'>{$this->lang->words['settings_time_txt2']} {parse date="" format="LONG" relative="false"}</span>
+		</li>
+		<li class='field checkbox'>
+			<if test="dstError:|:$this->request['dsterror'] == 1">
+				{$this->lang->words['dst_error']}
+			</if>
+			<input type='checkbox' class='input_check' id='dst' name="dstCheck" onclick='toggle_dst()' value="1"<if test="doAutoDst:|:$this->memberData['members_auto_dst']"> checked="checked"</if>/> <label for='dst'>{$this->lang->words['dst_correction_title']}</label><br />
+			<span class='desc'>{$this->lang->words['dst_auto2']}</span>
+		</li>
+		<li class='field checkbox' id='dst-manual'>
+			<input type='checkbox' class='input_check' id='dstManual' name="dstOption" value="1"<if test="doManualDst:|:$this->memberData['dst_in_use']"> checked="checked"</if>/> <label for='dstManual'>{$this->lang->words['ucp_dst_now']}</label><br />
+			<span class='desc'>{$this->lang->words['ucp_dst_effect']}</span>
+		</li>
+	</ul>
+</fieldset>
+<fieldset class='row1'>
+	<h3>{$this->lang->words['ucp_op_pm_title']}</h3>
+	<ul>
+		<if test="hasPm:|:$this->memberData['members_disable_pm'] != 2">
+		<li class='field checkbox'>
+			<input type='checkbox' name='disableMessenger' class='input_check' id='disable_msg' value='1'<if test="disablePm:|:$this->memberData['members_disable_pm']"> checked="checked"</if>/> <label for='disable_msg'>{$this->lang->words['ucp_op_pm']}</label><br />
+			<span class='desc'>{$this->lang->words['ucp_op_pm_desc']}</span>
+		</li>
+		</if>
+		<li class='field checkbox'>
+			<input type='checkbox' class='input_check' id='email_notify' name='pm_reminder' value='1'<if test="emailPm:|:$this->memberData['email_pm']"> checked="checked"</if>/> <label for='email_notify'>{$this->lang->words['pm_reminder']}</label><br />
+			<span class='desc'>{$this->lang->words['pm_reminder_desc']}</span>
+		</li>
+		<li class='field checkbox'>
+			<input type='checkbox' name='showPMPopUp' id='board_notify' class='input_check' value='1'<if test="pmPopup:|:$this->memberData['view_pop']"> checked="checked"</if>/> <label for='board_notify'>{$this->lang->words['settings_dopopup']}</label><br />
+			<span class='desc'>{$this->lang->words['settings_dopopup_desc']}</span>
+		</li>
+	</ul>
+</fieldset>
+<fieldset class='row2 '>
+	<h3>{$this->lang->words['ucp_title_posting']}</h3>
+	<ul>
+		<if test="allowRte:|:$this->settings['posting_allow_rte'] == 1">
+			<li class='field checkbox'>
+				<input type='checkbox' class='input_check' id='editor_type' name='editorChoice' value='1' <if test="useRte:|:$this->memberData['members_editor_choice'] == 'rte'"> checked="checked"</if>/> <label for='editor_type'>{$this->lang->words['enable_rte']}</label><br />
+				<span class='desc'>{$this->lang->words['rte_text']}</span>
+			</li>
+		</if>
+		
+		<if test="allowFlash:|:$this->settings['uploadFormType']">
+			<!-- Fancy uploader is available, so show user option... -->
+			<li class='field checkbox'>
+				<input type='checkbox' class='input_check' id='member_uploader' name='member_uploader' value='1' <if test="useFlash:|:$this->memberData['member_uploader'] == 'flash'"> checked="checked"</if>/> <label for='member_uploader'>{$this->lang->words['enable_flash']}</label><br />
+				<span class='desc'>{$this->lang->words['flash_text']}</span>
+			</li>
+		</if>
+	</ul>
+</fieldset>]]></template_content>
+      <template_name>generalSettingsForm</template_name>
+      <template_data>$times</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content/>
+      <template_name>Show_attachments</template_name>
+      <template_data><![CDATA[$data=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<input type='hidden' name='key' value='{$key}' />
+<input type='hidden' name='removeattachid' value='0' />
+{parse striping="usercp" classes="row1,row2"}
+<if test="$preview_sig">
+	<fieldset class='{parse striping="usercp"}'>
+		<h3>{$this->lang->words['cp_current_sig']}</h3>
+		<div class='signature'>
+			{$preview_sig}
+		</div>
+	</fieldset>
+</if>
+<fieldset class='{parse striping="usercp"}'>
+	<h3>{$this->lang->words['cp_edit_sig']}</h3>
+	<div>
+		{$editor_html}
+	</div>
+</fieldset>
+<if test="hasSignatureLimits:|:$this->memberData['g_signature_limits']">
+	<fieldset class='{parse striping="usercp"}'>
+		<h3>{$this->lang->words['sig_restrictions']}s</h3>
+		<br />
+		<div class='desc'>
+			{$this->lang->words['sig_restrictions_contain']}
+			<ul class='bullets'>
+				<if test="$sig_restrictions[1] != 0">
+					<li>{parse expression="sprintf( $this->lang->words['sig_max_imagesr'], $sig_restrictions[1] )"}</li>
+				<else />
+					<li>{$this->lang->words['sig_max_imagesr_nl']}</li>
+				</if>
+				<if test="$sig_restrictions[2] != 0 || $sig_restrictions[3] != 0">
+					<li>{parse expression="sprintf( $this->lang->words['sig_max_imgsize'], $sig_restrictions[2], $sig_restrictions[3] )"}</li>
+				<else />
+					<li>{$this->lang->words['sig_max_imgsize_nl']}</li>
+				</if>
+				<if test="$sig_restrictions[4] != 0">
+					<li>{parse expression="sprintf( $this->lang->words['sig_max_urls'], $sig_restrictions[4] )"}</li>
+				<else />
+					<li>{$this->lang->words['sig_max_urls_nl']}</li>
+				</if>
+				<if test="$sig_restrictions[5] != 0">
+					<li>{parse expression="sprintf( $this->lang->words['sig_max_lines'], $sig_restrictions[5] )"}</li>
+				<else />
+					<li>{$this->lang->words['sig_max_lines_nl']}</li>
+				</if>
+			</ul>
+		</div>
+	</fieldset>
+</if>
+{parse template="include_lightbox" group="global" params=""}
+{parse template="include_highlighter" group="global" params="1"}]]></template_content>
+      <template_name>membersSignatureForm</template_name>
+      <template_data><![CDATA[$preview_sig="",$editor_html="",$sig_restrictions=array()]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>watchedTopics</template_name>
+      <template_data>$mainForumArray, $dateCut</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>watchChoices</template_name>
+      <template_data><![CDATA[$forum="",$topic="",$method=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>modAnnounceForm</template_name>
+      <template_data><![CDATA[$announce="",$button="",$forum_html="",$type="",$editor_html="",$msg=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<p class='message unspecific'>
+	You cannot use this feature with the LoFi theme
+</p>]]></template_content>
+      <template_name>modAnnouncements</template_name>
+      <template_data>$announcements</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_ucp</template_group>
+      <template_content><![CDATA[<if test="dnameOkMessage:|:$okmessage != """>
+	<p class='message'>{$okmessage}</p>
+</if>
+<fieldset class='row1'>
+	<h3>{$this->lang->words['dname_title']}</h3>
+	<br />
+	<if test="$form['_noPerm']">
+		<p class='message error'>{$form['_noPerm']}</p>
+	<else />
+		<p class='message unspecific'>{$form['_lang_string']}</p>
+		<ul>
+			<li class='field'>
+				<label for='displayName'>{$this->lang->words['dname_choose']}</label><input class='input_text' type="text" maxlength='{$this->settings['max_user_name_length']}' name="displayName" id="displayName" value="{$this->request['displayName']}" size='30' /> <br />
+				<span class='desc'>{$this->lang->words['dname_choose2']}</span>
+			</li>
+			<li class='field'>
+				<label for='displayPassword'>{$this->lang->words['dname_password']}</label><input class='input_text' type="password" maxlength='{$this->settings['max_user_name_length']}' name="displayPassword" id="displayPassword" value="" size='30' /> <br />
+				<span class='desc'>{$this->lang->words['dname_password2']}</span>
+			</li>
+		</ul>
+	</if>
+</fieldset>]]></template_content>
+      <template_name>displayNameForm</template_name>
+      <template_data><![CDATA[$form=array(),$error="",$okmessage=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_profile">
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content/>
+      <template_name>dnameWrapper</template_name>
+      <template_data><![CDATA[$member_name="",$records=array()]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content/>
+      <template_name>showCard</template_name>
+      <template_data>$member, $download=0</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content><![CDATA[<if test="contact_field:|:$f->parsed">
+<dt>{$f->raw_data['pf_title']}</dt>
+<dd>
+	<if test="cf_icon:|:$f->raw_data['pf_icon']"><img src='{$this->settings['public_dir']}/{$f->raw_data['pf_icon']}' alt='{$f->raw_data['pf_title']}' />&nbsp;</if>
+	<if test="cf_array:|:is_array( $f->parsed )">
+		<foreach loop="cfieldgroups:$f->parsed as $value">
+			{$value}
+		</foreach>
+	<else />
+		<if test="cf_aim:|:$f->raw_data['pf_key'] == 'aim'">
+			<a class='url' href='aim:goim?screenname={$f->parsed}'>{$f->parsed}</a>
+		<else />
+			<if test="cf_msn:|:$f->raw_data['pf_key'] == 'msn'">
+				<a class='url' href='msnim:chat?contact={$f->parsed}'>{$f->parsed}</a>
+			<else />
+				<if test="cf_yahoo:|:$f->raw_data['pf_key'] == 'yahoo'">
+					<a class='url' href='ymsgr:sendIM?{$f->parsed}'>{$f->parsed}</a>
+				<else />
+					<if test="cf_icq:|:$f->raw_data['pf_key'] == 'icq'">
+						<a class='url' type="application/x-icq" href='http://www.icq.com/people/cmd.php?uin={$f->parsed}&amp;action=message'>{$f->parsed}</a>
+					<else />
+						<if test="cf_website:|:$f->raw_data['pf_key'] == 'website'">
+							<a class='url uid' rel="me" href='{$f->parsed}'>{$f->parsed}</a>
+						<else />
+							<if test="cf_jabber:|:$f->raw_data['pf_key'] == 'jabber'">
+								<a class='url' href='xmpp:{$f->parsed}'>{$f->parsed}</a>
+							<else />
+								<if test="cf_skype:|:$f->raw_data['pf_key'] == 'skype'">
+									<a class='url' href='skype:{$f->parsed}?call'>{$f->parsed}</a>
+								<else />
+									{$f->parsed}
+								</if>
+							</if>
+						</if>
+					</if>
+				</if>
+			</if>
+		</if>
+	</if>
+</dd>
+</if>]]></template_content>
+      <template_name>customFieldGroup__contact</template_name>
+      <template_data>$f</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content/>
+      <template_name>tabNoContent</template_name>
+      <template_data>$langkey</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content/>
+      <template_name>friendsList</template_name>
+      <template_data>$friends, $pages</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content/>
+      <template_name>showIframeComments</template_name>
+      <template_data>$member, $comments, $pages</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content/>
+      <template_name>showComments</template_name>
+      <template_data><![CDATA[$member, $comments=array(), $new_id=0, $return_msg='', $links='']]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content/>
+      <template_name>tabSingleColumn</template_name>
+      <template_data><![CDATA[$row=array(), $read_more_link='', $url='', $title='']]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content/>
+      <template_name>tabPosts</template_name>
+      <template_data>$content</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content/>
+      <template_name>tabTopics</template_name>
+      <template_data>$content</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content/>
+      <template_name>tabAboutMe</template_name>
+      <template_data>$member=array()</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content/>
+      <template_name>friendsIframe</template_name>
+      <template_data>$member, $friends, $showWrapper=false</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content><![CDATA[<div class='vcard'>
+	<h2 class='maintitle'>
+		<span class='left'><span class="fn nickname">{$member['members_display_name']}</span>{$this->lang->words['m_profile_title']}</span>
+	</h2>
+	
+	<div id='profile_overview' class='left'>
+		<div class='personal_info clear general_box alt'>
+			<img class="photo" src='{$member['pp_main_photo']}' alt="{$member['members_display_name']}'s {$this->lang->words['photo_title']}"  />
+		</div>
+		<div class='info'>
+			<dl>
+				<dt>{$this->lang->words['m_group']}</dt>
+				<dd>{$member['g_title']}</dd>
+				<dt>{$this->lang->words['m_posts']}</dt>
+				<dd <if test="showProfileStats:|:!$this->settings['disable_profile_stats']">title='{$member['_total_pct']}% {$this->lang->words['total_percent']}'</if>>{parse format_number="$member['posts']"}<if test="showProfileStats2:|:!$this->settings['disable_profile_stats']"> ({$member['_posts_day']} {$this->lang->words['posts_per_day']})</if></dd>
+				<if test="favoriteForum:|:!$this->settings['disable_profile_stats'] AND $member['favorite_id']">
+					<dt>{$this->lang->words['m_active_in']}</dt>
+					<dd title='{$member['_fav_percent']}% {$this->lang->words['fav_percent']}'>
+						<a href='{parse url="showforum={$member['favorite_id']}" seotitle="{$this->registry->class_forums->forum_by_id[ $member['favorite_id'] ]['name_seo']}" template="showforum" base="public"}'>{$this->registry->class_forums->forum_by_id[ $member['favorite_id'] ]['name']}</a> ({$member['_fav_posts']} {$this->lang->words['fav_posts']})
+					</dd>
+				</if>
+				<dt>{$this->lang->words['m_member_since']}</dt>
+				<dd>{parse date="$member['joined']" format="joined"}</dd>
+				<dt>{$this->lang->words['m_profile_views']}</dt>
+				<dd>{parse format_number="$member['members_profile_views']"}</dd>
+				<dt>{$this->lang->words['m_last_active']}</dt>
+				<dd><if test="memberOnline:|:$member['_online']">{parse replacement="user_online"}<else />{parse replacement="user_offline"}</if> {$member['_last_active']}</dd>
+				<dt>{$this->lang->words['m_currently']}</dt>
+				<dd><if test="onlineDetails:|:$member['_online']">
+						{$member['online_extra']}
+					<else />
+						{$this->lang->words['online_offline']}
+					</if>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div id='main_profile_body' class='right'>
+		<div class='about_contact'>
+			<div class='about_info left general_box row2'>
+				<h3 class='bar'>{$this->lang->words['my_info']}</h3>
+				<dl>
+					<if test="member_title:|:$member['title'] != ''">
+						<dt>{$this->lang->words['m_member_title']}</dt>
+						<dd>{$member['title']}</dd>
+					</if>
+					<dt>{$this->lang->words['m_age_prefix']}</dt>
+					<if test="member_age:|:$member['_age'] > 0">
+						<dd>{$member['_age']} {$this->lang->words['m_years_old']}</dd>
+					<else />
+						<dd>{$this->lang->words['m_age_unknown']}</dd>
+					</if>
+					<dt>{$this->lang->words['m_birthday_prefix']}</dt>
+					<if test="member_birthday:|:$member['bday_day']">
+						<!-- SKINNOTE: We should use the localized date formatting for this -->
+						<dd>{$member['_bday_month']} {$member['bday_day']}<if test="member_bday_year:|:$member['bday_year']">, {$member['bday_year']}</if></dd>
+					<else />
+						<dd>{$this->lang->words['m_bday_unknown']}</dd>
+					</if>
+					<!-- SKINNOTE: Gender is now a custom profile field...-->
+					{$member['custom_fields']['profile_info']['gender']}
+				</dl>
+			</div>
+	
+			<div class='contact_info right general_box row2'>
+				<h3 class='bar'>{$this->lang->words['contact_info']}</h3>
+				<dl>
+					<dt>{$this->lang->words['m_email']}</dt>
+					<dd>
+						<if test="member_email:|:!$member['hide_email']">
+							<a href='{parse url="app=members&amp;module=messaging&amp;section=contact&amp;do=Mail&amp;MID={$member['member_id']}" base="public"}'>{$this->lang->words['click_to_email']}</a>
+						<else />
+							<em>{$this->lang->words['private']}</em>
+						</if>						
+					</dd>
+	
+					<if test="member_contact_fields:|:is_array( $member['custom_fields']['contact'])">
+						<foreach loop="cfields:$member['custom_fields']['contact'] as $field">
+							{$field}
+						</foreach>
+					</if>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>]]></template_content>
+      <template_name>profileModern</template_name>
+      <template_data><![CDATA[$tabs=array(), $member=array(), $comments="", $friends=array(), $visitors=array(), $default_tab='posts', $default_tab_content='', $fields=null]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_profile</template_group>
+      <template_content><![CDATA[<dt>{$f->raw_data['pf_title']}</dt>
+<dd>
+<if test="gender_set:|:$f->value">
+	<if test="male:|:$f->value == 'm'">
+		<img src='{$this->settings['img_url']}/profile/male.png' alt='' /> {$this->lang->words['js_gender_male']}
+	</if>
+	
+	<if test="female:|:$f->value == 'f'">
+		<img src='{$this->settings['img_url']}/profile/female.png' alt='' /> {$this->lang->words['js_gender_female']}
+	</if>
+	
+	<if test="nottelling:|:$f->value =='u'">
+		<img src='{$this->settings['img_url']}/profile/mystery.png' alt='' /> {$this->lang->words['js_gender_mystery']}
+	</if>
+<else />
+	{$this->lang->words['m_no_gender']}
+</if>
+</dd>]]></template_content>
+      <template_name>customField__gender</template_name>
+      <template_data>$f</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_online">
+    <template>
+      <template_group>skin_online</template_group>
+      <template_content/>
+      <template_name>showOnlineList</template_name>
+      <template_data><![CDATA[$rows, $links="", $defaults=array(), $our_mgroups=array()]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_messaging">
+    <template>
+      <template_group>skin_messaging</template_group>
+      <template_content/>
+      <template_name>PMQuickForm</template_name>
+      <template_data>$toMemberData</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_messaging</template_group>
+      <template_content/>
+      <template_name>messengerTemplate</template_name>
+      <template_data><![CDATA[$html, $jumpmenu, $dirData, $totalData=array(), $topicParticipants=array(), $inlineError='']]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_messaging</template_group>
+      <template_content/>
+      <template_name>showSearchResults</template_name>
+      <template_data>$messages, $pages, $error</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_messaging</template_group>
+      <template_content/>
+      <template_name>showFolder</template_name>
+      <template_data>$messages, $dirname, $pages, $currentFolderID, $jumpFolderHTML</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_messaging</template_group>
+      <template_content/>
+      <template_name>showConversation</template_name>
+      <template_data><![CDATA[$topic, $replies, $members, $jump=""]]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_messaging</template_group>
+      <template_content/>
+      <template_name>sendReplyForm</template_name>
+      <template_data>$displayData</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_messaging</template_group>
+      <template_content/>
+      <template_name>sendNewPersonalTopicForm</template_name>
+      <template_data>$displayData</template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_mlist">
+    <template>
+      <template_group>skin_mlist</template_group>
+      <template_content><![CDATA[<!-- SEARCH FORM -->
+<h2>{$this->lang->words['mlist_header']}</h2>
+<div class='topic_controls'>
+	{$pages}
+</div>
+<div id='member_list clear block_wrap'>
+	<ol id='member_alpha' class='tab_bar'>
+		<if test="letterquickjump:|:!$this->request['quickjump']">
+			<li class='active'><a href='{parse url="app=members&amp;section=view&amp;module=list" base="public"}' title='{$this->lang->words['members_start_with']}{$letter}'>{$this->lang->words['mlist_view_all_txt']}</a></li>
+		<else />
+			<li><a href='{parse url="app=members&amp;section=view&amp;module=list" base="public"}' title='{$this->lang->words['mlist_view_all_title']}'>{$this->lang->words['mlist_view_all_txt']}</a></li>
+		</if>
+<foreach loop="chars:range(65,90) as $char">
+	<if test="letterdefault:|:$letter = strtoupper(chr($char))">
+		<li <if test="selected:|:strtoupper( $this->request['quickjump'] ) == $letter">class='active'</if>><a href='{parse url="app=members&amp;section=view&amp;module=list&amp;{$url}&amp;quickjump={$letter}" base="public"}' title='{$this->lang->words['mlist_view_start_title']} {$letter}'>{$letter}</a></li>
+	</if>
+</foreach>
+	</ol>
+	<br /><br />
+	<div id='member_wrap'>
+		<ol class='lofi_list lofi_members'>
+			<if test="showmembers:|:is_array( $members ) and count( $members )">
+				<foreach loop="members:$members as $member">
+					<li class='lofi_member'>
+						<h3>
+							<a href='{parse url="showuser={$member['member_id']}" template="showuser" seotitle="{$member['members_seo_name']}" base="public"}' title='{$this->lang->words['view_profile']}'>{$member['members_display_name']}</a>
+							<span class='desc'>( {$this->lang->words['member_posts']}: {parse format_number="$member['posts']"} )</span>
+						</h3>
+						<span class='desc'><strong>{IPSLib::makeNameFormatted( $member['group'], $member['member_group_id'] )}</strong></span><br />
+						<span class='desc'>{$this->lang->words['member_joined']} {parse date="$member['joined']" format="joined"}</span> 
+					</li>
+				</foreach>
+			</if>
+		</ol>
+	</div>
+</div>
+<div class='topic_controls'>
+	{$pages}
+</div>]]></template_content>
+      <template_name>member_list_show</template_name>
+      <template_data><![CDATA[$members, $pages="", $dropdowns=array(), $defaults=array(), $custom_fields=null, $url='']]></template_data>
+      <template_updated>1251817158</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+</templates>

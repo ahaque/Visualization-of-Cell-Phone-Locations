@@ -1,0 +1,57 @@
+#search {
+	position: absolute !important;
+	right: 0px !important;
+	float: none !important;
+	display: block !important;
+	width: 330px;
+}
+
+	#search label,
+	#search input {
+		float: left !important;
+	}
+	
+	#search .submit_input {
+		font-size: 1em;
+	}
+	
+	#search label {
+		margin: 4px 6px;
+	}
+
+#ipboard_body .input_submit {
+	padding: 2px 5px;
+	font-size: 90%;
+}
+
+#ipboard_body .tab_bar li.active {
+	margin-top: -5px;
+}
+
+#ipboard_body .popupWrapper {
+	padding-top: 6px;
+}
+
+#ipboard_body .ipb_palette {
+	min-width: 130px;
+	max-width: 255px;
+}
+
+#ipboard_body #conversation .post_block {
+	position: static !important;
+	clear: both !important;
+}
+
+#ipboard_body #conversation ul.post_controls {
+	padding-bottom: 0;
+	height: 32px;
+}
+
+/*#ipboard_body .user_controls li img {
+	margin: 4px 0;
+}
+
+#ipboard_body .user_controls li {
+	margin: 0 4px 0 0;
+	text-align: center;
+}*/

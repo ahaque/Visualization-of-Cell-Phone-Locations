@@ -1,0 +1,1010 @@
+/************************************************************************/
+/* IP.Board 3 CSS RTL - By Vadim Vincent Gabriel						*/
+/************************************************************************/
+/* ipb_rtl.css															*/
+/************************************************************************/
+
+body { text-align:right; direction: rtl; }
+
+/* Common */
+
+h2 {text-align:right;}
+
+h1, #content_jump {display: none;}
+
+a.toggle {text-decoration: none;}
+
+/* Navigation */
+#primary_nav {
+padding-right: 10px;
+}
+
+
+#primary_nav ul li {
+padding: 8px 8px;
+margin-right: 6px;
+}
+#primary_nav ul li.active a {
+padding: 10px 15px 10px 10px;
+margin-right: 6px;	
+}
+
+#user_navigation .photo {
+margin: 6px 10px 6px 6px;
+float: left;
+}
+
+#user_info {
+margin-left: 60px;
+margin-right: 15px;
+}
+
+#user_navigation #new_msg_count {
+left: 45px;
+right: auto;
+}
+
+#user_navigation ul#user_other {	
+margin-left: 5px;
+}
+
+#user_navigation ul#user_other li {
+float: left;
+padding: 0 4px;
+}
+
+#user_navigation ul#user_link_menucontent {
+float: left;
+}
+
+#user_navigation #user_link { text-align: right; }
+
+/** Logo & User Navigation Align **/
+#user_navigation { left: 10px;right: auto;float: left; }
+
+#user_navigation #user_link img {left: 5px; right: auto;}
+
+/*** COMMENT THE FOLLOWING TO ALIGN THE LOGO TO THE RIGHT SIDE AND THE MENU TO THE LEFT  ***/
+#branding { text-align: left; direction: ltr; }
+#user_navigation.not_logged_in {text-align: right; float: right;}
+#user_navigation { left: auto;right: 10px;float: right; }
+/*** COMMENT THE FOLLOWING TO ALIGN THE LOGO TO THE RIGHT SIDE AND THE MENU TO THE LEFT  ***/
+
+#search {
+right: 0px;
+float: left;
+}
+
+#search input#main_search {
+margin-right: 5px;
+}
+
+#search label,
+#search input,
+#search #adv_search {
+float: right;
+}
+
+#secondary_nav {
+padding: 12px 15px 12px 25px;
+clear: both;
+}
+
+#secondary_nav li {
+padding-right: 7px;
+float: right;
+}
+
+
+
+
+#pm_notification .photo {
+float: right;
+margin: 0 15px;
+}
+
+/************************************************************************/
+/* FOOTER */
+
+#board_footer ul#utility_links li {
+float: left;
+padding-right: 8px;
+}
+
+#board_footer p {
+	text-align:left; 
+	direction: ltr;
+}
+
+#footer_utilities li {
+float: right;
+}
+
+/************************************************************************/
+/* GENERAL CONTENT */
+
+.topic_options li {
+float: right;
+}
+
+#update_status_form p span img {
+	margin: -2px 0 0 5px;
+}
+
+/************************************************************************/
+/* GENERIC REPEATED STYLES */
+
+/* Floats */
+.right { float: left; }
+.left { float: right; }
+
+/* Bullets */
+.bullets ul, .bullets ol,
+ul.bullets, ol.bullets {
+margin-right: 30px;
+}
+
+
+/************************************************************************/
+/* COLUMN WIDTHS FOR TABLES */
+.col_f_topic, .col_m_subject {
+text-align:right;
+}
+.col_f_post, .col_m_date,
+.col_r_updated, .col_r_section {
+text-align:right;
+}
+.col_c_post {
+text-align:right;
+}
+.col_c_forum {
+text-align:right;
+}
+
+/************************************************************************/
+/* TABLE STYLES */
+
+
+table.ipb_table tr .stats {
+text-align: right;
+}
+
+table.ipb_table ol.subforums li {	
+float: right;
+}
+
+table.ipb_table ol.subforums li.newposts {		
+float: right;
+}
+
+/************************************************************************/
+/* MENU & POPUP STYLES */
+
+.ipbmenu_content a {
+text-decoration: none;
+text-align: left;
+}
+
+.popupClose {
+position: absolute;
+left: 12px;
+top: 12px;
+}
+
+.popup_footer {
+padding: 15px;
+position: absolute;
+bottom: 0px;
+right: 0px;
+}
+
+.userpopup .photo { right: auto; left: 0;}
+
+.userpopup .user_controls {
+right: auto;
+left: 10px;
+}
+
+.userpopup .reputation {
+right: 4px;
+}
+
+.info dt {
+float: right;
+}
+.info dd {
+margin-right: 35%;
+}
+
+/************************************************************************/
+/* TOPIC/POST BUTTONS STYLES */
+
+.post_form .topic_controls {
+	float: left;
+}
+
+.topic_buttons li {
+float: left;
+}
+
+.topic_buttons li a img,
+.topic_buttons li span img {
+margin: -1px 0px 1px 5px;
+}
+
+ul.post_controls {
+text-align: right;
+}
+
+ul.post_controls li {
+float: left;
+}
+
+ul.post_controls li.report,
+ul.post_controls.left li {
+float: right;
+}
+
+ul.post_controls a {	
+margin-left: 4px;
+}
+
+/************************************************************************/
+/* PAGINATION STYLES */
+
+ul.pagination {
+	float: right;
+}
+
+ul.pagination li {
+float: right;
+}
+
+ul.pagination li.total,
+ul.pagination li.active {
+margin-left: 0px;
+}
+
+ul.mini_pagination {
+margin-left: 7px;
+}
+
+/************************************************************************/
+/* MODERATION & FILTER STYLES */
+
+.moderation_bar {
+text-align: left;
+}
+
+#topic_mod #forum_mod_options_menucontent {
+text-align: right;
+}
+
+.filter_bar select {
+margin-right: 10px;
+}
+
+
+/************************************************************************/
+/* TAB BAR STYLES */
+
+
+.tab_bar li {
+float: right;
+}
+
+/************************************************************************/
+/* AUTHOR INFO (& RELATED) STYLES */
+
+.author_info {
+text-align: right;
+border-right: none;
+border-left: 1px solid #e4ebf3;
+margin:15px -5px 10px 0;
+width: 250px;
+float: right;
+padding-bottom: 20px;
+}
+
+.author_info.no_rep {
+margin-bottom: 15px;
+}
+
+.author_info ul.user_fields li span.ft,
+.author_info ul.user_fields li span.fc {
+	float: right;
+}
+
+.author_info ul.user_fields li span.ft {
+	text-align: left;
+}
+
+.author_info .title {
+margin-top: 4px;
+}	
+
+.user_controls {
+text-align: center;
+margin: 6px 0;
+}
+
+.user_controls li {
+margin: 0 2px;
+display: inline;
+}
+
+.warn_panel {
+text-align: right;
+padding: 0px;
+margin: 0px 0px 10px 10px;
+}
+.warn_panel .warn_link {
+padding-right: 10%;
+}
+
+.warn_panel .warn_edit {
+float: left;
+}
+
+.warn_panel .warn_edit.up {
+margin-left: 10%;
+margin-right: auto;
+}
+
+/************************************************************************/
+/* BOARD INDEX STYLES */
+
+div#categories {
+width: 76%;
+float: right;
+}
+
+div#categories.no_sidebar {
+width: 100%;
+float: none;
+}
+
+
+.sidebar_toggle {
+left: 15px;
+right: auto;
+}
+
+#open_sidebar.sidebar_toggle {left: 5px; right: auto;}
+
+
+body .stats_list {
+padding: 10px 5px 0 0;
+float: right;
+}
+
+.stats_list li,
+.active_users li {
+float: right;
+padding: 0 5px 0 0;
+}
+
+.stats_list ul, .stats_list p {
+margin-left: 15px;
+}
+
+.active_users p {
+margin-left: 15px;
+}
+
+#stats {
+padding-left: 20px;
+float: left;
+}
+#stats dl {
+margin-left: 10px;
+}
+
+#stats dt,
+#stats dd {
+float: right;
+}
+
+
+.friend_list ul li,
+#top_posters li {
+float: left;
+}
+
+
+/************************************************************************/
+/* FORUM VIEW (& RELATED) STYLES */
+
+
+ul.topic_moderation li {
+float: left;
+}
+
+ul.topic_moderation li a {
+float: left;
+}
+
+span.mini_rate {
+margin-right: 12px;
+}
+
+img.mini_rate {
+margin-right: -5px;
+}
+
+.topic_prefix {
+float: right;
+}
+
+
+#forum_legend dt,
+#forum_legend dd {
+float: right;
+}
+
+#forum_table .maintitle .main_forum_title {
+float: right;
+}
+
+#forum_table .maintitle .desc {
+float: left;
+}
+
+/************************************************************************/
+/* TOPIC VIEW (& RELATED) STYLES */
+
+ul.topic_jump li {
+float: right;
+}
+
+body .ip {
+margin-left: 10px;
+margin-right: 15px;
+}
+
+span.post_id {
+float: left;
+}
+
+input.post_mod {
+float: left;
+margin: 0px 6px 0 15px;
+}
+
+.post_block.topic_summary .posted_info {
+margin-right: 10px;
+}
+
+.post_block.with_rep .post_body {
+margin-bottom: 25px;
+}
+
+
+.post_body {
+margin-right: 250px;
+margin-left: 0;
+}
+
+.rep_bar {
+position: absolute;
+left: 0px;
+right: auto;
+bottom: 32px;
+padding: 1px 10px;
+-moz-border-radius-topleft: 0px;
+-webkit-border-top-left-radius: 0px;
+-moz-border-radius-topright: 5px;
+-webkit-border-top-right-radius: 5px;
+}
+
+p.rep_highlight {
+	float: left;
+	display: inline-block;
+}
+
+p.posted_info {
+margin-right: -3px;
+}
+
+
+div.threaded_view ul ul {
+margin-left: -25px;
+}
+
+
+.topic_share li {
+float: left;
+margin: 0 5px;
+}
+
+
+.poll_question .votes {
+margin-left: 5px;
+}
+
+.snapback { 
+margin-right: 5px;
+}
+
+.topic .main_topic_title {
+float: right;
+}
+
+.maintitle .rating {
+float: left;
+}
+
+
+/************************************************************************/
+/* POSTING FORM (& RELATED) STYLES */
+
+div.post_form label {
+text-align: left;
+padding-right: 15px;
+float: right;
+margin-left: 15px;
+}
+
+div.post_form span.desc,
+fieldset#poll_wrap span.desc {
+margin-right:0;
+}
+
+div.post_form .checkbox input.input_check,
+#mod_form .checkbox input.input_check {
+	margin-left:auto;
+	margin-right:0;
+}
+
+div.post_form .antispam_img {
+margin-right: 290px;
+}
+
+div.post_form .captcha .input_text {
+float: right;
+}
+
+
+fieldset.with_subhead ul {
+margin-right: 320px;
+margin-left: 15px;
+}
+fieldset.with_subhead h4 {
+text-align: right;	
+float: right;
+margin-right: 10px;
+}
+
+fieldset.with_subhead #post_icons {
+margin-right: 326px;
+}
+
+fieldset.with_subhead #post_icons li {
+margin-right: 15px;
+float: right;
+}
+
+fieldset.with_subhead .checkbox input.input_check {
+margin-left: auto;
+}
+
+
+.post_form #poll_wrap .question .wrap {
+margin-right: 290px;
+margin-left: 12px;
+}
+
+.post_form #poll_wrap .question .wrap ol {
+margin-right: 25px;
+}
+
+.post_form #poll_wrap .question .wrap input.input_check,
+.post_form #poll_wrap .question .wrap label,
+.post_form #poll_wrap .question .wrap span.desc {
+text-align: right;
+margin-right: 0px;
+
+}
+
+.post_form #poll_wrap .question ul.post_controls {
+text-align: right;
+}
+
+
+.post_form #poll_form .topic_buttons {
+right: 315px !important;
+position: absolute;
+margin-left: 0;
+}
+
+.post_form #poll_form .topic_buttons li,
+.post_form #poll_form .post_controls li {
+float: right;
+}
+
+.post_form #poll_form #poll_stats.desc {
+margin-left: 320px;
+margin-bottom: 8px;
+}
+
+
+li.field {
+	padding: 5px;
+	margin-left: 27px;
+}
+
+li.field.checkbox {
+	margin-right: 0;
+}
+
+li.field.checkbox .input_check,
+li.field.checkbox .input_radio {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+	li.field label {
+		text-align: left;
+		margin-left: 10px;
+	}
+	
+	li.field label strong {
+		text-align: left;
+		margin-left: 10px;
+	}
+
+	li.field.checkbox label.desc {
+		padding-left: 27px;
+		margin-left: auto;
+		display: block;
+	}
+	
+	.wrap label.desc {text-align: left;}
+
+/************************************************************************/
+/* ATTACHMENT MANAGER (& RELATED) STYLES */
+
+#attachments li.complete .links {
+margin-left: 40px;
+right: auto;
+left: 0px;
+}
+
+.attach_name {
+margin-right: 30px;
+}
+
+#attachments li.complete .info { margin-right: 30px; }
+
+#attachments li .progress_bar {
+right: auto;
+left: 0px;
+}
+
+#attachments li .thumb_img {
+right: 6px;
+}
+
+fieldset.attachments .input_submit, fieldset.attachments .swfupload, fieldset.attachments .input_upload {
+margin-right: 50px;
+}
+
+
+#attach_wrap li {
+margin: 5px 6px;
+float: left;
+}
+
+#attach_wrap .desc.info {
+margin-left: 24px;
+}
+
+
+/************************************************************************/
+/* COMMENTS (& RELATED) STYLES */
+
+#comment_list {
+margin-top: 10px;
+}
+
+.comment_wrap .comment {
+line-height: 150%;
+padding: 5px;
+margin: 8px;
+}
+
+.comment_wrap .comment .photo {
+float: right;
+margin: 0 10px 10px;
+}
+
+.comment_wrap .comment h4,
+.comment_wrap .posted_date,
+.comment_wrap .comment .comment_content {
+margin-left: 65px;
+}
+
+
+.comment_options {
+float: left;
+}
+
+.comment_options li {
+float: left;
+}
+
+/************************************************************************/
+/* REPUTATION STYLES */
+
+.reputation,
+.post_block .rep_highlight {
+float: right;
+}
+
+body .post_block .rep_highlight {	
+font-size: 1.1em;
+float: left;
+}
+
+
+/************************************************************************/
+/* LIGHTBOX STYLES */
+
+#lightbox{ right: 0;}
+#loading{ right: 0;}
+#hoverNav{ right: 0; }
+#imageContainer>#hoverNav{ right: 0;}
+#prevLink { right: 0; float: right;}
+#nextLink { left: 0; float: left;}
+#imageData #imageDetails{ float: left; text-align: right; }	
+#imageData #numberDisplay{ clear: right;	}			
+#imageData #bottomNavClose{ float: left; }
+#overlay{ right: 0; }
+
+/************************************************************************/
+/*  BBCODE STYLES */
+pre.prettyprint 		{ padding: 5px; background: #f8f8f8; border: 1px solid #c9c9c9; overflow: auto; margin-left: 10px; font-size: 11px; line-height: 110%; direction: ltr; text-align: left; }
+
+/* Quote boxes */
+
+div.quote {
+padding: 12px;
+} 
+
+div.quote p.blockquote {
+margin-left: -12px;
+}
+
+p.citation {background-position: left;}
+
+ul.bbc {
+margin-left: 0;
+margin-right: 30px;
+}
+ul.bbcol.decimal {
+margin-left: 0; 
+margin-right: 30px;
+}
+
+/************************************************************************/
+/*  HELP & PORTAL STYLES */
+
+#portal_articles {
+margin-right: 2%;
+}
+
+#portal_active_users ul,
+#portal_active_users li {
+float: left;
+padding: 3px;
+}
+
+.message {
+	background-position: 99.5% 50%;
+	padding:10px 3% 10px 20px;
+	text-align:right;
+}
+
+#toggle_post_options {
+	background-position: center right;
+	padding: 2px 20px 2px 22px;
+}
+
+#post_options_options {
+margin-right: 5px;
+
+}
+
+#post_options_options ul {
+left: 0;
+
+}
+
+#post_options_options ul li .desc {
+float: none;
+margin-right: 10px;
+display:inline;
+}
+
+#post_options_options ul li.field .input_text {
+float: right;
+}
+
+#post_options_options ul li.field .input_check {
+float: right;
+}
+
+#post_options_options h4 .desc { margin-right:auto; }
+
+#post_options_options h4 { margin-right:5px; float: right; }
+
+/* Search */
+#search_info fieldset label {
+		float: right;
+}
+
+/* Other */
+.ipb_autocomplete {left: auto; right: 262px;}
+
+caption, th { text-align: right; }
+
+/* Mlist */
+div#member_filters label {	
+		float: right;
+	}
+	
+.members li .info {
+	right: 90px; 
+	left: auto;
+	border-right:none;
+	border-left:1px solid #D5DDE5;
+}	
+
+.members li .user_controls 
+{
+	text-align:right;
+	right:450px;
+	left:auto;
+}
+	
+/* Calendar */
+#calendar_list li {
+	text-align: right;
+}
+#current_calendar .topic_controls ul.pagination { float: right; }
+#current_calendar ul.pagination { float: right; }
+
+/* Profile */
+
+.personal_info li a { text-align: right; }
+.about_contact dt, .info dt, .user_info dt { text-align: right; float: right; }
+
+
+/* User CP */
+
+#usercp_menu {
+		float: right;
+		border-left:3px solid #528F6C;
+		border-right: none;
+}
+
+#usercp_content {
+
+	margin-left: 0;
+	border-left: none;
+	margin-right: 190px;
+	border-right: 3px solid #528f6c;
+	
+}
+
+#usercp_menu li { margin:0 0 4px 8px; padding:6px 5px; }
+
+#usercp_menu li.active {
+		-webkit-border-top-right-radius: 4px;
+		-webkit-border-bottom-right-radius: 4px;
+		-webkit-border-top-left-radius: auto;
+		-webkit-border-bottom-left-radius: auto;
+		margin-left: 0px;
+		-moz-border-radius: 0 4px 4px 0;
+	}
+	
+#usercp_content li.field {margin-left:auto; margin-right:27px;}
+
+#usercp_content li.field.checkbox {margin-left:auto; margin-right:auto;}
+
+#usercp_content li.field label {margin-left:auto; margin-right:10px; text-align:right; }
+
+#usercp_content p {margin-right: 5px;}
+
+
+/** Messenger **/
+#folder_list li {
+	margin-left: auto;
+	margin-right: 6px;
+}
+
+#folder_list .total {
+	margin-right: auto;
+	margin-left: 10px;
+	right: auto;
+	left: 0;
+}
+
+#message_compose ul li label { 
+margin-left:auto;
+text-align:right;
+margin-right:10px;
+}
+
+/** Editor **/ 
+
+#ipboard_body .ips_editor .toolbar li.left {float: right;}
+
+#ipboard_body .ips_editor .toolbar li.right {float: left;}
+
+#ipboard_body .ips_editor .toolbar li {float: right;}
+
+#ipboard_body .input_rte {direction: rtl; text-align: right;}
+
+/* Sign In */
+#regular_signin ul li label {
+margin-left:auto;
+text-align:right;
+margin-right:10px;
+}
+
+#openid_signin ul li label {
+margin-left:auto;
+text-align:right;
+margin-right:10px;
+}
+
+#login_form ul li.field.checkbox span.desc {
+display:inline;
+}
+
+div#member_login .extra {float: left;margin-left:10px;margin-right:auto;}
+
+/* Register */
+div#register_form label { float: right; }
+
+div#register_form input { float: right; }
+
+div#register_form ul li.field label { text-align: left; }
+
+div#register_form .checkbox input { margin-right:245px; margin-left:auto; }
+
+/* Help */
+#help_topics li {background-position:99.5% 50%;text-align:right;}
+
+/** RTE **/
+.withRTL {direction: rtl; text-align: right;}
+
+#ipboard_body .ips_editor.with_sidebar .sidebar { left: 0px; right: auto; }
+
+#ipboard_body .ips_editor.with_sidebar .controls,
+#ipboard_body .ips_editor.with_sidebar .editor{
+	margin-right: auto;
+	margin-left: 200px;
+}
+
+#ipboard_body .ips_editor.with_sidebar .sidebar h4 img {
+	float: left;
+	margin-left: 6px;
+}
+
+/** Post Body **/
+.post_body .post {margin-right: 10px;}
+
+/** Mlist **/
+.members li .photo {float: right;}
+.reputation, .post_block .rep_highlight {float: left;}
+.members li p.rating {left: 0; right: auto;}
+
+/** Profile **/
+.friend_list ul li, #top_posters li {float: right;}
+
+/** Popup **/
+.popupInner .row1 .field {margin-left:auto; margin-right:40px;}
+
+.popupInner .row1 .field label {text-align: right;}

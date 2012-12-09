@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>SQL Toolbox</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>SQL Toolbox</subitemtitle>
+					<subsection>toolbox</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>SQL Back Up</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>SQL Back Up</subitemtitle>
+					<subsection>toolbox</subsection>
+					<subitemurl>do=backup</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>SQL Runtime Info</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>SQL Runtime Info</subitemtitle>
+					<subsection>toolbox</subsection>
+					<subitemurl>do=runtime</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>SQL System Vars</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>SQL System Vars</subitemtitle>
+					<subsection>toolbox</subsection>
+					<subitemurl>do=system</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>SQL Processes</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>SQL Processes</subitemtitle>
+					<subsection>toolbox</subsection>
+					<subitemurl>do=processes</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+	
+	</tabitems>
+</menu>

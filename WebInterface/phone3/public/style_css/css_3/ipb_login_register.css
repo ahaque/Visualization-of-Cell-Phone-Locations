@@ -1,0 +1,148 @@
+/************************************************************************/
+/* IP.Board 3 CSS - By Rikki Tissier - (c)2008 Invision Power Services	*/
+/************************************************************************/
+/* ipb_login_register.css - Login & Registration styles					*/
+/************************************************************************/
+
+div#register_info {
+	width: 30%;
+}
+div#register_form {
+	width: 66%;
+}
+
+	div#register_form h2 {
+		clear: none;
+	}
+
+	div#register_form h3,
+	div#login_form h3 {
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+
+	div#register_form fieldset {
+		margin-bottom: 10px;
+	}
+
+	div#register_form p.extra {
+		margin-bottom: 15px;
+		line-height: 150%;
+	}
+
+	div#register_form .field.nodesc {
+		padding-bottom: 26px;
+		clear: both;
+	}
+
+	div#register_form label {
+		text-align: right;
+		padding-right: 15px;
+		width: 200px;
+		float: left;
+		clear: both;
+	}
+
+	div#register_form .checkbox label,
+	div#register_form .field.radio input {
+		float: none;
+		width: auto;
+		clear: none;
+		text-align: left;
+	}
+
+	div#register_form .checkbox input {
+		margin-left: 245px;
+		clear: both;
+	}
+		
+	div#register_form input {
+		float: left;
+	}
+
+	div#register_form fieldset.submit input {
+		float: none;
+	}
+
+	div#register_form input.input_text {
+		padding-bottom: 2px;
+	}
+
+	div#register_form hr,
+	div#login_form hr {
+		display: block;
+		width: 95%;
+		border: 1px solid #ebebeb;
+		border-width: 1px 0 0 0;
+		clear: both;
+		margin: 10px auto 10px auto;
+	}
+	
+	div#register_form span.desc {
+		margin-left: 215px;
+		display: block;
+		clear: both;
+	}
+	
+.reg_msg {	
+	color: #fff;
+	font-size: 0.8em;
+	font-weight: bold;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 3px 8px;
+	position: absolute;
+}
+
+	.reg_msg img {
+		display: none;
+	}
+	.reg_msg.reg_error {
+		background-color: #ad2930;
+	}
+	.reg_msg.reg_accept {
+		background-color: #6f8f52;
+	}
+
+div#login_form {
+	width: 80%;
+	margin: 0 auto 25px auto;
+}
+
+div#member_login {
+	width: 65%;
+}
+
+div#guest_register {
+	width: 30%;
+}
+
+div#member_login form {
+	margin: 0 0px 0 0;
+}
+
+div#login_form h3 {
+	font-size: 1.1em;
+}
+
+div#member_login .extra {
+	font-size: 0.8em;
+	color: #69727b;
+	padding: 5px;
+	margin-right: 10px;
+	float: right;
+}
+
+input#openid {
+	background-image: transparent url(http://24.27.110.178/phone3/public/style_images/master/openid.gif) no-repeat 2px 2px;
+	padding: 3px 3px 3px 20px;
+	margin-top: -2px;
+}
+
+#regular_signin, #openid_signin {
+	height: 165px;
+}
+
+#signin_options {
+	padding-left: 30px;
+}

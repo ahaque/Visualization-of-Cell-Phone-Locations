@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moduleexport>
+  <modulegroup>
+    <module>
+      <sys_module_title>Pages</sys_module_title>
+      <sys_module_application>ccs</sys_module_application>
+      <sys_module_key>pages</sys_module_key>
+      <sys_module_description>Page viewing</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>0</sys_module_position>
+      <sys_module_admin>0</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Page Manager</sys_module_title>
+      <sys_module_application>ccs</sys_module_application>
+      <sys_module_key>pages</sys_module_key>
+      <sys_module_description>Manage your pages</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>1</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Blocks</sys_module_title>
+      <sys_module_application>ccs</sys_module_application>
+      <sys_module_key>blocks</sys_module_key>
+      <sys_module_description>Create and customize blocks for pages</sys_module_description>
+      <sys_module_version>1.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>2</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Templates</sys_module_title>
+      <sys_module_application>ccs</sys_module_application>
+      <sys_module_key>templates</sys_module_key>
+      <sys_module_description>Manage your page and block templates</sys_module_description>
+      <sys_module_version>1.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>3</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Media Manager</sys_module_title>
+      <sys_module_application>ccs</sys_module_application>
+      <sys_module_key>media</sys_module_key>
+      <sys_module_description>Allows you to manage media content</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>0</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>4</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Settings</sys_module_title>
+      <sys_module_application>ccs</sys_module_application>
+      <sys_module_key>settings</sys_module_key>
+      <sys_module_description>Manage settings for CCS</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>0</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>5</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+  </modulegroup>
+</moduleexport>

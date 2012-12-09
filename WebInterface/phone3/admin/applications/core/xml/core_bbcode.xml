@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bbcodeexport>
+  <bbcodegroup>
+    <bbcode>
+      <bbcode_id>1</bbcode_id>
+      <bbcode_title>Post Snap Back</bbcode_title>
+      <bbcode_desc>This tag displays a little linked image which links back to a post - used when quoting posts from the board. Opens in same window by default.</bbcode_desc>
+      <bbcode_tag>snapback</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[snapback]100[/snapback]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>2</bbcode_id>
+      <bbcode_title>Right</bbcode_title>
+      <bbcode_desc>Aligns content to the right of the posting area</bbcode_desc>
+      <bbcode_tag>right</bbcode_tag>
+      <bbcode_replace><![CDATA[<div class='bbc_right'>{content}</div>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[right]Some text here[/right]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>3</bbcode_id>
+      <bbcode_title>Left</bbcode_title>
+      <bbcode_desc>Aligns content to the left of the post</bbcode_desc>
+      <bbcode_tag>left</bbcode_tag>
+      <bbcode_replace><![CDATA[<div class='bbc_left'>{content}</div>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[left]Left aligned text[/left]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>4</bbcode_id>
+      <bbcode_title>Center</bbcode_title>
+      <bbcode_desc>Aligns content to the center of the posting area.</bbcode_desc>
+      <bbcode_tag>center</bbcode_tag>
+      <bbcode_replace><![CDATA[<div class='bbc_center'>{content}</div>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[center]Centered Text[/center]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text>Enter content to be centered</bbcode_menu_content_text>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>5</bbcode_id>
+      <bbcode_title>Topic Link</bbcode_title>
+      <bbcode_desc>This tag provides an easy way to link to a topic</bbcode_desc>
+      <bbcode_tag>topic</bbcode_tag>
+      <bbcode_replace><![CDATA[<a href='{base_url}showtopic={option}'>{content}</a>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[topic=1]Click me![/topic]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text>Enter the topic ID</bbcode_menu_option_text>
+      <bbcode_menu_content_text>Enter the title for this link</bbcode_menu_content_text>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>6</bbcode_id>
+      <bbcode_title>Post Link</bbcode_title>
+      <bbcode_desc>This tag provides an easy way to link to a post.</bbcode_desc>
+      <bbcode_tag>post</bbcode_tag>
+      <bbcode_replace><![CDATA[<a href='{base_url}act=findpost&amp;pid={option}'>{content}</a>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[post=1]Click me![/post]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text>Enter the Post ID</bbcode_menu_option_text>
+      <bbcode_menu_content_text>Enter the title for this link</bbcode_menu_content_text>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>8</bbcode_id>
+      <bbcode_title>Spoiler</bbcode_title>
+      <bbcode_desc>Spoiler tag</bbcode_desc>
+      <bbcode_tag>spoiler</bbcode_tag>
+      <bbcode_replace><![CDATA[<div class='bbc_spoiler'>
+	<span>Spoiler</span> <input type='button' class='bbc_spoiler_show' value='Show' />
+	<div class='bbc_spoiler_wrapper'><div class='bbc_spoiler_content' style="display:none;">{content}</div></div>
+</div>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[spoiler]Some hidden text[/spoiler]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text>Enter the text to be masked</bbcode_menu_content_text>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>1</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>9</bbcode_id>
+      <bbcode_title>Acronym</bbcode_title>
+      <bbcode_desc>Allows you to make an acronym that will display a description when moused over</bbcode_desc>
+      <bbcode_tag>acronym</bbcode_tag>
+      <bbcode_replace><![CDATA[<acronym title='{option}' class='bbc'>{content}</acronym>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[acronym='Laugh Out Loud']lol[/acronym]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text>Enter the description for this acronym (EG: Laugh Out Loud)</bbcode_menu_option_text>
+      <bbcode_menu_content_text>Enter the acronym (EG: lol)</bbcode_menu_content_text>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>10</bbcode_id>
+      <bbcode_title>Bold Text</bbcode_title>
+      <bbcode_desc>Makes text bold</bbcode_desc>
+      <bbcode_tag>b</bbcode_tag>
+      <bbcode_replace><![CDATA[<strong class='bbc'>{content}</strong>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[b]This text is bold[/b]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>11</bbcode_id>
+      <bbcode_title>Italic Text</bbcode_title>
+      <bbcode_desc>Makes the text italic</bbcode_desc>
+      <bbcode_tag>i</bbcode_tag>
+      <bbcode_replace><![CDATA[<em class='bbc'>{content}</em>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[i]This text is italicized[/i]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>12</bbcode_id>
+      <bbcode_title>Underlined Text</bbcode_title>
+      <bbcode_desc>Makes the text underlined</bbcode_desc>
+      <bbcode_tag>u</bbcode_tag>
+      <bbcode_replace><![CDATA[<span class='bbc_underline'>{content}</span>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[u]This text is underlined[/u]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>13</bbcode_id>
+      <bbcode_title>Horizontal Rule</bbcode_title>
+      <bbcode_desc>Adds a horizontal rule to separate text</bbcode_desc>
+      <bbcode_tag>hr</bbcode_tag>
+      <bbcode_replace><![CDATA[<hr class='bbc' />]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[hr]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>1</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>14</bbcode_id>
+      <bbcode_title>Code</bbcode_title>
+      <bbcode_desc>Allows you to enter general code</bbcode_desc>
+      <bbcode_tag>code</bbcode_tag>
+      <bbcode_replace><![CDATA[<pre class='prettyprint'>
+{content}
+</pre>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[code]$text = 'Some long code here';[/code]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases>codebox</bbcode_aliases>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>15</bbcode_id>
+      <bbcode_title>PHP Code</bbcode_title>
+      <bbcode_desc>Allows you to enter PHP code into a formatted/highlighted syntax box</bbcode_desc>
+      <bbcode_tag>php</bbcode_tag>
+      <bbcode_replace><![CDATA[<pre class='prettyprint'>
+{content}
+</pre>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[php]$variable = true;
+
+print_r($variable);[/php]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>16</bbcode_id>
+      <bbcode_title>HTML Code</bbcode_title>
+      <bbcode_desc>Allows you to enter formatted/syntax-highlighted HTML code</bbcode_desc>
+      <bbcode_tag>html</bbcode_tag>
+      <bbcode_replace><![CDATA[<pre class='prettyprint lang-html'>
+{content}
+</pre>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[html]<body onload="doSomething();">
+ <div class='outer'>
+  <p>Hello World</p>
+ </div>
+</body>[/html]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>17</bbcode_id>
+      <bbcode_title>SQL Code</bbcode_title>
+      <bbcode_desc>Allows you to enter formatted/syntax-highlighted SQL code</bbcode_desc>
+      <bbcode_tag>sql</bbcode_tag>
+      <bbcode_replace><![CDATA[<pre class='prettyprint lang-sql'>
+{content}
+</pre>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[sql]SELECT p.*, t.* FROM posts p LEFT JOIN topics t ON t.tid=p.topic_id WHERE t.tid=7[/sql]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>18</bbcode_id>
+      <bbcode_title>XML Code</bbcode_title>
+      <bbcode_desc>Allows you to enter formatted/syntax-highlighted XML code</bbcode_desc>
+      <bbcode_tag>xml</bbcode_tag>
+      <bbcode_replace><![CDATA[<pre class='prettyprint lang-xml'>
+{content}
+</pre>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[xml]<outer>
+ <inner>
+  <tag param='1'>Test</tag>
+ </inner>
+</outer>[/xml]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>19</bbcode_id>
+      <bbcode_title>URL</bbcode_title>
+      <bbcode_desc>A standard HTML url anchor tag</bbcode_desc>
+      <bbcode_tag>url</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[url=http://google.com]Google[/url]
+
+[url]http://mysite.com[/url]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>1</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>20</bbcode_id>
+      <bbcode_title>Image</bbcode_title>
+      <bbcode_desc>Displays linked images</bbcode_desc>
+      <bbcode_tag>img</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[img]http://www.google.com/intl/en_ALL/images/logo.gif[/img]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>21</bbcode_id>
+      <bbcode_title>Quote</bbcode_title>
+      <bbcode_desc>Displayed quoted text within post content</bbcode_desc>
+      <bbcode_tag>quote</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[quote]Some generic content here[/quote]
+
+[quote name='Username' date='Jun 30 2008, 10:39 AM' post='1735291']Quoted post content here[/quote]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>22</bbcode_id>
+      <bbcode_title>Indent</bbcode_title>
+      <bbcode_desc>Indents text a few spaces from the left content border</bbcode_desc>
+      <bbcode_tag>indent</bbcode_tag>
+      <bbcode_replace><![CDATA[<div class='bbc_indent'>{content}</div>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[indent]Indent this text to make it stand out[/indent]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>23</bbcode_id>
+      <bbcode_title>Lists</bbcode_title>
+      <bbcode_desc>Generate HTML lists.  Supports multi-dimensional lists, and different list marker types.</bbcode_desc>
+      <bbcode_tag>list</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[list][*]Unordered list
+[/list]
+
+[list=1][*]Ordered list
+[/list]
+
+[list=A][*]Generate different marker types (you can use a, A, i, I, and 1)
+[list][*]This is multi-dimensional..
+[/list]
+[/list]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>24</bbcode_id>
+      <bbcode_title>strike</bbcode_title>
+      <bbcode_desc>Displays text striked-out</bbcode_desc>
+      <bbcode_tag>strike</bbcode_tag>
+      <bbcode_replace><![CDATA[<del class='bbc'>{content}</del>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[strike]Striked out text[/strike]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases>s</bbcode_aliases>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>25</bbcode_id>
+      <bbcode_title>Subscript text</bbcode_title>
+      <bbcode_desc>Displays text lowered on the line</bbcode_desc>
+      <bbcode_tag>sub</bbcode_tag>
+      <bbcode_replace><![CDATA[<sub class='bbc'>{content}</sub>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[Carbon Dioxide's chemical composition is CO[sub]2[/sub]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>26</bbcode_id>
+      <bbcode_title>Superscript Text</bbcode_title>
+      <bbcode_desc>Displays superscript text</bbcode_desc>
+      <bbcode_tag>sup</bbcode_tag>
+      <bbcode_replace><![CDATA[<sup class='bbc'>{content}</sup>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[The mathematical way to write "x squared" is x[sup]2[/sup]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>27</bbcode_id>
+      <bbcode_title>Email address</bbcode_title>
+      <bbcode_desc>Formats an email address as a mailto link</bbcode_desc>
+      <bbcode_tag>email</bbcode_tag>
+      <bbcode_replace><![CDATA[<a href='mailto:{option}' title='{text.bbc_email}' class='bbc_email'>{content}</a>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[Please email [email=admin@mysite.com]the admin[/email]
+
+My email address is [email]my@emailaddress.com[/email]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>1</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>28</bbcode_id>
+      <bbcode_title>Background-color</bbcode_title>
+      <bbcode_desc>Adds a background color behind the text</bbcode_desc>
+      <bbcode_tag>background</bbcode_tag>
+      <bbcode_replace><![CDATA[<span style='background-color: {option}'>{content}</span>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[background=red]Red background behind this text[/background]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>29</bbcode_id>
+      <bbcode_title>Color text</bbcode_title>
+      <bbcode_desc>Applies a different text-color to the text</bbcode_desc>
+      <bbcode_tag>color</bbcode_tag>
+      <bbcode_replace><![CDATA[<span style='color: {option}'>{content}</span>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[color=blue]This text is blue[/color]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>30</bbcode_id>
+      <bbcode_title>Size tag</bbcode_title>
+      <bbcode_desc>Makes text bigger or smaller in font-size</bbcode_desc>
+      <bbcode_tag>size</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[size=4]This is larger text[/size]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>31</bbcode_id>
+      <bbcode_title>Font tag</bbcode_title>
+      <bbcode_desc>Applies a different font-family to the text</bbcode_desc>
+      <bbcode_tag>font</bbcode_tag>
+      <bbcode_replace><![CDATA[<span style='font-family: {option}'>{content}</span>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[font=Tahoma]This text uses Tahoma font-family styling[/font]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>32</bbcode_id>
+      <bbcode_title>Member</bbcode_title>
+      <bbcode_desc><![CDATA[Given a member name, a link is automatically generated to the member's profile]]></bbcode_desc>
+      <bbcode_tag>member</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[member=admin] runs this site.]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>1</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>34</bbcode_id>
+      <bbcode_title>Media</bbcode_title>
+      <bbcode_desc>Allows a user to post media content from certain common media sites</bbcode_desc>
+      <bbcode_tag>media</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[media]http://www.youtube.com/watch?v=YqqLx-2vUr0[/media]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>1</bbcode_protected>
+      <bbcode_aliases>video,movie,flash,blogmedia,youtube</bbcode_aliases>
+      <bbcode_optional_option>1</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>35</bbcode_id>
+      <bbcode_title>Extract Blog Entry</bbcode_title>
+      <bbcode_desc>This will allow users to define an extract for an entry. Only this piece of the entry will be displayed on the main blog page and will show up in the RSS feed.</bbcode_desc>
+      <bbcode_tag>extract</bbcode_tag>
+      <bbcode_replace><![CDATA[<!--blog.extract.start-->{content}<!--blog.extract.end-->]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[extract]This is an example![/extract]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>36</bbcode_id>
+      <bbcode_title>Blog Link</bbcode_title>
+      <bbcode_desc>This tag provides an easy way to link to a blog.</bbcode_desc>
+      <bbcode_tag>blog</bbcode_tag>
+      <bbcode_replace><![CDATA[<a href='{base_url}app=blog&amp;showblog={option}'>{content}</a>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[blog=100]Click me![/blog]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>37</bbcode_id>
+      <bbcode_title>Blog Entry Link</bbcode_title>
+      <bbcode_desc>This tag provides an easy way to link to a blog entry.</bbcode_desc>
+      <bbcode_tag>entry</bbcode_tag>
+      <bbcode_replace><![CDATA[<a href='{base_url}app=blog&amp;module=display&amp;section=blog&amp;showentry={option}'>{content}</a>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[entry=100]Click me![/entry]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>38</bbcode_id>
+      <bbcode_title>Twitter</bbcode_title>
+      <bbcode_desc><![CDATA[A tag to link to a user's twitter account]]></bbcode_desc>
+      <bbcode_tag>twitter</bbcode_tag>
+      <bbcode_replace><![CDATA[<a href='http://www.twitter.com/{content}'>@{content}</a>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[twitter]userName[/twitter]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image>twitter.png</bbcode_image>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>39</bbcode_id>
+      <bbcode_title>Optional</bbcode_title>
+      <bbcode_desc/>
+      <bbcode_tag>optional</bbcode_tag>
+      <bbcode_replace>Optional={option} and content={content}</bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example/>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_parse>2</bbcode_parse>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>1</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+    </bbcode>
+  </bbcodegroup>
+</bbcodeexport>

@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settingexport>
+  <settinggroup>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>chat</conf_title_keyword>
+      <conf_title_title>AddonChat Settings</conf_title_title>
+      <conf_title_desc>This will allow you to customize your AddonChat chat room</conf_title_desc>
+      <conf_title_tab>IPS Apps</conf_title_tab>
+      <conf_title_app>chat</conf_title_app>
+      <conf_title_noshow>1</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Chat Room Account Number?</conf_title>
+      <conf_description>Removing this number will remove all links / chat functionality within IPB.
+</conf_description>
+      <conf_group>51</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat_account_no</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Account Specifics</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Chat Room Server?</conf_title>
+      <conf_description><![CDATA[<!--SERVER-->]]></conf_description>
+      <conf_group>51</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat_server_addr</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Enable &#39;Who&#39;s Chatting?&#39;]]></conf_title>
+      <conf_description><![CDATA[If enabled, this will show who's chatting in the chat room on your forums home page underneath the active users list.]]></conf_description>
+      <conf_group>51</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>chat_who_on</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group><![CDATA[Who&#39;s Chatting]]></conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Hide Who&#39;s Chatting when no members are logged into chat?]]></conf_title>
+      <conf_description/>
+      <conf_group>51</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>chat_hide_whoschatting</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Chat Room Dimensions (WIDTH)?</conf_title>
+      <conf_description/>
+      <conf_group>51</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat_width</conf_key>
+      <conf_default>600</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group>Showing the chat room</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Chat Room Dimensions (HEIGHT)?</conf_title>
+      <conf_description/>
+      <conf_group>51</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat_height</conf_key>
+      <conf_default>350</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Default Chat Room Interface Language?</conf_title>
+      <conf_description/>
+      <conf_group>51</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>chat_language</conf_key>
+      <conf_default>en</conf_default>
+      <conf_extra>en=English
+ar=Arabic
+de=German
+es=Spanish
+fr=French
+hr=Croation
+it=Italian
+iw=Hebrew
+nl=Dutch
+pl=Polish
+pt=Portuguese</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow bbcode and color formatting</conf_title>
+      <conf_description>Do you wish to allow bbcode and color formatting?</conf_description>
+      <conf_group>51</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>chat_allow_bbcode</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow chat access to these groups</conf_title>
+      <conf_description>You may select more than one</conf_description>
+      <conf_group>51</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>chat_access_groups</conf_key>
+      <conf_default/>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['chat_access_groups']) )
+	{
+		$_POST['chat_access_groups'] = implode(",",$_POST['chat_access_groups']);
+	}
+	else
+	{
+		$_POST['chat_access_groups'] = "";
+	}
+	
+	$key = 'chat_access_groups';
+}
+if ( $show == 1 )
+{
+    $key='chat_access_groups[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group>Access Permissions</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow moderator access to these groups</conf_title>
+      <conf_description>You may select more than one - please choose carefully!</conf_description>
+      <conf_group>51</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>chat_mod_groups</conf_key>
+      <conf_default/>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['chat_mod_groups']) )
+	{
+		$_POST['chat_mod_groups'] = implode(",",$_POST['chat_mod_groups']);
+	}
+	else
+	{
+		$_POST['chat_mod_groups'] = "";
+	}
+	
+	$key = 'chat_mod_groups';
+}
+if ( $show == 1 )
+{
+    $key='chat_mod_groups[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>10</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow admin access to these groups</conf_title>
+      <conf_description>You may select more than one - please choose carefully!</conf_description>
+      <conf_group>51</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>chat_admin_groups</conf_key>
+      <conf_default/>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['chat_admin_groups']) )
+	{
+		$_POST['chat_admin_groups'] = implode(",",$_POST['chat_admin_groups']);
+	}
+	else
+	{
+		$_POST['chat_admin_groups'] = "";
+	}
+	
+	$key = 'chat_admin_groups';
+}
+if ( $show == 1 )
+{
+    $key='chat_admin_groups[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>11</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_title_title>ParaChat Settings</conf_title_title>
+      <conf_title_desc>This will allow you to customize your Invision Chat integration settings for the new 2004 edition</conf_title_desc>
+      <conf_title_tab>IPS Apps</conf_title_tab>
+      <conf_title_app>chat</conf_title_app>
+      <conf_title_noshow>1</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Chat Site ID / Account No.</conf_title>
+      <conf_description>If you are using Parachat v8 or greater, enter your site ID (1234, for example). If you are using an older version of Parachat please enter your group number (ip0000, for example)</conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat04_account_no</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Account Specifics</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Custom Applet Codebase URL</conf_title>
+      <conf_description>This should be left blank during an evaluation.</conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>parachat_codebase_url</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Chat Room Version</conf_title>
+      <conf_description><![CDATA[The version of the Parachat chat software you're using]]></conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>parachat_version</conf_key>
+      <conf_default>6</conf_default>
+      <conf_extra>6=Parachat v6 or below&#13;
+7=Parachat v8 or greater</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Enable &#39;Who&#39;s Chatting?&#39;]]></conf_title>
+      <conf_description><![CDATA[If enabled, this will show who's chatting in the chat room on your forums home page underneath the active users list.]]></conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>chat04_who_on</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group><![CDATA[Who&#39;s Chatting]]></conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Hide Who&#39;s Chatting when no members are logged into chat?]]></conf_title>
+      <conf_description/>
+      <conf_group>11</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>chat04_hide_whoschatting</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Chat Room Dimensions (WIDTH)?</conf_title>
+      <conf_description/>
+      <conf_group>11</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat04_width</conf_key>
+      <conf_default>600</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group>Showing the chat room</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Chat Room Dimensions (HEIGHT)?</conf_title>
+      <conf_description/>
+      <conf_group>11</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat04_height</conf_key>
+      <conf_default>350</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Load the chat room in...?</conf_title>
+      <conf_description/>
+      <conf_group>11</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>chat04_display</conf_key>
+      <conf_default>self</conf_default>
+      <conf_extra>self=Normal IPB Page</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>12</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Additional PARAM information</conf_title>
+      <conf_description><![CDATA[Use this field to enter any custom param tags for the chat applet.
+Example:<br />
+&lt;param name="cmd.BeepEnter" value="true"&gt;
+<br />&lt;param name="cmd.BeepLeave" value="true"&gt;
+<br />Please refer to the Invision Chat documentation for more info.]]></conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>textarea</conf_type>
+      <conf_key>chat04_customparams</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>13</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Chat Room Pop-up Window Padding? (in px)</conf_title>
+      <conf_description>Allows window to open without scrollbars</conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat04_poppad</conf_key>
+      <conf_default>50</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>14</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow chat access to these groups</conf_title>
+      <conf_description>You may select more than one</conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>chat04_access_groups</conf_key>
+      <conf_default/>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['chat04_access_groups']) )
+	{
+		$_POST['chat04_access_groups'] = implode(",",$_POST['chat04_access_groups']);
+	}
+	else
+	{
+		$_POST['chat04_access_groups'] = "";
+	}
+	
+	$key = 'chat04_access_groups';
+}
+if ( $show == 1 )
+{
+$key = 'chat04_access_groups[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>25</conf_position>
+      <conf_start_group>Access Permissions</conf_start_group>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Default Chat Room Language</conf_title>
+      <conf_description>This is the default language used for the chat user inteface (buttons and labels, etc)</conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>chat04_default_lang</conf_key>
+      <conf_default>english.conf</conf_default>
+      <conf_extra>english.conf=English&#13;
+spanish.conf=Spanish&#13;
+portuguese.conf=Portuguese&#13;
+italian.conf=Italian&#13;
+french.conf=French&#13;
+german.conf=German</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>99</conf_position>
+      <conf_start_group>Version 6 Settings (Not required for v8)</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Chat Room Type</conf_title>
+      <conf_description>This is the type of chat service you purchased</conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>chat04_servicetype</conf_key>
+      <conf_default/>
+      <conf_extra>advanced=Advanced
+premium=Premium</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>100</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Default Chat Room</conf_title>
+      <conf_description>This is the room that your chat users will be logged into first</conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat04_default_room</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>101</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Enable &quot;Plain Mode&quot;?]]></conf_title>
+      <conf_description><![CDATA["Plain mode" removes the colored chat text from your Invision Power Chat Advanced room(s), and implements single-colored (non-GUI) chat text. This will disable the graphic emoticons and click-able URLs.]]></conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>chat04_plainmode</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>102</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Applet: Background Color</conf_title>
+      <conf_description>To change your chat applet background color select any RGB value.</conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat04_style_applet_bg</conf_key>
+      <conf_default>#BCD0ED</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>130</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Applet: Foreground Color</conf_title>
+      <conf_description>To change your chat applet foreground color select any RGB value.</conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat04_style_applet_fg</conf_key>
+      <conf_default>#345487</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>131</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Chat Window: Background Color</conf_title>
+      <conf_description>To change your chat window background color select any RGB value.</conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat04_style_window_bg</conf_key>
+      <conf_default>#F5F9FD</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>132</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Chat Window: Foreground Color</conf_title>
+      <conf_description>To change your chat window foreground color select any RGB value.</conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat04_style_window_fg</conf_key>
+      <conf_default>#345487</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>133</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Chat Room Font Size</conf_title>
+      <conf_description><![CDATA[To customize your font size replace "10" to whatever numeric value you wish.]]></conf_description>
+      <conf_group>11</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>chat04_style_font_size</conf_key>
+      <conf_default>10</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>135</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>chat04</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </settinggroup>
+</settingexport>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Managing Groups</grouptitle>
+		<items>
+			<item>
+				<key>groups_add</key>
+				<string>Can add groups?</string>
+			</item>
+			<item>
+				<key>groups_add_admin</key>
+				<string>Can add ADMIN groups?</string>
+			</item>
+			<item>
+				<key>groups_edit</key>
+				<string>Can edit groups?</string>
+			</item>
+			<item>
+				<key>groups_edit_admin</key>
+				<string>Can edit ADMIN groups?</string>
+			</item>
+			<item>
+				<key>groups_delete</key>
+				<string>Can delete groups?</string>
+			</item>
+			<item>
+				<key>groups_delete_admin</key>
+				<string>Can delete ADMIN groups?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Managing Permissions</grouptitle>
+		<items>
+			<item>
+				<key>perms_manage</key>
+				<string>Can manage permission sets and configure permission access?</string>
+			</item>
+			<item>
+				<key>perms_delete</key>
+				<string>Can remove permission sets?</string>
+			</item>
+		</items>
+	</group>	
+</permissions>

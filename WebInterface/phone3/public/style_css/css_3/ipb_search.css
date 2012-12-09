@@ -1,0 +1,139 @@
+/************************************************************************/
+/* IP.Board 3 CSS - By Rikki Tissier - (c)2008 Invision Power Services	*/
+/************************************************************************/
+/* ipb_search.css - Search results styles								*/
+/************************************************************************/
+
+#main_search_form {
+}
+
+#search_info {
+	font-size: 1.1em;
+}
+	
+	#search_info fieldset {
+		padding: 15px 0;
+	}
+	
+	#search_info fieldset li {
+		padding: 10px 0 15px 0;
+		margin-left: 20px;
+	}
+
+	#search_info fieldset label {
+		text-align: right;
+		padding-right: 10px;
+		width: 20%;
+		float: left;
+	}
+	
+	#search_info fieldset .input_text {
+		width: 60%;
+	}
+	
+	#search_info fieldset .input_text.date {
+		width: 20%;
+	}
+	
+	#search_info fieldset.extra_filter {
+		border-top: 1px solid #d5dde5;
+	}
+	
+	#search_info .input_select {
+		width: 40%;
+	}
+	
+div#search_results {
+	border-bottom: 4px solid #d5dde5;
+	margin-bottom: 8px;
+}	
+	
+	/* Main information*/
+	div#search_results span.icon {
+		float: left;
+		margin-right: 15px;
+	}
+	
+	div#search_results div.result_info {
+		float: left;
+		width: 60%;
+	}
+	
+		div#search_results div.result_info span.desc.breadcrumb a {
+			color: #a9a9a9;
+		}
+	
+	div#search_results h3 {
+		background: none;
+		font-weight: normal;
+		font-size: 1.3em;
+		border: 0;
+		padding: 0;
+	}
+
+	div#search_results li {
+		padding: 10px 15px 15px 15px;
+		border-top: 1px solid #fff;
+	}
+
+	div#search_results p {
+		color: #606060;
+		margin: 4px 0 2px 0;
+	}
+	
+	/* Further details */
+	div#search_results .result_details {
+		width: 30%;
+		float: right;
+		border-left: 1px solid #B5C0CF;
+		padding-left: 15px;
+		line-height: 130%;
+		font-size: 11px;
+	}
+	
+		div#search_results .result_details li {
+			border: 0;
+			padding: 0;
+		}
+
+	div#search_results .gutter {
+		background-color: #528f6c;
+		color: #fff;
+		font-size: 9px;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 3px 8px 2px 8px;
+		margin-top: 0px;
+		margin-right: 15px;
+		display: none;
+		float: left;
+	}
+
+		div#search_results .gutter img {
+			padding-right: 4px;
+		}
+
+	div#search_results .sub div.result_info {
+		padding-left: 3%;/*padding-left: 45px;*/
+	}
+
+		div#search_results .sub .gutter {
+			background-color: #dedede;
+			color: #1d3652;
+			padding: 6px 8px 5px 8px;
+			margin-left: 45px;
+		}
+
+	div#search_results ol ol {
+		padding: 20px 0 0 15px;
+		margin: 0 0 -15px 20px;
+	}
+	
+	.tab_filters ul {
+		padding-top: 5px;
+	}
+	
+	.tab_filters ul.padded
+	{
+		padding-top: 10px;
+	}

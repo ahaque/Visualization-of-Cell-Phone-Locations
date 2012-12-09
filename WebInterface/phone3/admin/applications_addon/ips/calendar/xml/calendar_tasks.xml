@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export>
+  <group>
+    <row>
+      <task_id>4</task_id>
+      <task_title>Birthday and Events Cache</task_title>
+      <task_file>calendarevents.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>12</task_hour>
+      <task_minute>-1</task_minute>
+      <task_cronkey>90eda65c70d48ffcbb91ac6a693bb001</task_cronkey>
+      <task_log>1</task_log>
+      <task_description><![CDATA[Caches calendar events &amp; birthdays]]></task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>calendarevents</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>calendar</task_application>
+    </row>
+  </group>
+</export>

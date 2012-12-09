@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>System Scheduler</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>System Scheduler</subitemtitle>
+					<subsection>taskmanager</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Security Center</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Security Center</subitemtitle>
+					<subsection>security</subsection>
+					<subitemurl></subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+				<subitem>
+					<subitemtitle>List Admins</subitemtitle>
+					<subsection>security</subsection>
+					<subitemurl>do=list_admins</subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>	
+	</tabitems>
+</menu>

@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<replacements>
+  <replacement>
+    <replacement_key>add_folder</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/folder_add.png' alt='{lang:add_folder}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>add_friend</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/user_add.png' alt='{lang:add_friend}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>add_participants</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/user_add.png' title='{lang:part_add}' alt='{lang:part_add}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>add_poll_choice</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/add.png' alt='+' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>add_poll_question</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/add.png' alt='+' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>approve</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/add.png' alt='+' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_add_entry</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/blog/book_add.png' alt='+' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_add_fav</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/blog/heart_add.png' alt='+' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_blocks</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/blog/layout_add.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_comments</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/blog/comments.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_del_fav</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/blog/heart_delete.png' alt='-' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_email</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/blog/email.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_entries</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/blog/entries.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_header</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/blog/layout_header.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_link</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/book_open.png' alt='{lang:view_blog}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_new</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_unread.png' alt='{lang:macro__unread}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_off</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_read.png' alt='{lang:macro__read}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_print</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/blog/print.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_private_new</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_unread.png' alt='{lang:macro__unread}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_private_off</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_read.png' alt='{lang:macro__read}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_theme</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/blog/palette.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>blog_views</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/blog/views.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>cal_ranged</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/cal_ranged.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>cal_recurring</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/cal_recurring.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>cal_single</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/cal_single.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>close_poll_form</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/cross.png' alt='x' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>compose_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/note_add.png' alt='{lang:macro__compose}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>delete_msg_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/delete.png' alt='{lang:pc_delete}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>delete_post_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/comment_delete.png' alt='{lang:macro__delete}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>deny</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/delete.png' alt='-' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>display_name</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/display_name.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>downloads_no_photo</replacement_key>
+    <replacement_content>--</replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>dropdown</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/dropdown.png' alt='+' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>edit_folder</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/folder_edit.png' alt='{lang:edit_folders}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>edit_post_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/comment_edit.png' alt='{lang:macro__edit}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>email_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/email.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>find_posts_link</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/page_white_magnify.png' alt='{lang:find_posts}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>find_topics_link</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/page_topic_magnify.png' alt='{lang:find_topics}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>folder_delete</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/delete.png' alt='{lang:delete_folder_title}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>folder_drafts</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/folder.png' alt='{lang:macro__folder}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>folder_empty</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/bin.png' alt='{lang:empty_folder_title}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>folder_finished</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/folder.png' alt='{lang:macro__folder}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>folder_generic</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/folder.png' alt='{lang:macro__folder}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>folder_myconvo</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/email_go.png' alt='{lang:macro__myconvo}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>folder_new</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/folder_page.png' alt='{lang:macro__new}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>folder_trash</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/bin.png' alt='{lang:macro__trash}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>f_cat_read</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/f_cat_read.png' alt='{lang:macro__readcat}' title='{lang:macro__readcat}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>f_cat_unread</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/f_cat_unread.png' alt='{lang:macro__unreadcat}' title='{lang:macro__markread}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>f_lastpost</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/last_post.png' alt='{lang:icon}' title='{lang:view_last_post}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>f_locked</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/f_locked.png' alt='{lang:macro__readonly}' title='{lang:macro__readonly}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>f_nav_sep</replacement_key>
+    <replacement_content><![CDATA[&gt;]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>f_newpost</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/new_post.png' alt='{lang:icon}' title='{lang:first_unread_post}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>f_pass_read</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/f_pass_read.png' alt='{lang:macro__readpw}' title='{lang:macro__readpw}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>f_pass_unread</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/f_pass_unread.png' alt='{lang:macro__unreadpw}' title='{lang:macro__markread}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>f_read</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/f_read.png' alt='{lang:macro__readf}' title='{lang:macro__readf}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>f_redirect</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/f_redirect.png' alt='{lang:macro__redirect}' title='{lang:macro__redirect}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>f_unread</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/f_unread.png' alt='{lang:macro__unreadf}' title='{lang:macro__markread}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_album</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/gallery/photo_add.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_bulk</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/gallery/arrow_divide.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_comment</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/comment_add.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_c_off</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/gallery/c_read.png' alt='{lang:macro__nonew}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_c_off_cat</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/gallery/c_read.png' alt='{lang:macro__nonew}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_c_on</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/gallery/c_unread.png' alt='{lang:macro__new}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_c_on_cat</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/gallery/c_unread.png' alt='{lang:macro__new}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_ecard</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/gallery/ecard.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_favorite</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/heart.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_image</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/gallery/image_add.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_link</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/picture.png' alt='{lang:view_gallery}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_media</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/gallery/media_add.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_no_photo</replacement_key>
+    <replacement_content>--</replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_pinned</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/award.png' alt='{lang:img_pinned}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_slideshow</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/gallery/pictures.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>gallery_watch</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/transmit_blue.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>help_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/help.png' alt='{lang:macro__help}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>ignore_user</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/comments_ignore.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>live_large</replacement_key>
+    <replacement_content><![CDATA[<img src='http://dev.live.com/scripts/base/wlconnect.png' alt='{lang:macro__liveicon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>live_small</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/live.gif' alt='{lang:macro__liveicon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>lock_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/lock.png' alt='{lang:pm_locked}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>logo_img</replacement_key>
+    <replacement_content>{style_image_url}/logo.png</replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>mini_rate_off</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/bullet_star_off.png' alt='-' class='mini_rate' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>mini_rate_on</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/bullet_star.png' alt='*' class='mini_rate' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>mq_post_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/comment_add.png' alt='{lang:macro__reply}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>msg_deleted</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/cross.png' title='{lang:macro__deletedmsg}' alt='*' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>msg_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/pm_nonew.png' title='{lang:macro__nonewmsg}' alt='*' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>msg_icon_new</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/pm_new.png' title='{lang:macro__newmsg}' alt='*' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>msg_notify_off</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/bell_off.png' title='{lang:macro__notifyoff}' alt='{lang:macro__notifyoff}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>msg_notify_on</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/bell.png' title='{lang:macro__notifyon}' alt='{lang:macro__notifyon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>openid_large</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/openid_logo.png' alt='{lang:macro__openidlogo}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>openid_small</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/openid.gif' alt='{lang:macro__openidicon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>pip_pip</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/bullet_black.png' alt='{lang:macro__pip}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>popular_post</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/star_big.png' alt='*' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>post_attach_link</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/attachicon.gif'	alt='{lang:macro__attachment}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>print_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/printer.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>rate_off</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/bullet_star_off.png' alt='-' class='rate_img' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>rate_on</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/bullet_star.png' alt='*' class='rate_img' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>register_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/paste_plain.png' alt='{lang:macro__register}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>remove_friend</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/user_delete.png' alt='{lang:remove_friend}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>remove_poll_choice</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/bullet_delete.png' alt='{lang:remove_choice}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>remove_poll_question</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/delete.png' alt='-' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>reply_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/arrow_rotate_clockwise.png' alt='{lang:topic_add_reply}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>reply_msg_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/arrow_rotate_clockwise.png' alt='{lang:pc_reply}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>reply_post_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/comment_add.png' alt='{lang:macro__reply}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>report_green_alert</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/reports/post_alert_3.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>report_post_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/report.png' alt='{lang:macro__report}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>report_red_alert</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/reports/post_alert_1.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>rep_down</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/delete.png' alt='-' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>rep_up</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/add.png' alt='+' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>send_msg</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/email_open.png' alt='{lang:pm_this_member}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>show_poll_form</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/chart_curve_add.png' alt='{lang:macro__show}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>signin_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/key.png' alt='{lang:macro__signin}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>snapback</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/snapback.png' alt='{lang:macro__view_post}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>spammer_off</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/spammer_off.png' alt='{lang:spm_off}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>spammer_on</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/spammer_on.png' alt='{lang:spm_on}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>topic_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/page_white_add.png' alt='{lang:topic_start}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_announcement</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_announcement.png' alt='{lang:announce_row}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_attach</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/attachicon.gif'	alt='{lang:attach_page_title}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_closed</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_closed.png' alt='{lang:pm_locked}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_hot_read</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_hot_read.png' alt='{lang:pm_hot_no}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_hot_read_dot</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_hot_read_dot.png' alt='*{lang:pm_hot_no}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_hot_unread</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_hot_unread.png' alt='{lang:pm_hot_new}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_hot_unread_dot</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_hot_unread_dot.png' alt='*{lang:pm_hot_new}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_moved</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_moved.png' alt='{lang:pm_moved}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_poll_read</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_poll_read.png' alt='{lang:pm_poll_no}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_poll_read_dot</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_poll_read_dot.png' alt='*{lang:pm_poll_no}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_poll_unread</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_poll_unread.png' alt='{lang:pm_poll}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_poll_unread_dot</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_poll_unread_dot.png' alt='*{lang:pm_poll}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_read</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_read.png' alt='{lang:pm_open_no}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_read_dot</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_read_dot.png' alt='*{lang:pm_open_no}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_threaded_read</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/threaded_read.png' alt='{lang:pm_open_no}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_threaded_unread</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/threaded_unread.png' alt='{lang:pm_open_new}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_unread</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_unread.png' alt='{lang:pm_open_new}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>t_unread_dot</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/t_unread_dot.png' alt='*{lang:pm_open_new}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>user_edit_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/user_edit.png' alt='{lang:macro__useredit}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>user_icon</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/user.png' alt='{lang:macro__user}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>user_offline</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/user_off.png' alt='{lang:macro__useroffline}' title='{lang:macro__useroffline}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>user_online</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/user_green.png' alt='{lang:macro__useronline}' title='{lang:macro__useronline}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>user_popup</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/user_popup.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>user_status</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/user_comment.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>watch_forum_off</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/transmit_blue.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>watch_forum_on</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/transmit_blue.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>watch_small</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/transmit_small.png' alt='{lang:macro__tracking}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>watch_topic_off</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/transmit_blue.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>watch_topic_on</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/transmit_blue.png' alt='{lang:icon}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+  <replacement>
+    <replacement_key>your_vote</replacement_key>
+    <replacement_content><![CDATA[<img src='{style_image_url}/bullet_star_rated.png' alt='{lang:macro__voted}' />]]></replacement_content>
+    <replacement_set_id>0</replacement_set_id>
+  </replacement>
+</replacements>

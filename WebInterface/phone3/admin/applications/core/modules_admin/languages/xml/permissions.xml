@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Manage Languages</grouptitle>
+		<items>
+			<item>
+				<key>lang_words</key>
+				<string>Can add/edit the language bit texts?</string>
+			</item>
+			<item>
+				<key>lang_packs</key>
+				<string>Can add/edit language packs?</string>
+			</item>
+			<item>
+				<key>lang_pack_info</key>
+				<string>Can alter the language pack properties and information?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

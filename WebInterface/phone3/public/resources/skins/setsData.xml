@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skinsets>
+  <set>
+    <set_id>1</set_id>
+    <set_name>IP.Board</set_name>
+    <set_key>default</set_key>
+    <set_parent_id>0</set_parent_id>
+    <set_parent_array>a:0:{}</set_parent_array>
+    <set_child_array>a:0:{}</set_child_array>
+    <set_permissions>*</set_permissions>
+    <set_is_default>1</set_is_default>
+    <set_author_name>Invision Power Services, Inc</set_author_name>
+    <set_author_url>http://www.</set_author_url>
+    <set_image_dir>master</set_image_dir>
+    <set_emo_dir>default</set_emo_dir>
+    <set_css_inline>1</set_css_inline>
+    <set_css_groups><![CDATA[a:16:{s:6:"1.3338";a:2:{s:9:"css_group";s:15:"calendar_select";s:12:"css_position";s:1:"1";}s:6:"1.3350";a:2:{s:9:"css_group";s:6:"ipblog";s:12:"css_position";s:1:"1";}s:6:"1.3339";a:2:{s:9:"css_group";s:12:"ipb_calendar";s:12:"css_position";s:1:"1";}s:6:"1.3340";a:2:{s:9:"css_group";s:10:"ipb_editor";s:12:"css_position";s:1:"1";}s:6:"0.3341";a:2:{s:9:"css_group";s:6:"ipb_ie";s:12:"css_position";s:1:"0";}s:6:"1.3342";a:2:{s:9:"css_group";s:18:"ipb_login_register";s:12:"css_position";s:1:"1";}s:6:"1.3343";a:2:{s:9:"css_group";s:13:"ipb_messenger";s:12:"css_position";s:1:"1";}s:6:"1.3344";a:2:{s:9:"css_group";s:9:"ipb_mlist";s:12:"css_position";s:1:"1";}s:6:"1.3345";a:2:{s:9:"css_group";s:9:"ipb_print";s:12:"css_position";s:1:"1";}s:6:"1.3346";a:2:{s:9:"css_group";s:11:"ipb_profile";s:12:"css_position";s:1:"1";}s:6:"2.3347";a:2:{s:9:"css_group";s:10:"ipb_search";s:12:"css_position";s:1:"2";}s:6:"1.3348";a:2:{s:9:"css_group";s:10:"ipb_styles";s:12:"css_position";s:1:"1";}s:6:"1.3349";a:2:{s:9:"css_group";s:7:"ipb_ucp";s:12:"css_position";s:1:"1";}s:6:"1.3351";a:2:{s:9:"css_group";s:6:"ipchat";s:12:"css_position";s:1:"1";}s:6:"1.3352";a:2:{s:9:"css_group";s:11:"ipdownloads";s:12:"css_position";s:1:"1";}s:6:"1.3353";a:2:{s:9:"css_group";s:9:"ipgallery";s:12:"css_position";s:1:"1";}}]]></set_css_groups>
+    <set_added>1251817165</set_added>
+    <set_updated>1251817165</set_updated>
+    <set_output_format>html</set_output_format>
+    <set_locked_uagent/>
+    <set_hide_from_list>0</set_hide_from_list>
+  </set>
+  <set>
+    <set_id>2</set_id>
+    <set_name>IP.Board 3 XML</set_name>
+    <set_key>xmlskin</set_key>
+    <set_parent_id>0</set_parent_id>
+    <set_parent_array>a:0:{}</set_parent_array>
+    <set_child_array>a:0:{}</set_child_array>
+    <set_permissions>*</set_permissions>
+    <set_is_default>1</set_is_default>
+    <set_author_name>Invision Power Services, Inc.</set_author_name>
+    <set_author_url>http://www.</set_author_url>
+    <set_image_dir>master</set_image_dir>
+    <set_emo_dir>default</set_emo_dir>
+    <set_css_inline>1</set_css_inline>
+    <set_css_groups><![CDATA[a:19:{s:6:"1.3354";a:2:{s:9:"css_group";s:15:"calendar_select";s:12:"css_position";s:1:"1";}s:6:"1.3361";a:2:{s:9:"css_group";s:6:"ipblog";s:12:"css_position";s:1:"1";}s:6:"1.3355";a:2:{s:9:"css_group";s:10:"ipb_bbcode";s:12:"css_position";s:1:"1";}s:6:"1.3339";a:2:{s:9:"css_group";s:12:"ipb_calendar";s:12:"css_position";s:1:"1";}s:6:"1.3356";a:2:{s:9:"css_group";s:10:"ipb_editor";s:12:"css_position";s:1:"1";}s:6:"0.3357";a:2:{s:9:"css_group";s:6:"ipb_ie";s:12:"css_position";s:1:"0";}s:6:"1.3342";a:2:{s:9:"css_group";s:18:"ipb_login_register";s:12:"css_position";s:1:"1";}s:6:"1.3343";a:2:{s:9:"css_group";s:13:"ipb_messenger";s:12:"css_position";s:1:"1";}s:6:"1.3344";a:2:{s:9:"css_group";s:9:"ipb_mlist";s:12:"css_position";s:1:"1";}s:6:"1.3358";a:2:{s:9:"css_group";s:9:"ipb_print";s:12:"css_position";s:1:"1";}s:6:"1.3346";a:2:{s:9:"css_group";s:11:"ipb_profile";s:12:"css_position";s:1:"1";}s:6:"0.3359";a:2:{s:9:"css_group";s:9:"ipb_reset";s:12:"css_position";s:1:"0";}s:6:"2.3347";a:2:{s:9:"css_group";s:10:"ipb_search";s:12:"css_position";s:1:"2";}s:6:"1.3360";a:2:{s:9:"css_group";s:10:"ipb_styles";s:12:"css_position";s:1:"1";}s:6:"1.3349";a:2:{s:9:"css_group";s:7:"ipb_ucp";s:12:"css_position";s:1:"1";}s:6:"1.3351";a:2:{s:9:"css_group";s:6:"ipchat";s:12:"css_position";s:1:"1";}s:6:"1.3362";a:2:{s:9:"css_group";s:11:"ipdownloads";s:12:"css_position";s:1:"1";}s:6:"1.3363";a:2:{s:9:"css_group";s:9:"ipgallery";s:12:"css_position";s:1:"1";}s:6:"1.3364";a:2:{s:9:"css_group";s:8:"lightbox";s:12:"css_position";s:1:"1";}}]]></set_css_groups>
+    <set_added>1229423973</set_added>
+    <set_updated>1232446446</set_updated>
+    <set_output_format>xml</set_output_format>
+    <set_locked_uagent/>
+    <set_hide_from_list>0</set_hide_from_list>
+    <set_minify>0</set_minify>
+  </set>
+  <set>
+    <set_id>3</set_id>
+    <set_name>IP.Board Lo-Fi</set_name>
+    <set_key>lofi</set_key>
+    <set_parent_id>0</set_parent_id>
+    <set_parent_array>a:0:{}</set_parent_array>
+    <set_child_array>a:0:{}</set_child_array>
+    <set_permissions>*</set_permissions>
+    <set_is_default>0</set_is_default>
+    <set_author_name>Invision Power Services, Inc.</set_author_name>
+    <set_author_url>http://www.</set_author_url>
+    <set_image_dir>master</set_image_dir>
+    <set_emo_dir>default</set_emo_dir>
+    <set_css_inline>1</set_css_inline>
+    <set_css_groups><![CDATA[a:19:{s:6:"1.3365";a:2:{s:9:"css_group";s:15:"calendar_select";s:12:"css_position";s:1:"1";}s:6:"1.3372";a:2:{s:9:"css_group";s:6:"ipblog";s:12:"css_position";s:1:"1";}s:6:"1.3366";a:2:{s:9:"css_group";s:10:"ipb_bbcode";s:12:"css_position";s:1:"1";}s:6:"1.3339";a:2:{s:9:"css_group";s:12:"ipb_calendar";s:12:"css_position";s:1:"1";}s:6:"1.3367";a:2:{s:9:"css_group";s:10:"ipb_editor";s:12:"css_position";s:1:"1";}s:6:"0.3368";a:2:{s:9:"css_group";s:6:"ipb_ie";s:12:"css_position";s:1:"0";}s:6:"1.3342";a:2:{s:9:"css_group";s:18:"ipb_login_register";s:12:"css_position";s:1:"1";}s:6:"1.3343";a:2:{s:9:"css_group";s:13:"ipb_messenger";s:12:"css_position";s:1:"1";}s:6:"1.3344";a:2:{s:9:"css_group";s:9:"ipb_mlist";s:12:"css_position";s:1:"1";}s:6:"1.3369";a:2:{s:9:"css_group";s:9:"ipb_print";s:12:"css_position";s:1:"1";}s:6:"1.3346";a:2:{s:9:"css_group";s:11:"ipb_profile";s:12:"css_position";s:1:"1";}s:6:"0.3370";a:2:{s:9:"css_group";s:9:"ipb_reset";s:12:"css_position";s:1:"0";}s:6:"2.3347";a:2:{s:9:"css_group";s:10:"ipb_search";s:12:"css_position";s:1:"2";}s:6:"0.3371";a:2:{s:9:"css_group";s:10:"ipb_styles";s:12:"css_position";s:1:"0";}s:6:"1.3349";a:2:{s:9:"css_group";s:7:"ipb_ucp";s:12:"css_position";s:1:"1";}s:6:"1.3351";a:2:{s:9:"css_group";s:6:"ipchat";s:12:"css_position";s:1:"1";}s:6:"1.3373";a:2:{s:9:"css_group";s:11:"ipdownloads";s:12:"css_position";s:1:"1";}s:6:"1.3374";a:2:{s:9:"css_group";s:9:"ipgallery";s:12:"css_position";s:1:"1";}s:6:"1.3375";a:2:{s:9:"css_group";s:8:"lightbox";s:12:"css_position";s:1:"1";}}]]></set_css_groups>
+    <set_added>1232105385</set_added>
+    <set_updated>1232446646</set_updated>
+    <set_output_format>html</set_output_format>
+    <set_locked_uagent><![CDATA[a:2:{s:6:"groups";a:0:{}s:7:"uagents";a:3:{s:10:"blackberry";s:0:"";s:6:"iphone";s:0:"";s:9:"ipodtouch";s:0:"";}}]]></set_locked_uagent>
+    <set_hide_from_list>0</set_hide_from_list>
+    <set_minify>0</set_minify>
+  </set>
+</skinsets>

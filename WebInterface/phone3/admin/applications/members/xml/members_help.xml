@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<export>
+  <help>
+    <row>
+      <title>Personal Messenger</title>
+      <text><![CDATA[The personal messenger can be used to have private conversations with other members. To access it, select your username while logged in from the top corner of any page, and then press &quot;Messenger&quot;.<br />
+<br />
+<br />
+&lt;strong&gt;Managing conversations&lt;/strong&gt;<br />
+<br />
+&lt;em&gt;Change which conversations you are viewing&lt;/em&gt;<br />
+By default, all conversations are shown, but you can change the view to only display conversations you started, or conversations that others have started.  To change this, select the appropriate option from the dropdown underneath the conversation list and then press &lt;span class=&#39;input_submit alt&#39;&gt;Update&lt;/span&gt;.<br />
+<br />
+&lt;em&gt;Deleting conversations&lt;/em&gt;<br />
+To delete a whole conversation, select the checkbox beside the conversation, then select &quot;Delete&quot; from the dropdown at the bottom and then press &lt;span class=&#39;input_submit alt&#39;&gt;Go&lt;/span&gt;.<br />
+<br />
+If you started the conversation, this will remove the conversation from your list, and lock it for everyone else - nobody else will be able to make replies to the conversation, but they will still be able to read it until they also delete it.<br />
+<br />
+If you did not start the conversation, this will remove the conversation from your list and remove you from the conversation - you will not be able to make any more replies, but others will still be able to continue the conversation without you, and see your previous replies.<br />
+<br />
+&lt;em&gt;Managing notifications&lt;/em&gt;<br />
+You will see a &lt;img src=&#39;{style_image_url}/bell.png&#39; /&gt; icon for conversations that you will be notified of updates to, and &lt;img src=&#39;{style_image_url}/bell_off.png&#39; /&gt; for conversations that you will not receive notifications for.<br />
+<br />
+To turn on or off notifications for any conversation, select the checkbox beside the conversation, then select the appropriate option from the dropdown at the bottom and then press &lt;span class=&#39;input_submit alt&#39;&gt;Go&lt;/span&gt;.<br />
+<br />
+<br />
+&lt;strong&gt;Managing messages&lt;/strong&gt;<br />
+To edit or delete one of your messages in a conversation, press the &quot;&lt;img src=&#39;{style_image_url}/comment_edit.png&#39; /&gt; Edit&quot; or &quot;&lt;img src=&#39;{style_image_url}/comment_delete.png&#39; /&gt; Delete&quot; button underneath the post.  The changes will be reflected to all participants in the conversation.<br />
+<br />
+<br />
+&lt;strong&gt;Starting a new conversation&lt;/strong&gt;<br />
+To start a new conversation, start by pressing the &quot;&lt;img src=&#39;{style_image_url}/note_add.png&#39; /&gt; Compose New&quot; button.  Enter the user&#39;s name into the &quot;Recipient&#39;s Name&quot; field.  As you type, suggestions will appear below the box.  When you see the member you are looking for, click on their name.<br />
+<br />
+You may also be able to add other recipients into the &quot;Other Recipients&quot; box. If so, the next option allows you to specify how the messages will be sent to alternate recipients: &quot;Invitation&quot; allows all invited members to participate in a single conversation, while &quot;Copy&quot; will send a separate conversation to each member.<br />
+<br />
+You should then type a message subject and the message body, just like you would for a new topic in the forums.<br />
+<br />
+When you are done, you can press &lt;span class=&#39;input_submit&#39;&gt;Send Message&lt;/span&gt; or &lt;span class=&#39;input_submit alt&#39;&gt;Save (Send Later)&lt;/span&gt; to save the message for later.<br />
+<br />
+<br />
+&lt;strong&gt;Replying to a conversation&lt;/strong&gt;<br />
+To reply to any conversation, press the &quot;&lt;img src=&#39;{style_image_url}/arrow_rotate_clockwise.png&#39; /&gt; Add Reply&quot; button when viewing it or press the &quot;&lt;img src=&#39;{style_image_url}/comment_add.png&#39; /&gt; Reply&quot; button underneath any existing message to quote it. Then type your message just like you would a post and press &lt;span class=&#39;input_submit&#39;&gt;Send Message&lt;/span&gt;.  You can also use the Fast Reply box at the bottom of each conversation to quickly reply to the conversation.<br />
+<br />
+<br />
+&lt;strong&gt;Adding participants to a conversation&lt;/strong&gt;<br />
+You may be able to add more participants to a conversation. If so, you will see an &quot;&lt;img src=&#39;{style_image_url}/user_add.png&#39; /&gt; Add&quot; button on the left-side when viewing a conversation.<br />
+Click this button and a box will appear for you to enter member names into. To add more than one member, separate their names with commas. When you are done, press &lt;span class=&#39;input_submit&#39;&gt;Add&lt;/span&gt;.<br />
+<br />
+<br />
+&lt;strong&gt;Reporting a message&lt;/strong&gt;<br />
+If you wish to report to a moderator a message that someone has sent to you, you can press the &quot;&lt;img src=&#39;{style_image_url}/report.png&#39; /&gt; Report&quot; button underneath the message.<br />
+<br />
+Type in your report and then press &lt;span class=&#39;input_submit&#39;&gt;Submit Report&lt;/span&gt;. This will send a copy of the message to the moderators - only the specific message you report will be displayed to the moderating team, however some moderators may be able to add themselves to the conversation you have reported.<br />
+<br />
+<br />
+&lt;strong&gt;Managing your messenger folders&lt;/strong&gt;<br />
+By default there are three folders for messages: &lt;ul&gt;&lt;li&gt;New, which stores all unread conversations.&lt;/li&gt;&lt;li&gt;My Conversations, which contains all conversations you are participating in.&lt;/li&gt;&lt;li&gt;Drafts, which stores unsent messages saved for later.&lt;/li&gt;&lt;/ul&gt;<br />
+<br />
+You can also add your own folders to make it easier to manage your messages.<br />
+<br />
+&lt;em&gt;Adding a new folder&lt;/em&gt;<br />
+To add a new folder, press the &quot;&lt;img src=&#39;{style_image_url}/folder_add.png&#39; /&gt; Add&quot; button beneath the list of folders.<br />
+Type the name of the folder you want to add, then press the &quot;+&quot; button.<br />
+<br />
+&lt;em&gt;Moving messages&lt;/em&gt;<br />
+To move a message from one folder to another, select the checkbox beside the conversation, then select the name of the folder you want to move the conversation to from the dropdown at the bottom and then press &lt;span class=&#39;input_submit alt&#39;&gt;Go&lt;/span&gt;.<br />
+<br />
+&lt;em&gt;Renaming, Deleting or Emptying a folder&lt;/em&gt;<br />
+To rename, empty or delete a folder, press the &quot;&lt;img src=&#39;{style_image_url}/folder_edit.png&#39; /&gt; Edit&quot; button beneath the list of folders.<br />
+<br />
+To rename a folder, type the new name in the textbox currently containing the folder name, and then press the &quot;&gt;&quot; button.  You cannot rename default folders.<br />
+<br />
+To empty a folder, press the &lt;img src=&#39;{style_image_url}/bin.png&#39; /&gt; icon beside the folder name.<br />
+<br />
+To delete a folder, press the &lt;img src=&#39;{style_image_url}/delete.png&#39; /&gt; icon beside the folder name. Be careful as this will also empty the folder. You cannot delete default folders.]]></text>
+      <description>How to send personal messages, track them, edit your messenger folders and archive stored messages.</description>
+      <position>6</position>
+      <app>members</app>
+    </row>
+    <row>
+      <title>Members</title>
+      <text><![CDATA[&lt;strong&gt;Member List&lt;/strong&gt;<br />
+The member list contains a list of all members of the community. To access it, click the &quot;Members&quot; tab at the top of any page.<br />
+<br />
+By default, all members are listed in alphabetical order.  You can choose to only display members whose names begin with a certain letter by selecting that letter from the bar at the top.  You can also choose to change the order of the results to display based on post count or join date by selecting the appropriate option from the bar below that.<br />
+<br />
+&lt;em&gt;Advanced Search&lt;/em&gt;<br />
+To search for a specific member, you can press the &quot;&lt;img src=&#39;{style_image_url}/cog.png&#39; /&gt; Use Advanced Filters&quot; button. This will reveal advanced filter options. Once you have entered the search criteria, press &lt;span class=&#39;input_submit&#39;&gt;Apply Filters&lt;/span&gt;.<br />
+<br />
+&lt;strong&gt;Profiles&lt;/strong&gt;<br />
+You can access a member&#39;s profile by clicking their name anywhere in the community. From here you can see content the member has added, information about the member and contact the member.<br />
+<br />
+&lt;em&gt;User Information&lt;/em&gt;<br />
+To the side, you will see the user&#39;s profile picture if they have one. Below this you will see options to add the user as a friend, send the user a personal message and view content from the user. Underneath this, you will see the user&#39;s total reputation, if enabled, taking into account all positive and negative reputation given for all posts. Underneath this, you will see the user&#39;s statistics, including what group they are in, how long they have been a member and other basic details. <br />
+<br />
+&lt;em&gt;Status&lt;/em&gt;<br />
+The user&#39;s status displays in the profile. If you are viewing your own profile, you will be able to change this by pressing &lt;span class=&#39;input_submit&#39;&gt;Update&lt;/span&gt;.<br />
+<br />
+&lt;em&gt;Content&lt;/em&gt;<br />
+In the middle of the profile, you can see what a user has specified in their &quot;About Me&quot; page. You can use the tabs above this to view content the user has contributed to the community.  This section will, however, only show recent content - to view all content, use the appropriate links from the user information section of the profile.<br />
+<br />
+&lt;em&gt;Personal and Contact Information&lt;/em&gt;<br />
+Below the content box, you will see the member&#39;s personal information such as age and birthday. You may also be able to send the user an email if they have allowed it.<br />
+<br />
+&lt;em&gt;Friends&lt;/em&gt;<br />
+Below the personal and contact information, you will see the user&#39;s friends. You can click on any of the usernames here to go view their profiles.<br />
+<br />
+&lt;em&gt;Rating&lt;/em&gt;<br />
+You may be able to rate the user by selecting one of the stars at the top of their profile.  If you can rate a user, the stars will change color as you move your mouse over them.  If you cannot rate the user, you will not be able to select the stars. You cannot rate yourself.  You may be able to change your rating.  To do this, just click on a different star and your vote will be updated.]]></text>
+      <description>A guide to the member list and member profiles, including profile comments, adding friends and contacting members.</description>
+      <position>7</position>
+      <app>members</app>
+    </row>
+  </help>
+</export>

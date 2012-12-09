@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Security Center</grouptitle>
+		<items>
+			<item>
+				<key>acplink_remove</key>
+				<string>Remove the ACP Link?</string>
+			</item>
+			<item>
+				<key>deepscan</key>
+				<string>Perform a deepscan for suspicious files?</string>
+			</item>
+			<item>
+				<key>virus_checker</key>
+				<string>Run the virus-checker scanner?</string>
+			</item>
+			<item>
+				<key>list_admins</key>
+				<string>List members with administrative access?</string>
+			</item>
+			<item>
+				<key>htaccess_protection</key>
+				<string>Create a .htaccess to protect writable directories?</string>
+			</item>
+			<item>
+				<key>nowrite_conf_global</key>
+				<string>Make conf_global.php not writable?</string>
+			</item>
+			<item>
+				<key>acp_rename</key>
+				<string>Rename the ACP directory?</string>
+			</item>
+			<item>
+				<key>acp_htaccess</key>
+				<string>Create a .htaccess to protect the ACP?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Manage Scheduled Tasks</grouptitle>
+		<items>
+			<item>
+				<key>task_manage</key>
+				<string>Can add/edit scheduled tasks?</string>
+			</item>
+			<item>
+				<key>task_remove</key>
+				<string>Can remove scheduled tasks?</string>
+			</item>
+			<item>
+				<key>task_run_lock</key>
+				<string>Can unlock and/or run scheduled tasks manually?</string>
+			</item>
+			<item>
+				<key>tasklogs_view</key>
+				<string>Can view task logs?</string>
+			</item>
+			<item>
+				<key>tasklogs_delete</key>
+				<string>Can remove task logs?</string>
+			</item>
+		</items>
+	</group>
+	
+	<group>
+		<grouptitle>Admin Login Logs</grouptitle>
+		<items>
+			<item>
+				<key>acplogin_log</key>
+				<string>Can view admin login logs?</string>
+			</item>
+		</items>
+	</group>
+
+</permissions>

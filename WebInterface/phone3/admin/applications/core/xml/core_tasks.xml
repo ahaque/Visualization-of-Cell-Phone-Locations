@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export>
+  <group>
+    <row>
+      <task_id>1</task_id>
+      <task_title>Hourly Clean Out</task_title>
+      <task_file>cleanout.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>-1</task_hour>
+      <task_minute>59</task_minute>
+      <task_cronkey>2930f2dc342e6d284bc74ce02b69a8c8</task_cronkey>
+      <task_log>1</task_log>
+      <task_description>Kill old sessions, reg images, searches</task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>cleanout</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>core</task_application>
+    </row>
+    <row>
+      <task_id>2</task_id>
+      <task_title>Daily Stats Rebuild</task_title>
+      <task_file>rebuildstats.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>0</task_hour>
+      <task_minute>0</task_minute>
+      <task_cronkey>fbd5602d9662adaf122a7586acc29169</task_cronkey>
+      <task_log>1</task_log>
+      <task_description>Rebuilds board statistics</task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>rebuildstats</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>core</task_application>
+    </row>
+    <row>
+      <task_id>14</task_id>
+      <task_title>Prune Logs</task_title>
+      <task_file>logprune.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>27</task_month_day>
+      <task_hour>6</task_hour>
+      <task_minute>0</task_minute>
+      <task_cronkey>dc238ae6961e7aba1ef5d351203e9369</task_cronkey>
+      <task_log>1</task_log>
+      <task_description>This task will prune logs based on your log pruning settings</task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>logprune</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>core</task_application>
+    </row>
+    <row>
+      <task_id>23</task_id>
+      <task_title>Clean Up MySQL</task_title>
+      <task_file>mysqlcleanup.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>-1</task_hour>
+      <task_minute>30</task_minute>
+      <task_cronkey>cbde9115bf3dd193805505e1793ce3a7</task_cronkey>
+      <task_log>1</task_log>
+      <task_description>Cleans up sleeping mysql procceses</task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>mysqlcleanup</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>core</task_application>
+    </row>
+    <row>
+      <task_id>24</task_id>
+      <task_title>Clear OpenID Caches</task_title>
+      <task_file>openidcleanup.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>1</task_hour>
+      <task_minute>30</task_minute>
+      <task_cronkey>42ffd5fe5031810289a5e0daefbd73ec</task_cronkey>
+      <task_log>1</task_log>
+      <task_description>Cleans out OpenID caches older than 24 hours</task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>openidcleanup</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>core</task_application>
+    </row>
+    <row>
+      <task_id>25</task_id>
+      <task_title>Item Marking Clean Up</task_title>
+      <task_file>itemmarkers.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>6</task_hour>
+      <task_minute>0</task_minute>
+      <task_cronkey>f49b0e4086f7af77ea7874df075b6c2b</task_cronkey>
+      <task_log>1</task_log>
+      <task_description><![CDATA[Cleans out &#39;dead&#39; item markers]]></task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>itemmarkers</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>core</task_application>
+    </row>
+    <row>
+      <task_id>26</task_id>
+      <task_title>Content Cache Prune</task_title>
+      <task_file>contentcache.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>3</task_hour>
+      <task_minute>0</task_minute>
+      <task_cronkey>2a762ee9f4845ed67f976a38b63289b8</task_cronkey>
+      <task_log>1</task_log>
+      <task_description>Rmoves old content cache entries</task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>contentcache</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>core</task_application>
+    </row>
+  </group>
+</export>

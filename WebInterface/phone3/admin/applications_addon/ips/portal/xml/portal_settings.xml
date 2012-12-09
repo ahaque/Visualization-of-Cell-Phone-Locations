@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settingexport>
+  <settinggroup>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>ipbportal</conf_title_keyword>
+      <conf_title_title>IPB Portal</conf_title_title>
+      <conf_title_desc>These settings enable you to enable or disable IPB Portal and control the options IPB Portal offers.</conf_title_desc>
+      <conf_title_tab>IPS Apps</conf_title_tab>
+      <conf_title_app>portal</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>IPB Portal Page Title?</conf_title>
+      <conf_description>This will appear inbetween the title elements on the page</conf_description>
+      <conf_group>18</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>csite_title</conf_key>
+      <conf_default>IPB Portal</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipbportal</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Date format for articles</conf_title>
+      <conf_description><![CDATA[<a href='http://www.php.net/strftime'>Same as PHP's strftime function</a>]]></conf_description>
+      <conf_group>18</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>csite_article_date</conf_key>
+      <conf_default>%m-%d-%y %H:%M</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipbportal</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Show Site Navigation Menu?</conf_title>
+      <conf_description/>
+      <conf_group>18</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>csite_nav_show</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>18</conf_position>
+      <conf_start_group>Default Portal Blocks</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipbportal</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Site Navigation Menu Links</conf_title>
+      <conf_description><![CDATA[One per line in this format<br>http://www.apple.com [Apple's Website]<br><br>{board_url} will convert into your board]]></conf_description>
+      <conf_group>18</conf_group>
+      <conf_type>textarea</conf_type>
+      <conf_key>csite_nav_contents</conf_key>
+      <conf_default><![CDATA[{board_url}act=idx [Forums]
+{board_url}app=core&module=search&do=active [Today's Active Topics]
+{board_url}app=forums&module=extras&section=stats [Today's Top 20 Posters]
+{board_url}app=forums&module=extras&section=stats&do=leaders [Contact Staff]]]></conf_default>
+      <conf_extra/>
+      <conf_evalphp><![CDATA[if ( $show == 1)
+{
+    $value = preg_replace( "/&(middot|quot|copy|amp)/", "&\\\\\\\\\\\\\\\\1", $value );
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>19</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipbportal</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Show Affiliates / Favoured Sites box?</conf_title>
+      <conf_description/>
+      <conf_group>18</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>csite_fav_show</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>20</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipbportal</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Show Affiliates / Favoured Sites box content</conf_title>
+      <conf_description>Raw HTML enabled</conf_description>
+      <conf_group>18</conf_group>
+      <conf_type>textarea</conf_type>
+      <conf_key>csite_fav_contents</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp><![CDATA[if ( $show == 1)
+{
+ $value = preg_replace( "/&(middot|quot|copy|amp)/", "&\\\\\\\\1", $value );
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>21</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipbportal</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>portal_poll</conf_title_keyword>
+      <conf_title_title>Portal: Poll</conf_title_title>
+      <conf_title_desc/>
+      <conf_title_tab>IPS Apps</conf_title_tab>
+      <conf_title_app>portal</conf_title_app>
+      <conf_title_noshow>1</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Enter URL to poll topic for inclusion</conf_title>
+      <conf_description>Leave blank to not show a poll or the poll box</conf_description>
+      <conf_group>22</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>poll_poll_url</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>17</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>portal_poll</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>portal_recent_topics</conf_title_keyword>
+      <conf_title_title>Portal: Recent Topics</conf_title_title>
+      <conf_title_desc><![CDATA[Settings for the "recent topics" plug in of the portal]]></conf_title_desc>
+      <conf_title_tab>IPS Apps</conf_title_tab>
+      <conf_title_app>portal</conf_title_app>
+      <conf_title_noshow>1</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Forums to export articles from</conf_title>
+      <conf_description>You may select more than one.</conf_description>
+      <conf_group>23</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>recent_topics_article_forum</conf_key>
+      <conf_default/>
+      <conf_extra>#show_forums#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['recent_topics_article_forum']) )
+	{
+		$_POST['recent_topics_article_forum'] = implode(",",$_POST['recent_topics_article_forum']);
+	}
+	else
+	{
+		$_POST['recent_topics_article_forum'] = "";
+	}
+	
+	$key = 'recent_topics_article_forum';
+}
+if ( $show == 1 )
+{
+$key = 'recent_topics_article_forum[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>portal_recent_topics</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Number of articles to show</conf_title>
+      <conf_description><![CDATA[This is the number of topics you wish to display for the "recent_topics_last_x" portal tag.]]></conf_description>
+      <conf_group>23</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>recent_topics_article_max</conf_key>
+      <conf_default>15</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group>Recent Topics Last X</conf_start_group>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>portal_recent_topics</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Don&#39;t pin pinned topics]]></conf_title>
+      <conf_description>Enabling this setting causes pinned topics to be treated normally, instead of being pinned on the portal</conf_description>
+      <conf_group>23</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>portal_exclude_pinned</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>portal_recent_topics</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Number of topics to show</conf_title>
+      <conf_description><![CDATA[Enter the number of topic titles shown on the list for the "recent_discussions_last_x" tag]]></conf_description>
+      <conf_group>23</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>recent_topics_discuss_number</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group>Recent Discussions Last X</conf_start_group>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>portal_recent_topics</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </settinggroup>
+</settingexport>

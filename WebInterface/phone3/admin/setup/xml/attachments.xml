@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<attachtypesexport>
+	<attachtypesgroup>
+		<attachtype>
+			<atype_extension>aiff</atype_extension>
+			<atype_mimetype>audio/x-aiff</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/quicktime.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>bmp</atype_extension>
+			<atype_mimetype>image/x-MS-bmp</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/gif.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>css</atype_extension>
+			<atype_mimetype>unknown/unknown</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/script.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>doc</atype_extension>
+			<atype_mimetype>application/msword</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/doc.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>gif</atype_extension>
+			<atype_mimetype>image/gif</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>1</atype_photo>
+			<atype_img>style_extra/mime_types/gif.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>gz</atype_extension>
+			<atype_mimetype>application/x-gzip</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/zip.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>hqx</atype_extension>
+			<atype_mimetype>application/mac-binhex40</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/stuffit.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>htm</atype_extension>
+			<atype_mimetype>unknown/unknown</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/html.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>html</atype_extension>
+			<atype_mimetype>unknown/unknown</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/html.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>ico</atype_extension>
+			<atype_mimetype>image/ico</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/gif.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>jpeg</atype_extension>
+			<atype_mimetype>image/jpeg</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>1</atype_photo>
+			<atype_img>style_extra/mime_types/gif.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>jpg</atype_extension>
+			<atype_mimetype>image/jpeg</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>1</atype_photo>
+			<atype_img>style_extra/mime_types/gif.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>mov</atype_extension>
+			<atype_mimetype>video/quicktime</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/quicktime.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>mp3</atype_extension>
+			<atype_mimetype>audio/x-mpeg</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/music.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>mpg</atype_extension>
+			<atype_mimetype>video/mpeg</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/quicktime.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>pdf</atype_extension>
+			<atype_mimetype>application/pdf</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/pdf.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>php</atype_extension>
+			<atype_mimetype>unknown/unknown</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/php.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>png</atype_extension>
+			<atype_mimetype>image/png</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>1</atype_photo>
+			<atype_img>style_extra/mime_types/quicktime.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>ppt</atype_extension>
+			<atype_mimetype>application/powerpoint</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/ppt.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>ps</atype_extension>
+			<atype_mimetype>application/postscript</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/eps.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>ram</atype_extension>
+			<atype_mimetype>audio/x-pn-realaudio</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/real_audio.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>rtf</atype_extension>
+			<atype_mimetype>unknown/unknown</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/rtf.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>swf</atype_extension>
+			<atype_mimetype>application/x-shockwave-flash</atype_mimetype>
+			<atype_post>0</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/quicktime.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>tar</atype_extension>
+			<atype_mimetype>application/x-tar</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/zip.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>tiff</atype_extension>
+			<atype_mimetype>image/tiff</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/quicktime.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>txt</atype_extension>
+			<atype_mimetype>unknown/unknown</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/txt.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>viv</atype_extension>
+			<atype_mimetype>video/vivo</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/win_player.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>wav</atype_extension>
+			<atype_mimetype>audio/x-wav</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/music.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>wmv</atype_extension>
+			<atype_mimetype>video/x-ms-wmv</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/win_player.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>xml</atype_extension>
+			<atype_mimetype>unknown/unknown</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/script.gif</atype_img>
+		</attachtype>
+
+		<attachtype>
+			<atype_extension>zip</atype_extension>
+			<atype_mimetype>application/zip</atype_mimetype>
+			<atype_post>1</atype_post>
+			<atype_photo>0</atype_photo>
+			<atype_img>style_extra/mime_types/zip.gif</atype_img>
+		</attachtype>
+	</attachtypesgroup>
+
+</attachtypesexport>

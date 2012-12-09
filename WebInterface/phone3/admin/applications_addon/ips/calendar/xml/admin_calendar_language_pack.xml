@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languageexport>
+  <languagegroup>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>perm_calendar_nomod</word_key>
+      <word_default>Bypass Moderation</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>perm_calendar_start</word_key>
+      <word_default>Create Events</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_singleday</word_key>
+      <word_default>Single Day Event On:</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>perm_calendar_view</word_key>
+      <word_default>Show Calendar</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_ranged</word_key>
+      <word_default>Ranged Event</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_addcal</word_key>
+      <word_default>Add New Calendar</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_recachecal</word_key>
+      <word_default>Recache Calendar Events</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_recurring</word_key>
+      <word_default>Recurrent Event</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_tocolon</word_key>
+      <word_default>To:</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_fromcolon</word_key>
+      <word_default>From:</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_deletecal</word_key>
+      <word_default>Delete Calendar...</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_rebuildcal</word_key>
+      <word_default>Rebuild Calendar RSS Export...</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_calendars</word_key>
+      <word_default>Calendars</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_options</word_key>
+      <word_default>Options</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_editcal</word_key>
+      <word_default>Edit Calendar...</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_max</word_key>
+      <word_default><![CDATA[<strong>RSS: Export Maximum Events</strong>]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_max_info</word_key>
+      <word_default>The maximum number of events exported</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_freq_info</word_key>
+      <word_default>The number of minutes between RSS cache rebuilding</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_freq</word_key>
+      <word_default><![CDATA[<strong>RSS: Update Frequency</strong>]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_enable</word_key>
+      <word_default><![CDATA[<strong>RSS: Enable</strong>]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_enable_info</word_key>
+      <word_default><![CDATA[If enabled, all <em>n</em> forthcoming events (based on GMT time) that have guest read permission will be exported]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_forthcoming</word_key>
+      <word_default><![CDATA[<strong>RSS: Forthcoming Days</strong>]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_bday_info</word_key>
+      <word_default><![CDATA[This is the number of birthdays listed per day before they are replaced by a single link<br />Enter 0 to not show birthdays at all]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_rss</word_key>
+      <word_default><![CDATA[<strong>RSS Options</strong>]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_limit_info</word_key>
+      <word_default><![CDATA[This is the number of events listed per day before they are replaced by a single link to the day's events]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_bday</word_key>
+      <word_default><![CDATA[<strong>Calendar: Birthday Limit</strong>]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_limit</word_key>
+      <word_default><![CDATA[<strong>Calendar: Event Limit</strong>]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_mod_info</word_key>
+      <word_default><![CDATA[If enabled, all groups which are not included in the 'Avoid Moderation Queue' will have their events entered into the moderation queue for approval.]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_mod</word_key>
+      <word_default><![CDATA[<strong>Calendar: Enable Moderation</strong>]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_block_title</word_key>
+      <word_default><![CDATA[<strong>Calendar: Title</strong>]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_rssrecached</word_key>
+      <word_default>Calendar Events RSS Recached</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_recached</word_key>
+      <word_default>Calendar Events Recached</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_editbutton</word_key>
+      <word_default>Edit Calendar </word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_savebutton</word_key>
+      <word_default>Save Changes</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_title</word_key>
+      <word_default>Calendar Manager</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_completeform</word_key>
+      <word_default>You must complete the entire form.</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_added</word_key>
+      <word_default>New Calendar Added</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_edited</word_key>
+      <word_default>Calendar Edited</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_noid</word_key>
+      <word_default>No ID was passed. Please try again.</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>calendar</word_app>
+      <word_pack>admin_calendar</word_pack>
+      <word_key>c_removed</word_key>
+      <word_default>Calendar Removed</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+  </languagegroup>
+</languageexport>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Manage Applications &amp; Modules</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Manage Applications &amp; Modules</subitemtitle>
+					<subsection>applications</subsection>
+					<subitemurl>do=applications_overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		
+		<item>
+			<title>Manage Hooks</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Manage Hooks</subitemtitle>
+					<subsection>hooks</subsection>
+					<subitemurl>do=hooks_overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>				
+			</subitems>
+		</item>
+	</tabitems>
+</menu>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Manage Members</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Manage Members</subitemtitle>
+					<subsection>members</subsection>
+					<subitemurl>do=members_overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+				<subitem>
+					<subitemtitle>Manage Validating Members</subitemtitle>
+					<subsection>tools</subsection>
+					<subitemurl>do=validating</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+				<subitem>
+					<subitemtitle>Manage Locked Members</subitemtitle>
+					<subsection>tools</subsection>
+					<subitemurl>do=locked</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+				<subitem>
+					<subitemtitle>Manage Banned Members</subitemtitle>
+					<subsection>tools</subsection>
+					<subitemurl>do=banned</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+				<subitem>
+					<subitemtitle>Manage Spam Members</subitemtitle>
+					<subsection>tools</subsection>
+					<subitemurl>do=spam</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+
+		<item>
+			<title>Manage Member Ranks</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Manage Member Ranks</subitemtitle>
+					<subsection>ranks</subsection>
+					<subitemurl>do=ranks_overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>			
+			</subitems>
+		</item>
+		
+		<item>
+			<title>Manage Member Reputation</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Manage Member Reputation</subitemtitle>
+					<subsection>reputation</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>		
+		
+		<item>
+			<title>Manage Custom Profile Fields</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Manage Custom Profile Fields</subitemtitle>
+					<subsection>customfields</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>			
+			</subitems>
+		</item>
+		
+		<item>
+			<title>Manage Custom Profile Field Groups</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Manage Custom Profile Field Groups</subitemtitle>
+					<subsection>customfields</subsection>
+					<subitemurl>do=group_overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>			
+			</subitems>
+		</item>		
+		
+		<item>
+			<title>Member Management Tools</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Member Management Tools</subitemtitle>
+					<subsection>tools</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>			
+			</subitems>
+		</item>
+	
+		<item>
+			<title>Add New Member</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Add New Member</subitemtitle>
+					<subsection>members</subsection>
+					<subitemurl>do=add</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>				
+			</subitems>
+		</item>	
+		
+		<item>
+			<title>Ban Filters</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Ban Filters</subitemtitle>
+					<subsection>banfilters</subsection>
+					<subitemurl>do=add</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>				
+			</subitems>
+		</item>			
+	</tabitems>
+</menu>

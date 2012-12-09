@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>My Dashboard</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>My Dashboard</subitemtitle>
+					<subsection>dashboard</subsection>
+					<subitemurl></subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Change My Details</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Change My Details</subitemtitle>
+					<subsection>details</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+	</tabitems>
+</menu>

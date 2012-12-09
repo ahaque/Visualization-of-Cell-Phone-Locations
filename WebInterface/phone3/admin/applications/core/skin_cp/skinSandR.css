@@ -1,0 +1,75 @@
+/**
+* IPS Template Skin Search And Replace Thingy
+* (c) Invision Power Services, Inc
+* @author Matt Mecham
+*/
+
+	
+/* Log Tray */
+#SandRLowDrawInner
+{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+	background-repeat: repeat-x;
+	border: 1px solid #5b5b5b;
+	width: 500px;
+}
+	#SandRLowDrawInner table
+	{
+		height: 120px;
+		width: 100%;
+	}
+
+#SandRDone
+{
+	margin:auto;
+	text-align:center;
+	font-weight:bold;
+	font-size:14px;
+}
+
+#SandRLogText
+{
+	width: 96%;
+	height: 45px;
+	padding:10px;
+	font-size:22px;
+	margin:auto;
+	text-align:center;
+	font-weight:bold;
+	overflow: auto;
+}
+	
+/* Progress Bar */
+#SandRLogProgressBar
+{
+	border: 1px solid #5b5b5b;
+	background-color: #2B2B2B;
+	width: 200px;
+	height: 15px;
+	padding-top:0px;
+	padding-bottom:2px;
+	padding-right:5px;
+	padding-left:0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:10px;
+}
+
+#SandRLogProgressBarInner
+{
+	padding:0px;
+	margin:0px;
+	height:14px;
+	width:68%;
+	background-image: url("images/icon_components/templates/sandr/progressbar.gif");
+	background-repeat: repeat-x;
+}
+
+#SandRStatusImage
+{
+	float:left;
+	margin-top: -4px;
+	margin-left: 115px;
+}

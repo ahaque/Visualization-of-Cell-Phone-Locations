@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<information>
+	<data>
+		<name>Portal</name>
+		<public_name>Portal</public_name>
+		<author>Invision Power Services, Inc.</author>
+		<description></description>
+		<disabledatinstall>1</disabledatinstall>
+		<ipskey>9fef8fc6c7dfc4716f0cfd698b48e3c9</ipskey>
+		<templategroups>
+			<template match="exact">skin_portal</template>
+		</templategroups>
+	</data>
+</information>

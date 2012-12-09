@@ -1,0 +1,117 @@
+/********************************************/
+/* IE6 SPECIFIC */
+/********************************************/
+#header { _height: 1%; }
+h1, #content_jump {	_display: none; }
+#search { _position: absolute; _right: 0px; _width: 300px; }
+#primary_nav ul li.active {	_margin-bottom: -2px; }
+#user_navigation { _width: 250px }
+
+/* remove background images from annoying places */
+.maintitle, #footer_utilities, #ipboard_body .ips_editor .toolbar, #admin_bar {	_background-image: none !important; }
+
+h2.maintitle{ _overflow:visible; _height:1% }
+
+/* hasLayout bug */
+.statistics, #footer_utilities, #ipboard_body .ips_editor .controls, .member_entry, #search_results li { _height: 100%; }
+
+#footer_utilities form, .rep_bar { _width: 1%; }
+
+#context_search, #multimod { _float: right; _position: relative; _left: -50px; _margin-bottom: 5px; }
+
+#forum_legend dt, #forum_legend dd { _height: 25px; }
+
+#ipboard_body .rte_fontsize{ _width:50px }
+#ipboard_body .rte_font { _width:85px }
+#ipboard_body .rte_special{ _width:90px }
+#toggle_post_options{ _overflow:visible; _height:1% }
+
+.author_info, .post_block { _height: 100%; }
+
+#fast_reply, #member_alpha { _clear: both; }
+#ipboard_body .input_rte { _border: 1px inset #000; }
+
+/*******************************************/
+/* <= IE7 */
+	#search label,
+	#search input,
+	#search #adv_search {
+		float: left !important;
+	}
+	
+	#search .submit_input {
+		font-size: 1.1em;
+		padding: 2px;
+	}
+	
+#ipboard_body .input_submit {
+	padding: 2px 5px;
+	font-size: 90%;
+}
+
+#ipboard_body .tab_bar li.active {
+	margin-top: -5px;
+}
+
+#ipboard_body .popupWrapper {
+	padding-top: 6px;
+}
+
+#ipboard_body .ipb_palette {
+	min-width: 130px;
+	max-width: 255px;
+}
+
+#ipboard_body .emoticons_palette {
+	max-width: 400px;
+}
+
+#ipboard_body #header {
+	z-index: 2001 !important;
+	/* must be at least 1 higher than #pm_notification */
+}
+
+#ipboard_body .report_comment .post_wrap {
+	height: 1%;
+}
+
+#ipboard_body .report_menu {
+	position: static !important;
+	float: left !important;
+}
+	
+	#ipboard_body .report_menu li {
+		float: none !important;
+		display: inline !important;
+	}
+
+#ipboard_body #conversation ul.post_controls {
+	padding-bottom: 0;
+	height: 32px;
+}
+
+#ipboard_body #topic_mod_2 {
+	padding-top: 10px;
+	margin-top: -5px;
+}
+table.ipb_table ol.subforums li {
+	white-space: nowrap !important;
+}
+
+.emote {
+	padding: 5px;
+}
+
+.rep_bar { 
+	width: 8%;
+}
+
+p.rep_highlight {
+	margin-right: 10px;
+}
+
+.post_block {
+	zoom: 1;
+}
+
+pre.prettyprint { padding: 5px 5px 20px 5px; }

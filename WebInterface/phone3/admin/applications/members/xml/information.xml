@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<information>
+	<data>
+		<name>Members</name>
+		<public_name>Members</public_name>
+		<author>Invision Power Services, Inc.</author>
+		<description>Manage members and groups</description>
+		<templategroups>
+			<template match="exact">skin_messaging</template>
+			<template match="exact">skin_mlist</template>
+			<template match="exact">skin_online</template>
+			<template match="exact">skin_profile</template>
+			<template match="exact">skin_ucp</template>
+		</templategroups>
+	</data>
+</information>

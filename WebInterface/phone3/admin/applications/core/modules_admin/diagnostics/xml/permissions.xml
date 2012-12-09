@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Diagnostic Tools</grouptitle>
+		<items>
+			<item>
+				<key>index_checker</key>
+				<string>Can use the database index checker?  Warning: Allows ability to run database queries indirectly.</string>
+			</item>
+			<item>
+				<key>database_checker</key>
+				<string>Can use the database checker?  Warning: Allows ability to run database queries indirectly.</string>
+			</item>
+			<item>
+				<key>whitespace_checker</key>
+				<string>Can use the whitespace checker?</string>
+			</item>
+			<item>
+				<key>version_checker</key>
+				<string>Can use the version checker?</string>
+			</item>
+			<item>
+				<key>permission_checker</key>
+				<string>Can use the permissions checker?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

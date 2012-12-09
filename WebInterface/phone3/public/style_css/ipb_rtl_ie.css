@@ -1,0 +1,120 @@
+#search label,
+#search input,
+#search #adv_search {
+float: none !important;
+vertical-align: middle;
+}
+
+.info {
+	height: 1%;
+}
+
+.info dd {
+	float: right;
+	margin-left: 0;
+	margin-right: 0;
+}
+.info dt {
+	float: right;
+	clear: none;
+}
+
+ul.pagination li {
+	float: left;
+}
+
+/* Hack to fix RTL breadcrumbs in IE7 */
+#secondary_nav #breadcrumb {
+	direction: ltr;
+	padding: 0;
+	margin: 0;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(mirror=1);
+}
+#secondary_nav li {
+	float: left;
+}
+#secondary_nav li a {
+	zoom: 1;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(mirror=1);
+}
+#secondary_nav #section_links {
+	zoom: 1;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(mirror=1);
+}
+/******************/
+
+/* Similar fix for pagination */
+ul.pagination li {
+	float: left;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(mirror=1);
+	zoom: 1;
+}
+
+ul.pagination li.next a,
+ul.pagination li.prev a {
+	zoom: 1;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(mirror=1);
+}
+
+ul.pagination {
+	filter: progid:DXImageTransform.Microsoft.BasicImage(mirror=1);
+}
+/*****************/
+
+#ipboard_body .members li p.rating {
+	margin-right: auto;
+	margin-left: 10px;
+}
+
+#folder_list, #space_allowance {
+	zoom: 1;
+}
+
+#folder_list .total {
+	left: 10px;
+}
+
+#ipboard_body.redirector {
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 150px 0 0 0;
+}
+
+	#ipboard_body.redirector #ipbwrapper {
+		width: 500px;
+		text-align: right;
+	}
+	
+/*ul.topic_jump {
+	float: left !important;
+	width: 300px;
+}*/
+
+ul.topic_jump li {
+	float: left;
+}
+
+#footer_utilities li {
+	float: left;
+}
+
+#tab_posts .post_body,
+#tab_topics .post_body {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.userpopup dl {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.user_status.message #update_status {
+	margin-left: 0px;
+}
+
+.post_form #poll_form .topic_buttons {
+	position: static;
+	margin-right: 315px;
+}

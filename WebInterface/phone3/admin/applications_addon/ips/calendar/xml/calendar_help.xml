@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<export>
+  <help>
+    <row>
+      <title>Calendar</title>
+      <text><![CDATA[The calendar can be used to post events for other members of the community to see. It also lists each member&#39;s birthday. To access it, click the &quot;Calendar&quot; tab at the top of any page.<br />
+<br />
+&lt;strong&gt;Navigating the Calendar&lt;/strong&gt;<br />
+<br />
+&lt;em&gt;Quick Jump&lt;/em&gt;<br />
+At the top of the side-bar you will see a box that will allow you to select a calendar to view, or quickly change to any month.  To change the month you are viewing, select the month you want to view using the drop-down boxes and press &lt;span class=&#39;input_submit&#39;&gt;Go&lt;/span&gt;.  <br />
+<br />
+There are also links to quickly jump the current month or week below the main calendar.<br />
+<br />
+&lt;em&gt;Mini-Calendars&lt;/em&gt;<br />
+Below the quick jump box, you will see a mini-calendar view of the previous month and the next month based on the current month that you are viewing. If you are viewing a specific week, you will also see a mini-calendar of the current month, and today&#39;s date will be highlighted.<br />
+<br />
+If a day has an event scheduled for it, clicking on the date will bring up the details for all events on that day.<br />
+<br />
+You can also click on &lt;img src=&#39;{style_image_url}/next.png&#39; /&gt; beside any week to change the calendar view to that week.<br />
+<br />
+&lt;em&gt;Main Calendar&lt;/em&gt;<br />
+The calendar you are currently viewing displays in the middle of the page. Today&#39;s date will be highlighted if it is in the month that you are viewing.<br />
+<br />
+Events or birthdays will be noted in the boxes.  Click on any of these for details of the events.  If there are too many events to display on the monthly view, you will be advised of this with a link to view all events for the day.<br />
+<br />
+You can navigate forwards and backwards by pressing the &quot;&amp;larr; Previous&quot; and &quot;&amp;rarr; Next&quot; links above the calendar.<br />
+<br />
+<br />
+&lt;strong&gt;Adding New Events&lt;/strong&gt;<br />
+To add a new event, select one of the buttons above the calendar:<br />
+&lt;ul&gt;&lt;li&gt;&lt;img src=&#39;{style_image_url}/cal_recurring.png&#39; /&gt;Recurring Events - This is for events that repeat, such as anniversaries. You will be asked how often the event happens (every week, month or year) and when the event stops recurring.&lt;/li&gt;&lt;li&gt;&lt;img src=&#39;{style_image_url}/cal_ranged.png&#39; /&gt;Ranged Events - This is for events that span over more than one day. You will be asked for a start and an end date.&lt;/li&gt;&lt;li&gt;&lt;img src=&#39;{style_image_url}/cal_single.png&#39; /&gt;Single Events - This is for events that happen once on a single day.&lt;/li&gt;&lt;/ul&gt;<br />
+You will be asked to give your event a title. If you are creating a recurring or single event, you can also specify the start time in case you. event does not last all day.  To do this, tick the checkbox and provide the start time.<br />
+You can then configure what type of event this is - public events can be viewed by other members, while personal events are shown only to you.<br />
+<br />
+Finally, type a description for your event and press &lt;span class=&#39;input_submit&#39;&gt;Add Calendar Event&lt;/span&gt;.]]></text>
+      <description>More information on the boards calendar feature.</description>
+      <position>11</position>
+      <app>calendar</app>
+    </row>
+  </help>
+</export>

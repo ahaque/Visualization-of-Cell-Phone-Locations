@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export>
+  <group>
+    <row>
+      <task_id>3</task_id>
+      <task_title>Daily Clean Out</task_title>
+      <task_file>dailycleanout.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>3</task_hour>
+      <task_minute>0</task_minute>
+      <task_cronkey>41b7e7f629e14b7e8378fa2f57ef0f99</task_cronkey>
+      <task_log>1</task_log>
+      <task_description>Prunes topic subscriptions and old read topic entries</task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>dailycleanout</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>forums</task_application>
+    </row>
+    <row>
+      <task_id>5</task_id>
+      <task_title>Announcements Update</task_title>
+      <task_file>announcements.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>4</task_hour>
+      <task_minute>-1</task_minute>
+      <task_cronkey>cfeeb71f0f8a16e4aab99170ffee256b</task_cronkey>
+      <task_log>1</task_log>
+      <task_description>Rebuilds cache and expires out of date announcements</task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>announcements</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>forums</task_application>
+    </row>
+    <row>
+      <task_id>7</task_id>
+      <task_title><![CDATA[Daily Topic &amp; Forum Digest]]></task_title>
+      <task_file>dailydigest.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>0</task_hour>
+      <task_minute>10</task_minute>
+      <task_cronkey>d65061b4fc2101f3c1a5839fc0116003</task_cronkey>
+      <task_log>1</task_log>
+      <task_description><![CDATA[Emails out daily topic &amp; forum digest emails]]></task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>dailydigest</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>forums</task_application>
+    </row>
+    <row>
+      <task_id>8</task_id>
+      <task_title><![CDATA[Weekly Topic &amp; Forum Digest]]></task_title>
+      <task_file>weeklydigest.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>0</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>3</task_hour>
+      <task_minute>10</task_minute>
+      <task_cronkey>6916a4450496a5e5b3a406145978a567</task_cronkey>
+      <task_log>1</task_log>
+      <task_description><![CDATA[Emails weekly topic &amp; forum digest emails]]></task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>weeklydigest</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>forums</task_application>
+    </row>
+    <row>
+      <task_id>10</task_id>
+      <task_title>Update Topic Views Counter</task_title>
+      <task_file>updateviews.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>3</task_hour>
+      <task_minute>-1</task_minute>
+      <task_cronkey>cdab16c15a26070ffa18197f98f3166b</task_cronkey>
+      <task_log>0</task_log>
+      <task_description>Used when topic views are not incremented immediately</task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>updateviews</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>forums</task_application>
+    </row>
+    <row>
+      <task_id>12</task_id>
+      <task_title>RSS Import Update</task_title>
+      <task_file>rssimport.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>-1</task_hour>
+      <task_minute>30</task_minute>
+      <task_cronkey>556cf29b2e1f30769dd73708c1c4547e</task_cronkey>
+      <task_log>1</task_log>
+      <task_description>Imports any new RSS articles</task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>rssimport</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>forums</task_application>
+    </row>
+  </group>
+</export>

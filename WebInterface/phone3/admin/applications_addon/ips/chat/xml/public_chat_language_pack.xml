@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languageexport>
+  <languagegroup>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chataddon</word_pack>
+      <word_key>sigmachat_chatsigma</word_key>
+      <word_default>1</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chataddon</word_pack>
+      <word_key>chat_online</word_key>
+      <word_default>Chatting in live chat</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chataddon</word_pack>
+      <word_key>sigmachat_help_text</word_key>
+      <word_default><![CDATA[If you are running a version of a Microsoft Windows&#153; and see only a broken link icon, you will need to download a copy of the Java&#153; Virtual Machine in order to run our application. You may download Java&#153; Support for your browser from one of the following links below:<br />
+<br />
+        * <a href='http://www.microsoft.com/Java/vm/dl_vm40.htm?FinishURL=%2Fdownloads%2Frelease%2Easp%3Frelease'>Microsoft Virtual Machine (for MSIE)</a><br />
+        * <a href='http://java.sun.com/getjava/'>Sun Java&#153; Plugin (for Netscape, Opera, MSIE, etc..)</a><br />
+<br />
+    Older versions of Netscape (on certain platforms) such as v4.08, and v4.7x may not run the software. We strongly recommend upgrading to a newer version of Netscape (v6.xx or better) if this is the case. Certain browsers running on Macintosh platforms are not capable of running our software due to problems outside of our control. As WebTV does not support Java&#153;, WebTV users will not be able to access the live chat rooms.<br />
+<br />
+    Users behind firewalls may need to inform their local IT/network administrator to allow TCP connections on ports 9000-9009 at client.invisionchat.com.<br />
+<br />
+    AOL Members: Some users have reported that the built-in AOL browser has difficulty connecting to our service, or does not load colors/emoticons properly. To resolve this, minimize your AOL connection, and use the Internet Explorer browser that came with your computer to access our chat rooms.<br />
+<br />]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chataddon</word_pack>
+      <word_key>sigmachat_help</word_key>
+      <word_default>Live Chat Help</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chataddon</word_pack>
+      <word_key>sigmachat_title</word_key>
+      <word_default>Live Chat Main Window</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chatpara</word_pack>
+      <word_key>chat_online</word_key>
+      <word_default>Chatting in live chat</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chatpara</word_pack>
+      <word_key>para_err_java_start</word_key>
+      <word_default>Sorry, your browser is not Java enabled, please visit</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chatpara</word_pack>
+      <word_key>para_err_java_end</word_key>
+      <word_default>our Java support pages</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chatpara</word_pack>
+      <word_key>parachat_help_text</word_key>
+      <word_default><![CDATA[If you are running a version of a Microsoft Windows&#153; and see only a broken link icon, you will need to download a copy of the Java&#153; Virtual Machine in order to run our application. You may download Java&#153; Support for your browser from one of the following links below:<br />
+<br />
+        * <a href='http://www.microsoft.com/Java/vm/dl_vm40.htm?FinishURL=%2Fdownloads%2Frelease%2Easp%3Frelease'>Microsoft Virtual Machine (for MSIE)</a><br />
+        * <a href='http://java.sun.com/getjava/'>Sun Java&#153; Plugin (for Netscape, Opera, MSIE, etc..)</a><br />
+<br />
+    Older versions of Netscape (on certain platforms) such as v4.08, and v4.7x may not run the software. We strongly recommend upgrading to a newer version of Netscape (v6.xx or better) if this is the case. Certain browsers running on Macintosh platforms are not capable of running our software due to problems outside of our control. As WebTV does not support Java&#153;, WebTV users will not be able to access the live chat rooms.<br />
+<br />
+    Users behind firewalls may need to inform their local IT/network administrator to allow TCP connections on ports 9000-9009 at client.invisionchat.com.<br />
+<br />
+    AOL Members: Some users have reported that the built-in AOL browser has difficulty connecting to our service, or does not load colors/emoticons properly. To resolve this, minimize your AOL connection, and use the Internet Explorer browser that came with your computer to access our chat rooms.<br />
+<br />]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chatpara</word_pack>
+      <word_key>parachat_chatpara</word_key>
+      <word_default>1</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chatpara</word_pack>
+      <word_key>parachat_title</word_key>
+      <word_default>Live Chat Main Window</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chatpara</word_pack>
+      <word_key>parachat_help</word_key>
+      <word_default>Live Chat Help</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chatsigma</word_pack>
+      <word_key>sigmachat_title</word_key>
+      <word_default>Live Chat Main Window</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chatsigma</word_pack>
+      <word_key>sigmachat_help</word_key>
+      <word_default>Live Chat Help</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chatsigma</word_pack>
+      <word_key>sigmachat_online</word_key>
+      <word_default>Chatting in live chat</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chatsigma</word_pack>
+      <word_key>sigmachat_help_text</word_key>
+      <word_default><![CDATA[If you are running a version of a Microsoft Windows&#153; and see only a broken link icon, you will need to download a copy of the Java&#153; Virtual Machine in order to run our application. You may download Java&#153; Support for your browser from one of the following links below:<br />
+<br />
+        * <a href='http://www.microsoft.com/Java/vm/dl_vm40.htm?FinishURL=%2Fdownloads%2Frelease%2Easp%3Frelease'>Microsoft Virtual Machine (for MSIE)</a><br />
+        * <a href='http://java.sun.com/getjava/'>Sun Java&#153; Plugin (for Netscape, Opera, MSIE, etc..)</a><br />
+<br />
+    Older versions of Netscape (on certain platforms) such as v4.08, and v4.7x may not run the software. We strongly recommend upgrading to a newer version of Netscape (v6.xx or better) if this is the case. Certain browsers running on Macintosh platforms are not capable of running our software due to problems outside of our control. As WebTV does not support Java&#153;, WebTV users will not be able to access the live chat rooms.<br />
+<br />
+    Users behind firewalls may need to inform their local IT/network administrator to allow TCP connections on ports 9000-9009 at client.invisionchat.com.<br />
+<br />
+    AOL Members: Some users have reported that the built-in AOL browser has difficulty connecting to our service, or does not load colors/emoticons properly. To resolve this, minimize your AOL connection, and use the Internet Explorer browser that came with your computer to access our chat rooms.<br />
+<br />]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>public_chatsigma</word_pack>
+      <word_key>sigmachat_chatsigma</word_key>
+      <word_default>1</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+  </languagegroup>
+</languageexport>

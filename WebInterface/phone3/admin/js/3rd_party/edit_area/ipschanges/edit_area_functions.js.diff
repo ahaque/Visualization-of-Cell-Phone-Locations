@@ -1,0 +1,13 @@
+Index: edit_area_functions.js
+===================================================================
+--- edit_area_functions.js	(revision 4488)
++++ edit_area_functions.js	(revision 4490)
+@@ -842,7 +841,7 @@
+ 				var elem= document.createElement('li');
+ 				elem.id= this.files[id]['html_id'];
+ 				var close= "<img src=\""+ parent.editAreaLoader.baseURL +"images/close.gif\" title=\""+ this.get_translation('close_tab', 'word') +"\" onclick=\"editArea.execCommand('close_file', editArea.filesIdAssoc['"+ html_id +"']);return false;\" class=\"hidden\" onmouseover=\"this.className=''\" onmouseout=\"this.className='hidden'\" />";
+-				elem.innerHTML= "<a onclick=\"javascript:editArea.execCommand('switch_to_file', editArea.filesIdAssoc['"+ html_id +"']);\" selec=\"none\"><b><span><strong class=\"edited\">*</strong>"+ this.files[id]['title'] + close +"</span></b></a>";
++				elem.innerHTML= "<a onclick=\"javascript:editArea.execCommand('switch_to_file', editArea.filesIdAssoc['"+ html_id +"']);\" selec=\"none\"><b><span><strong class=\"edited\">*</strong>"+ this.files[id]['title'] + "</span></b></a>" + close;
+ 				_$('tab_browsing_list').appendChild(elem);
+ 				var elem= document.createElement('text');
+ 				this.update_size();

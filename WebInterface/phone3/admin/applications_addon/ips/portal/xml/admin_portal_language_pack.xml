@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languageexport>
+  <languagegroup>
+    <lang>
+      <word_app>portal</word_app>
+      <word_pack>admin_portal</word_pack>
+      <word_key>portal_pop_desc</word_key>
+      <word_default>Tag Description</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>portal</word_app>
+      <word_pack>admin_portal</word_pack>
+      <word_key>portal_row_menu_view_tags</word_key>
+      <word_default>View Exportable Tags...</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>portal</word_app>
+      <word_pack>admin_portal</word_pack>
+      <word_key>portal_main_key</word_key>
+      <word_default>Plug-in Title</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>portal</word_app>
+      <word_pack>admin_portal</word_pack>
+      <word_key>portal_pop_name</word_key>
+      <word_default>Tag Name</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>portal</word_app>
+      <word_pack>admin_portal</word_pack>
+      <word_key>portal_pop_tags</word_key>
+      <word_default>Exportable Tags:</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>portal</word_app>
+      <word_pack>admin_portal</word_pack>
+      <word_key>portal_main_title</word_key>
+      <word_default>Registered Portal Plug-ins</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>portal</word_app>
+      <word_pack>admin_portal</word_pack>
+      <word_key>error_no_key</word_key>
+      <word_default>There is no matching plug-in for the key used to find it.</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>portal</word_app>
+      <word_pack>admin_portal</word_pack>
+      <word_key>error_no_settings</word_key>
+      <word_default>There are no settings for this plug-in</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>portal</word_app>
+      <word_pack>admin_portal</word_pack>
+      <word_key>portal_row_menu_settings</word_key>
+      <word_default>Edit Settings...</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>portal</word_app>
+      <word_pack>admin_portal</word_pack>
+      <word_key>error_no_dir</word_key>
+      <word_default><![CDATA[The directory 'sources/portal_plugins' does not exist. Create it and try again.]]></word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>portal</word_app>
+      <word_pack>admin_portal</word_pack>
+      <word_key>main_title</word_key>
+      <word_default>Manage Portal Plug-ins</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+  </languagegroup>
+</languageexport>

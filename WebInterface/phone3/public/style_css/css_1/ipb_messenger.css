@@ -1,0 +1,119 @@
+/************************************************************************/
+/* IP.Board 3 CSS - By Rikki Tissier - (c)2008 Invision Power Services	*/
+/************************************************************************/
+/* ipb_messenger.css - Messenger styles									*/
+/************************************************************************/
+
+#messenger_utilities {
+	width: 18%;
+}	
+	
+#messenger_content {
+	width: 80%;
+}
+
+	#messenger_content h2 {
+		clear: none;
+		font-size: 1.4em;
+	}
+
+#folder_list, #space_allowance,
+#message_search, #participants,
+#invite_more {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#space_allowance p {
+	line-height: 150%;
+}
+
+#message_list {
+	clear: right;
+}
+
+#message_compose .input_check {
+	margin-left: 245px;
+}
+
+#invite_more p.desc {
+	padding: 10px;
+}
+
+#invite_more_dialogue {
+	display: none;
+}
+
+#invite_more_dialogue ul {
+	padding: 4px;
+}
+
+#invite_more_autocomplete {
+	width: 99%;
+}
+
+#folder_list li {
+	margin-bottom: 4px;
+	margin-left: 6px;
+	padding: 0px;
+}
+
+	#folder_list #folders {
+		margin-bottom: 12px;
+	}
+
+	#folder_list .total {
+		background-color: #d5dde5;
+		font-size: 0.75em;
+		font-weight: bold;
+		padding: 3px 6px;
+		margin-right: 10px;
+		right: 0;
+		position: absolute;
+	}
+
+#participants #participants_list li {
+	padding: 5px;
+	min-height: 55px;
+	clear: both;
+}
+
+#participants #participants_list li .photo {
+	margin: 2px 10px 0 0;
+	float: left;
+}
+
+	#participants #participants_list span.name.left_convo a {
+		color: #8a8a8a;
+		font-style: italic;
+	}
+
+	#participants #participants_list span.name.blocked a {
+		color: #ad2930;
+	}
+
+#space_allowance {
+	clear: both;
+}
+
+li.new_folder {
+	padding-left: 20px;
+}
+
+.add_folder.input_submit {
+	padding: 1px 3px;
+}
+
+.edit_folders {
+	background: #eef3f8;
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-right: 10px;
+	padding: 2px 0px 2px 5px;
+	right: -3px;
+	position: absolute;
+}
+
+	.f_delete {
+		color: #f00;
+	}

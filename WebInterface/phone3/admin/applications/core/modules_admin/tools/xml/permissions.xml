@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Manage Settings</grouptitle>
+		<items>
+			<item>
+				<key>settings_manage</key>
+				<string>Can edit/add settings and setting groups?</string>
+			</item>
+			<item>
+				<key>settings_delete</key>
+				<string>Can delete settings and setting groups?</string>
+			</item>
+			<item>
+				<key>performance_toggle</key>
+				<string>Can toggle performance mode?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Manage Caches</grouptitle>
+		<items>
+			<item>
+				<key>cache_manage</key>
+				<string>Can view and recache caches?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Manage Log In Modules</grouptitle>
+		<items>
+			<item>
+				<key>login_manage</key>
+				<string>Can manage log in modules?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Registration questions and answers</grouptitle>
+		<items>
+			<item>
+				<key>qanda_manage</key>
+				<string>Can access questions and answers?</string>
+			</item>
+			<item>
+				<key>qa_manage</key>
+				<string>Can add/edit questions and answers?</string>
+			</item>
+			<item>
+				<key>qa_remove</key>
+				<string>Can remove questions and answers?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Manage Help Files</grouptitle>
+		<items>
+			<item>
+				<key>helpfiles_manage</key>
+				<string>Can access help files?</string>
+			</item>
+			<item>
+				<key>help_manage</key>
+				<string>Can edit/add help files?</string>
+			</item>
+			<item>
+				<key>help_remove</key>
+				<string>Can remove help files?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>API Users</grouptitle>
+		<items>
+			<item>
+				<key>api_manage</key>
+				<string>Can edit/add API users?</string>
+			</item>
+			<item>
+				<key>api_remove</key>
+				<string>Can remove API users?</string>
+			</item>
+			<item>
+				<key>api_logs</key>
+				<string>Can access API logs?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Manage User Agents</grouptitle>
+		<items>
+			<item>
+				<key>uagents</key>
+				<string>Can manage user agents?</string>
+			</item>
+			<item>
+				<key>ua_manage</key>
+				<string>Can edit/add user agents and user agent groups?</string>
+			</item>
+			<item>
+				<key>ua_remove</key>
+				<string>Can remove user agents and user agent groups?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Cleanup and Rebuild Tools</grouptitle>
+		<items>
+			<item>
+				<key>rebuild_manage</key>
+				<string>Can access rebuild tools?</string>
+			</item>
+			<item>
+				<key>recount_manage</key>
+				<string>Can access recount tools?</string>
+			</item>
+			<item>
+				<key>tools_recount</key>
+				<string>Can recount site statistics?</string>
+			</item>
+			<item>
+				<key>tools_resynch</key>
+				<string>Can resynchronize forums?</string>
+			</item>
+			<item>
+				<key>tools_resyncht</key>
+				<string>Can resynchronize topics?</string>
+			</item>
+			<item>
+				<key>tools_rebuild</key>
+				<string>Can rebuild bbcode in post and other content?</string>
+			</item>
+			<item>
+				<key>tools_postcounts</key>
+				<string>Can reset post counts and usernames in posts?</string>
+			</item>
+			<item>
+				<key>tools_thumbs</key>
+				<string>Can rebuild thumbnails and user photos?</string>
+			</item>
+			<item>
+				<key>tools_attach</key>
+				<string>Can rebuild attachment data?</string>
+			</item>
+			<item>
+				<key>tools_orphaned</key>
+				<string>Can remove orphaned attachments?</string>
+			</item>
+			<item>
+				<key>tools_orphana</key>
+				<string>Can remove orphaned avatars?</string>
+			</item>
+			<item>
+				<key>tools_orphanp</key>
+				<string>Can remove orphaned photos?</string>
+			</item>
+			<item>
+				<key>tools_220</key>
+				<string>Can run the various 2.1.x and 2.2.x upgrade tools?</string>
+			</item>			
+		</items>
+	</group>
+</permissions>

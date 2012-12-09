@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>RSS Management</grouptitle>
+		<items>
+			<item>
+				<key>export_manage</key>
+				<string>Can edit/add forum RSS exports?</string>
+			</item>
+			<item>
+				<key>export_delete</key>
+				<string>Can delete forum RSS exports?</string>
+			</item>
+			<item>
+				<key>import_manage</key>
+				<string>Can edit/add forum RSS imports?</string>
+			</item>
+			<item>
+				<key>import_delete</key>
+				<string>Can delete forum RSS imports?</string>
+			</item>
+			<item>
+				<key>import_remove</key>
+				<string>Can remove topics previously imported via RSS?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

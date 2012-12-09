@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moduleexport>
+  <modulegroup>
+    <module>
+      <sys_module_title>Messaging</sys_module_title>
+      <sys_module_application>members</sys_module_application>
+      <sys_module_key>messaging</sys_module_key>
+      <sys_module_description>Personal Messaging Features</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>0</sys_module_position>
+      <sys_module_admin>0</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Member List</sys_module_title>
+      <sys_module_application>members</sys_module_application>
+      <sys_module_key>list</sys_module_key>
+      <sys_module_description>Displays the member list</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>0</sys_module_position>
+      <sys_module_admin>0</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Online List</sys_module_title>
+      <sys_module_application>members</sys_module_application>
+      <sys_module_key>online</sys_module_key>
+      <sys_module_description>Displays the online member list</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>0</sys_module_position>
+      <sys_module_admin>0</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Profile</sys_module_title>
+      <sys_module_application>members</sys_module_application>
+      <sys_module_key>profile</sys_module_key>
+      <sys_module_description>View members profiles</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>0</sys_module_position>
+      <sys_module_admin>0</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Members</sys_module_title>
+      <sys_module_application>members</sys_module_application>
+      <sys_module_key>members</sys_module_key>
+      <sys_module_description>Manage Members</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>0</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Member Groups</sys_module_title>
+      <sys_module_application>members</sys_module_application>
+      <sys_module_key>groups</sys_module_key>
+      <sys_module_description>Manage Member Groups</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>1</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Bulk Mail</sys_module_title>
+      <sys_module_application>members</sys_module_application>
+      <sys_module_key>bulkmail</sys_module_key>
+      <sys_module_description>Manage your bulk mail</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>2</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Manage Admin Restrictions</sys_module_title>
+      <sys_module_application>members</sys_module_application>
+      <sys_module_key>restrictions</sys_module_key>
+      <sys_module_description>Allows you to manage user and group ACP restrictions</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>0</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>3</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+  </modulegroup>
+</moduleexport>

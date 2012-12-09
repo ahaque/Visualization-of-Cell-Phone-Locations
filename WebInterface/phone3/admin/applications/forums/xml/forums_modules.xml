@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moduleexport>
+  <modulegroup>
+    <module>
+      <sys_module_title>Forums</sys_module_title>
+      <sys_module_application>forums</sys_module_application>
+      <sys_module_key>forums</sys_module_key>
+      <sys_module_description>Interact with forums</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>0</sys_module_position>
+      <sys_module_admin>0</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Posting</sys_module_title>
+      <sys_module_application>forums</sys_module_application>
+      <sys_module_key>post</sys_module_key>
+      <sys_module_description>Functions for making forum topics and posts</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>1</sys_module_position>
+      <sys_module_admin>0</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Forums</sys_module_title>
+      <sys_module_application>forums</sys_module_application>
+      <sys_module_key>forums</sys_module_key>
+      <sys_module_description>Manage Forums</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>0</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Post Attachments</sys_module_title>
+      <sys_module_application>forums</sys_module_application>
+      <sys_module_key>attachments</sys_module_key>
+      <sys_module_description>Manage post attachments</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>1</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Tools</sys_module_title>
+      <sys_module_application>forums</sys_module_application>
+      <sys_module_key>tools</sys_module_key>
+      <sys_module_description>Delete posts, change avatar, etc</sys_module_description>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent>0</sys_module_parent>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>2</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Statistics Center</sys_module_title>
+      <sys_module_application>forums</sys_module_application>
+      <sys_module_key>statistics</sys_module_key>
+      <sys_module_description/>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>3</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>RSS Management</sys_module_title>
+      <sys_module_application>forums</sys_module_application>
+      <sys_module_key>rss</sys_module_key>
+      <sys_module_description/>
+      <sys_module_version>1.0.0</sys_module_version>
+      <sys_module_parent/>
+      <sys_module_protected>1</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_tables/>
+      <sys_module_hooks/>
+      <sys_module_position>4</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+  </modulegroup>
+</moduleexport>

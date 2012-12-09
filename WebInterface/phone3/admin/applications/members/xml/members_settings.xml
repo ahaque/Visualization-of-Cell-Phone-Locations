@@ -1,0 +1,1506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settingexport>
+  <settinggroup>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>personalmessagesetup</conf_title_keyword>
+      <conf_title_title>Personal Message Set-up</conf_title_title>
+      <conf_title_desc>This section allows you to control the global PM options.</conf_title_desc>
+      <conf_title_tab>Members</conf_title_tab>
+      <conf_title_app>members</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Allow BBCode in messages?</conf_title>
+      <conf_description><![CDATA[BBCode is the [tag][/tag] format used to format text and apply other effects.]]></conf_description>
+      <conf_group>21</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>msg_allow_code</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>personalmessagesetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow HTML in messages?</conf_title>
+      <conf_description><![CDATA[If set to "yes", your members will be allowed to use HTML in their personal messages. We recommend that you disable this for security reasons.]]></conf_description>
+      <conf_group>21</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>msg_allow_html</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>personalmessagesetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Max. number of messages to show per page when viewing message list</conf_title>
+      <conf_description>The default is 50.</conf_description>
+      <conf_group>21</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>show_max_msg_list</conf_key>
+      <conf_default>50</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>personalmessagesetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Unblockable PM Groups</conf_title>
+      <conf_description>Members will not be able to block private messages from members in the selected groups.  You may select more than one.</conf_description>
+      <conf_group>21</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>unblockable_pm_groups</conf_key>
+      <conf_default/>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['unblockable_pm_groups']) )
+	{
+		$_POST['unblockable_pm_groups'] = implode(",",$_POST['unblockable_pm_groups']);
+	}
+	else
+	{
+		$_POST['unblockable_pm_groups'] = "";
+	}
+	
+	$key = 'unblockable_pm_groups';
+}
+if ( $show == 1 )
+{
+    $key='unblockable_pm_groups[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>personalmessagesetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Override &#39;Inbox Full&#39; Error]]></conf_title>
+      <conf_description><![CDATA[Members in the selected groups will be able to send private messages to other members, even when their inbox is 'full'.]]></conf_description>
+      <conf_group>21</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>override_inbox_full</conf_key>
+      <conf_default/>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['override_inbox_full']) )
+	{
+		$_POST['override_inbox_full'] = implode(",",$_POST['override_inbox_full']);
+	}
+	else
+	{
+		$_POST['override_inbox_full'] = "";
+	}
+	
+	$key = 'override_inbox_full';
+}
+if ( $show == 1 )
+{
+    $key='override_inbox_full[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>personalmessagesetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>reputation</conf_title_keyword>
+      <conf_title_title>Reputation System</conf_title_title>
+      <conf_title_desc>Configuration options for the reputation system</conf_title_desc>
+      <conf_title_tab>Members</conf_title_tab>
+      <conf_title_app>members</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Enable reputation system</conf_title>
+      <conf_description/>
+      <conf_group>47</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>reputation_enabled</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>741</conf_position>
+      <conf_start_group>General Setup</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>reputation</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Protected Groups</conf_title>
+      <conf_description>These groups can not receive reputation votes</conf_description>
+      <conf_group>47</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>reputation_protected_groups</conf_key>
+      <conf_default/>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['reputation_protected_groups']) )
+	{
+		$_POST['reputation_protected_groups'] = implode(",",$_POST['reputation_protected_groups']);
+	}
+	else
+	{
+		$_POST['reputation_protected_groups'] = "";
+	}
+	
+	$key = 'reputation_protected_groups';
+}
+if ( $show == 1 )
+{
+    $key='reputation_protected_groups[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>742</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>reputation</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Reputation type</conf_title>
+      <conf_description>Set the type of reputation points that your users can give</conf_description>
+      <conf_group>47</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>reputation_point_types</conf_key>
+      <conf_default>both</conf_default>
+      <conf_extra>positive=Positive Reputation Points&#13;
+negative=Negative Reputation Points&#13;
+both=Both Positive and Negative Reputation Points</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>743</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>reputation</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Highlight content above X points</conf_title>
+      <conf_description>Set the number of points required to highlight content that has been rated.</conf_description>
+      <conf_group>47</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>reputation_highlight</conf_key>
+      <conf_default>50</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>744</conf_position>
+      <conf_start_group>Display Settings</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>reputation</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Display user reputation</conf_title>
+      <conf_description>Set to yes to show a users reputation on their profile</conf_description>
+      <conf_group>47</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>reputation_show_profile</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>745</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>reputation</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Display content points</conf_title>
+      <conf_description>Set to yes to display the number of points that a post or other type of content has received</conf_description>
+      <conf_group>47</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>reputation_show_content</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>746</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>reputation</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow users to give themselves rep?</conf_title>
+      <conf_description>If set to yes, users will be allowed to vote on their own content</conf_description>
+      <conf_group>47</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>reputation_can_self_vote</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>747</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>reputation</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>spamservice</conf_title_keyword>
+      <conf_title_title>Spam Service</conf_title_title>
+      <conf_title_desc>Settings for the IPS Spam Service</conf_title_desc>
+      <conf_title_tab>Members</conf_title_tab>
+      <conf_title_app>members</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Enable Service</conf_title>
+      <conf_description/>
+      <conf_group>53</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>spam_service_enabled</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Basic Settings</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>spamservice</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>API Key</conf_title>
+      <conf_description/>
+      <conf_group>53</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>spam_service_api_key</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>spamservice</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Report &quot;Mark as Spam&quot; to IPS?]]></conf_title>
+      <conf_description>If set to yes, any users that your admin/mods report as spam will be reported to IPS for inclusion in the spam database.</conf_description>
+      <conf_group>53</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>spam_service_send_to_ips</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>spamservice</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Request Timeout</conf_title>
+      <conf_description>This is how may seconds IP.Board will wait for a response from the spam system</conf_description>
+      <conf_group>53</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>spam_service_timeout</conf_key>
+      <conf_default>15</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>spamservice</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Action to take for Request Timeout</conf_title>
+      <conf_description>If the request takes longer than the Request Timeout setting, what action should be taken?</conf_description>
+      <conf_group>53</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>spam_service_action_timeout</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra>1=Proceed with account registration&#13;
+2=Flag the account for administrator review&#13;
+3=Register the account but immediately mark it as banned</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group>Report Actions</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>spamservice</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Action to take for Code 0</conf_title>
+      <conf_description>Code 0 means that the request could not be processed by the spam service, due to an out of date license key or other technical issue.</conf_description>
+      <conf_group>53</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>spam_service_action_0</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra>1=Proceed with account registration&#13;
+2=Flag the account for administrator review&#13;
+3=Register the account but immediately mark it as banned</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>spamservice</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Action to take for Code 1</conf_title>
+      <conf_description>Code 1 is sent if the spam service determines that the account is unlikely to be spam.</conf_description>
+      <conf_group>53</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>spam_service_action_1</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra>1=Proceed with account registration&#13;
+2=Flag the account for administrator review&#13;
+3=Register the account but immediately mark it as banned</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>spamservice</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Action to take for Code 2</conf_title>
+      <conf_description>Code 2 is sent by the service if the account is possibly spam</conf_description>
+      <conf_group>53</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>spam_service_action_2</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra>1=Proceed with account registration&#13;
+2=Flag the account for administrator review&#13;
+3=Register the account but immediately mark it as banned</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>spamservice</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Action to take for Code 3</conf_title>
+      <conf_description>Code 3 is sent by the service if the account is likely spam</conf_description>
+      <conf_group>53</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>spam_service_action_3</conf_key>
+      <conf_default>2</conf_default>
+      <conf_extra>1=Proceed with account registration&#13;
+2=Flag the account for administrator review&#13;
+3=Register the account but immediately mark it as banned</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>spamservice</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Action to take for Code 4</conf_title>
+      <conf_description>Code 4 is sent by the service if the account is a known spammer</conf_description>
+      <conf_group>53</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>spam_service_action_4</conf_key>
+      <conf_default>3</conf_default>
+      <conf_extra>1=Proceed with account registration&#13;
+2=Flag the account for administrator review&#13;
+3=Register the account but immediately mark it as banned</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>10</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>spamservice</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_title_title>User Profiles</conf_title_title>
+      <conf_title_desc><![CDATA[This section allows you to adjust your members' global permissions and other options.]]></conf_title_desc>
+      <conf_title_tab>Members</conf_title_tab>
+      <conf_title_app>members</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Allow users to choose skins?</conf_title>
+      <conf_description/>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>allow_skins</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Global User Profile Options</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Disable group prefix/suffix formatting</conf_title>
+      <conf_description>This will allow you to globally disable the group prefix and suffix from formatting member names</conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipb_disable_group_psformat</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Number of posts a member must have before allowing them to change their member title?</conf_title>
+      <conf_description>Enter 0 to disable completely</conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>post_titlechange</conf_key>
+      <conf_default>500</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Maximum length (in bytes) for user signatures</conf_title>
+      <conf_description/>
+      <conf_group>30</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>max_sig_length</conf_key>
+      <conf_default>10000</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow HTML in signatures?</conf_title>
+      <conf_description>This is NOT recommended unless you trust all your members who can add a signature.</conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>sig_allow_html</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow BBCode in signatures?</conf_title>
+      <conf_description/>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>sig_allow_ibc</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Default editor type for members</conf_title>
+      <conf_description><![CDATA[What should the member's default editor type be when they register?]]></conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>ips_default_editor</conf_key>
+      <conf_default>std</conf_default>
+      <conf_extra>std=Standard Editor
+rte=Rich-Text Editor</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>User selectable posts per page dropdown contents</conf_title>
+      <conf_description><![CDATA[Separate with a comma, 'Use forum default' added automatically<br>Example: 5,15,20,25,30]]></conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>postpage_contents</conf_key>
+      <conf_default>5,10,15,20,25,30,35,40</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>User selectable topics per forum page dropdown contents</conf_title>
+      <conf_description><![CDATA[Separate with a comma, 'Use forum default' added automatically<br>Example: 5,15,20,25,30]]></conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>topicpage_contents</conf_key>
+      <conf_default>5,10,15,20,25,30,35,40</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Auto prune all topic subscriptions if the topic has no replies over [x] days]]></conf_title>
+      <conf_description>Leave blank or enter 0 for no auto prune limit</conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>subs_autoprune</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>10</conf_position>
+      <conf_start_group><![CDATA[Topic &amp; Forum Subscriptions]]></conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Automatically subscribe to every forum</conf_title>
+      <conf_description><![CDATA[Please choose which user groups you'd like to automatically be subscribed for email notification of <b>new</b> topics (not replies) in every forum available to them. This means that members having a selected PRIMARY group will be emailed everytime there is a new topic and they are not online to view it.<br /><b>Note</b> This will only send the email to those who have chosen to 'Allow emails from the administrators'.]]></conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>autoforum_sub_groups</conf_key>
+      <conf_default/>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['autoforum_sub_groups']) )
+	{
+		$_POST['autoforum_sub_groups'] = implode(",",$_POST['autoforum_sub_groups']);
+	}
+	else
+	{
+		$_POST['autoforum_sub_groups'] = "";
+	}
+	
+	$key = 'autoforum_sub_groups';
+}
+if ( $show == 1 )
+{
+    $key='autoforum_sub_groups[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>11</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow the use of avatars?</conf_title>
+      <conf_description/>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>avatars_on</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>12</conf_position>
+      <conf_start_group><![CDATA[Avatars &amp; Photos]]></conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allowed avatar image URL extensions</conf_title>
+      <conf_description>Seperate with comma (gif,png,jpeg) etc</conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>avatar_ext</conf_key>
+      <conf_default>gif,jpg,jpeg,png</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>13</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow users to use remote URL avatars?</conf_title>
+      <conf_description/>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>avatar_url</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>14</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow users to use Gravatars?</conf_title>
+      <conf_description><![CDATA[<a href='http://en.gravatar.com/' target='_blank'>Click here for more information on Gravatars</a>]]></conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>allow_gravatars</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>15</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Max. file size for avatar uploads? (K)</conf_title>
+      <conf_description/>
+      <conf_group>30</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>avup_size_max</conf_key>
+      <conf_default>50</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>15</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Maximum avatar dimensions</conf_title>
+      <conf_description><![CDATA[(WIDTH<b>x</b>HEIGHT)]]></conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>avatar_dims</conf_key>
+      <conf_default>90x90</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>16</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Default sizes for gallery avatars?</conf_title>
+      <conf_description><![CDATA[(WIDTH<b>x</b>HEIGHT)]]></conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>avatar_def</conf_key>
+      <conf_default>80x80</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>17</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allowed photo URL extensions</conf_title>
+      <conf_description>Seperate with comma (gif,png,jpeg) etc</conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>photo_ext</conf_key>
+      <conf_default>gif,jpg,jpeg,png</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>19</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Disable IPB auto sizing large photos/avatars?</conf_title>
+      <conf_description>This will ask the member to input their dimensions</conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>disable_ipbsize</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>20</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow GUESTS to view signatures?</conf_title>
+      <conf_description/>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>guests_sig</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>21</conf_position>
+      <conf_start_group>Guest Default Options</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow GUESTS to view posted images?</conf_title>
+      <conf_description/>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>guests_img</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>22</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow GUESTS to view user avatars?</conf_title>
+      <conf_description/>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>guests_ava</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>23</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow members to rate each other?</conf_title>
+      <conf_description><![CDATA[If 'yes', members will be able to rate other members from their profiles.]]></conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>pp_allow_member_rate</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>33</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Allow HTML in &quot;About Me&quot;?]]></conf_title>
+      <conf_description>This is NOT recommended unless you trust all your members who can edit their profiles.</conf_description>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>aboutme_html</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>85</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Allow BBCode in &quot;About Me&quot;?]]></conf_title>
+      <conf_description/>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>aboutme_bbcode</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>87</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Allow emoticons in &quot;About Me&quot;?]]></conf_title>
+      <conf_description/>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>aboutme_emoticons</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>88</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Enable the friends feature?</conf_title>
+      <conf_description/>
+      <conf_group>30</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>friends_enabled</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>752</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>userprofiles</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>displaynamesettings</conf_title_keyword>
+      <conf_title_title>Username Restrictions</conf_title_title>
+      <conf_title_desc>Settings to control display names on the forums.</conf_title_desc>
+      <conf_title_tab>Members</conf_title_tab>
+      <conf_title_app>members</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Characters allowed in usernames</conf_title>
+      <conf_description><![CDATA[If this is set, Invision Board will ensure all usernames only contain characters in this list upon registration.<br /><br />
+To allow only alphanumeric usernames, use: <b>a-zA-Z0-9</b>]]></conf_description>
+      <conf_group>8</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>username_characters</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Username Restrictions</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>displaynamesettings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Error Message to Display</conf_title>
+      <conf_description><![CDATA[If you specify the characters allowed in usernames, and a user tries to register with a name that has invalid characters, what error message should be displayed?<br /><b>Tip:</b>You can use {chars} to show the characters allowed]]></conf_description>
+      <conf_group>8</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>username_errormsg</conf_key>
+      <conf_default>The name can only contain these characters: {chars}</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>displaynamesettings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Block linebreaks in names</conf_title>
+      <conf_description><![CDATA[Do you want to explicitly block newlines, linebreaks, and html <br> tags in usernames and display names?]]></conf_description>
+      <conf_group>8</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>usernames_nobr</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>displaynamesettings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Allow &quot;Display Names&quot;]]></conf_title>
+      <conf_description><![CDATA[If enabled, the member can choose a "Display Name" that is separate from their "Log in UserName". This is REQUIRED when using non-internal authentication methods.]]></conf_description>
+      <conf_group>8</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>auth_allow_dnames</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group>Display Name Restrictions</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>displaynamesettings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Maximum Display Name Length</conf_title>
+      <conf_description>The maximum number of characters that a display name can be.</conf_description>
+      <conf_group>8</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>max_user_name_length</conf_key>
+      <conf_default>26</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>displaynamesettings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Prohibit Display Names from selecting Log In names</conf_title>
+      <conf_description><![CDATA[If "yes", one is not able to choose a display name that is the same as another's display name OR another's log in name. If "no" one is not able to choose a display name that is the same as another's display name only.]]></conf_description>
+      <conf_group>8</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>auth_dnames_nologinname</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>displaynamesettings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_title_title>Warning and Moderation</conf_title_title>
+      <conf_title_desc>This section will allow you to configure moderator settings</conf_title_desc>
+      <conf_title_tab>Members</conf_title_tab>
+      <conf_title_app>members</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Enable the warning system?</conf_title>
+      <conf_description><![CDATA[If set to "no", the warn system will not be used and all warn levels will be hidden from view.]]></conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>warn_on</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Warn System</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Minimum Warn Level</conf_title>
+      <conf_description><![CDATA[Minus numbers allowed. If using minus numbers, we recommend that you do not use the graphical blocks and percentage but use the 'rating' mode as 'warn mode' will not take into account a minus start number.
+<br />Members always start with a zero warn level when registered.]]></conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>warn_min</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Maximum Warn Level</conf_title>
+      <conf_description/>
+      <conf_group>31</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>warn_max</conf_key>
+      <conf_default>10</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow warnings to continue once the minimum or maximum has been reached?</conf_title>
+      <conf_description/>
+      <conf_group>31</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>warn_past_max</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Protected Groups</conf_title>
+      <conf_description><![CDATA[Groups that cannot be warned<br />You may choose more than one.]]></conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>warn_protected</conf_key>
+      <conf_default/>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['warn_protected']) )
+	{
+		$_POST['warn_protected'] = implode(",",$_POST['warn_protected']);
+	}
+	else
+	{
+		$_POST['warn_protected'] = "";
+	}
+	
+	$key = 'warn_protected';
+}
+if ( $show == 1 )
+{
+    $key='warn_protected[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow all other non-protected groups to see their own warn level and reasons?</conf_title>
+      <conf_description><![CDATA[If set to "yes", members will be able to see their own warn level and reasons for their warns.]]></conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>warn_show_own</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Type of visual indicator?</conf_title>
+      <conf_description>Controls which type of warn level meter is displayed.</conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>warn_show_rating</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra><![CDATA[0=Warn mode: Show graphical blocks & percentage
+1=Rating mode: Show < min | current | max > level]]></conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Moderators can ban via warn panel?</conf_title>
+      <conf_description><![CDATA[Applies to those moderators allowed to use the warning system<br />Admins can automatically do this via the warn panel.]]></conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>warn_mod_ban</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group>Forum Moderator Permissions</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Moderators can mod queue members via warn panel?</conf_title>
+      <conf_description><![CDATA[Applies to those moderators allowed to use the warning system<br />Admins can automatically do this via the warn panel.]]></conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>warn_mod_modq</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Moderators can remove post rights via warn panel?</conf_title>
+      <conf_description><![CDATA[Applies to those moderators allowed to use the warning system<br />Admins can automatically do this via the warn panel.]]></conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>warn_mod_post</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>10</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Number of times per day moderators can warn a single member</conf_title>
+      <conf_description/>
+      <conf_group>31</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>warn_mod_day</conf_key>
+      <conf_default>3</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>11</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Global Moderators can ban via warn panel?</conf_title>
+      <conf_description>Admins can automatically do this via the warn panel.</conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>warn_gmod_ban</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>12</conf_position>
+      <conf_start_group>Global Moderator Permissions</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Global Moderators can mod queue members via warn panel?</conf_title>
+      <conf_description>Admins can automatically do this via the warn panel.</conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>warn_gmod_modq</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>13</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Global Moderators can remove post rights via warn panel?</conf_title>
+      <conf_description>Admins can automatically do this via the warn panel.</conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>warn_gmod_post</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>14</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Number of times per day a global moderator can warn a single member</conf_title>
+      <conf_description/>
+      <conf_group>31</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>warn_gmod_day</conf_key>
+      <conf_default>3</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>15</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Can view report center?</conf_title>
+      <conf_description><![CDATA[Specifies what groups can view the report center. <!--PERM_LINK-->]]></conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>report_mod_group_access</conf_key>
+      <conf_default>4</conf_default>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['report_mod_group_access']) )
+	{
+		$_POST['report_mod_group_access'] = implode(",",$_POST['report_mod_group_access']);
+	}
+	else
+	{
+		$_POST['report_mod_group_access'] = "";
+	}
+	
+	$key = 'report_mod_group_access';
+}
+if ( $show == 1 )
+{
+    $key='report_mod_group_access[]';
+    $r['conf_description'] = str_replace( "<!--PERM_LINK-->", '<a href="' . $this->settings['base_url'] . 'module=report&amp;section=reports&amp;do=plugin">Configure group access</a>', $r['conf_description'] );
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>16</conf_position>
+      <conf_start_group>Report Center</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Enable Email Notification Option</conf_title>
+      <conf_description>Allows moderator to receive notification via Email.</conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>report_nemail_enabled</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>17</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Enable PM Notification Option</conf_title>
+      <conf_description>Allows moderator to receive notification via Private Message.</conf_description>
+      <conf_group>31</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>report_pm_enabled</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>18</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>warnsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </settinggroup>
+</settingexport>

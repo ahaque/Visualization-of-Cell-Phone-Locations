@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<export>
+  <help>
+    <row>
+      <title>Posting</title>
+      <text><![CDATA[&lt;strong&gt;The Post Editor&lt;/strong&gt;<br />
+There are two versions of the post editor: the standard editor and the rich text editor. Which one you use can be configured from your settings. With the rich text editor, you&#39;ll see how the post will look when it&#39;s finally posted, like a live preview.<br />
+<br />
+The toolbar buttons on each editor are very similar, and each button is explained below, from left to right:&lt;ul&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/remove_formatting.png&#39; /&gt; (This is only available in the rich text editor) - This will turn off all formatting tools currently in use.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/toggle_source.png&#39; /&gt; (This is only available in the rich text editor) - This will show the HTML source of the post and allow you to enter the post in HTML.  Note that we filter posts and some HTML may not be allowed or saved.&lt;/li&gt; &lt;li&gt;Other styles - This menu contains all other options which do not have their own toolbar button, such as acronyms or spoilers.&lt;/li&gt; &lt;li&gt;Fonts - This menu allows you to set what font your post is displayed in.&lt;/li&gt; &lt;li&gt;Sizes - This menu allows you to set what size the text in your post is.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/font_color.png&#39; /&gt; - This menu allows you to set the color of the text in your post.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/redo.png&#39; /&gt; - This will redo the last undone change.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/undo.png&#39; /&gt; - This will undo the last change made.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/bold.png&#39; /&gt; - This will make the text &lt;b&gt;bold&lt;/b&gt;.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/italic.png&#39; /&gt; - This will make the text &lt;i&gt;italic&lt;/i&gt; .&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/underline.png&#39; /&gt; - This will make the text &lt;u&gt;underlined&lt;/u&gt;.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/strike.png&#39; /&gt; - This will make the text &lt;strike&gt;striked out&lt;/strike&gt;.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/subscript.png&#39; /&gt; - This will make the text &lt;sub&gt;subscript&lt;/sub&gt;.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/superscript.png&#39; /&gt; - This will make the text &lt;sup&gt;superscript&lt;/sup&gt;.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/unordered_list.png&#39; /&gt; - This will start a bullet-point list.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/ordered_list.png&#39; /&gt; - This will start a numbered list.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/emoticons.png&#39; /&gt; - This menu will allow you to insert an emoticon into your post.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/link.png&#39; /&gt; - This will insert a link.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/picture.png&#39; /&gt; - This will insert an image.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/email.png&#39; /&gt; - This will insert an email address.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/quote.png&#39; /&gt; - This will insert a quote.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/code.png&#39; /&gt; - This will insert a codebox.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/media.png&#39; /&gt; - This will allow you to link to media, such as a video or song.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/indent.png&#39; /&gt; - This will indent the post. This icon can also be used to create multi-level lists.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/align_left.png&#39; /&gt; - This will make the text aligned to the left.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/align_right.png&#39; /&gt; - This will make the text aligned to the right.&lt;/li&gt; &lt;li&gt;&lt;img src=&#39;{style_image_url}/rte_icons/align_center.png&#39; /&gt; - This will make the text aligned in the center.&lt;/li&gt; &lt;/ul&gt;<br />
+<br />
+<br />
+&lt;strong&gt;Polls&lt;/strong&gt;<br />
+Depending on where in the at community you are posting your message at, you may have the option to add a poll that other members can vote in. If so, you will see a &quot;&lt;img src=&#39;{style_image_url}/chart_curve_add.png&#39; /&gt; Manage Poll&quot; button. lick on this to configure the poll.<br />
+<br />
+You can optionally enter a title for the poll in the &quot;Poll Title&quot; box. You may then also be able to set it as a public poll by checking the &quot;Public Poll?&quot; box. In public polls, all members will be able to see who voted for which option.<br />
+<br />
+You can then add your questions by typing the first question into the Question box.  You must then choose if you want this question to be multi-choice (allowing users to select an arbitrary number of answers) or single-choice (users will only be able to select one answer). To make the question multi-choice, check the &quot;Allow users to select multiple answers?&quot; box, otherwise, leave it blank.<br />
+<br />
+Then enter the possible answers for the questions into the boxes below. To add more answers, press the  &quot;&lt;img src=&#39;{style_image_url}/add.png&#39; /&gt; Add Another Choice&quot; button, or to remove an answer, click the &lt;img src=&#39;{style_image_url}/bullet_delete.png&#39; /&gt; icon. You can see how many choices you are allowed per question at the bottom of the list of questions.<br />
+<br />
+To add additional questions, press the  &quot;&lt;img src=&#39;{style_image_url}/add.png&#39; /&gt; Add Another Question&quot; button. You can see how many questions you are allowed at the bottom of the list of questions.<br />
+<br />
+To remove a question, press the &quot;&lt;img src=&#39;{style_image_url}/delete.png&#39; /&gt; Remove Question&quot; button, or to cancel adding a poll, press the &quot;&lt;img src=&#39;{style_image_url}/cross.png&#39; /&gt; Close Poll Form&quot; button.<br />
+<br />
+<br />
+&lt;strong&gt;Post Options&lt;/strong&gt;<br />
+Depending on where in the community you are posting your message at, you may have additional options including whether or not to add your signature, what post icon to use, and more. To see and configure these options, press the &quot;&lt;img src=&#39;{style_image_url}/add.png&#39; /&gt; Click to configure post options&quot; link if it is available.<br />
+<br />
+<br />
+&lt;strong&gt;Attachments&lt;/strong&gt;<br />
+Depending on where in the community you are posting your message at, you may be able to upload attachments to your message. There are two types of uploaders available: the default uploader and the flash uploader.<br />
+<br />
+&lt;em&gt;Default Uploader&lt;/em&gt;<br />
+The default uploader allows you to upload attachments one at a time. To begin, press the &lt;input type=&#39;button&#39; value=&#39;Choose File&#39; /&gt; button. A box will appear for you to select the file on your computer that you want to attach.  Select the file you want to upload.<br />
+<br />
+If you change your mind, you can press the &lt;input type=&#39;button&#39; value=&#39;Clear Selection&#39; /&gt; button and then choose a different file.<br />
+<br />
+Once you have selected the file you want, press &lt;span class=&#39;input_submit&#39;&gt;Attach the file&lt;/span&gt;.<br />
+If there are any errors uploading the file, you will receive an error message, otherwise, you will see the attachment appear.<br />
+<br />
+&lt;em&gt;Flash Uploader&lt;/em&gt;<br />
+You can enable the flash uploader from your settings menu. When enabled, you will be able to easily upload more than one file at a time.<br />
+<br />
+To start, press &lt;span class=&#39;input_submit&#39;&gt;Click to Attach Files&lt;/span&gt;. A box will appear for you to select the file or files on your computer that you want to attach. Select the file or files you want to upload.  You can select more than one file at a time by holding Ctrl (on Windows) or Command (on Mac) and click on the files.<br />
+<br />
+Once you have selected your files and clicked &quot;Open&quot;, they will begin uploading. If there are any errors uploading the files, you will receive an error message, otherwise, you will see the attachments appear.<br />
+<br />
+&lt;em&gt;Managing Attachments&lt;/em&gt;<br />
+Regardless of which uploader you use, once the files are uploaded you will see them on your screen. By default, all attachments are added to the bottom of your message, however, you can add any attachment to a particular section of your post by pressing the &quot;Add to Post&quot; link.<br />
+<br />
+If you wish to remove an attachment and have it not appear in your post, simply press the &quot;&lt;a href=&#39;#&#39; class=&#39;cancel delete&#39;&gt;Delete&lt;/a&gt;&quot; link.]]></text>
+      <description>A guide to the features available when posting or sending messages. Including the post editor, polls and attachments.</description>
+      <position>5</position>
+      <app>forums</app>
+    </row>
+    <row>
+      <title>Topics and Forums</title>
+      <text><![CDATA[&lt;strong&gt;Viewing the Forums&lt;/strong&gt;<br />
+You can view the forums by pressing the &quot;Discussion&quot; tab at the top of any page.  To enter a forum, click on it&#39;s name.<br />
+<br />
+Forums are split into categories. You can choose to hide any category by pressing the &quot;-&quot; button on the right-hand side above the list of forums, and the &quot;+&quot; button to make them visible again.<br />
+<br />
+Each forum has a marker to indicate the type of forum it is:<br />
+&lt;img src=&#39;{style_image_url}/f_read.png&#39; /&gt; Normal forum, no unread posts.<br />
+&lt;img src=&#39;{style_image_url}/f_unread.png&#39; /&gt; Normal forum, contains unread posts.<br />
+&lt;img src=&#39;{style_image_url}/f_cat_read.png&#39; /&gt; Forum that contains subforums, no unread posts.<br />
+&lt;img src=&#39;{style_image_url}/f_cat_unread.png&#39; /&gt; Forum that contains subforums, contains unread posts.<br />
+&lt;img src=&#39;{style_image_url}/f_pass_read.png&#39; /&gt; Password-protected forum, no unread posts.<br />
+&lt;img src=&#39;{style_image_url}/f_pass_unread.png&#39; /&gt; Password-protected forum, contains unread posts.<br />
+&lt;img src=&#39;{style_image_url}/f_locked.png&#39; /&gt; Archived read-only forum.<br />
+&lt;img src=&#39;{style_image_url}/f_redirect.png&#39; /&gt; Redirect forum, when you enter this forum you will be redirected elsewhere.<br />
+<br />
+<br />
+&lt;strong&gt;Viewing  Topics&lt;/strong&gt;<br />
+Within each forum there are a list of topics. Just like forums, each topic has an marker to indicate the type of topic it is:<br />
+&lt;img src=&#39;{style_image_url}/t_read.png&#39; /&gt; Normal topic, no unread posts.<br />
+&lt;img src=&#39;{style_image_url}/t_unread.png&#39; /&gt; Normal topic, contains unread posts.<br />
+&lt;img src=&#39;{style_image_url}/t_hot_read.png&#39; /&gt; Hot (popular) topic, no unread posts.<br />
+&lt;img src=&#39;{style_image_url}/t_hot_unread.png&#39; /&gt; Hot (popular) topic, contains unread posts.<br />
+&lt;img src=&#39;{style_image_url}/t_poll_read.png&#39; /&gt; Topic with a poll, no unread posts or votes since your last visit.<br />
+&lt;img src=&#39;{style_image_url}/t_poll_unread.png&#39; /&gt; Topic with a poll, contains unread posts or votes since your last visit.<br />
+&lt;img src=&#39;{style_image_url}/t_announcement.png&#39; /&gt; Important topic.<br />
+&lt;img src=&#39;{style_image_url}/t_moved.png&#39; /&gt; Topic that has been moved into another forum.<br />
+&lt;img src=&#39;{style_image_url}/t_closed.png&#39; /&gt; Closed topic, no more replies can be made.<br />
+<br />
+You may also see any of these icons with a slight variation to indicate that you have posted in the topic: &lt;img src=&#39;{style_image_url}/t_read_dot.png&#39; /&gt;<br />
+<br />
+To add a new topic, press the &quot;&lt;img src=&#39;{style_image_url}/page_white_add.png&#39; alt=&#39;Icon&#39; /&gt; Start new Topic&quot; button. This may not be available for all forums. In forums where you cannot create a topic you will see &quot;You cannot start a new topic&quot; in place of the button.<br />
+<br />
+To enter a any topic, click on its name.<br />
+<br />
+&lt;em&gt;Viewing Options&lt;/em&gt;<br />
+To customize the way topics are displayed you can click the &quot;Show filter options&quot; link at the bottom of the list of topics. This will expand the bar, showing a number of options:<br />
+&lt;ul&gt;&lt;li&gt;Show type - this allows you to only display certain types of topics such as polls or topics that you have posted in.&lt;/li&gt;&lt;li&gt;Sort by - this allows you to change the way topics are ordered. By default topics are ordered with the topics that have most recently had replies first, but you can choose to sort by other factors such as the number of replies or alphabetically.&lt;/li&gt;&lt;li&gt;Sort direction - this allows you to set which way you want to sort for the setting above.  For example if you set &quot;Sort by&quot; to be &quot;Replies&quot;, choosing &quot;A-Z&quot; for this setting will show the topics that have no replies first, whereas choosing &quot;Z-A&quot; will show the topics with the most replies first.&lt;/li&gt;&lt;li&gt;Time frame - this allows you to limit the topics that are shown to only topics that have been made within a certain amount of time.&lt;/li&gt;&lt;/ul&gt;<br />
+<br />
+There may be more than one page of topics, if this is the case, you will see &quot;(X Pages)&quot; at the bottom of the list of topics, followed by buttons to move across the pages. Use these buttons to view topics on other pages.<br />
+<br />
+<br />
+&lt;strong&gt;Viewing Posts&lt;/strong&gt;<br />
+<br />
+&lt;em&gt;User Information&lt;/em&gt;<br />
+To the side of each post there will be information about the user.  The icon to the side of the username indicates whether or not they are online. &lt;img src=&#39;{style_image_url}/user_green.png&#39; /&gt; means the user is currently online, while &lt;img src=&#39;{style_image_url}/user_off.png&#39; /&gt; means the user is offline.<br />
+<br />
+The &lt;img src=&#39;{style_image_url}/user_popup.png&#39; /&gt; icon to the right of the image will display the user&#39;s popup card which shows more information about the user and has links to display all their topics or posts.<br />
+<br />
+You can click the user&#39;s username or avatar to be taken to their profile.<br />
+<br />
+Below their username you will see their avatar, member title and pips or group image.<br />
+<br />
+Below this there are several more buttons: the &lt;img src=&#39;{style_image_url}/user_add.png&#39; /&gt; icon adds the user as a friend, and the &lt;img src=&#39;{style_image_url}/email_open.png&#39; /&gt; icon allows you to quickly send the user a personal message.<br />
+<br />
+&lt;em&gt;Reputation&lt;/em&gt;<br />
+If enabled, you will see reputation options in the corner below each post. You may see an icon representing the reputation other members have given for that post, along with icons to give reputation. To give the post a positive reputation, click the &lt;img src=&#39;{style_image_url}/add.png&#39; /&gt; icon or to give the post a negative reputation, click the &lt;img src=&#39;{style_image_url}/delete.png&#39; /&gt; icon.<br />
+<br />
+You may only be able to give positive or negative reputation, and for some users you may not be able to give reputation at all.<br />
+<br />
+&lt;em&gt;Replying&lt;/em&gt;<br />
+To add a post to the topic, press the &quot;&lt;img src=&#39;{style_image_url}/arrow_rotate_clockwise.png&#39; /&gt; Add Reply&quot; button. This will not be available if the topic is closed, in which case you will see &quot;&lt;img src=&#39;{style_image_url}/lock.png&#39; /&gt; This topic has been closed&quot; or if you do not have permission to post in the forum, in which case you will see &quot;You cannot reply to this topic&quot;.<br />
+<br />
+To quote another post in your reply, you can either click the &quot;&lt;img src=&#39;{style_image_url}/comment_add.png&#39; /&gt; Reply&quot; button beneath a post, or use the multiquote feature.  Multiquote is used when you want to quote more than one post in your reply.  Select the &quot;&lt;img src=&#39;{style_image_url}/comment_add.png&#39; /&gt; MultiQuote&quot; button underneath the posts you want to quote, and you will notice that the button will change color. To undo this, just press the button again. When you have marked all the posts you want to quote, press the &quot;&lt;img src=&#39;{style_image_url}/arrow_rotate_clockwise.png&#39; /&gt; Add Reply&quot; button as normal.<br />
+<br />
+You can also quickly reply to a topic by typing your reply into the fast reply box below the topic and pressing &lt;span class=&#39;input_submit alt&#39;&gt;Post&lt;/span&gt;.<br />
+<br />
+&lt;em&gt;Post Options&lt;/em&gt;<br />
+Next to the reply and multiquote buttons you may also see &quot;&lt;img src=&#39;{style_image_url}/comment_edit.png&#39; /&gt; Edit&quot; and &quot;&lt;img src=&#39;{style_image_url}/comment_delete.png&#39; /&gt; Delete&quot; buttons for your own posts. If so, you can use these buttons to edit or delete your posts. Note that these options may not be available after a certain amount of time. <br />
+<br />
+<br />
+&lt;strong&gt;Sharing Topics&lt;/strong&gt;<br />
+At the bottom of each topic you will see &quot;Share this topic&quot; followed by a number of links that allow you to email the topic to someone else, print the topic, or download and save the topic. Simply press the appropriate link and follow the on-screen instructions.<br />
+<br />
+&lt;strong&gt;Polls&lt;/strong&gt;<br />
+Some topic may have polls attached to them. If you can vote in the poll, you will see the questions and the options for voting. Once you have selected your options, press &lt;span class=&#39;input_submit alt&#39;&gt;Vote&#33;&lt;/span&gt; to add your vote.  Once voted, you will see the results and a &lt;img src=&#39;{style_image_url}/bullet_star_rated.png&#39;/&gt; icon besides the options you voted for.<br />
+<br />
+You may be able to change your vote. If so, you will see &lt;span class=&#39;input_submit alt&#39;&gt;Delete My Vote&lt;/span&gt;. To change your vote, press this and then vote again.<br />
+<br />
+To see the results of the poll without voting, press &lt;span class=&#39;input_submit alt&#39;&gt;Show Results&lt;/span&gt;. If the poll is a public poll, you can see who voted for which option by pressing the &quot;View&quot; link next to any option.<br />
+<br />
+&lt;strong&gt;Notifications&lt;/strong&gt;<br />
+You may want to subscribe to your favorite forums or topics so that when a new topic or reply is added you will be notified.<br />
+<br />
+To subscribe to a topic or forum, go to that area and click the &quot;&lt;img src=&#39;{style_image_url}/transmit_blue.png&#39; /&gt; Watch&quot; button.  You can also subscribe to a topic while replying by checking the &quot;Enable email notification of replies?&quot; checkbox from under the post configuration options.<br />
+<br />
+There are several types of notification, and you will be asked to choose one of these options:<br />
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;No Email Notification&lt;/strong&gt;: This option will not send out any email notification but will retain the forum in your subscriptions panel.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Delayed Emailed Notification&lt;/strong&gt;: This option will send out a notification if a new topic has been posted and you&#39;re not active on the board.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Immediate Email Notification&lt;/strong&gt;: This option will send out a notification immediately after a new topic has been made, regardless of your activity.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Daily Email Digest&lt;/strong&gt;: This option will send out a daily digest showing all new topics and all updated topics for the day.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Weekly Email Digest&lt;/strong&gt;: This option will send out a weekly digest showing all new topics and all updated topics for the week.&lt;/li&gt;&lt;/ul&gt;<br />
+<br />
+If you wish to automatically subscribe to every topic you reply to, you can configure this from &lt;a href=&#39;{board_url}app=core&amp;module=usercp&amp;tab=forums&#39;&gt;your control panel&lt;/a&gt;. Simply check the &quot;Watch every topic I reply to&quot; box, select the type of subscription and then click &lt;span class=&#39;input_submit&#39;&gt;Save Changes&lt;/span&gt;.<br />
+<br />
+You can remove a subscription from your settings, or by going back to the area you are subscribed to and pressing the &quot;&lt;img src=&#39;{style_image_url}/transmit_blue.png&#39; alt=&#39;Icon&#39; /&gt; Stop Watching&quot; button.]]></text>
+      <description>A guide to forums, topics, posts and polls.</description>
+      <position>4</position>
+      <app>forums</app>
+    </row>
+  </help>
+</export>

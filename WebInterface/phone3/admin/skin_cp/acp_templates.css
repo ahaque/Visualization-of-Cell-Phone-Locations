@@ -1,0 +1,87 @@
+/**
+* Template Editing Stuffs
+* (c) Invision Power Services, Inc
+* @author Matt Mecham
+*/
+
+/* text area wrapper */
+.tmpl_pte
+{
+	clear: both;
+}
+
+/* Text area */
+.tmpl_te
+{
+	width: 99%;
+	height: 470px;
+	line-height: 150%;
+	font-family: "monaco", "courier new", monospace;
+	font-size: 11px;
+}
+
+/* Close tab */
+.tbe_tab_c
+{
+	cursor: pointer;
+	float: left;
+	width: 12px;
+	height: 12px;
+	background-image: url(_newimages/icons/mclose.png);
+	background-position: 0px 4px;
+	background-repeat: no-repeat;
+}
+
+/* Go FS tab */
+.tbe_tab_f
+{
+	cursor: pointer;
+	float: left;
+	width: 12px;
+	height: 12px;
+	background-image: url(_newimages/icons/mfullscreen.png);
+	background-position: 0px 4px;
+	background-repeat: no-repeat;
+}
+
+/* Tab text */
+.tbe_tab_t
+{
+	float: left;
+	margin-left: 1px;
+}
+
+#tbe_tabstrip
+{
+	
+}
+
+#tbe_tabstrip li,
+#tbe_tabstrip li.tbe_item_lit
+{
+	cursor: pointer;
+	float: left;
+	background: #ecf1f5;
+	padding: 4px 9px;
+	-moz-border-radius: 3px 3px 0px 0px;
+	font-size: 0.9em;
+	margin: 0 2px 0 0;
+	position: relative;
+}
+
+#tbe_tabstrip li.tbe_item_lit
+{
+	background: #1d3652;
+	color: #fff;
+}
+
+.textarea-handle
+{
+	height: 8px;
+	display: block;
+	width: 99%;
+	background: #C5C5C5;
+	background-image: url('_newimages/grab-handle.gif');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}

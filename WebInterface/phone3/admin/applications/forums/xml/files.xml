@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<filedata>
+	<file>
+		<path>{admin}/applications/{app_directory}/xml/information.xml</path>
+		<exist>1</exist>
+		<writeable>0</writeable>
+	</file>
+</filedata>

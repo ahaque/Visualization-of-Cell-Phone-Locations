@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Admin Logs</grouptitle>
+		<items>
+			<item>
+				<key>adminlogs_view</key>
+				<string>Can view admin logs?</string>
+			</item>
+			<item>
+				<key>adminlogs_delete</key>
+				<string>Can delete admin logs?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Moderator Logs</grouptitle>
+		<items>
+			<item>
+				<key>modlogs_view</key>
+				<string>Can view moderator logs?</string>
+			</item>
+			<item>
+				<key>modlogs_delete</key>
+				<string>Can delete moderator logs?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Email Logs</grouptitle>
+		<items>
+			<item>
+				<key>emaillogs_view</key>
+				<string>Can view email logs?</string>
+			</item>
+			<item>
+				<key>emaillogs_delete</key>
+				<string>Can delete email logs?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Email Error Logs</grouptitle>
+		<items>
+			<item>
+				<key>emailerrorlogs_view</key>
+				<string>Can view email error logs?</string>
+			</item>
+			<item>
+				<key>emailerrorlogs_delete</key>
+				<string>Can delete email error logs?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Spider Logs</grouptitle>
+		<items>
+			<item>
+				<key>spiderlogs_view</key>
+				<string>Can view spider logs?</string>
+			</item>
+			<item>
+				<key>spiderlogs_delete</key>
+				<string>Can delete spider logs?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Warn Logs</grouptitle>
+		<items>
+			<item>
+				<key>warnlogs_view</key>
+				<string>Can view warn logs?</string>
+			</item>
+			<item>
+				<key>warnlogs_delete</key>
+				<string>Can delete warn logs?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Error Logs</grouptitle>
+		<items>
+			<item>
+				<key>errorlogs_view</key>
+				<string>Can view error logs?</string>
+			</item>
+			<item>
+				<key>errorlogs_delete</key>
+				<string>Can delete error logs?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

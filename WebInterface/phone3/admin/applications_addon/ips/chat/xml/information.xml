@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<information>
+	<data>
+		<name>Chat Services</name>
+		<public_name>Chat</public_name>
+		<author>Invision Power Services, Inc.</author>
+		<description></description>
+		<ipskey>08198fd56e656d80c69841a289166b2f</ipskey>
+		<disabledatinstall>1</disabledatinstall>
+		<templategroups>
+			<template match="contains">skin_chat</template>
+		</templategroups>
+	</data>
+</information>

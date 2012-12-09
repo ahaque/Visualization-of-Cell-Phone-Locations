@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>TrackMe Example</title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA9K1YkDoSv7ab5ZNpy7jKoRT61_z_jOTQzdwwKfH6KUZtXA2RvBRfVswBentOITYKdJThkUYKRvL3vA" type="text/javascript"></script>
+    <script type="text/javascript">
+var xmlHttp;
+var url = "http://localhost:80/updatelocation.jsp?info=true";
+
+var map;
+var marker;
+
+var lastpoint;
+var pano;
+var panoClient;
+var direction;
+
+function load(){
+  if (GBrowserIsCompatible()) {
+    map = new GMap2(document.getElementById("map"));
+    map.setCenter(new GLatLng(0,0), 12);
+    map.addOverlay(new GStreetviewOverlay());
+
+    pano = new GStreetviewPanorama(document.getElementById("pano"));
+    panoClient = new GStreetviewClient();
+
+    setInterval('updatelocation()',3000);
+  }
+}
+
+function updatelocation (){
+  xmlHttp=null;
+  xmlHttp=GetXmlHttpObject();
+  if (xmlHttp==null){
+    alert ("Browser does not support HTTP Request");
+    return;
+  }
+  xmlHttp.onreadystatechange=stateChanged;
+  xmlHttp.open("GET",url,true);
+  xmlHttp.send(null);
+}
+
+function stateChanged() {
+  if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete"){
+    if (marker != null) map.removeOverlay(marker);
+    var json = eval('(' + xmlHttp.responseText + ')');
+    var point = new GLatLng(Number(json.info.lat),Number(json.info.lon));
+    marker = new GMarker(point);
+    marker.bindInfoWindowHtml(json.info.email);
+    map.addOverlay(marker);
+    map.panTo(point);
+
+    setPanorama(point);
+  }
+}
+
+function setPanorama(point){
+  if (lastpoint != null) {
+    var o = map.fromLatLngToDivPixel(lastpoint);
+    var n = map.fromLatLngToDivPixel(point);
+    direction = getHeading(o.x,o.y,n.x,n.y);
+    panoClient.getNearestPanoramaLatLng(point, updatePano);
+  }
+  lastpoint = point;
+}
+
+function getHeading(x1,y1,x2,y2){
+  return 90 + Math.atan2((y2-y1),(x2-x1)) * 180 / Math.PI;
+}
+
+function updatePano(point){
+  if (point != null && direction != null) {
+    var pov = {yaw:direction,pitch:-20};
+    pano.setLocationAndPOV(point, pov);
+  }
+}
+
+function GetXmlHttpObject(){
+  var objXMLHttp = null;
+  if (window.XMLHttpRequest){
+    objXMLHttp = new XMLHttpRequest();
+  }
+  else if (window.ActiveXObject){
+    objXMLHttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  return objXMLHttp;
+}
+    </script>
+  </head>
+  <body onload="load()" onunload="GUnload()">
+    <center>
+      <table>
+        <tr>
+           <td>
+             <div id="map" style="width: 300px; height: 300px;">
+             </div>
+           </td>
+           <td>
+             <div id="pano" style="width: 300px; height: 300px; background: black;">
+             </div>
+           </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

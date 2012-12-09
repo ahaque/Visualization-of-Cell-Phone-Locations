@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>RSS Import</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>RSS Import</subitemtitle>
+					<subsection>import</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>RSS Export</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>RSS Export</subitemtitle>
+					<subsection>export</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>				
+	</tabitems>
+</menu>

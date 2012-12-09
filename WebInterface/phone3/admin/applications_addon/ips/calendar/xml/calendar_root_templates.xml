@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates application="calendar" templategroups="a:1:{s:13:&quot;skin_calendar&quot;;s:5:&quot;exact&quot;;}">
+  <templategroup group="skin_calendar">
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<h2>{$this->lang->words['cal_birthdays']}</h2>
+<div class='general_box'>
+{parse striping="bday" classes="row1,row2"}
+	<ul>
+		<foreach loop="birthdays:$rows as $r">
+			<li class='{parse striping="bday"}'><a href="{parse url="showuser={$r['uid']}" template="showuser" seotitle="{$r['seoname']}" base="public"}">{$r['uname']}</a> <if test="age:|:$r['age']">(<strong>{$r['age']}</strong>)</if></li>
+		</foreach>
+	</ul>
+</div>]]></template_content>
+      <template_name>calendarBirthdayList</template_name>
+      <template_data>$rows</template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[{parse js_module="calendar"}
+<script type='text/javascript'>
+	ipb.calendar.inSection = 'form';
+</script>
+<div class='post_form'>
+<form id='postingform' action="{parse url="app=calendar&module=calendar&amp;do={$code}&amp;cal_id={$calendar_id}&amp;formtype={$formtype}&amp;event_id={$event_id}" base="public"}" method="post">
+	<input type="hidden" name="removeattachid" value="" />
+	
+	<h2 class='maintitle'>{$form_title}</h2>
+	<div class='generic_bar'></div>
+	
+	<fieldset>
+		<h3 class='bar'>{$this->lang->words['event_details']}</h3>
+		<ul>
+			<li class='field'>
+				<label for='event_title'>{$this->lang->words['calendar_title']}</label>
+				<input type='text' id='event_title' class='input_text' name='event_title' value="{$event_title}" size='50' maxlength='50' />
+			</li>
+			
+			<if test="single:|:$formtype == 'single'">
+			<li class='field'>
+				<label for='e_day'>{$this->lang->words['fv_single']}</label>
+				<!-- SKINNOTE: Update this to use the calendar picker? -->
+				<select class='input_select' name="e_day" id='e_day'>{$event_date['nd']}</select>&nbsp;&nbsp;
+				<select class='input_select' name="e_month">{$event_date['nm']}</select>&nbsp;&nbsp;
+				<select class='input_select' name="e_year">{$event_date['ny']}</select>
+			</li>
+			</if>
+			
+			<if test="range:|:$formtype == 'range'">
+			<li class='field'>
+				<label for='e_day'>{$this->lang->words['fv_single']}</label>
+				<select class='input_select' name="e_day" id='e_day'>{$event_date['nd']}</select>&nbsp;&nbsp;
+				<select class='input_select' name="e_month">{$event_date['nm']}</select>&nbsp;&nbsp;
+				<select class='input_select' name="e_year">{$event_date['ny']}</select>
+			</li>
+			<li class='field'>
+				<label for='end_day'>{$this->lang->words['fv_range_ends']}</label>
+				<select class='input_select' name="end_day" id='end_day'>{$event_date['fd']}</select>&nbsp;&nbsp;
+				<select class='input_select' name="end_month">{$event_date['fm']}</select>&nbsp;&nbsp;
+				<select class='input_select' name="end_year">{$event_date['fy']}</select>
+			</li>
+			</if>
+			
+			<if test="recur:|:$formtype == 'recur'">
+			<li class='field'>
+				<label for='e_day'>{$this->lang->words['fv_single']}</label>
+				<select class='input_select' name="e_day" id='e_day'>{$event_date['nd']}</select>&nbsp;&nbsp;
+				<select class='input_select' name="e_month">{$event_date['nm']}</select>&nbsp;&nbsp;
+				<select class='input_select' name="e_year">{$event_date['ny']}</select>
+			</li>
+			<li class='field'>
+				<label for='recur_unit'>{$this->lang->words['fv_recur']}</label>
+				{$this->lang->words['fv_recur_every']} 
+				<select class='input_select' name="recur_unit" id='recur_unit'>{$event_date['recur_unit']}</select>
+				
+				{$this->lang->words['fv_until']}
+				<select class='input_select' name="end_day">{$event_date['fd']}</select>&nbsp;&nbsp;
+				<select class='input_select' name="end_month">{$event_date['fm']}</select>&nbsp;&nbsp;
+				<select class='input_select' name="end_year">{$event_date['fy']}</select>
+			</li>
+			</if>
+			
+			<if test="settimes:|:$event_type['timestuff']['formtype'] != 'range'">
+			<li class='field checkbox'>
+				<input class='input_check' type='checkbox' id='set_times' name='set_times' {$event_type['timestuff']['checked']} value='1' /> 
+				<label for='set_times'>{$this->lang->words['form_set_times']}</label>
+			</li>
+			<li class='field time_setting'>
+				<label for='timezone'>{$this->lang->words['form_tz']}</label>
+				{$event_type['timezone']}
+			</li>
+			<li class='field time_setting'>
+				<label for='tz_start'>{$this->lang->words['form_timestart']}</label>
+				<input class='input_text' type='text' size='8' id='tz_start' name='event_timestart' value='{$event_type['timestuff']['timestart']}' />
+			</li>
+			</if>
+		</ul>
+		<h3 class='bar'>{$this->lang->words['event_options']}</h3>
+		<ul>
+			<li class='field'>
+				<label for='event_calendar_id'>{$this->lang->words['form_whichcal']}</label>
+				<select name='event_calendar_id' id='event_calendar_id'>{$event_type['dropdown']}</select>
+			</li>
+			<li class='field'>
+				<label for='e_type'>{$this->lang->words['calendar_event_type']}</label>
+				<select name="e_type" id='e_type'>
+					<option value="public"{$event_type['pub_select']}>{$this->lang->words['calendar_type_public']}</option>
+					<option value="private"{$event_type['priv_select']}>{$this->lang->words['calendar_type_private']}</option>
+				</select>
+			</li>
+			<if test="acpaccess:|:$this->memberData['g_access_cp']">
+			<li class='field type_setting'>
+				<label for='e_groups'>{$this->lang->words['calendar_group_filter']}</label>
+				<select name="e_groups[]" id='e_groups' size="5" multiple='multiple'>{$groups}</select>
+			</li>
+			<li class='field checkbox type_setting'>
+				<input type='checkbox' id='all_groups' value='1' class='input_check' />
+				<label for='all_groups'>{$this->lang->words['all_groups']}</label>
+			</if>
+		</ul>
+		<script type='text/javascript'>
+			<if test="hidetime:|:$event_type['timestuff']['divhide'] == 'none'">
+			$$('.time_setting').invoke('hide');
+			</if>
+			
+			<if test="adminoptions:|:$this->memberData['g_access_cp']">
+			ipb.calendar.hideAdminOptions();
+			</if>
+		</script>
+		<h3 class='bar'>{$this->lang->words['event']}</h3>
+		<ul>
+			<li>{$editor}</li>
+			<li class='field checkbox'>
+				<input type="checkbox" name="enableemo" class="input_check" value="yes" <if test="hassmilies:|:$event_type['smilies'] == 1">checked='checked'</if> />
+				<label for='enableemo'>{$this->lang->words['enable_emo']}</label>
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset class='submit'>
+		<input class='input_submit' type="submit" value="{$button}" tabindex="4" /> {$this->lang->words['or']} <a href='{parse url="app=calendar&amp;module=calendar&amp;cal_id={$calendar_id}" base="public"}' title='{$this->lang->words['cancel']}' class='cancel'>{$this->lang->words['cancel']}</a>
+	</fieldset>
+</form>
+</div>]]></template_content>
+      <template_name>calendarEventForm</template_name>
+      <template_data><![CDATA[$code="", $calendar_id="", $formtype="", $event_id='', $event_title='', $form_title='', $event_date='', $event_type='', $groups, $button, $editor]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[{parse js_module="topic"}
+<script type="text/javascript">
+//<!#^#|CDATA|
+	function calendar_event_delete(id, cal_id)
+	{
+		if (confirm('{$this->lang->words['js_del_1']}'))
+		{
+			 window.location.href = "{$this->settings['base_url']}app=calendar&amp;module=calendar&amp;do=delete&md5check={$this->member->form_hash}&event_id=" + id + "&cal_id=" + cal_id;
+		 }
+		 else {
+			alert ('{$this->lang->words['js_del_2']}');
+		} 
+	}
+//|#^#]>
+</script>
+<!--SKINNOTE: I commented this out because we need to show event titles, and this seemed "prettiest", but feel free to change -->
+<!--<h2>{$this->lang->words['cal_title_events']}</h2>
+<div class='generic_bar'></div>-->
+{$events}]]></template_content>
+      <template_name>calendarEventsList</template_name>
+      <template_data>$events</template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[{parse js_module="calendar"}
+<h2>{$this->lang->words['calendars']}</h2>
+<div id='calendar_list' class='left general_box'>
+	<if test="gotcalendars:|:is_array( $calendars ) && count( $calendars )">
+	<p><strong>{$this->lang->words['select_calendar']}</strong></p>
+	<ol>
+		<foreach loop="calendars:$calendars as $cid => $cal">
+			<li><a href='{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cid}&amp;m={$this->request['m']}&amp;y={$this->request['y']}" base="public"}' title="{$this->lang->words['view_this_calendar']}" class='rounded'>{$cal['cal_title']}</a></li>
+		</foreach>
+	</ol>
+	</if>
+	<strong>{$this->lang->words['jump_to']}</strong><br />
+	<form action="{parse url="app=calendar&amp;module=calendar" base="public"}" method="post">
+		<fieldset>
+			<input type='hidden' name='cal_id' value='{$this->request['cal_id']}' />
+			<label for='m' class='hide'>{$this->lang->words['fv_months']}:</label>
+			<select name="m" class='input_select'><!--IBF.MONTH_BOX--></select>&nbsp;
+			<label for='year' class='hide'>{$this->lang->words['fv_years']}:</label>
+			<select name="year" class='input_select'><!--IBF.YEAR_BOX--></select>&nbsp;
+			<input type='submit' class='input_submit' value='{$this->lang->words['jmp_go']}' />
+		</fieldset>
+	</form>
+</div>
+<div id='current_calendar' class='right calendar_wrap'>
+	<div class='topic_controls'>
+		<ul class='pagination'>
+			<li><a href="{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cal_id}&amp;m={$prev['month_id']}&amp;y={$prev['year_id']}" base="public"}" title="{$prev['month_name']} {$prev['year_id']}">&larr; {$this->lang->words['month_previous']}</a></li>
+			<li><a href="{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cal_id}&amp;m={$next['month_id']}&amp;y={$next['year_id']}" base="public"}" title="{$next['month_name']} {$next['year_id']}">{$this->lang->words['month_next']} &rarr;</a></li>
+		</ul>
+		<ul class='topic_buttons'>
+			<li><a href='{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cal_id}&amp;do=newevent&amp;formtype=single" base="public"}' title='{$this->lang->words['se_normal']}'>{parse replacement="cal_single"} {$this->lang->words['event_add_single']}</a></li>
+			<li><a href='{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cal_id}&amp;do=newevent&amp;formtype=range" base="public"}' title='{$this->lang->words['se_range']}'>{parse replacement="cal_ranged"} {$this->lang->words['event_add_ranged']}</a></li>
+			<li><a href='{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cal_id}&amp;do=newevent&amp;formtype=recur" base="public"}' title='{$this->lang->words['se_recur']}'>{parse replacement="cal_recurring"} {$this->lang->words['event_add_recurring']}</a></li>
+		</ul>
+	</div>
+	<br />
+	
+	<table id='calendar_table' class='ipb_table' summary="{$this->lang->words['calendar_for']} {$month} {$year}">
+		<caption class='maintitle'>{$month} {$year}</caption>
+		<tr class='header'>
+				<th class='head_week' scope='col'>&nbsp;</th>
+			<foreach loop="days:$day_words as $day">
+				<th scope='col'>{$day}</th>
+			</foreach>
+			<!--IBF.DAYS_CONTENT-->
+		</tr>
+	</table>
+	
+	<ul class='pagination'>
+		<li><a href="{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cal_id}&amp;do=find&amp;what=thismonth" base="public"}">{$this->lang->words['aa_cur_month']}</a></li>
+		<li><a href="{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cal_id}&amp;do=find&amp;what=thisweek" base="public"}">{$this->lang->words['aa_view_week']}</a></li>
+	</ul>
+</div>
+<div id='mini_calendars' class='left calendar_wrap'>
+	<!--PREV.MONTH-->
+	<br />
+	<!--NEXT.MONTH-->
+</div>		
+<br />]]></template_content>
+      <template_name>calendarMainContent</template_name>
+      <template_data><![CDATA[$calendars, $month="",$year="",$prev="",$next="",$cal_jump="",$cal_id="",$day_words=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<p>{$event['event_content']}</p>
+<br />
+<p>{$this->lang->words['c_ranged']}
+<br />{$this->lang->words['c_fromcolon']} {$event['_from_month']}/{$event['_from_day']}/{$event['_from_year']}
+<br />{$this->lang->words['c_tocolon']} {$event['_to_month']}/{$event['_to_day']}/{$event['_to_year']}</p>]]></template_content>
+      <template_name>calendar_rss_range</template_name>
+      <template_data>$event</template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<p>{$event['event_content']}</p>
+<br />
+<p>{$this->lang->words['c_recurring']}
+<br />{$this->lang->words['c_fromcolon']} {$event['_from_month']}/{$event['_from_day']}/{$event['_from_year']}
+<br />{$this->lang->words['c_tocolon']} {$event['_to_month']}/{$event['_to_day']}/{$event['_to_year']}</p>]]></template_content>
+      <template_name>calendar_rss_recurring</template_name>
+      <template_data>$event</template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<p>{$event['event_content']}</p>
+<br />
+<p>{$this->lang->words['c_singleday']} {$event['_from_month']}/{$event['_from_day']}/{$event['_from_year']}</p>]]></template_content>
+      <template_name>calendar_rss_single</template_name>
+      <template_data>$event</template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<li class='post_approve'><a href="{parse url="app=calendar&amp;module=calendar&amp;do=calendarEventApprove&amp;modfilter={$this->request['modfilter']}&amp;qt={$event['_quicktime']}&amp;approve=1&amp;md5check={$this->member->form_hash}&amp;cal_id={$cal_id}&amp;event_id=$id" base="public"}" title='{$this->lang->words['approve_event']}'>{parse replacement="edit_post_icon"} {$this->lang->words['approve_event']}</a></li>]]></template_content>
+      <template_name>cal_approve_button</template_name>
+      <template_data><![CDATA[$id="",$cal_id="",$event=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<td class="blank"><!-- no content --></td>]]></template_content>
+      <template_name>cal_blank_cell</template_name>
+      <template_data/>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<!--Day-->
+<if test="datecellqueued:|:$queued != 0">
+<td id='{$js_id}' class="moderated">
+	<strong>{$month_day}</strong><a href="{$cal_date_queued}">{parse replacement="t_queued"}</a>
+<else />
+<td id='{$js_id}'>
+	<strong>{$month_day}</strong>
+</if>
+	{$events}
+</td>]]></template_content>
+      <template_name>cal_date_cell</template_name>
+      <template_data><![CDATA[$month_day="",$events="",$cal_date_queued="",$queued=0, $js_id]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<!--Day-->
+<if test="todayqueued:|:$queued != 0">
+<td id='{$js_id}' class="today moderated">
+ 	<strong>{$month_day}: {$this->lang->words['today_title']}</strong> <a href="{$cal_date_queued}">{parse replacement="t_queued"}</a>
+<else />
+<td id='{$js_id}' class="today">
+	<strong>{$month_day}: {$this->lang->words['today_title']}</strong>
+</if>
+	{$events}
+</td>]]></template_content>
+      <template_name>cal_date_cell_today</template_name>
+      <template_data><![CDATA[$month_day="",$events="",$cal_date_queued="",$queued=0, $js_id]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<td id='{$id}'><strong>{$day}</strong></td>]]></template_content>
+      <template_name>cal_day_bit</template_name>
+      <template_data><![CDATA[$day="", $id='']]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<li class='post_del'><a href='{parse url="app=calendar&amp;module=calendar&amp;do=delete&amp;md5check={$this->member->form_hash}&amp;event_id={$id}&amp;cal_id={$cal_id}" base="public"}' title='{$this->lang->words['calendar_delete_title']}'>{parse replacement="delete_post_icon"} {$this->lang->words['calendar_delete_button']}</a></li>
+<li class='post_edit'><a href='{parse url="app=calendar&amp;module=calendar&amp;do=edit&amp;cal_id={$cal_id}&amp;event_id={$id}" base="public"}' title='{$this->lang->words['calendar_edit_title']}'>{parse replacement="edit_post_icon"} {$this->lang->words['calendar_edit_button']}</a></li>]]></template_content>
+      <template_name>cal_edit_del_button</template_name>
+      <template_data><![CDATA[$id="",$cal_id=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[</ul>]]></template_content>
+      <template_name>cal_events_end</template_name>
+      <template_data/>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<ul>]]></template_content>
+      <template_name>cal_events_start</template_name>
+      <template_data/>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<li class='cal'>
+	<a href="{parse url="app=calendar&amp;module=calendar&amp;cal_id={$event['event_calendar_id']}&amp;do=showevent&amp;event_id={$event['event_id']}" seotitle="false" template="event" base="public"}" title='{$this->lang->words['view_event']}'>{$event['event_title']}</a>
+</li>]]></template_content>
+      <template_name>cal_events_wrap</template_name>
+      <template_data><![CDATA[$event=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<if test="strpos( $url, "do=showevent" ) !== false">
+	<li class='cal'><a href="{parse url="app=calendar&amp;module=calendar&amp;{$url}" template="event" seotitle="false" base="public"}" title='{$this->lang->words['view_event']}'>{$text}</a></li>
+<else />
+	<li class='cal'><a href="{parse url="app=calendar&amp;module=calendar&amp;{$url}" base="public"}" title='{$this->lang->words['view_event']}'>{$text}</a></li>
+</if>]]></template_content>
+      <template_name>cal_events_wrap_manual</template_name>
+      <template_data><![CDATA[$url="",$text=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<li class='cal'>
+	<a href="{parse url="app=calendar&amp;module=calendar&amp;cal_id={$event['event_calendar_id']}&amp;do=showevent&amp;event_id={$event['event_id']}" template="event" seotitle="false" base="public"}" title='{$this->lang->words['view_event']}'>{$event['event_title']}</a>
+</li>]]></template_content>
+      <template_name>cal_events_wrap_range</template_name>
+      <template_data><![CDATA[$event=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<li class='cal'>
+	<a href="{parse url="app=calendar&amp;module=calendar&amp;cal_id={$event['event_calendar_id']}&amp;do=showevent&amp;event_id={$event['event_id']}" base="public"}" title="{$this->lang->words['tbt_recur']}">{$event['event_title']}</a>
+</li>]]></template_content>
+      <template_name>cal_events_wrap_recurring</template_name>
+      <template_data><![CDATA[$event=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[</tr>
+<!-- NEW ROW-->
+<php>
+	$this->row_class = ( $this->row_class == 'row1' ) ? 'row2' : 'row1';
+</php>
+<tr class='{$this->row_class}'>
+	<th class='view_week header' scope='row'>
+		<a href="{parse url="app=calendar&amp;module=calendar&amp;cal_id={$this->request['_cal_id']}&amp;do=showweek&amp;week={$week}" seotitle="false" template="cal_week" base="public"}" title="{$this->lang->words['view_this_week']}"><img src="{$this->settings['img_url']}/next.png" alt='{$this->lang->words['icon']}' /></a>
+	</th>]]></template_content>
+      <template_name>cal_new_row</template_name>
+      <template_data><![CDATA[$week=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<if test="disablelightbox:|:!$this->settings['disable_lightbox']">
+{parse template="include_lightbox" group="global" params=""}
+</if>
+{parse template="include_highlighter" group="global" params="1"}
+<h2 class='maintitle'>{$this->lang->words['event_prefix']} {$event['event_title']}</h2>
+<div class='generic_bar'></div>
+<div class='post_block <if test="eventnotapproved:|:$event['event_approved']==0">moderated</if>' id='event_id_{$event['event_id']}'>
+	<div class='post_wrap'>
+		<if test="eventmember:|:$member['member_id']">
+			<h3>
+		<else />
+			<h3 class='guest'>
+		</if>
+				<if test="onlineoffline:|:$member['member_id']">
+					<if test="online:|:$member['_online']">
+						{parse replacement="user_online"}
+					<else />
+						{parse replacement="user_offline"}
+					</if> &nbsp;
+							<span class="author vcard"><a class="url fn" href='{parse url="showuser={$member['member_id']}" template="showuser" seotitle="{$member['members_seo_name']}" base="public"}' title='{$this->lang->words['view_profile']}'>{$member['members_display_name']}</a>{parse template="user_popup" group="global" params="$member['member_id'],$member['members_seo_name']"}</span>
+				<else />
+					{$member['members_display_name']}
+				</if>
+			</h3>
+		<div class='author_info'>
+			{parse template="userInfoPane" group="global" params="$member, $event['event_id'], array()"}
+		</div>
+		<div class='post_body'>
+			<p class='posted_info'>
+				<if test="posticonid:|:$post['post']['icon_id']">
+					<img src="{$this->settings['public_dir']}/style_extra/post_icons/icon{$post['post']['icon_id']}.gif" alt="{$this->lang->words['icon']}" />&nbsp;
+				</if>
+				<strong class='event'>{$this->lang->words['event_date']} {$event['_start_date']} {$date_ends} {$event['time']} ({$type})</strong>
+			</p>
+			<div class='post entry-content'>
+				{$event['event_content']}
+			</div>
+		</div>
+		<ul class='post_controls'>
+			<if test="reportpost:|:($this->settings['disable_reportpost'] != 1) and ( $this->memberData['member_id'] )">
+				<li class='report'><a href='{parse url="app=core&amp;module=reports&amp;rcom=calendar&amp;event_id={$event['event_id']}" base="public"}' title='{$this->lang->words['report_event']}'>{parse replacement="report_post_icon"} {$this->lang->words['report']}</a></li>
+			</if>
+			<!-- SKINNOTE: Add report link back in -->
+			{$approve_button} {$edit_button}
+		</ul>
+	</div>			
+</div>]]></template_content>
+      <template_name>cal_show_event</template_name>
+      <template_data><![CDATA[$event="",$member="",$event_type="",$edit_button="",$approve_button="",$type="",$date_ends=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<li class='post_unapprove'><a href="{parse url="app=calendar&amp;module=calendar&amp;do=calendarEventApprove&amp;modfilter={$this->request['modfilter']}&amp;qt={$event['_quicktime']}&amp;approve=0&amp;md5check={$this->member->form_hash}&amp;cal_id={$cal_id}&amp;event_id={$id}" base="public"}" title='{$this->lang->words['unapprove_event']}'>{parse replacement="edit_post_icon"} {$this->lang->words['unapprove_event']}</a></li>]]></template_content>
+      <template_name>cal_unapprove_button</template_name>
+      <template_data><![CDATA[$id="",$cal_id="",$event=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[{parse js_module="calendar"}
+<h2>{$this->lang->words['calendars']}</h2>
+<div id='calendar_list' class='left general_box'>
+	<if test="calendarsforweek:|:is_array( $calendars ) && count( $calendars )">
+	<p><strong>{$this->lang->words['select_calendar']}</strong></p>
+	<ol>
+		<foreach loop="weekcalendars:$calendars as $cid => $cal">
+			<li><a href='{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cid}&amp;do=showweek&amp;week={$this->request['week']}" seotitle="false" template="cal_week" base="public"}' title="{$this->lang->words['view_this_calendar']}" class='rounded'>{$cal['cal_title']}</a></li>
+		</foreach>
+	</ol>
+	</if>
+	<strong>{$this->lang->words['jump_to']}</strong><br />
+	<form action="{parse url="app=calendar&amp;module=calendar&amp;cal_id={$this->request['_cal_id']}" base="public"}" method="post">
+		<fieldset>
+			<label for='m' class='hide'>{$this->lang->words['fv_months']}:</label>
+			<select name="m" class='input_select'><!--IBF.MONTH_BOX--></select>&nbsp;
+			<label for='year' class='hide'>{$this->lang->words['fv_years']}:</label>
+			<select name="year" class='input_select'><!--IBF.YEAR_BOX--></select>&nbsp;
+			<input type='submit' class='input_submit' value='{$this->lang->words['jmp_go']}' />
+		</fieldset>
+	</form>
+</div>
+<div id='current_calendar' class='right calendar_wrap'>
+	<div class='topic_controls'>
+		<ul class='pagination'>
+			<li><a href="{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cal_id}&amp;do=showweek&amp;week={$prev['0']}" seotitle="false" template="cal_week" base="public"}" title="{$prev['month_name']} {$prev['year_id']}">&larr; {$this->lang->words['week_previous']}</a></li>
+			<li><a href="{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cal_id}&amp;do=showweek&amp;week={$next['0']}" seotitle="false" template="cal_week" base="public"}" title="{$next['month_name']} {$next['year_id']}">{$this->lang->words['week_next']} &rarr;</a></li>
+		</ul>
+		<ul class='topic_buttons'>
+			<li><a href='{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cal_id}&amp;do=newevent&amp;formtype=single" base="public"}' title='{$this->lang->words['se_normal']}'>{parse replacement="cal_single"} {$this->lang->words['event_add_single']}</a></li>
+			<li><a href='{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cal_id}&amp;do=newevent&amp;formtype=range" base="public"}' title='{$this->lang->words['se_range']}'>{parse replacement="cal_ranged"} {$this->lang->words['event_add_ranged']}</a></li>
+			<li><a href='{parse url="app=calendar&amp;module=calendar&amp;cal_id={$cal_id}&amp;do=newevent&amp;formtype=recur" base="public"}' title='{$this->lang->words['se_recur']}'>{parse replacement="cal_recurring"} {$this->lang->words['event_add_recurring']}</a></li>
+		</ul>
+	</div>
+	<br />
+	<h2 class='maintitle'>{$this->lang->words['week_beginning']} {$date} {$month} {$year}</h2>
+	<ol id='week_view' class='clear'>
+		<!--IBF.DAYS_CONTENT-->
+	</ol>
+</div>
+<div id='mini_calendars' class='left calendar_wrap'>
+	<!--PREV.MONTH-->
+	<br />
+	<!--THIS.MONTH-->	
+	<br />
+	<!--NEXT.MONTH-->
+</div>]]></template_content>
+      <template_name>cal_week_content</template_name>
+      <template_data><![CDATA[$calendars, $date="",$month="",$year="",$prev="",$next="", $cal_id=1]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<php>
+	$this->week_view = ( $this->week_view == 'row1' ) ? 'row2' : 'row1';
+</php>
+ 
+<li id='day-{$year}_{$mid}_{$date}' class='day {$this->week_view} <if test="weekdayentryqueued:|:$queued != 0">{$this->lang->words['moderated']}</if>'>
+	<h3 class='bar'>{$wday}</h3>
+	<div>
+		<span class='date altrow'>{$date}</span>
+		<ul>
+			{$events}
+		</ul>
+	</div>
+</li>]]></template_content>
+      <template_name>cal_week_dayentry</template_name>
+      <template_data><![CDATA[$wday="",$date="",$month="",$mid="",$year="",$events="",$queued=0]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<li class='cal'>
+	<a href="{parse url="app=calendar&amp;module=calendar&amp;$link" base="public"}" title='{$this->lang->words['view_event']}'>{$text}</a>
+</li>]]></template_content>
+      <template_name>cal_week_events_wrap</template_name>
+      <template_data><![CDATA[$link="",$text=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<div style="background-color: $bg; color: $ft; padding: 3px; border: 1px outset $bg; width: 50%;">
+	<a href='{parse url="app=calendar&amp;module=calendar&amp;$link" base="public"}' style="color: $ft;">$text</a>
+</div>]]></template_content>
+      <template_name>cal_week_events_wrap_range</template_name>
+      <template_data><![CDATA[$link="",$text="",$ft="",$bg=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<li class='month_bar header'>
+	{$month} {$year}
+</li>]]></template_content>
+      <template_name>cal_week_monthbar</template_name>
+      <template_data><![CDATA[$month="",$year=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<td class='blank'><!-- no content --></td>]]></template_content>
+      <template_name>mini_cal_blank_cell</template_name>
+      <template_data/>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<td>
+	{$month_day}
+</td>]]></template_content>
+      <template_name>mini_cal_date_cell</template_name>
+      <template_data><![CDATA[$month_day="",$events=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<td class="today">
+	<strong>{$month_day}</strong>
+</td>]]></template_content>
+      <template_name>mini_cal_date_cell_today</template_name>
+      <template_data><![CDATA[$month_day="",$events=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[<!-- <a href="{parse url="app=calendar&module=calendar&amp;cal_id={$this->request['_cal_id']}&amp;m={$mid}&amp;y=$year" base="public"}"> -->
+<php>
+	$this->mini_cal = 'row2';
+</php>	
+<h3 class='maintitle'>{$month} {$year}</h3>
+<table class='mini_cal'>
+	<tr class='header'>
+		<th class='head_week'>&nbsp;</th>
+		<foreach loop="minidays:$day_words as $day">
+			<th>{parse expression="IPSText::mbsubstr( $day, 0, 1 )"}</th>
+		</foreach>
+		{$events}
+	</tr>
+</table>]]></template_content>
+      <template_name>mini_cal_mini_wrap</template_name>
+      <template_data><![CDATA[$month="",$mid="",$year="",$events="",$day_words=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_calendar</template_group>
+      <template_content><![CDATA[</tr>
+	<!-- NEW ROW-->
+	<php>
+		$this->mini_cal = ( $this->mini_cal == 'row1' ) ? 'row2' : 'row1';
+		$this->request['_cal_id'] = ( $this->request['_cal_id'] ) ? $this->request['_cal_id'] : 1;
+	</php>
+<tr class='{$this->mini_cal}'>
+	<th class='view_week header'>
+		<a href="{parse url="app=calendar&amp;module=calendar&amp;cal_id={$this->request['_cal_id']}&amp;do=showweek&amp;week={$week}" seotitle="false" template="cal_week" base="public"}" title='{$this->lang->words['view_this_week']}' ><img src="{$this->settings['img_url']}/next.png" alt='{$this->lang->words['icon']}' /></a>
+	</th>]]></template_content>
+      <template_name>mini_cal_new_row</template_name>
+      <template_data><![CDATA[$week=""]]></template_data>
+      <template_updated>1251817153</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+</templates>

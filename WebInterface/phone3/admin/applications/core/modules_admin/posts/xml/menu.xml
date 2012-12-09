@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Emoticon Management</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Emoticon Management</subitemtitle>
+					<subsection>emoticons</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+				<subitem>
+					<subitemtitle>Emoticon Import / Export</subitemtitle>
+					<subsection>emoticons</subsection>
+					<subitemurl>do=emo_packsplash</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>BBCode Management</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>BBCode Management</subitemtitle>
+					<subsection>bbcode</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>	
+				<subitem>
+					<subitemtitle>Manage Media BBCode</subitemtitle>
+					<subsection>media</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>				
+			</subitems>
+		</item>
+		<item>
+			<title>Bad Word Filters</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Bad Word Filters</subitemtitle>
+					<subsection>badwords</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>				
+			</subitems>
+		</item>
+	</tabitems>
+</menu>

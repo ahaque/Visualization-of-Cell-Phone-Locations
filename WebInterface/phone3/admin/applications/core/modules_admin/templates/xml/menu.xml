@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Manage Skin Sets &amp; Templates</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Manage Skin Sets &amp; Templates</subitemtitle>
+					<subsection>skinsets</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Template Tools</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Template Tools</subitemtitle>
+					<subsection>tools</subsection>
+					<subitemurl>do=splash</subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+				<subitem>
+					<subitemtitle>Difference Reports</subitemtitle>
+					<subsection>skindiff</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+				<subitem>
+					<subitemtitle>Search and Replace</subitemtitle>
+					<subsection>searchandreplace</subsection>
+					<subitemurl>do=showform</subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+				<subitem>
+					<subitemtitle>Easy Logo Changer</subitemtitle>
+					<subsection>easylogo</subsection>
+					<subitemurl></subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+				<subitem>
+					<subitemtitle>Import / Export</subitemtitle>
+					<subsection>importexport</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+	</tabitems>
+</menu>

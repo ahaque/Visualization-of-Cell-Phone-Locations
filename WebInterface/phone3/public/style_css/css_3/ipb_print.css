@@ -1,0 +1,87 @@
+* {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+html #content {
+	font-size: 10pt;
+}
+
+#admin_bar,
+#header,
+#footer_utilities,
+#utility_links,
+.post_mod,
+.author_info,
+.rep_bar,
+.post_controls,
+.top,
+#content_jump,
+.topic_buttons,
+.topic_options,
+h1,
+.post_id,
+h3 img,
+.ip,
+hr,
+.moderation_bar,
+.topic_jump,
+.topic_share,
+#fast_reply,
+#reputation_filter,
+.statistics {
+	display: none;
+}
+
+#breadcrumb {
+	display: block !important;
+}
+	#breadcrumb li {
+		float: left;
+	}
+
+.post_block {
+	margin-bottom: 25pt;
+	border-top: 2pt solid gray;
+	line-height: 60%; 
+	padding-top: 10px;
+}
+
+.posted_info {
+	color: gray !important;
+	font-size: 8pt !important;
+	text-decoration: none !important;
+	border-bottom: 1pt solid lightgray;
+	padding-bottom: 3px;
+}
+
+.post_block h3 {
+	display: inline !important;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.post_block h3 a {
+	color: black !important;
+	text-decoration: none !important;
+	font-style: normal !important;
+}
+
+	.post_block .post_body a:after {
+	    content: " (" attr(href) ") ";
+	}
+
+.post_body {
+	margin-left: 10pt;
+	line-height: 100%;
+	margin-top: 15pt;
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+}
+
+#copyright {
+	text-align: center;
+	color: gray;
+	font-size: 9pt;
+}

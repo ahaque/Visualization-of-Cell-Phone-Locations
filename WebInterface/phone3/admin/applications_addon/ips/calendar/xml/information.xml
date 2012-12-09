@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<information>
+	<data>
+		<name>Calendar</name>
+		<public_name>Calendar</public_name>
+		<author>Invision Power Services, Inc.</author>
+		<description></description>
+		<ipskey>fa038db69fa627d8e8e034d65f554d1f</ipskey>
+		<templategroups>
+			<template match="exact">skin_calendar</template>
+		</templategroups>
+	</data>
+</information>

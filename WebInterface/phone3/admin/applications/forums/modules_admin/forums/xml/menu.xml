@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Manage Forums</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Manage Forums</subitemtitle>
+					<subsection>forums</subsection>
+					<subitemurl>do=forums_overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Topic Multi-moderation</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Topic Multi-moderation</subitemtitle>
+					<subsection>multimods</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>				
+			</subitems>
+		</item>
+	</tabitems>
+</menu>

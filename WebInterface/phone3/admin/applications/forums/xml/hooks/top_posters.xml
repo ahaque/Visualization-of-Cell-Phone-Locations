@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hookexport>
+  <hookdata>
+    <config>
+      <hook_name><![CDATA[Today&#39;s Top Posters]]></hook_name>
+      <hook_desc>Displays the top posters from the past 24 hours on the board index</hook_desc>
+      <hook_author>Invision Power Services, Inc</hook_author>
+      <hook_email/>
+      <hook_website>www.</hook_website>
+      <hook_update_check/>
+      <hook_requirements><![CDATA[a:4:{s:20:"hook_ipb_version_min";i:3;s:20:"hook_ipb_version_max";i:0;s:20:"hook_php_version_min";s:0:"";s:20:"hook_php_version_max";s:0:"";}]]></hook_requirements>
+      <hook_version_human>1.0.0</hook_version_human>
+      <hook_version_long>1000</hook_version_long>
+      <hook_extra_data><![CDATA[a:3:{s:13:"settingGroups";a:0:{}s:8:"settings";a:0:{}s:7:"display";a:1:{s:8:"settings";s:0:"";}}]]></hook_extra_data>
+      <hook_key>todays_top_posters</hook_key>
+    </config>
+  </hookdata>
+  <hookfiles>
+    <file>
+      <hook_file_real>boardIndexTopPosters.php</hook_file_real>
+      <hook_type>templateHooks</hook_type>
+      <hook_classname>boardIndexTopPosters</hook_classname>
+      <hook_data><![CDATA[a:6:{s:15:"classToOverload";s:0:"";s:9:"skinGroup";s:11:"skin_boards";s:12:"skinFunction";s:18:"boardIndexTemplate";s:4:"type";s:7:"foreach";s:2:"id";s:11:"side_blocks";s:8:"position";s:9:"outer.pre";}]]></hook_data>
+      <hooks_source><![CDATA[<?php
+
+class boardIndexTopPosters
+{
+	public $registry;
+	
+	public function __construct()
+	{
+		$this->registry = ipsRegistry::instance();
+		$this->DB       = $this->registry->DB();
+	}
+	
+	public function getOutput()
+	{
+		/* INIT */
+		$time_high	  = time();
+ 		$ids		  = array();
+ 		$rows		  = array();
+ 		$time_low	  = $time_high - (60*60*24);
+		$todays_posts = 0;
+		$store		  = array(); 		
+ 		
+		/* List of forum ids */
+		foreach( ipsRegistry::getClass('class_forums')->forum_by_id as $id => $data )
+		{
+			if ( ! isset( $data['inc_postcount'] ) || ! $data['inc_postcount'] )
+			{
+				continue;
+			}
+		
+			$ids[] = $id;
+		}
+		
+		/* Found some forums? */
+		if( count( $ids ) )
+		{
+			/* Total Posts Today */
+			/*$total_today = $this->DB->buildAndFetch( array( 
+																	'select'   => 'count(*) as cnt',
+																	'from'     => array( 'posts' => 'p' ),
+																	'where'    => "p.post_date > {$time_low} AND t.forum_id IN(" . implode( ",", $ids ) . ")",
+																	'add_join' => array(
+																						array( 
+																								'from'	=> array( 'topics' => 't' ),
+																								'where'	=> 't.tid=p.topic_id',
+																								'type'	=> 'left' 
+																							)
+																						)
+														)		);*/
+			
+			/* Query the top posters */
+			$this->DB->build( array( 
+											'select'   => 'COUNT(*) as tpost',
+											'from'     => array( 'posts' => 'p' ),
+											'where'	   => "p.post_date > {$time_low} AND t.forum_id IN(" . implode( ",", $ids ) . ")",
+											'group'	   => 'p.author_id',
+											'order'	   => 'tpost DESC',
+											'limit'	   => array( 0, 9 ),
+											'add_join' => array( 
+																array(  'from'	=> array( 'topics' => 't' ),
+																		'where'	=> 't.tid=p.topic_id',
+																		'type'	=> 'left'
+																	),
+																array(  'select'=> 'm.*',
+																		'from'	=> array( 'members' => 'm' ),
+																		'where'	=> 'm.member_id=p.author_id',
+																		'type'	=> 'left'
+																	),
+																array(
+																		'select' => 'pp.*',
+																		'from'   => array( 'profile_portal' => 'pp' ),
+																		'where'  => 'pp.pp_member_id=m.member_id',
+																		'type'   => 'left',
+																	),
+																)
+								)	);
+			$this->DB->execute();
+			
+			/* Loop through and save the members */
+			while( $r = $this->DB->fetch() )
+			{
+				$todays_posts += $r['tpost'];
+			
+				$store[] = $r;
+			}
+			
+			/* Format the results for output */
+			if( $todays_posts )
+			{
+				foreach( $store as $info )
+				{		
+					$info['total_today_posts'] = $todays_posts;
+				
+					if ($todays_posts > 0 and $info['tpost'] > 0)
+					{
+						//$info['today_pct'] = sprintf( '%.2f',  ( $info['tpost'] / $total_today['cnt'] ) * 100  );
+					}					
+					
+					$rows[] = IPSMember::buildDisplayData( $info );
+				}
+			}
+		}
+
+		return $this->registry->getClass('output')->getTemplate('boards')->hookTopPosters( $rows );	
+	}
+}]]></hooks_source>
+    </file>
+  </hookfiles>
+  <hookextras_settings/>
+  <hookextras_language/>
+  <hookextras_modules/>
+  <hookextras_help/>
+  <hookextras_templates/>
+  <hookextras_tasks/>
+  <hookextras_database_create/>
+  <hookextras_database_alter/>
+  <hookextras_database_update/>
+  <hookextras_database_insert/>
+</hookexport>

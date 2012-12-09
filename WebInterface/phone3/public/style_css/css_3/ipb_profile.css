@@ -1,0 +1,233 @@
+/************************************************************************/
+/* IP.Board 3 CSS - By Rikki Tissier - (c)2008 Invision Power Services	*/
+/************************************************************************/
+/* ipb_profile.css - Profile specific styles							*/
+/************************************************************************/
+
+div#profile_overview {
+	width: 23%;
+}
+
+div#main_profile_body {
+	width: 75%;
+	margin-top: 20px;
+}
+	
+.friend_list p {
+	font-size: 0.9em;
+	padding: 15px 0 0 5px;
+}
+
+.personal_info {
+	text-align: center;
+}
+
+	.personal_info .photo {
+		margin: 30px auto 20px auto;
+	}
+
+	.personal_info ul {
+		font-size: 0.9em;
+		-moz-border-radius: 0 0 10px 10px;
+		-webkit-border-bottom-left-radius: 10px;
+		-webkit-border-bottom-right-radius: 10px;
+		padding: 5px 10px;
+	}
+	
+	.personal_info li {
+		margin: 2px 0;
+		text-align: left;
+	}
+	
+	.personal_info li a {
+		background: #d5dde5;
+		text-decoration: none;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		padding: 5px 7px;
+		display: block;
+	}
+
+ul.profile_options {
+	margin-bottom: 20px;
+}
+
+
+div#profile_overview .info {
+	font-size: 0.9em;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	padding: 5px 0 5px 0;
+}
+
+	body div#profile_overview .info dt {
+		padding: 3px 4px;
+		width: 37%;
+	}
+
+	body div#profile_overview .info dd {
+		padding: 3px 4px;
+		width: 53%;
+	}
+	
+#profile_overview .reputation {
+	float: none;
+	text-align: center;
+	font-weight: normal;
+	margin: 6px 0;
+}
+
+	#profile_overview .reputation .number {
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+
+	#profile_overview .reputation .title,
+	#profile_overview .reputation .image {
+		font-size: 0.9em;
+		display: block;
+	}
+	
+.about_info,
+.contact_info {
+	width: 46%;
+}
+
+.recent_activity,
+.about_contact,
+.friend_list,
+#comment_wrap {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+.other_contact
+{
+	margin: 5px 0px 5px 0px;
+}
+
+.other_contact .general_box {
+	overflow: auto;
+}
+
+.about_contact,
+.friend_list {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+	.other_contact dl {
+		padding: 0px 10px 10px 0px;
+	}
+	
+	.about_contact dl, dl.user_info {
+		padding: 10px;
+	}
+	
+	.other_contact dt, .other_contact dd, .about_contact dt, .about_contact dd,
+	.info dt, .user_info dt, .user_info dd {
+		float: left;
+	}
+	
+	.other_contact dt, .about_contact dt, .info dt, .user_info dt {
+		font-weight: bold;
+		padding: 3px 6px;
+		clear: both;
+		width: 30%;
+	}
+
+	.other_contact dd, .about_contact dd, .info dd, .user_info dd {
+		padding: 3px 6px;
+		width: 60%;
+	}
+	
+	.info dd, .user_info dd {	
+		margin-left: 35%;
+	}	
+	
+.recent_activity .general_box {
+	background: #eef3f8;
+}
+
+.recent_activity a {
+	text-decoration: none;
+}
+
+.recent_activity #tab_recentActivity {
+	line-height: 150%;
+}
+
+	.recent_activity #tab_recentActivity h4 {
+		color: #1d3652;
+		font-size: 1.1em;
+		font-weight: normal;
+		padding: 10px;
+	}
+
+	.recent_activity #tab_recentActivity ol {
+		font-size: 0.9em;
+		padding: 0 0 10px 20px;
+	}
+
+	.recent_activity li img {
+		padding-right: 6px;
+	}
+
+	#tab_posts .general_box,
+	#tab_topics .general_box {
+		max-height: 250px;
+		overflow: auto !important;
+	}
+
+		#tab_posts h4,
+		#tab_topics h4 {
+			font-size: 1.05em;
+			font-weight: normal;
+			padding: 6px 0 0 6px;
+		}
+
+		#tab_posts .post_body,
+		#tab_topics .post_body {
+			background-color: #fafbfc;
+			border-bottom: 1px solid #d5dde5;
+			padding: 10px 10px 25px 18px;
+			line-height: 140%;
+			margin-left: 0;
+		}
+
+		#tab_posts p.posted_info,
+		#tab_topics p.posted_info {
+			padding: 0 0 6px 6px;
+			margin: 0;
+		}
+
+#post_comment {
+	padding: 10px 10px 10px 30px;
+}
+
+	#post_comment .photo {
+		margin: 0 16px 0 6px;
+	}
+
+	#post_comment .input_textarea {
+		margin-bottom: 8px;
+		width: 380px;
+	}
+
+	#post_comment .input_submit {
+		margin: 0 10px 0 50px;
+	}
+	
+#latest_visitors {
+	margin-top: 12px;
+}
+
+	#latest_visitors li .photo {
+		margin: 2px 10px 0 0;
+		float: left;
+	}
+
+	#latest_visitors li {
+		clear: both;
+		padding: 5px;
+	}

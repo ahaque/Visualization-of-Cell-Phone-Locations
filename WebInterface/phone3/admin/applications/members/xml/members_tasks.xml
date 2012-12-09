@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export>
+  <group>
+    <row>
+      <task_id>6</task_id>
+      <task_title>Send Bulk Mail</task_title>
+      <task_file>bulkmail.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>-1</task_hour>
+      <task_minute>-1</task_minute>
+      <task_cronkey>a2fde6cf4785f4ae856d9e932d2c650a</task_cronkey>
+      <task_log>0</task_log>
+      <task_description>Dynamically assigned, no need to edit or change</task_description>
+      <task_enabled>0</task_enabled>
+      <task_key>bulkmail</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>members</task_application>
+    </row>
+    <row>
+      <task_id>13</task_id>
+      <task_title>Remove Old Validating Members</task_title>
+      <task_file>removevalidating.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>2</task_hour>
+      <task_minute>0</task_minute>
+      <task_cronkey>2da3d5c435ca78d9e1ccd64375e64bda</task_cronkey>
+      <task_log>1</task_log>
+      <task_description><![CDATA[If you enable the &#39;Prune validating members after x days&#39; setting, this task will remove those members]]></task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>validating</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>members</task_application>
+    </row>
+    <row>
+      <task_id>15</task_id>
+      <task_title>Update Profile Views</task_title>
+      <task_file>update_profile_views.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>1</task_hour>
+      <task_minute>-1</task_minute>
+      <task_cronkey>bacf57b98720cb455a2ef23f0d021a6c</task_cronkey>
+      <task_log>0</task_log>
+      <task_description>Rebuilds the profile view counters</task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>update_profile_views</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>members</task_application>
+    </row>
+    <row>
+      <task_id>16</task_id>
+      <task_title>Remove Locked Members</task_title>
+      <task_file>removelocked.php</task_file>
+      <task_next_run>1246348010</task_next_run>
+      <task_week_day>-1</task_week_day>
+      <task_month_day>-1</task_month_day>
+      <task_hour>3</task_hour>
+      <task_minute>0</task_minute>
+      <task_cronkey>b8b9793ed18fea9c0639b111da887bd9</task_cronkey>
+      <task_log>1</task_log>
+      <task_description>Removes member accounts that are no longer locked</task_description>
+      <task_enabled>1</task_enabled>
+      <task_key>remove_locked</task_key>
+      <task_safemode>1</task_safemode>
+      <task_locked>0</task_locked>
+      <task_application>members</task_application>
+    </row>
+  </group>
+</export>

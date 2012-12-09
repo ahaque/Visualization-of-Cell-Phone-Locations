@@ -1,0 +1,72 @@
+Index: edit_area.css
+===================================================================
+--- edit_area.css	(revision 4488)
++++ edit_area.css	(revision 4489)
+@@ -408,32 +408,17 @@
+ #tab_browsing_list li {
+ 	float: left;
+ 	margin: -1px;
+-}
+-#tab_browsing_list a {
+-	position: relative;
+ 	display: block; 
+-	text-decoration: none; 
+-	float: left; 
+-	cursor: pointer;
+-	line-height:14px;
+-}
+-
+-#tab_browsing_list a span {
+-	display: block; 
+ 	color: #000; 
+ 	background: #ECE9D8; 
+ 	border:	1px solid #888; 
+ 	border-width: 1px 1px 0; 
+ 	text-align: center; 
+-	padding: 2px 2px 1px 4px; 
++	padding: 2px 2px 1px 4px;
++	cursor: pointer;
+ 	position: relative;	/*IE 6 hack */
+ }
+ 
+-#tab_browsing_list a b {
+-	display: block; 
+-	border-bottom: 2px solid #617994;
+-}
+-
+ #tab_browsing_list a .edited {
+ 	display: none;
+ }
+@@ -442,25 +427,21 @@
+ 	display: inline;
+ }
+ 
+-#tab_browsing_list a img{
+-	margin-left: 7px;
++#tab_browsing_list li img {
++	margin-left: 2px;
+ }
+ 
+-#tab_browsing_list a.edited img{
+-	margin-left: 3px;
++#tab_browsing_list .selected {
++	background: #046380;
++	color: #FFF;
+ }
+ 
+-#tab_browsing_list a:hover span {
++
++#tab_browsing_list img a:hover {
+ 	background: #F4F2E8;
+ 	border-color: #0A246A;
+ }
+ 
+-#tab_browsing_list .selected a span{
+-	background: #046380;
+-	color: #FFF;
+-}
+-
+-
+ #no_file_selected{
+ 	height: 100%;
+ 	width: 150%; /* Opera need more than 100% */

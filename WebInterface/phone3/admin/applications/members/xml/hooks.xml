@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hooks>
+	<hook>
+		<file>status_updates.xml</file>
+		<enabled>0</enabled>
+	</hook>
+</hooks>

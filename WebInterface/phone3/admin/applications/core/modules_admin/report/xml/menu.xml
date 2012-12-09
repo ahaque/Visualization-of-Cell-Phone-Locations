@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Overview</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Overview</subitemtitle>
+					<subsection>reports</subsection>
+					<subitemurl>do=show_main</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Plugin Manager</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Plugin Manager</subitemtitle>
+					<subsection>reports</subsection>
+					<subitemurl>do=plugin</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Status and Severity Levels</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Status and Severity Levels</subitemtitle>
+					<subsection>reports</subsection>
+					<subitemurl>do=status</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+	</tabitems>
+</menu>

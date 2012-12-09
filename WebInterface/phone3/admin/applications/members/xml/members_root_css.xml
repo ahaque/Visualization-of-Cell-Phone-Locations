@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<css>
+  <cssfile>
+    <css_set_id>0</css_set_id>
+    <css_updated>1251817153</css_updated>
+    <css_group>ipb_messenger</css_group>
+    <css_content>/************************************************************************/
+/* IP.Board 3 CSS - By Rikki Tissier - (c)2008 Invision Power Services	*/
+/************************************************************************/
+/* ipb_messenger.css - Messenger styles									*/
+/************************************************************************/
+
+#messenger_utilities {
+	width: 18%;
+}	
+	
+#messenger_content {
+	width: 80%;
+}
+
+	#messenger_content h2 {
+		clear: none;
+		font-size: 1.4em;
+	}
+
+#folder_list, #space_allowance,
+#message_search, #participants,
+#invite_more {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#space_allowance p {
+	line-height: 150%;
+}
+
+#message_list {
+	clear: right;
+}
+
+#message_compose .input_check {
+	margin-left: 245px;
+}
+
+#invite_more p.desc {
+	padding: 10px;
+}
+
+#invite_more_dialogue {
+	display: none;
+}
+
+#invite_more_dialogue ul {
+	padding: 4px;
+}
+
+#invite_more_autocomplete {
+	width: 99%;
+}
+
+#folder_list li {
+	margin-bottom: 4px;
+	margin-left: 6px;
+	padding: 0px;
+}
+
+	#folder_list #folders {
+		margin-bottom: 12px;
+	}
+
+	#folder_list .total {
+		background-color: #d5dde5;
+		font-size: 0.75em;
+		font-weight: bold;
+		padding: 3px 6px;
+		margin-right: 10px;
+		right: 0;
+		position: absolute;
+	}
+
+#participants #participants_list li {
+	padding: 5px;
+	min-height: 55px;
+	clear: both;
+}
+
+#participants #participants_list li .photo {
+	margin: 2px 10px 0 0;
+	float: left;
+}
+
+	#participants #participants_list span.name.left_convo a {
+		color: #8a8a8a;
+		font-style: italic;
+	}
+
+	#participants #participants_list span.name.blocked a {
+		color: #ad2930;
+	}
+
+#space_allowance {
+	clear: both;
+}
+
+li.new_folder {
+	padding-left: 20px;
+}
+
+.add_folder.input_submit {
+	padding: 1px 3px;
+}
+
+.edit_folders {
+	background: #eef3f8;
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-right: 10px;
+	padding: 2px 0px 2px 5px;
+	right: -3px;
+	position: absolute;
+}
+
+	.f_delete {
+		color: #f00;
+	}</css_content>
+    <css_position>1</css_position>
+    <css_app>members</css_app>
+    <css_app_hide>1</css_app_hide>
+    <css_attributes><![CDATA[title="Main" media="screen"]]></css_attributes>
+    <css_removed>0</css_removed>
+    <css_modules>messaging</css_modules>
+    <css_user_added>0</css_user_added>
+    <css_user_edited>0</css_user_edited>
+  </cssfile>
+  <cssfile>
+    <css_set_id>0</css_set_id>
+    <css_updated>1251817153</css_updated>
+    <css_group>ipb_mlist</css_group>
+    <css_content>/************************************************************************/
+/* IP.Board 3 CSS - By Rikki Tissier - (c)2008 Invision Power Services	*/
+/************************************************************************/
+/* ipb_mlist.css - Member list styles									*/
+/************************************************************************/
+
+div#member_filters {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+	
+	div#member_filters fieldset.other_filters {
+		text-align: center;
+		padding: 6px;
+		margin-top: 10px;
+		clear: both;
+	}
+	
+	div#member_filters fieldset.submit {
+		background: #d5dde5;
+		padding: 6px;
+	}
+	
+	div#member_filters ul {
+		margin-bottom: 12px;
+		margin-top: 8px;
+		width: 49%;
+		float: left;
+	}
+	
+	div#member_filters li {
+		border-bottom: 1px solid #d5dde5;
+		margin-right: 20px;
+		padding: 8px 0 8px 0;
+		clear: both;
+	}
+	
+		div#member_filters li .desc {
+			margin: 0;
+			display: inline;
+		}
+	
+	div#member_filters label {	
+		text-align: right;
+		margin-right: 15px;
+		width: 150px;
+		display: block;
+		float: left;
+	}
+	
+	div#member_filters li.field.custom input,
+	div#member_filters li.field.custom textarea {
+		width: 50%;
+	}
+
+#member_alpha li {
+	padding: 2px 7px;
+}
+
+	#member_alpha li.active {
+		padding: 7px 15px;
+	}
+	
+.members li.member_entry {
+	position: relative;
+	min-height: 100px;
+}
+
+.members li .photo {
+	margin: 10px;
+	float: left;
+}
+
+.members li .user_controls {
+	text-align: left;
+	margin: 25px 10px;
+	min-width: 350px;
+	position: absolute;
+	left: 450px;
+	clear: none;
+}
+
+	.members li .user_controls .rating {
+		background: none;
+		margin-right: 10px;
+	}
+
+	.members li .user_controls a {
+		text-decoration: none;
+		font-size: 0.85em;
+	}
+	
+.members li .info {	
+	font-size: 0.9em;
+	line-height: 100%;
+	border-right: 1px solid #d5dde5;
+	margin: 10px;
+	left: 90px;
+	width: 350px;
+	position: absolute;
+}
+	.members li .info dt {
+		text-align: right;
+		width: 80px;
+	}
+
+	.members li .info dd {
+		width: 200px;
+	}
+
+.members li .reputation {
+	margin-top: 40px;
+}
+
+.members li p.rating {
+	margin: 10px;	
+	right: 0;
+	position: absolute;
+}
+
+.members li.general_box {
+	margin-bottom: 4px;
+}</css_content>
+    <css_position>1</css_position>
+    <css_app>members</css_app>
+    <css_app_hide>1</css_app_hide>
+    <css_attributes><![CDATA[title="Main" media="screen"]]></css_attributes>
+    <css_removed>0</css_removed>
+    <css_modules/>
+    <css_user_added>0</css_user_added>
+    <css_user_edited>0</css_user_edited>
+  </cssfile>
+  <cssfile>
+    <css_set_id>0</css_set_id>
+    <css_updated>1251817153</css_updated>
+    <css_group>ipb_profile</css_group>
+    <css_content>/************************************************************************/
+/* IP.Board 3 CSS - By Rikki Tissier - (c)2008 Invision Power Services	*/
+/************************************************************************/
+/* ipb_profile.css - Profile specific styles							*/
+/************************************************************************/
+
+div#profile_overview {
+	width: 23%;
+}
+
+div#main_profile_body {
+	width: 75%;
+	margin-top: 20px;
+}
+	
+.friend_list p {
+	font-size: 0.9em;
+	padding: 15px 0 0 5px;
+}
+
+.personal_info {
+	text-align: center;
+}
+
+	.personal_info .photo {
+		margin: 30px auto 20px auto;
+	}
+
+	.personal_info ul {
+		font-size: 0.9em;
+		-moz-border-radius: 0 0 10px 10px;
+		-webkit-border-bottom-left-radius: 10px;
+		-webkit-border-bottom-right-radius: 10px;
+		padding: 5px 10px;
+	}
+	
+	.personal_info li {
+		margin: 2px 0;
+		text-align: left;
+	}
+	
+	.personal_info li a {
+		background: #d5dde5;
+		text-decoration: none;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		padding: 5px 7px;
+		display: block;
+	}
+
+ul.profile_options {
+	margin-bottom: 20px;
+}
+
+
+div#profile_overview .info {
+	font-size: 0.9em;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	padding: 5px 0 5px 0;
+}
+
+	body div#profile_overview .info dt {
+		padding: 3px 4px;
+		width: 37%;
+	}
+
+	body div#profile_overview .info dd {
+		padding: 3px 4px;
+		width: 53%;
+	}
+	
+#profile_overview .reputation {
+	float: none;
+	text-align: center;
+	font-weight: normal;
+	margin: 6px 0;
+}
+
+	#profile_overview .reputation .number {
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+
+	#profile_overview .reputation .title,
+	#profile_overview .reputation .image {
+		font-size: 0.9em;
+		display: block;
+	}
+	
+.about_info,
+.contact_info {
+	width: 46%;
+}
+
+.recent_activity,
+.about_contact,
+.friend_list,
+#comment_wrap {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+.other_contact
+{
+	margin: 5px 0px 5px 0px;
+}
+
+.other_contact .general_box {
+	overflow: auto;
+}
+
+.about_contact,
+.friend_list {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+	.other_contact dl {
+		padding: 0px 10px 10px 0px;
+	}
+	
+	.about_contact dl, dl.user_info {
+		padding: 10px;
+	}
+	
+	.other_contact dt, .other_contact dd, .about_contact dt, .about_contact dd,
+	.info dt, .user_info dt, .user_info dd {
+		float: left;
+	}
+	
+	.other_contact dt, .about_contact dt, .info dt, .user_info dt {
+		font-weight: bold;
+		padding: 3px 6px;
+		clear: both;
+		width: 30%;
+	}
+
+	.other_contact dd, .about_contact dd, .info dd, .user_info dd {
+		padding: 3px 6px;
+		width: 60%;
+	}
+	
+	.info dd, .user_info dd {	
+		margin-left: 35%;
+	}	
+	
+.recent_activity .general_box {
+	background: #eef3f8;
+}
+
+.recent_activity a {
+	text-decoration: none;
+}
+
+.recent_activity #tab_recentActivity {
+	line-height: 150%;
+}
+
+	.recent_activity #tab_recentActivity h4 {
+		color: #1d3652;
+		font-size: 1.1em;
+		font-weight: normal;
+		padding: 10px;
+	}
+
+	.recent_activity #tab_recentActivity ol {
+		font-size: 0.9em;
+		padding: 0 0 10px 20px;
+	}
+
+	.recent_activity li img {
+		padding-right: 6px;
+	}
+
+	#tab_posts .general_box,
+	#tab_topics .general_box {
+		max-height: 250px;
+		overflow: auto !important;
+	}
+
+		#tab_posts h4,
+		#tab_topics h4 {
+			font-size: 1.05em;
+			font-weight: normal;
+			padding: 6px 0 0 6px;
+		}
+
+		#tab_posts .post_body,
+		#tab_topics .post_body {
+			background-color: #fafbfc;
+			border-bottom: 1px solid #d5dde5;
+			padding: 10px 10px 25px 18px;
+			line-height: 140%;
+			margin-left: 0;
+		}
+
+		#tab_posts p.posted_info,
+		#tab_topics p.posted_info {
+			padding: 0 0 6px 6px;
+			margin: 0;
+		}
+
+#post_comment {
+	padding: 10px 10px 10px 30px;
+}
+
+	#post_comment .photo {
+		margin: 0 16px 0 6px;
+	}
+
+	#post_comment .input_textarea {
+		margin-bottom: 8px;
+		width: 380px;
+	}
+
+	#post_comment .input_submit {
+		margin: 0 10px 0 50px;
+	}
+	
+#latest_visitors {
+	margin-top: 12px;
+}
+
+	#latest_visitors li .photo {
+		margin: 2px 10px 0 0;
+		float: left;
+	}
+
+	#latest_visitors li {
+		clear: both;
+		padding: 5px;
+	}</css_content>
+    <css_position>1</css_position>
+    <css_app>members</css_app>
+    <css_app_hide>1</css_app_hide>
+    <css_attributes><![CDATA[title="Main" media="screen"]]></css_attributes>
+    <css_removed>0</css_removed>
+    <css_modules/>
+    <css_user_added>0</css_user_added>
+    <css_user_edited>0</css_user_edited>
+  </cssfile>
+</css>

@@ -1,0 +1,145 @@
+/**
+* IPS Upgrader Thingy
+* (c) Invision Power Services, Inc
+* @author Matt Mecham
+*/
+
+#upgradeWrap
+{
+	background-color: #2b2b2b;
+	text-align:left;
+	padding: 0px;
+}
+
+.upgradeRowWrapper
+{
+	display: block;
+	font-size: 14px;
+	color: #EFEFEF;
+	padding: 4px 16px 4px 16px;
+	clear: both;
+}
+
+.upgradeRowTitle
+{
+	text-align: left;
+}
+
+	.upgradeRowTitle img
+	{
+		vertical-align: -10px;
+		padding-right: 5px;
+	}
+	
+.upgradeRowVersion
+{
+	margin-top: 10px;
+	float: right;
+	padding-right: 5px;
+	color: #ABABAB;
+}
+
+.upgradeRowButton
+{
+	margin-top: 4px;
+	float: right;
+	padding: 6px;
+	font-size: 12px;
+	background-color: #605f5f;
+	color: #b4b4b4 !important;
+	border: 1px solid #5b5b5b;
+	width:150px;
+	text-align:center;
+}
+	.upgradeRowButton.available
+	{
+		background-color: #EBE7B6;
+		color: #000 !important;
+		cursor:pointer;
+	}
+	
+/* Log Tray */
+#upgradeLowDrawInner
+{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+	background-image: url("images/upgrade/trayslice.gif");
+	background-repeat: repeat-x;
+	border: 1px solid #5b5b5b;
+	border-top: 0px;
+	width: 500px;
+}
+	#upgradeLowDrawInner table
+	{
+		height: 120px;
+		width: 100%;
+	}
+	
+#upgradeLogText
+{
+	width: 96%;
+	height: 95px;
+	padding:10px;
+	font-size:11px;
+	font-family: "Courier New", Courier, Geneva, Monaco;
+	overflow: auto;
+}
+	
+/* Progress Bar */
+#upgradeLogProgressBar
+{
+	border: 1px solid #5b5b5b;
+	background-color: #2B2B2B;
+	width: 200px;
+	height: 15px;
+	padding-top:0px;
+	padding-bottom:2px;
+	padding-right:5px;
+	padding-left:0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:10px;
+}
+#upgradeLogProgressBarInner
+{
+	padding:0px;
+	margin:0px;
+	height:14px;
+	width:68%;
+	background-image: url("images/upgrade/progressbar.gif");
+	background-repeat: repeat-x;
+}
+
+#upgradeStatusImage
+{
+	float:left;
+	margin-top: -4px;
+	margin-left: 115px;
+}
+
+#upgradeErrorBox
+{
+	border: 1px solid #000;
+	background-color: #FFCCCC;
+	font-size:14px;
+	text-align: center;
+	padding-top:20px;
+	z-index: 1000;
+}
+
+	#upgradeErrorBox strong
+	{
+		font-size:30px;
+	}
+	
+	#upgradeErrorBox img
+	{
+		vertical-align: -12px;
+	}
+	
+#upgradeErrorText
+{
+	overflow: auto;
+	height: 90px;
+}

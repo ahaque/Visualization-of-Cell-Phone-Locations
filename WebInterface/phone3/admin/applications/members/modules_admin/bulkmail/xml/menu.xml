@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Bulk Mail</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Bulk Mail</subitemtitle>
+					<subsection>bulkmail</subsection>
+					<subitemurl>do=bulk_mail</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		
+	</tabitems>
+</menu>

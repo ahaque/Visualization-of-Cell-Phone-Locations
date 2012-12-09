@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Manage Templates</grouptitle>
+		<items>
+			<item>
+				<key>css_manage</key>
+				<string>Can edit/add CSS?</string>
+			</item>
+			<item>
+				<key>css_delete</key>
+				<string>Can remove and revert CSS?</string>
+			</item>
+			<item>
+				<key>templates_manage</key>
+				<string>Can add/edit templates?</string>
+			</item>
+			<item>
+				<key>templates_delete</key>
+				<string>Can remove and revert templates?</string>
+			</item>
+			<item>
+				<key>replacements_manage</key>
+				<string>Can add/edit macro replacements?</string>
+			</item>
+			<item>
+				<key>replacements_delete</key>
+				<string>Can remove and revert macro replacements?</string>
+			</item>
+			<item>
+				<key>settemplates_manage</key>
+				<string>Can add/edit template sets?</string>
+			</item>
+			<item>
+				<key>settemplates_delete</key>
+				<string>Can remove template sets?</string>
+			</item>
+			<item>
+				<key>settemplates_export</key>
+				<string>Can export template sets?</string>
+			</item>
+			<item>
+				<key>skindiff_reports</key>
+				<string>Can run the skin difference tools?</string>
+			</item>
+			<item>
+				<key>template_tools</key>
+				<string>Can run the various skin system tools?</string>
+			</item>
+			<item>
+				<key>url_map_manage</key>
+				<string>Can add/edit skin url mappings?</string>
+			</item>
+			<item>
+				<key>url_map_delete</key>
+				<string>Can remove skin url mappings?</string>
+			</item>
+			<item>
+				<key>useragent_skin_map</key>
+				<string>Can manage useragent skin mappings?</string>
+			</item>
+			<item>
+				<key>easy_logo</key>
+				<string>Can use the easy logo changer?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

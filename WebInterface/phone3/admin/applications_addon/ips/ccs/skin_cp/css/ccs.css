@@ -1,0 +1,167 @@
+/**
+ *	These are styles for the CCS
+ */
+
+.filemanager li.record {
+	clear: both;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.filemanager .info {
+	float: right;
+	vertical-align: top;
+	font-size: 10px;
+	color: gray;
+}
+
+.filemanager .manage {
+	float: right;
+	width: 40px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.filemanager .draghandle {
+	float: left;
+	vertical-align: middle;
+}
+
+.filemanager input {
+	padding: 0px;
+	vertical-align: middle;
+}
+
+.filemanager .no-records {
+	text-align: center;
+	padding: 10px;
+}
+
+.category-manage {
+	float: right;
+	width: 40px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.page-template-form label {
+	width: 30%;
+}
+
+.view-page {
+	font-size: 10px;
+	color: gray;
+	vertical-align: middle;
+	padding-bottom: 3px;
+}
+
+.block {
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	width: 50px;
+	padding: 5px;
+	text-align: center;
+}
+
+	.block.feed {
+		background-color: #d57272;
+	}
+
+	.block.custom {
+		background-color: #67c267;
+	}
+
+	.block.plugin {
+		background-color: #6d6dca;
+	}
+
+iframe.blockPreview {
+	border: 0px;
+	width: 590px;
+	min-width: 590px;
+	max-width: 590px;
+	height: 400px;
+	min-height: 400px;
+	max-height: 400px;
+	overflow: hidden;
+}
+
+.templateTags {
+	width: 98%;
+	background: #f9f7e0;
+	border: 1px solid #eadca0;
+	overflow: none;
+	padding: 5px;
+	height: 490px;
+	max-height: 490px;
+	overflow-y: auto;
+	overflow-x: none;
+}
+
+.templateTags h4 {
+	color: #6c6141;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.templateTags li {
+	width: 98%;
+	font-size: 14px;
+	border-bottom: 1px solid #eadca0;
+	vertical-align: middle;
+	
+}
+
+.templateTags div {
+	clear: both;
+	padding-left: 15px;
+}
+
+.templateTags li label {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 11px;
+	width: 60%;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.templateTags li:last-child {
+	border-bottom: 0px;
+}
+
+.withSidebar {
+	width: 70%;
+}
+
+.templateTags-container {
+	width: 30%;
+	margin-bottom: 8px;
+	float: right;
+}
+
+.templateTagRows li {
+	width: 98%;
+	border-bottom: 1px solid #D5DDE5;
+}
+
+.templateTagRows li .template-tag {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+li.template-tag-cat {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.droppable-hover {
+	background-color: #efefef;
+}
+

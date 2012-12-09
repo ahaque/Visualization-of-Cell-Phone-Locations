@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languageexport>
+  <languagegroup>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>admin_chat</word_pack>
+      <word_key>para_invalid_key</word_key>
+      <word_default>Sorry, that is not a valid IP Chat account number</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>admin_chat</word_pack>
+      <word_key>para_help_title</word_key>
+      <word_default>Invision Power Chat (ParaChat)</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>admin_chat</word_pack>
+      <word_key>addon_invalid_key</word_key>
+      <word_default>Sorry, that is not a valid IP Chat account number</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>chat</word_app>
+      <word_pack>admin_chat</word_pack>
+      <word_key>addon_help_title</word_key>
+      <word_default>Invision Power Chat (AddonChat)</word_default>
+      <word_custom/>
+      <word_default_version>30010</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+  </languagegroup>
+</languageexport>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hookexport>
+  <hookdata>
+    <config>
+      <hook_name><![CDATA[Who&#39;s Chatting]]></hook_name>
+      <hook_desc>Shows who is in chat if installed and enabled</hook_desc>
+      <hook_author>Invision Power Services, Inc</hook_author>
+      <hook_email>support@</hook_email>
+      <hook_website>http://</hook_website>
+      <hook_update_check/>
+      <hook_requirements><![CDATA[a:4:{s:20:"hook_ipb_version_min";i:3;s:20:"hook_ipb_version_max";i:0;s:20:"hook_php_version_min";s:1:"0";s:20:"hook_php_version_max";s:1:"0";}]]></hook_requirements>
+      <hook_version_human>1.0.0</hook_version_human>
+      <hook_version_long>10000</hook_version_long>
+      <hook_extra_data/>
+      <hook_key>chat_whos_chatting</hook_key>
+    </config>
+  </hookdata>
+  <hookfiles>
+    <file>
+      <hook_file_real>boardIndexWhosChatting.php</hook_file_real>
+      <hook_type>templateHooks</hook_type>
+      <hook_classname>boardIndexWhosChatting</hook_classname>
+      <hook_data><![CDATA[a:6:{s:15:"classToOverload";N;s:9:"skinGroup";s:11:"skin_boards";s:12:"skinFunction";s:18:"boardIndexTemplate";s:4:"type";s:2:"if";s:2:"id";s:10:"showActive";s:8:"position";s:10:"post.endif";}]]></hook_data>
+      <hooks_source><![CDATA[<?php
+
+class boardIndexWhosChatting
+{
+	/**#@+
+	 * Registry Object Shortcuts
+	 *
+	 * @access	protected
+	 * @var		object
+	 */
+	protected $registry;
+	protected $DB;
+	protected $settings;
+	protected $request;
+	protected $lang;
+	protected $member;
+	protected $memberData;
+	protected $cache;
+	protected $caches;
+	/**#@-*/
+	
+	public function __construct()
+	{
+		/* Make registry objects */
+		$this->registry	= ipsRegistry::instance();
+		$this->DB		= $this->registry->DB();
+		$this->settings =& $this->registry->fetchSettings();
+		$this->request  =& $this->registry->fetchRequest();
+		$this->lang		= $this->registry->getClass('class_localization');
+		$this->member	= $this->registry->member();
+		$this->memberData =& $this->registry->member()->fetchMemberData();
+		$this->cache	= $this->registry->cache();
+		$this->caches   =& $this->registry->cache()->fetchCaches();
+	}
+	
+	public function getOutput()
+	{
+		//-----------------------------------------
+		// INIT
+		//-----------------------------------------
+		
+		$member_ids         = array();
+		$to_load            = array();
+		
+		//-----------------------------------------
+		// Check module/app
+		//-----------------------------------------
+		
+		$module				= '';
+		
+		if( !IPSLib::appIsInstalled('chat') )
+		{
+			return '';
+		}
+		
+		if( IPSLib::moduleIsEnabled( 'addonchat', 'chat' ) )
+		{
+			$_hide_whoschatting	= $this->settings['chat_hide_whoschatting'];
+			$_who_on			= $this->settings['chat_who_on'];
+		}
+		else if( IPSLib::moduleIsEnabled( 'parachat', 'chat' ) )
+		{
+			$_hide_whoschatting	= $this->settings['chat04_hide_whoschatting'];
+			$_who_on			= $this->settings['chat04_who_on'];
+		}
+		else
+		{
+			return '';
+		}
+
+		//-----------------------------------------
+		// Check
+		//-----------------------------------------
+		
+		if ( ! $_who_on )
+		{
+			return;
+		}
+		
+		//-----------------------------------------
+		// Sort and show :D
+		//-----------------------------------------
+		
+		if ( is_array( $this->caches['chatting'] ) AND count( $this->caches['chatting'] ) )
+		{
+			foreach( $this->caches['chatting'] as $id => $data )
+			{
+				if ( $data['updated'] < ( time() - 120 ) )
+				{
+					continue;
+				}
+				
+				$to_load[ $id ] = $id;
+			}
+		}
+
+		//-----------------------------------------
+		// Got owt?
+		//-----------------------------------------
+		
+		if ( count($to_load) )
+		{
+			$this->DB->build( array( 'select' => 'm.member_id, m.members_display_name, m.member_group_id, m.members_seo_name',
+												     'from'   => array( 'members' => 'm' ),
+												     'where'  => "m.member_id IN(" . implode( ",", $to_load ) . ")",
+	 												 'add_join' => array( 0 => array( 'select' => 's.login_type, s.current_appcomponent',
+																					  'from'   => array( 'sessions' => 's' ),
+																					  'where'  => 's.member_id=m.member_id',
+																					  'type'   => 'left' ) ),
+													 'order'  => 'm.members_display_name' ) );
+			$this->DB->execute();
+			
+			while ( $m = $this->DB->fetch() )
+			{
+				if( $m['member_id'] == $this->memberData['member_id'] )
+				{
+					continue;
+				}
+
+				$m['members_display_name'] = IPSLib::makeNameFormatted( $m['members_display_name'], $m['member_group_id'] );
+								
+				if( $m['login_type'] )
+				{
+					if ( $this->memberData['g_access_cp'] and ($this->settings['disable_admin_anon'] != 1) )
+					{
+						$member_ids[] = "<a href='" . $this->registry->getClass('output')->buildSEOUrl( "showuser={$m['member_id']}", 'public', $m['seo_name'], 'showuser' ) . "'>{$m['members_display_name']}</a>";
+					}
+				}
+				else
+				{
+					$member_ids[] = "<a href='" . $this->registry->getClass('output')->buildSEOUrl( "showuser={$m['member_id']}", 'public', $m['seo_name'], 'showuser' ) . "'>{$m['members_display_name']}</a>";
+				}
+			}
+		}		
+		
+		//-----------------------------------------
+		// Got owt?
+		//-----------------------------------------
+		
+		if ( count( $member_ids ) )
+		{
+			$this->html = $this->registry->getClass('output')->getTemplate('boards')->whoschatting_show( intval(count($member_ids)), $member_ids );
+		}
+		else
+		{
+			if ( ! $_hide_whoschatting )
+			{
+				$this->html = $this->registry->getClass('output')->getTemplate('boards')->whoschatting_empty();
+			}
+		}
+		
+		return $this->html;
+	}
+}]]></hooks_source>
+    </file>
+  </hookfiles>
+  <hookextras_settings/>
+  <hookextras_language/>
+  <hookextras_modules/>
+  <hookextras_help/>
+  <hookextras_templates/>
+  <hookextras_tasks/>
+  <hookextras_database_create/>
+  <hookextras_database_alter/>
+  <hookextras_database_update/>
+  <hookextras_database_insert/>
+</hookexport>

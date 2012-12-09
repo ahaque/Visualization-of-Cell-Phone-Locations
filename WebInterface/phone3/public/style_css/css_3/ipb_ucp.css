@@ -1,0 +1,84 @@
+/************************************************************************/
+/* IP.Board 3 CSS - By Rikki Tissier - (c)2008 Invision Power Services	*/
+/************************************************************************/
+/* ipb_ucp.css - UserCP styles											*/
+/************************************************************************/
+
+#usercp_menu {
+	text-align: right;
+	font-size: 0.9em;
+	border-right: 3px solid #528f6c;
+	width: 190px;
+	float: left;
+}
+
+	#usercp_menu li {
+		background-color: #e4ebf2;
+		padding: 6px 5px;
+		margin: 0 8px 4px 0;
+	}
+		
+		#usercp_menu li a {
+			text-decoration: none;
+		}
+	
+	#usercp_menu li.active {
+		background-color: #528f6c;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.05em;
+		-moz-border-radius: 4px 0 0 4px;
+		-webkit-border-top-left-radius: 4px;
+		-webkit-border-bottom-left-radius: 4px;
+		padding: 6px 5px;
+		margin-right: 0px;
+	}
+
+div.avatar_gallery {	
+	text-align: center;
+	margin-top: 15px;
+	width: 20%;
+	float: left;
+}
+
+	div.avatar_gallery input,
+	div.avatar_gallery label {
+		margin-top: 10px;
+		display: inline-block;
+	}
+	
+.usercp_body {
+	background-color: transparent;
+	padding: 5px 5px 20px 5px;
+}
+
+#usercp_content {
+	padding: 0 0 0 10px;
+	margin-left: 190px;
+	border-left: 3px solid #528f6c;
+}
+	
+	#usercp_content fieldset.row1,
+	#usercp_content fieldset.row2 {
+		padding: 10px;
+		margin-bottom: 4px;
+	}
+	
+	#usercp_content h3 {
+		padding: 0;
+		border: 0;
+		font-size: 1em;
+		margin-left: -2px;
+		margin-bottom: 4px;
+		font-weight: bold;
+	}
+	
+	#usercp_content .post_block h3 {
+		font-size: 1.1em;
+		padding: 5px 8px 3px 8px;
+		margin-left: 0;
+	}
+	
+	#usercp_content .post {
+		padding: 20px;
+	}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Creating Bulk Mail</grouptitle>
+		<items>
+			<item>
+				<key>bulkmail_addedit</key>
+				<string>Can add/edit bulk emails?</string>
+			</item>
+			<item>
+				<key>bulkmail_delete</key>
+				<string>Can delete bulk emails?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Sending/Resending Bulk Mails</grouptitle>
+		<items>
+			<item>
+				<key>bulkmail_view</key>
+				<string>Can monitor/view bulk emails?</string>
+			</item>
+			<item>
+				<key>bulkmail_send</key>
+				<string>Can send bulk emails?</string>
+			</item>
+			<item>
+				<key>bulkmail_cancel</key>
+				<string>Can cancel bulk emails?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

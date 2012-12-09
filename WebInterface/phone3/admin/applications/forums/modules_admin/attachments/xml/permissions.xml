@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Manage Attachments</grouptitle>
+		<items>
+			<item>
+				<key>view_attachments</key>
+				<string>Can search and review attachments?</string>
+			</item>
+			<item>
+				<key>stats_attachments</key>
+				<string>Can view attachment stats?</string>
+			</item>
+			<item>
+				<key>remove_attachments</key>
+				<string>Can remove attachments?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Manage Attachments Mime-Types</grouptitle>
+		<items>
+			<item>
+				<key>mime_add</key>
+				<string>Can add attachment types?</string>
+			</item>
+			<item>
+				<key>mime_edit</key>
+				<string>Can edit attachment types?</string>
+			</item>
+			<item>
+				<key>mime_delete</key>
+				<string>Can remove attachment types?</string>
+			</item>
+			<item>
+				<key>mime_import</key>
+				<string>Can import attachment types?</string>
+			</item>
+			<item>
+				<key>mime_export</key>
+				<string>Can export attachment types?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

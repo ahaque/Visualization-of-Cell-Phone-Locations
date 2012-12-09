@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Manage ACP Restrictions</grouptitle>
+		<items>
+			<item>
+				<key>restrictions_add_member</key>
+				<string>Can add member restrictions?</string>
+			</item>
+			<item>
+				<key>restrictions_edit_member</key>
+				<string>Can edit member restrictions?</string>
+			</item>
+			<item>
+				<key>restrictions_delete_member</key>
+				<string>Can remove member restrictions?</string>
+			</item>
+			<item>
+				<key>restrictions_add_group</key>
+				<string>Can add group restrictions?</string>
+			</item>
+			<item>
+				<key>restrictions_edit_group</key>
+				<string>Can edit group restrictions?</string>
+			</item>
+			<item>
+				<key>restrictions_delete_group</key>
+				<string>Can remove group restrictions?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

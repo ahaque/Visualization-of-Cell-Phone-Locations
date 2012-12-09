@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Manage Applications</grouptitle>
+		<items>
+			<item>
+				<key>app_manage</key>
+				<string>Can edit/add applications?</string>
+			</item>
+			<item>
+				<key>app_delete</key>
+				<string>Can delete applications?</string>
+			</item>
+			<item>
+				<key>app_install</key>
+				<string>Can install new applications?</string>
+			</item>
+			<item>
+				<key>build_sphinx</key>
+				<string>Can build sphinx.conf? WARNING: Exposes database login details</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Manage Modules</grouptitle>
+		<items>
+			<item>
+				<key>module_manage</key>
+				<string>Can edit/add application modules?</string>
+			</item>
+			<item>
+				<key>module_delete</key>
+				<string>Can delete application modules?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Purchase Applications</grouptitle>
+		<items>
+			<item>
+				<key>purchase_app</key>
+				<string>Can view pages to purchase additional applications?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Manage Hooks</grouptitle>
+		<items>
+			<item>
+				<key>hooks_manage</key>
+				<string>Can add/edit hooks?</string>
+			</item>
+			<item>
+				<key>hooks_delete</key>
+				<string>Can remove hooks?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

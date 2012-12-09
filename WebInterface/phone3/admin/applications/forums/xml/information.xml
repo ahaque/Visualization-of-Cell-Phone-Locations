@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<information>
+	<data>
+		<name>Forums</name>
+		<public_name>Forums</public_name>
+		<author>Invision Power Services, Inc.</author>
+		<description>Manage forums and posts</description>
+		<templategroups>
+			<template match="exact">skin_boards</template>
+			<template match="exact">skin_forum</template>
+			<template match="exact">skin_legends</template>
+			<template match="exact">skin_mod</template>
+			<template match="exact">skin_poll</template>
+			<template match="exact">skin_post</template>
+			<template match="exact">skin_printpage</template>
+			<template match="exact">skin_topic</template>
+		</templategroups>
+	</data>
+</information>

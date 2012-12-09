@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<export>
+  <help>
+    <row>
+      <title>Searching</title>
+      <text><![CDATA[The search feature can be used to search all areas of the community quickly based on keywords you enter.<br />
+<br />
+&lt;strong&gt;Quick Search&lt;/strong&gt;<br />
+You can start a quick search by typing your keywords into the quick-search bar at the top of any page and pressing the &quot;Search&quot; button.<br />
+<br />
+&lt;strong&gt;Advanced Options&lt;/strong&gt;<br />
+If instead of typing your keywords into the quick-search bar, you click the &quot;Advanced&quot; link next to it, you will see some advanced options for searching.<br />
+<br />
+The first option, &quot;Find &lt;strong&gt;words&lt;/strong&gt;&quot; is where you can enter the keywords to search for.<br />
+<br />
+The next option, &quot;Find &lt;strong&gt;author&lt;/strong&gt;&quot; can be used to only find content from a specific user. As you begin typing ausername, you should see a dropdown with username suggestions that you can select from.<br />
+<br />
+The next option, &quot;Find by &lt;strong&gt;date&lt;/strong&gt;&quot; allows you to restrict the results to content added between particular dates. To select your date, click the &lt;img src=&#39;{style_image_url}/date.png&#39; /&gt; button - this will bring up a calendar. From here you can select any date and your option will be filled into the search form.<br />
+<br />
+The next option, &quot;Find in &lt;strong&gt;forum&lt;/strong&gt; allows you to restrict your results to content within particular forums. You can select multiple options by holding the Ctrl key on your keyboard (or the cmd key if you use a Mac) and clicking on your options.<br />
+<br />
+You can leave any of these options blank, however you must supply at least one search criteria when submitting the form.  Once you have filled in the options that you require, press the &lt;span class=&#39;input_submit&#39;&gt;Do Search&lt;/span&gt; button.<br />
+<br />
+&lt;strong&gt;Inline Search&lt;/strong&gt;<br />
+You can also search individual forums and topics from within the forums or topics themselves. Underneath the topic list in a forum, you will notice a box labeled &quot;Search Forum&quot;, and underneath all posts in a topic you will notice a box labeled &quot;Search Topic&quot; - enter your keyboards into the box and press &lt;span class=&#39;input_submit alt&#39;&gt;Go&lt;/span&gt; to perform an inline search.<br />
+<br />
+&lt;strong&gt;Results&lt;/strong&gt;<br />
+Once you have submitted your search, a tabbed page of results will appear - you can change the selected tab to choose which area of the community you wish to search. For example, results under the &quot;Forums&quot; tab will bring up any topics and posts that contain your search keywords, while the &quot;Members&quot; tab will bring up any member accounts that match your search criteria.<br />
+<br />
+You can change the order of the results to sort by relevance or to sort by date using the options on the right-hand side, just under the tabs.<br />
+<br />
+The keywords that you searched for will be highlighted like &lt;span class=&#39;searchlite&#39;&gt;this&lt;/span&gt;.<br />
+<br />
+Once you have found the result you are looking for, you can click on it to bring up the page.]]></text>
+      <description>How to use the search feature.</description>
+      <position>8</position>
+      <app>core</app>
+    </row>
+    <row>
+      <title>Your Settings</title>
+      <text><![CDATA[You can access your settings from any page by selecting your name at the top of the screen and then selecting &quot;My Settings&quot;.<br />
+<br />
+There are several tabs along the top, each of which reveal a number of settings pages:<br />
+<br />
+<br />
+&lt;strong&gt;Settings&lt;/strong&gt;<br />
+<br />
+&lt;em&gt;General Settings&lt;/em&gt;<br />
+&lt;ul&gt;<br />
+	&lt;li&gt;Privacy Options<br />
+		Here you can configure whether to subscribe to email updates from the board administrator, and whether to allow other members to send you emails&lt;/li&gt;<br />
+	&lt;li&gt;Time Zone<br />
+		Here you can configure your time zone. This is necessary to ensure that times across the community are shown correctly.&lt;/li&gt;<br />
+	&lt;li&gt;Personal Messenger Options<br />
+		Here you can choose to disable your personal messenger, or configure how you would like to be notified when you receive a new message.&lt;/li&gt;<br />
+	&lt;li&gt;Posting Settings<br />
+		Here you can configure global posting settings such as the visual text editor which makes formatting be shown as it will appear when posted, and the flash uploader which makes uploading multiple files quicker and easier.&lt;/li&gt;<br />
+&lt;/ul&gt;<br />
+	<br />
+&lt;em&gt;Change Email Address&lt;/em&gt;<br />
+You can use this tool to change the email address that is associated with your account.<br />
+<br />
+&lt;em&gt;Change Password&lt;/em&gt;<br />
+You can use this tool to change the password that you use to log in.<br />
+<br />
+&lt;em&gt;Change Display Name&lt;/em&gt;<br />
+Depending on your permissions, you may be able to use this tool to change your display name which is used across the community.<br />
+<br />
+&lt;em&gt;Manage Notes&lt;/em&gt;<br />
+You may use this area to store any notes or information that you want to keep.<br />
+<br />
+&lt;em&gt;Manage Attachments&lt;/em&gt;<br />
+This page will show you all of the attachments you have uploaded to the community and the amount of space you have left.  The bar at the top shows you how much of your allocated upload space you have used. Below this is a table containing information on all of the attachments you have submitted.<br />
+<br />
+If you are running out of space, you can delete some old attachments by selecting the checkbox on the right-hand side of the table for the attachments you want to delete, and then pressing the &lt;span class=&#39;input_submit alt&#39;&gt;Delete Selected&lt;/span&gt; button at the bottom of the table.<br />
+<br />
+<br />
+&lt;strong&gt;Forums&lt;/strong&gt;<br />
+<br />
+&lt;em&gt;View/Posting/Email Prefs&lt;/em&gt;<br />
+&lt;ul&gt;<br />
+	&lt;li&gt;Board Display Settings<br />
+		Here you can configure a number of options to control how forums and topics are displayed. You can disable viewing signatures, avatars and images in posts. You can also configure the number of posts and topics to display per page.&lt;/li&gt;<br />
+	&lt;li&gt;View/Posting/Email Prefs<br />
+		Here you can configure how notifications are sent, enable automatic subscription to topics and change the layout for topic display.&lt;/li&gt;<br />
+&lt;/ul&gt;<br />
+	<br />
+&lt;em&gt;Manage Watched Topics and Manage Watched Forums&lt;/em&gt;<br />
+Here you can see all of the topics and forums that you are currently subscribed to.<br />
+<br />
+To change the type of notification or to unsubscribe, select the checkbox on the right-hand side of the table for the subscriptions you want to change, then select the new type from the dropdown menu at the bottom of the table, and then click &lt;span class=&#39;input_submit alt&#39;&gt;with selected&lt;/span&gt;.<br />
+<br />
+<br />
+&lt;strong&gt;Profile&lt;/strong&gt;<br />
+<br />
+&lt;em&gt;Change Profile Information&lt;/em&gt;<br />
+&lt;ul&gt;<br />
+	&lt;li&gt;Comments<br />
+		Here you can configure settings related to profile comments, such as how you want to be notified when someone comments your profile and whether you want to approve new comments.&lt;/li&gt;<br />
+	&lt;li&gt;Friends<br />
+		Here you can configure options related to your friends, such as how you want to be notified when someone adds you as a friend and whether you want to approve friend requests.&lt;/li&gt;<br />
+	&lt;li&gt;Profile Information<br />
+		Here you can set your birthday and choose how many latest visitors to show on your profile.&lt;/li&gt;<br />
+	&lt;li&gt;Other Information<br />
+		Here you can configure all other information that is shown on your profile.&lt;/li&gt;<br />
+&lt;/ul&gt;<br />
+<br />
+&lt;em&gt;Change About Me Page&lt;/em&gt;<br />
+Here you can change the content of the &#39;about me&#39; section on your profile.<br />
+<br />
+&lt;em&gt;Change Signature&lt;/em&gt;<br />
+Here you can change your signature that is displayed at the bottom of posts.<br />
+<br />
+&lt;em&gt;Change Photo&lt;/em&gt;<br />
+Here you can change your photo that is displayed in your profile and other areas on the community.<br />
+<br />
+&lt;em&gt;Change Avatar&lt;/em&gt;<br />
+Here you can change your avatar which is the image that displays next to your posts.<br />
+<br />
+&lt;em&gt;Manage Ignored Users&lt;/em&gt;<br />
+Here you can manage your ignored users. You can choose to ignore all posts from a member, block them from sending you personal messages, or both.<br />
+<br />
+To add a member to your ignored list, type their name into the &quot;Member&#39;s Name&quot; box. As you type, suggestions will appear below the box. When you see the name of the member you want to add, click on it. Then select either or both of the checkboxes below. Selecting &quot;Ignore Personal Conversations&quot; will mean they cannot send you messages and their messages in group conversations will be hidden, while &quot;Ignore posts&quot; will hide their posts in the forums. When you are ready, click &lt;span class=&#39;input_submit&#39;&gt;Save Changes&lt;/span&gt;. <br />
+<br />
+Some members, such as administrators, cannot be ignored.  <br />
+<br />
+If you wish to stop ignoring a member, select &quot;Remove&quot; in the table, or to switch on or off the different types of ignoring, click the relevant link under the &quot;Ignore Posts&quot; or &quot;Ignore Messages&quot; columns.]]></text>
+      <description>Editing contact information, personal information, avatars, signatures, board settings, languages and style choices.</description>
+      <position>3</position>
+      <app>core</app>
+    </row>
+    <row>
+      <title>How to Register</title>
+      <text><![CDATA[To be able to enjoy all of the features available to the community, you will need to sign up for a member account. Registration is free and only takes a moment to complete. <br />
+ <br />
+ To sign up, click the &quot;&lt;a href=&#39;{board_url}app=core&amp;module=global&amp;section=register&#39;&gt;Register&lt;/a&gt;&quot; link at the top of any page.  You will see a page containing the registration terms, which you must agree to by checking the box and pressing &lt;span class=&#39;input_submit&#39;&gt;Continue Registration&lt;/span&gt;.<br />
+ <br />
+ You should then fill in all of the fields on the registration page.  As you move from field to field you will be alerted to any problems with the information you have entered. When you have filled in the form, click &lt;span class=&#39;input_submit&#39;&gt;Register&lt;/span&gt;.<br />
+ <br />
+ You may be registered and logged straight in, or you may have to verify your email address by clicking a link in an email that we will send you. If this is the case, a screen will now appear with further instructions.]]></text>
+      <description>How to register and the added benefits of being a registered member.</description>
+      <position>1</position>
+      <app>core</app>
+    </row>
+    <row>
+      <title>Logging In and Out</title>
+      <text><![CDATA[&lt;strong&gt;Logging In&lt;/strong&gt;<br />
+Once you have signed up for an account, you can log in by pressing the &quot;Sign In&quot; button at the top of any page.<br />
+<br />
+From here, you should enter your username or email address, and the password you used when you registered.  If you tick the &quot;Remember Me&quot; box you will not have to sign in when you visit the community in future. This ability can be very useful, but should not be used if other people have access to your computer or if you are using a public computer.<br />
+<br />
+You may also be able to hide your username from the online list by checking the &quot;Sign in anonymously&quot; box.  Administrators will still be able to see you online if you do so, however other members will not be able to.<br />
+<br />
+When you are ready, click &lt;span class=&#39;input_submit&#39;&gt;Sign In&lt;/span&gt;.<br />
+Once logged in, you should be taken back to whatever page you were previously viewing.<br />
+<br />
+You may also see additional log in options such as OpenID or Facebook Connect. If these features are available and you would prefer to use one of these options to log in, click on the appropriate button and follow the on-screen instructions.<br />
+<br />
+<br />
+&lt;strong&gt;Forgotten your password&lt;/strong&gt;<br />
+If you have forgotten your password, you can click the &quot;I&#39;ve forgotten my password&quot; link on the sign in page below the password box.  This will take you to a page where you can enter your username or email address, and we will then either email you a new password that you can use or a link for you to reset your password.<br />
+<br />
+Note that if you locked your account by typing in the wrong password too many times, you will still need to unlock your account before you can use your new password.<br />
+<br />
+<br />
+&lt;strong&gt;Logging Out&lt;/strong&gt;<br />
+To log out click the &quot;Sign Out&quot; link at the top of the screen from any page.]]></text>
+      <description>How to log in and out from the board, how to remain anonymous and not be shown on the active users list and what to do if you forget your password.</description>
+      <position>2</position>
+      <app>core</app>
+    </row>
+    <row>
+      <title>Contacting the staff</title>
+      <text><![CDATA[If you need to contact a moderator, or simply wish to view the complete administration team, you can click the link &#39;The moderating team&#39; found at the bottom of the main board page. This list will show you administrators and moderators. <br />
+<br />
+Note that you can report content to all staff by pressing the &quot;&lt;img src=&#39;{style_image_url}/report.png&#39; /&gt; Report&quot; button when viewing the content.]]></text>
+      <description>Where to find a list of the board moderators and administrators.</description>
+      <position>10</position>
+      <app>core</app>
+    </row>
+  </help>
+</export>

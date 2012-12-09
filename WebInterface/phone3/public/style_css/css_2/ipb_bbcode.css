@@ -1,0 +1,33 @@
+/***************************************************************/
+/* IP.Board 3 CSS                                              */
+/* ___________________________________________________________ */
+/* By Rikki Tissier                                            */
+/* (c)2008 Invision Power Services                             */
+/***************************************************************/
+/* ipb_bbcode.css - BBCode CSS								   */
+/***************************************************************/
+
+/* 	NOTE: This CSS file styles bbcodes throughout IPB. It is
+	recommended that you DO NOT change these styles if you are
+	creating a skin since it may interfere with user expectation
+	of what certain BBCodes look like. */
+	
+strong.bbc				{	font-weight: bold !important; }
+em.bbc 					{	font-style: italic !important; }
+span.bbc_underline 		{ 	text-decoration: underline !important; }
+div.bbc_center 			{	text-align: center; }
+div.bbc_left 			{	text-align: left; }
+div.bbc_right 			{	text-align: right; }
+div.bbc_indent 			{	margin-left: 50px; }
+del.bbc 				{	text-decoration: line-through !important; }
+ul.bbc 					{	list-style: disc outside; margin-left: 30px; }
+	ul.bbc ul.bbc 			{	list-style-type: circle; }
+		ul.bbc ul.bbc ul.bbc 	{	list-style-type: square; }
+ol.bbc 					{ list-style: decimal outside; margin-left: 30px; }
+	ol.bbc ol.bbc 			{	list-style-type: lower-roman; }
+hr.bbc 					{ 	display: block; border-top: 2px solid #777; }
+div.bbc_spoiler 		{	 }
+div.bbc_spoiler span	{ 	font-weight: bold; }
+div.bbc_spoiler_wrapper	{ 	border: 1px inset #777; padding: 4px; }
+div.bbc_spoiler_content	{ 	 }
+input.bbc_spoiler_show	{ 	width: 45px; font-size: .7em; margin: 0px; padding: 0px; }

@@ -1,0 +1,366 @@
+/**
+* Installer CSS
+* (c) Invision Power Services, Inc.
+*/
+
+/*-----------------------------------------------*/
+/* This section resets default browser styles.   */
+/* You shouldn't need to edit this section.      */
+/*-----------------------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; } 
+table {	border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal; }
+ol,ul { list-style:none; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%;	font-weight:normal; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
+hr { display: none; }
+
+/**
+* New or modified styles
+*/
+body {
+	font-family: arial, verdana, tahoma, sans-serif;
+	font-size: 13px;
+	color: #1c2837;
+	padding: 0px 0px 0px 0px;
+}
+
+#login_controls {
+	margin: 0 auto;
+	width: 100%;
+	font-size: 12px;
+}
+
+	#login_controls label {
+		display: block;
+		width: 35%;
+		color: #000;
+		float: left;
+		clear: both;
+		margin-bottom: 12px;
+		text-align: right;
+		padding-right: 15px;
+	}
+	
+	#login_controls input {
+		margin-bottom: 12px;
+		font-size: 12px;
+		width: 45%;
+	}
+	
+.nav_button, .button, .realbutton {
+-moz-border-radius-bottomleft:3px;
+-moz-border-radius-bottomright:3px;
+-moz-border-radius-topleft:3px;
+-moz-border-radius-topright:3px;
+background:#657B97 url(images/gradient_bg.png) repeat-x scroll 70% 50%;
+border:1px solid #3E546F;
+color:#FFFFFF;
+cursor:pointer;
+padding:3px;
+}
+
+.message {
+	background-repeat: no-repeat;
+	background-position: 8px 10px;
+	padding: 10px 10px 10px 30px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #b0ce94;
+	background-color: #f1f6ec;
+	background-image: url(images/information.png);
+	color: #3e4934;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	line-height: 150%;
+}
+
+	.message.error {
+		background-color: #f3dddd;
+		background-image: url(images/exclamation.png);
+		border-color: #deb7b7;
+		color: #281b1b;
+		font-size: 1.1em;
+	}
+	
+	.message.unspecific {
+		background-color: #f3f3f3;
+		border-color: #d4d4d4;
+		color: #515151;
+		clear: both;
+		margin: 0 0 10px 0;
+	}
+	
+	.message.unspecific.note {
+		background-color: #f9f7e0;
+		border-color: #eadca0;
+		margin-top: 8px;
+	}
+
+#branding {
+	background: #1d3652 url("images/branding_bg.png") repeat-x top;
+	height: 100px;
+}
+
+#navigation {
+	height: 31px;
+	background: transparent url(images/sub_bar.png) repeat-x;
+	border-bottom: 5px solid #ae555b;
+}
+	
+	#navigation p {
+		float: right;
+		margin-right: 10px;
+		margin-top: 11px;
+		color: #e4eaf1;
+		font-size: 11px;	
+	}
+	
+	#navigation p a {
+		color: #e4eaf1;
+		text-decoration: none;
+	}
+	
+	#navigation ul#section_buttons {
+		display: inline;
+		margin-top: -5px;
+	}
+		
+		#navigation ul#section_buttons li {
+			float: left;
+			margin: 0px 0px 10px 10px;
+			padding: 0;
+		}
+
+			#navigation ul#section_buttons li span {
+				display: block;
+				padding: 7px 15px 13px 13px;
+				margin-right: -6px;
+				color: #acbbcc;
+				font-size: 1em;
+				text-decoration: none !important;
+				-moz-outline: 0;
+			}
+
+
+			
+		#navigation ul#section_buttons li.active {
+			background: transparent url(images/main_button_left.png) no-repeat;
+			position: relative;
+			top: -5px;
+		}
+
+			#navigation ul#section_buttons li.active span {
+				background: transparent url(images/main_button_right.png) no-repeat top right;
+				color: #fff;
+				font-weight: bold;
+				padding-top: 10px;
+			}
+
+
+#ipswrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.main_shell {
+    background-color: #1d3652;
+    border: 1px solid #24426A;
+    width: 60%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+H1 {
+    margin: 0px;
+    background-image: url('images/title_bar.gif');
+    padding: 7px 5px 6px 5px;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+H2 {
+    margin: 0px;
+    font-size: 18px;
+}
+
+H3 {
+    font-size: 11px;
+    margin: 0px;
+}
+
+TABLE {
+    font-size: 10px;
+}
+
+.content_shell
+{
+    margin: 0px 3px 3px 3px;
+    border: 1px solid #24426A;
+    border-top: 3px solid #24426A;
+    background-repeat: repeat-x;
+    background-color: #D5DDE5;
+}
+
+.package {
+	clear:both;
+    height: 417px;
+}
+
+.content_wrap {
+    width: 70%;
+    height: 320px;
+    float: right;
+    margin: 6px 6px 4px 0px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    line-height: 150%;
+	overflow: auto;
+     overflow-y:auto;
+     overflow-x:hidden;
+}
+
+.install_info {
+    float: left;
+    margin: -5px 0px 0px 10px;
+    font-size: 12px;
+}
+
+.install_info H3 {
+    font-size: 15px;
+    color: #6D87A9;
+}
+
+.install_info UL {
+    margin: 0px;
+    margin-top: 15px;
+    padding-left: 25px;
+    list-style-type: none;
+}
+
+#progress .step_done {
+    list-style-image: url('images/bullet_done.gif');
+    color: #44638E;
+    font-style: italic;
+}
+
+#progress .step_doing {
+    list-style-image: url('images/bullet_doing.gif');
+    font-weight: bold;
+}
+	#progress .step_doing p {
+	    color: gray;
+	    font-weight: normal;
+	}
+
+#progress .step_notdone {
+    list-style-image: url('images/bullet_notdone.gif');
+}
+
+.warning {
+    background-color: #EDF1AB;
+    border: 1px solid #6E704B;
+    padding: 5px;
+    font-weight: bold;
+    -moz-border-radius: 5px;
+    overflow: auto;
+    
+}
+
+.hr {
+    margin: 4px 6px 0px 6px;
+    border-bottom: 1px solid #627686;
+}
+
+.copyright {
+    width: 98%;
+    text-align: right;
+    font-size: 9px;
+    color: #9EA7B3;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+.eula {
+	height: 210px;
+	border: 1px solid #76774C;
+	background-color: #FDFDD3;
+	padding: 5px;
+	overflow: auto;
+}	
+
+#auto_progress LI {
+    list-style: none;
+    color: #029901;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.done_text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#links {
+    margin: 0px;
+    padding: 5px;
+}
+
+#links LI {
+    list-style: none;
+}
+
+.float_img {
+    float: left;
+    margin-right: 5px;
+}
+
+.info {
+    background-color: #DCE6F3;
+    border: 1px solid #5876A0;
+    padding: 4px;
+    line-height: 120%;
+    -moz-border-radius: 7px;
+    color: #1D3A60;
+}
+
+.sql_form {
+    width: 100%;
+    font-size: 11px;
+    border-top: 1px solid #6A6A6A;
+    border-left: 1px solid #6A6A6A;
+      border-right: 1px solid #A8A8A8;
+      border-bottom: 1px solid #A8A8A8;
+}
+
+FIELDSET {
+	padding: 10px 10px 10px 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #d5dde5;
+	background-color: #F1F4F7;
+	color: #3e4934;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	line-height: 150%;
+}
+
+FIELDSET LEGEND {
+    font-weight: bold;
+}
+
+TABLE .title {
+    color: #2D4461;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+TABLE .content {
+    padding-bottom: 3px;
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>System Settings</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>System Settings</subitemtitle>
+					<subsection>settings</subsection>
+					<subitemurl>do=settingsview</subitemurl>
+					<subitemrolekey>settings_manage</subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+				<subitem>
+					<subitemtitle>Performance Mode</subitemtitle>
+					<subsection>performance</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey>performance_toggle</subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>User Agent Management</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>User Agent Management</subitemtitle>
+					<subsection>uagents</subsection>
+					<subitemurl>do=list</subitemurl>
+					<subitemrolekey>uagents</subitemrolekey>
+					<subisredirect>0</subisredirect>
+					<subitemkeywords>spiders</subitemkeywords>
+				</subitem>
+				<subitem>
+					<subitemtitle>Manage User Agent Groups</subitemtitle>
+					<subsection>uagents</subsection>
+					<subitemurl>do=groupsList</subitemurl>
+					<subitemrolekey>uagents</subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Recount &amp; Rebuild</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Recount &amp; Rebuild</subitemtitle>
+					<subsection>rebuild</subsection>
+					<subitemurl>do=rebuild_overview</subitemurl>
+					<subitemrolekey>rebuild_manage</subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+				<subitem>
+					<subitemtitle>Clean Up Tools</subitemtitle>
+					<subsection>rebuild</subsection>
+					<subitemurl>do=tools</subitemurl>
+					<subitemrolekey>recount_manage</subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Manage Help Files</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Manage Help Files</subitemtitle>
+					<subsection>help</subsection>
+					<subitemurl>do=help_overview</subitemurl>
+					<subitemrolekey>helpfiles_manage</subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Cache Management</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Cache Management</subitemtitle>
+					<subsection>cache</subsection>
+					<subitemurl>do=cache_overview</subitemurl>
+					<subitemrolekey>cache_manage</subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Question &amp; Answer Challenge</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Question &amp; Answer Challenge</subitemtitle>
+					<subsection>qanda</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey>qanda_manage</subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>			
+		<item>
+			<title>API Users</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>API Users</subitemtitle>
+					<subsection>api</subsection>
+					<subitemurl></subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Log In Management</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Log In Management</subitemtitle>
+					<subsection>login</subsection>
+					<subitemurl>do=login_overview</subitemurl>
+					<subitemrolekey>login_manage</subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Logs</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Logs</subitemtitle>
+					<subsection>logsSplash</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>		
+	</tabitems>
+</menu>

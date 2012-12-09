@@ -1,0 +1,7 @@
+table.shoutbox_table tr td {
+	padding: 4px;
+}
+
+.shoutbox_time {
+	color: gray;
+}

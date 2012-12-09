@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Manage Statistics</grouptitle>
+		<items>
+			<item>
+				<key>stats_topics</key>
+				<string>Can run reports on new topics?</string>
+			</item>
+			<item>
+				<key>stats_registration</key>
+				<string>Can run reports on new registrations?</string>
+			</item>
+			<item>
+				<key>stats_posts</key>
+				<string>Can run reports on new posts?</string>
+			</item>
+			<item>
+				<key>stats_msg</key>
+				<string>Can run reports on new messages?</string>
+			</item>
+			<item>
+				<key>stats_views</key>
+				<string>Can run reports on topic views?</string>
+			</item>			
+		</items>
+	</group>
+</permissions>

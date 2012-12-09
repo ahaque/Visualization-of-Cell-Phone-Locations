@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>CCS Plugins</grouptitle>
+		<items>
+			<item>
+				<key>ccs_add_plugin</key>
+				<string>Can install new plugins?</string>
+			</item>
+			<item>
+				<key>ccs_remove_plugin</key>
+				<string>Can remove plugins?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

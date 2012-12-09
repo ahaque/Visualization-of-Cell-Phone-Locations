@@ -1,0 +1,3283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settingexport>
+  <settinggroup>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>cookies</conf_title_keyword>
+      <conf_title_title>Cookies</conf_title_title>
+      <conf_title_desc>This section allows you to manage your cookie settings.</conf_title_desc>
+      <conf_title_tab/>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Cookie Domain</conf_title>
+      <conf_description>Use .domain.com for site wide cookies</conf_description>
+      <conf_group>4</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>cookie_domain</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cookies</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Cookie Prefix</conf_title>
+      <conf_description>Useful if you have multiple installations on one URL.</conf_description>
+      <conf_group>4</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>cookie_id</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cookies</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Cookie Path</conf_title>
+      <conf_description/>
+      <conf_group>4</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>cookie_path</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cookies</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>coppa</conf_title_keyword>
+      <conf_title_title>COPPA Set-up</conf_title_title>
+      <conf_title_desc><![CDATA[This section allows you to comply with <a href='http://www.ftc.gov/ogc/coppa1.htm' target='_blank'>COPPA</a>.]]></conf_title_desc>
+      <conf_title_tab>Members</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Use COPPA registration system?</conf_title>
+      <conf_description><![CDATA[Enabling <a href="http://www.ftc.gov/ogc/coppa1.htm" target="_blank">COPPA</a> on your board will require children under the age of 13 to get parental consent via a faxed or mailed form.]]></conf_description>
+      <conf_group>5</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>use_coppa</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>coppa</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Fax number to receive COPPA forms</conf_title>
+      <conf_description/>
+      <conf_group>5</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>coppa_fax</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>coppa</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Mail address to receive COPPA forms</conf_title>
+      <conf_description/>
+      <conf_group>5</conf_group>
+      <conf_type>textarea</conf_type>
+      <conf_key>coppa_address</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>coppa</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Additional COPPA Information</conf_title>
+      <conf_description>This text will be displayed on the parental consent form and can be used to include your privacy policy (a requirement for COPPA compliance)</conf_description>
+      <conf_group>5</conf_group>
+      <conf_type>editor</conf_type>
+      <conf_key>coppa_consent_extra</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>coppa</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_title_title><![CDATA[CPU Saving &amp; Optimization]]></conf_title_title>
+      <conf_title_desc>This section allows certain features to be limited or removed to get more performance out of your board.</conf_title_desc>
+      <conf_title_tab>Performance</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Server Load Limit</conf_title>
+      <conf_description><![CDATA[Will display 'busy' message when limit hit<br>Can be left blank for no limit]]></conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>load_limit</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Disable prefetching?</conf_title>
+      <conf_description><![CDATA[Some web accelerators can "prefetch" pages before users request them.  Will feel faster for the user if the page is then requested, but can waste server resources if it isn't.]]></conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>disable_prefetching</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Content Caching</conf_title>
+      <conf_description><![CDATA[Enter the number of days to cache content (posts and members' signatures). Enter 0 to disable caching.]]></conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>c_cache_days</conf_key>
+      <conf_default>7</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Enable Content Caching?</conf_title>
+      <conf_description><![CDATA[If 'yes', then content set out below will be cached to save resources.]]></conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>cc_on</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group>Content Caching</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Enable Monitoring?</conf_title>
+      <conf_description><![CDATA[If 'yes' then a record will be kept of cached versus raw items served. Warning: Do not enable during busy periods, recommend for sampling for short periods only.]]></conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>cc_monitor</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Post Cache</conf_title>
+      <conf_description>Enter the number of days to cache posts for. Enter 0 to not cache.</conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>cc_posts</conf_key>
+      <conf_default>7</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Signature Cache</conf_title>
+      <conf_description><![CDATA[Enter the number of days to cache members' signatures for. Enter 0 to not cache.]]></conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>cc_sigs</conf_key>
+      <conf_default>180</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow custom profile field info be used in TopicView?</conf_title>
+      <conf_description><![CDATA[If set to "yes", this will add a LEFT JOIN onto the custom profile field table.]]></conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>custom_profile_topic</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group>Saving SQL Resources</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Cache calendar and birthdays?</conf_title>
+      <conf_description><![CDATA[Not recommended if your board isn't visited daily.]]></conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>cache_calendar</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Cut off for active user display [in minutes]]]></conf_title>
+      <conf_description/>
+      <conf_group>6</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>au_cutoff</conf_key>
+      <conf_default>15</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>10</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Allow &#39;Watch&#39; Content Status Updates]]></conf_title>
+      <conf_description><![CDATA[If allowed, IP.Board will attempt to determine the 'watched' status of forums and topics and change the link accordingly. This uses 1 table join (indexed) per topic view and 1 indexed query per forum view.]]></conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>cpu_watch_update</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>11</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Update Topic Views Immediately</conf_title>
+      <conf_description>If enabled, the topic views counter will be updated as one loads a topic. If not enabled, the topic views will be written to another table and the topic views updated every 3 hours. This will significantly reduce overhead on the topics table if you have a very busy board as it overcomes the write lock initiated when the topic counter is updated.</conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>update_topic_views_immediately</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>12</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Mark topics a user has posted when displaying a forum?</conf_title>
+      <conf_description/>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>show_user_posted</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>13</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Kill long running search queries</conf_title>
+      <conf_description>Number of seconds after a search has started that IPB should try to kill the query if the user has left the page.  Enter 0 to disable.</conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>kill_search_after</conf_key>
+      <conf_default>30</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>14</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>resources, search, kill</conf_keywords>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Remove &#39;Users Browsing this forum&#39; feature?]]></conf_title>
+      <conf_description>This save 1 query per forum view</conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>no_au_forum</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra>no_au_forum</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>15</conf_position>
+      <conf_start_group>Turning Features Off</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Remove &#39;Users Browsing this topic&#39; feature?]]></conf_title>
+      <conf_description>(This save 1 query per topic view)</conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>no_au_topic</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>16</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Show Active Users</conf_title>
+      <conf_description/>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>show_active</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>17</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Disable Topic Summary</conf_title>
+      <conf_description>Do you wish to disable the topic summary from displaying at the bottom of the post reply page?</conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>disable_summary</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>18</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow users (where allowed) to use search?</conf_title>
+      <conf_description/>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>allow_search</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>19</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow search results to be grouped</conf_title>
+      <conf_description><![CDATA[This enables the "show results as titles" option on the search form, however the resulting query can lock up the posts table.  Only enable if searching posts and titles while displaying the results as titles is important to your site.]]></conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>enable_show_as_titles</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>20</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>search, fulltext, lock, posts, resources</conf_keywords>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Show Board Totals?</conf_title>
+      <conf_description>Show the board totals at the footer of the board index page.</conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>show_totals</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>21</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Disable Profile Statistics?</conf_title>
+      <conf_description>Member statistics related to forum activity displayed in the profile can be resource intensive on larger sites.</conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>disable_profile_stats</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>22</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>No. characters to word wrap on?</conf_title>
+      <conf_description>Prevents long unbroken words which distort tables. 80 - 150 is recommended if enabling, but this process can be slow.</conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>post_wordwrap</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>23</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Disable Sub-forums on Board Index</conf_title>
+      <conf_description>Do you wish to disable subforums from displaying on the board index?</conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>disable_subforum_show</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>24</conf_position>
+      <conf_start_group>Reducing HTML output</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Show short forum jump list?</conf_title>
+      <conf_description>This will remove sub-forums from the drop down list - useful if you have many forums.</conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>short_forum_jump</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra>short_forum_jump</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>25</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Load javascript files from Google</conf_title>
+      <conf_description><![CDATA[Enabling this setting causes the prototype and scriptaculous javascript files to be loaded from Google's servers instead of your own.]]></conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>remote_load_js</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>26</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Minify javascript?</conf_title>
+      <conf_description>You can minify javascript and CSS to reduce the number of HTTP requests to the server, support proper browser caching, and compress the contents sent.</conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>use_minify</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>27</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>minify, reduce, compress, javascript</conf_keywords>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Enable Topic Marking Tracking?</conf_title>
+      <conf_description><![CDATA[If 'yes', IP.Board will manage your read topics in the database so that they are available on different computers.]]></conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>topic_marking_enable</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>28</conf_position>
+      <conf_start_group>Topic Marking</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Topic Marker Save Frequency</conf_title>
+      <conf_description><![CDATA[Choose how often you'd like for topic markers to be saved back to the DB table. If you choose a time option, the markers information will be saved at session end also.]]></conf_description>
+      <conf_group>6</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>topic_marking_save_freq</conf_key>
+      <conf_default>session</conf_default>
+      <conf_extra>page=Each Page Load&#13;
+min-1=Every One Minute&#13;
+min-3=Every Three Minutes&#13;
+min-5=Every Five Minutes&#13;
+min-10=Every Ten Minutes&#13;
+session=Session End Only</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>29</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>cpusaving</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>date</conf_title_keyword>
+      <conf_title_title>Date, Time and Number Formats</conf_title_title>
+      <conf_title_desc>This section contains the date and time formats used throughout the board.</conf_title_desc>
+      <conf_title_tab>Advanced</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Native Server Time Zone</conf_title>
+      <conf_description><![CDATA[<span style='color:red'>If you have chosen the correct timezone and the clock is an hour out, this is because of daylight savings time and your members can correct this by editing their 'Board settings' via their User Control Panel.</span>]]></conf_description>
+      <conf_group>7</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>time_offset</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp><![CDATA[if ( $show == 1 )
+{
+		ipsRegistry::getClass('class_localization')->loadLanguageFile( array( 'public_usercp' ), 'core' );
+		
+		foreach( ipsRegistry::getClass('class_localization')->words as $off => $words )
+ 		{
+ 			if (preg_match("/^time_(-?[\\d\\.]+)$/", $off, $match))
+ 			{
+ 				$dropdown[] = array( $match[1], $words );
+ 			}
+ 		}
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Time Adjustments</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>date</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Server Time Adjustment (in minutes)</conf_title>
+      <conf_description><![CDATA[You fine tune the server time. If you need to subtract minutes from the server time, start the number with a '-' (no quotes)
+<br>Board time (inc. above time zone and current adj.) is now: <-T->]]></conf_description>
+      <conf_group>7</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>time_adjust</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp><![CDATA[if ( $show )
+{
+ $d_date = ipsRegistry::getClass('class_localization')->getDate(time(), 'LONG',1);
+$r['conf_description'] = str_replace( '<-T->', $d_date, $r['conf_description'] );
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>date</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Use relative dates?</conf_title>
+      <conf_description><![CDATA[Would use 'today' and 'yesterday' in posts / last post info]]></conf_description>
+      <conf_group>7</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>time_use_relative</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra><![CDATA[0=No
+1=Yes ( Today & Yesterday )
+2=Yes ( Last X Minutes, Today & Yesterday)
+3=Yes ( Full, minutes, hours & days )]]></conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group>Relative Dates</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>date</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Relative time format</conf_title>
+      <conf_description><![CDATA[{--} Will be replaced with 'today' or 'yesterday']]></conf_description>
+      <conf_group>7</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>time_use_relative_format</conf_key>
+      <conf_default>{--}, %I:%M %p</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>date</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>DST Auto Detection</conf_title>
+      <conf_description><![CDATA[When daylight saving time auto-detection is enabled, your member's profiles will be automatically updated with the correct time.]]></conf_description>
+      <conf_group>7</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>time_dst_auto_correction</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group>DST Correction</conf_start_group>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>date</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Long Date Method</conf_title>
+      <conf_description><![CDATA[The format here is the same as <a href='http://uk.php.net/manual/en/function.strftime.php'>PHP's strftime</a>]]></conf_description>
+      <conf_group>7</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>clock_long</conf_key>
+      <conf_default>%d %B %Y - %I:%M %p</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>747</conf_position>
+      <conf_start_group>Date and Time Formats</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>date</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Short Date Method</conf_title>
+      <conf_description><![CDATA[The format here is the same as <a href='http://uk.php.net/manual/en/function.strftime.php'>PHP's strftime</a>]]></conf_description>
+      <conf_group>7</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>clock_short</conf_key>
+      <conf_default>%b %d %Y %I:%M %p</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>747</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>date</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Joined Date Method</conf_title>
+      <conf_description><![CDATA[The format here is the same as <a href='http://uk.php.net/manual/en/function.strftime.php'>PHP's strftime</a>]]></conf_description>
+      <conf_group>7</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>clock_joined</conf_key>
+      <conf_default>%d-%B %y</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>749</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>date</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Tiny Date Method</conf_title>
+      <conf_description><![CDATA[The format here is the same as <a href='http://uk.php.net/manual/en/function.strftime.php'>PHP's strftime</a>]]></conf_description>
+      <conf_group>7</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>clock_tiny</conf_key>
+      <conf_default>%d %b %Y - %H:%M</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>750</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>date</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Date Only Method</conf_title>
+      <conf_description><![CDATA[The format here is the same as <a href='http://uk.php.net/manual/en/function.strftime.php'>PHP's strftime</a>]]></conf_description>
+      <conf_group>7</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>clock_date</conf_key>
+      <conf_default>%d %b %Y</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>751</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>date</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>email</conf_title_keyword>
+      <conf_title_title>Email Set-up</conf_title_title>
+      <conf_title_desc>This section will allow you to change the incoming and outgoing email addresses as well as the email method.</conf_title_desc>
+      <conf_title_tab>System</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Mail Delivery Method</conf_title>
+      <conf_description><![CDATA[If PHP's mail() isn't available, choose SMTP. If you are unsure, please ask your web host.]]></conf_description>
+      <conf_group>9</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>mail_method</conf_key>
+      <conf_default>mail</conf_default>
+      <conf_extra>mail=PHP Mail()&#13;
+smtp=SMTP</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>email</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Board incoming email address</conf_title>
+      <conf_description>This is the email address that all incoming mail is addressed to.</conf_description>
+      <conf_group>9</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>email_in</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group>Email Addresses</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>email</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Board outgoing email address</conf_title>
+      <conf_description>This is the email address that all mail appears to come from.</conf_description>
+      <conf_group>9</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>email_out</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>email</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Over-ride SMTP Host?</conf_title>
+      <conf_description><![CDATA[Default is 'localhost']]></conf_description>
+      <conf_group>9</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>smtp_host</conf_key>
+      <conf_default>localhost</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group>SMTP Set-up</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>email</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Over-ride SMTP Port?</conf_title>
+      <conf_description>Default is 25</conf_description>
+      <conf_group>9</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>smtp_port</conf_key>
+      <conf_default>25</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>email</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Add &#39;&lt;&#39; and &#39;&gt;&#39; to &#39;to&#39; and &#39;from&#39; addresses?]]></conf_title>
+      <conf_description><![CDATA[Some SMTP mailers require that email addresses are in the following format '<' address '>' (no quotes). If you are getting errors in the mail error log, enabled this option]]></conf_description>
+      <conf_group>9</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>mail_wrap_brackets</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>email</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>SMTP UserName</conf_title>
+      <conf_description><![CDATA[Not required in most cases when using 'localhost']]></conf_description>
+      <conf_group>9</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>smtp_user</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>email</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>SMTP Password</conf_title>
+      <conf_description><![CDATA[Not required in most cases when using 'localhost']]></conf_description>
+      <conf_group>9</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>smtp_pass</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>email</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>PHP Mail Extra Options</conf_title>
+      <conf_description><![CDATA[Example: -femail@address.com will force a 'From' header.]]></conf_description>
+      <conf_group>9</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>php_mail_extra</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group>PHP Mail Settings</conf_start_group>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>email</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>fbconnect</conf_title_keyword>
+      <conf_title_title>Facebook Connect</conf_title_title>
+      <conf_title_desc>Settings for Facebook Connect</conf_title_desc>
+      <conf_title_tab>System</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Enable Facebook Connect?</conf_title>
+      <conf_description><![CDATA[You *must* set up a Facebook Application. You can do that <a href="http://www.facebook.com/developers/editapp.php?new">here</a>]]></conf_description>
+      <conf_group>48</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>fbc_enable</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>fbconnect</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>API Key</conf_title>
+      <conf_description>This is shown after you have created your Facebook Application.</conf_description>
+      <conf_group>48</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>fbc_api_id</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>fbconnect</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Secret Key</conf_title>
+      <conf_description><![CDATA[This is shown as "Secret" after you have created your Facebook Application.]]></conf_description>
+      <conf_group>48</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>fbc_secret</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>fbconnect</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Default Member Group</conf_title>
+      <conf_description>Please select the default member group that will be used for all new Facebook created accounts. This does not affect members linking their accounts.</conf_description>
+      <conf_group>48</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>fbc_mgid</conf_key>
+      <conf_default>3</conf_default>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>fbconnect</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>general</conf_title_keyword>
+      <conf_title_title>General Configuration</conf_title_title>
+      <conf_title_desc>These settings control the basics of the board such as URLs and paths.</conf_title_desc>
+      <conf_title_tab>System</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Board Name</conf_title>
+      <conf_description>This is the name of the board. It is used as the first link in the navigation menu, etc.</conf_description>
+      <conf_group>10</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>board_name</conf_key>
+      <conf_default>Invision Power Board</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group><![CDATA[Names &amp; Addresses]]></conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>general</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Website Name</conf_title>
+      <conf_description><![CDATA[This is the name of your website. If this and "Website Address' is filled in, your website address and name will appear on the board above the header by default.]]></conf_description>
+      <conf_group>10</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>home_name</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>general</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Website Address</conf_title>
+      <conf_description><![CDATA[This is the URL to your website. If entered, it'll appear on the board above the header by default.]]></conf_description>
+      <conf_group>10</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>home_url</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>general</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Upload URL</conf_title>
+      <conf_description><![CDATA[The URL to your "uploads" folder.
+<!--SUGGEST-->]]></conf_description>
+      <conf_group>10</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>upload_url</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp><![CDATA[if( $show == 1 )
+{
+	$this_host   = getenv( 'SERVER_NAME' );
+	$this_script = getenv( 'SCRIPT_NAME' );
+	$this_script = str_replace( "&#092;&#092;&#092;&#092;", "/", $this_script );
+
+	if( $this_host AND $this_script )
+	{
+		$this_script = str_replace( '/'.CP_DIRECTORY.'/index.php', '/uploads', $this_script );
+		$r['conf_description'] = str_replace( "<!--SUGGEST-->", "<br />IPB has detected your uploads url as:<br />http://".$this_host.$this_script, $r['conf_description'] );
+	}
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group>Other URLs and Paths</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>general</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Upload form action domain</conf_title>
+      <conf_description><![CDATA[Override the form action for uploads.  This is useful in a load-balanced environment to force uploaded files to a specific server.  (Most users can leave this blank)<br />
+Ex: http://master.mysite.com/forums]]></conf_description>
+      <conf_group>10</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>upload_domain</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>general</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Path to &#39;upload&#39; directory]]></conf_title>
+      <conf_description><![CDATA[This is a path, not a URL.
+<!--SUGGEST-->]]></conf_description>
+      <conf_group>10</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>upload_dir</conf_key>
+      <conf_default/>
+      <conf_extra>upload_dir</conf_extra>
+      <conf_evalphp><![CDATA[if( $show == 1 )
+{
+	$this_script = str_replace( '&#092;&#092;&#092;&#092;', '/', getenv( 'SCRIPT_FILENAME' ) );
+ 	
+	if( $this_script )
+	{
+		$this_script = str_replace( '/'.CP_DIRECTORY.'/index.php', '/uploads', $this_script );
+ 		$r['conf_description'] = str_replace( "<!--SUGGEST-->", "<br />IPB has detected your uploads path as:<br />".$this_script, $r['conf_description'] );
+	}
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>general</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Caching PATH</conf_title>
+      <conf_description><![CDATA[<b>This can be left blank</b>
+<br />This is useful for specifing a PATH for the IPB written files (skin_cache, style_avatars, style_emoticons, style_images) when dealing with load balanced/clustered servers. If you enter a PATH, please ensure that it ends with a trailing slash.	<br />
+	Note: This location must have a 'cache' folder. So if you enter /home/path/ then you must have a folder /home/path/cache/]]></conf_description>
+      <conf_group>10</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ipb_cache_path</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>general</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Image URL</conf_title>
+      <conf_description><![CDATA[<b>This can be left blank</b>
+<br />This can be used if you wish to serve images from a different server or when using clustered servers. Please ensure that you use a trailing slash and that it starts with http(s):// if entering a URL]]></conf_description>
+      <conf_group>10</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ipb_img_url</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>general</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Debug level</conf_title>
+      <conf_description>This controls the debug information shown at the footer of your board.</conf_description>
+      <conf_group>10</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>debug_level</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra><![CDATA[0=0: None - Don't show any debug information
+1=1: Show server load, page generation times and query count
+2=2: Show level 1 (above) and GET and POST information
+3=3: Show level 1 + 2 and database queries]]></conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>11</conf_position>
+      <conf_start_group>Other General Settings</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>general</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>ACP Help System</conf_title>
+      <conf_description>Would you like to enable the help system in the ACP to provide some additional helpful information?</conf_description>
+      <conf_group>10</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>acp_tutorial_mode</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>12</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>general</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Remove default forums navigation</conf_title>
+      <conf_description>Removes the board index navigation link when not in the forums application.</conf_description>
+      <conf_group>10</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>remove_forums_nav</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>13</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>general</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>ipconverge</conf_title_keyword>
+      <conf_title_title>IP.Converge Settings</conf_title_title>
+      <conf_title_desc>Hidden settings</conf_title_desc>
+      <conf_title_tab>Advanced</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>1</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>IP.Converge Enabled?</conf_title>
+      <conf_description><![CDATA[If 'yes', this IPB will authenticate against IP.Converge.]]></conf_description>
+      <conf_group>34</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipconverge_enabled</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipconverge</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>IP.Converge URL</conf_title>
+      <conf_description>The root URL of the converge application.</conf_description>
+      <conf_group>34</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ipconverge_url</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipconverge</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>IP.Converge Product ID</conf_title>
+      <conf_description>The product ID assigned from the IP.Converge server</conf_description>
+      <conf_group>34</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ipconverge_pid</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipconverge</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>ipbcopyright</conf_title_keyword>
+      <conf_title_title>IPB Copyright Removal</conf_title_title>
+      <conf_title_desc>This section allows you to manage your copyright removal key.</conf_title_desc>
+      <conf_title_tab>IPS Apps</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>IPB Copyright Removal Key</conf_title>
+      <conf_description>Your copyright removal key obtained from IPS.</conf_description>
+      <conf_group>15</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ipb_copy_number</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp><![CDATA[if( $save == 1 )
+{
+  if( !preg_match( "#^\d+?\-\d+?\-\d+?\-\d+?#", $_POST[ $key ] ) )
+  {
+   $_POST[ $key ] = "";
+  }
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipbcopyright</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Turn off copyright?</conf_title>
+      <conf_description/>
+      <conf_group>15</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ips_cp_purchase</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipbcopyright</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>ipbreg</conf_title_keyword>
+      <conf_title_title>IPB License Settings</conf_title_title>
+      <conf_title_desc>This section will allow you to edit your IPB registered license settings.</conf_title_desc>
+      <conf_title_tab>IPS Apps</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>IPB Registered License Key</conf_title>
+      <conf_description><![CDATA[This is the IPB registraton key NOT your customer code or client center password. To get your key, log into your client center and click on 'Invision Power Board' under 'Your Purchases'.
+<br />DO NOT REMOVE OR EDIT THIS KEY UNLESS YOU'RE SURE OF WHAT YOU'RE DOING!]]></conf_description>
+      <conf_group>16</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ipb_reg_number</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipbreg</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Display registered to line?</conf_title>
+      <conf_description><![CDATA[If enabled, you can optionally add a "Licensed to" line at the bottom of your board.]]></conf_description>
+      <conf_group>16</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipb_reg_show</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipbreg</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Show as licensed to...</conf_title>
+      <conf_description><![CDATA[Examples: <em>Matthew Mecham</em>, <em>IPS, Inc.]]></conf_description>
+      <conf_group>16</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ipb_reg_name</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ipbreg</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>log_prune</conf_title_keyword>
+      <conf_title_title>Log Management</conf_title_title>
+      <conf_title_desc><![CDATA[Manage IP.Board's various logs]]></conf_title_desc>
+      <conf_title_tab>Performance</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Prune Spider Logs?</conf_title>
+      <conf_description>Do you wish to prune spider logs regularly (default every 30 days)?</conf_description>
+      <conf_group>19</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipb_prune_spider</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>10</conf_position>
+      <conf_start_group>Prune Options</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>log_prune</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Prune Task Logs?</conf_title>
+      <conf_description>Do you wish to prune task logs regularly (default every 30 days)?</conf_description>
+      <conf_group>19</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipb_prune_task</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>20</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>log_prune</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Prune Admin Logs?</conf_title>
+      <conf_description>Do you wish to prune admin logs regularly (default every 30 days)?</conf_description>
+      <conf_group>19</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipb_prune_admin</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>30</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>log_prune</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Prune Moderator Logs?</conf_title>
+      <conf_description>Do you wish to prune moderator logs regularly (default every 30 days)?</conf_description>
+      <conf_group>19</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipb_prune_mod</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>40</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>log_prune</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Prune Email Logs?</conf_title>
+      <conf_description>Do you wish to prune email logs regularly (default every 30 days)?</conf_description>
+      <conf_group>19</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipb_prune_email</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>50</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>log_prune</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Prune Email Error Logs</conf_title>
+      <conf_description>Do you wish to prune email error logs regularly (default every 30 days)?</conf_description>
+      <conf_group>19</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipb_prune_emailerror</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>60</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>log_prune</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Prune SQL Error Logs?</conf_title>
+      <conf_description>Do you wish to prune SQL Error logs older than 30 days?</conf_description>
+      <conf_group>19</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipb_prune_sql</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>70</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>log_prune</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Prune admin login logs?</conf_title>
+      <conf_description>Prunes admin login logs over configured days.</conf_description>
+      <conf_group>19</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>prune_admin_login_logs</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>80</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>log_prune</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Prune error logs?</conf_title>
+      <conf_description>Prune error logs over 30 days old?</conf_description>
+      <conf_group>19</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>prune_error_logs</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>90</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>prune, error, logs</conf_keywords>
+      <conf_title_keyword>log_prune</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Log Errors</conf_title>
+      <conf_description>Log all errors over the selected level</conf_description>
+      <conf_group>19</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>error_log_level</conf_key>
+      <conf_default>4</conf_default>
+      <conf_extra>0=Do not log any additional errors&#13;
+1=Log all errors&#13;
+2=Log all level 1 errors and above&#13;
+3=Log all level 2 errors and above&#13;
+4=Log all level 3 errors and above&#13;
+5=Log all level 4 errors and above&#13;
+6=Log all level 5 errors</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>100</conf_position>
+      <conf_start_group>Error Logs</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>log_prune</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Notify administrator</conf_title>
+      <conf_description>Notify the board incoming email address when an error is logged?</conf_description>
+      <conf_group>19</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>error_log_notify</conf_key>
+      <conf_default>6</conf_default>
+      <conf_extra>0=Do not notify of any errors&#13;
+1=Notify of all errors&#13;
+2=Notify of all level 1 errors and above&#13;
+3=Notify of all level 2 errors and above&#13;
+4=Notify of all level 3 errors and above&#13;
+5=Notify of all level 4 errors and above&#13;
+6=Notify of all level 5 errors</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>110</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>email, admin, notify, error, log</conf_keywords>
+      <conf_title_keyword>log_prune</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>searchenginespiders</conf_title_keyword>
+      <conf_title_title>Search Engine Spiders</conf_title_title>
+      <conf_title_desc>This section will allow you to set up and maintain your search engine bot spider recognition settings.</conf_title_desc>
+      <conf_title_tab>System</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Enable the search engine spider recognition?</conf_title>
+      <conf_description><![CDATA[If set to "no", this feature will not be activated and all the settings below will have no effect.]]></conf_description>
+      <conf_group>24</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>spider_sense</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchenginespiders</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Log all spider visits?</conf_title>
+      <conf_description><![CDATA[If you're under heavy attack, switch this off as it may put a little extra load on the SQL server as it attempts to insert new data rows.]]></conf_description>
+      <conf_group>24</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>spider_visit</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchenginespiders</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Treat spider/bot as part of which group?</conf_title>
+      <conf_description><![CDATA[This is useful as you can specify group settings for a 'bot' group which can restrict access to certain areas, etc.]]></conf_description>
+      <conf_group>24</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>spider_group</conf_key>
+      <conf_default>2</conf_default>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchenginespiders</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Force spider/bot to use skin</conf_title>
+      <conf_description><![CDATA[This is useful as you can create a 'lite' optimized skin for your spiders to use to reduce bandwidth and increase the depth of the bot crawling.]]></conf_description>
+      <conf_group>24</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>spider_suit</conf_key>
+      <conf_default/>
+      <conf_extra>#show_skins#</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchenginespiders</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Show spider/bot in the active users list?</conf_title>
+      <conf_description/>
+      <conf_group>24</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>spider_active</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchenginespiders</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Show spider as anonymous</conf_title>
+      <conf_description><![CDATA[If set to "yes", this makes all spider bots anonymous and they can only be seen by administrators.]]></conf_description>
+      <conf_group>24</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>spider_anon</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchenginespiders</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>searchsetup</conf_title_keyword>
+      <conf_title_title>Search Set-Up</conf_title_title>
+      <conf_title_desc><![CDATA[This section contains settings for your IPB's search system]]></conf_title_desc>
+      <conf_title_tab>System</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Type of search to use?</conf_title>
+      <conf_description><![CDATA[You can use traditional or sphinx searching (if available).
+<!--FULLTEXT-->
+<br />
+<!--FULLCHECK-->]]></conf_description>
+      <conf_group>25</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>search_method</conf_key>
+      <conf_default>traditional</conf_default>
+      <conf_extra>traditional=Traditional&#13;
+sphinx=Sphinx</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Use fulltext searching?</conf_title>
+      <conf_description>Only applies to traditional search. If you are using traditional search, this is recommended, but may not find non-English words if the database is not configured properly.</conf_description>
+      <conf_group>25</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>use_fulltext</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Minimum search word length</conf_title>
+      <conf_description><![CDATA[Allowing shorter search words can return more results, such as 'if', 'at', etc. Note, if using the fulltext search method, your MySQL configuration may override this setting.]]></conf_description>
+      <conf_group>25</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>min_search_word</conf_key>
+      <conf_default>4</conf_default>
+      <conf_extra>min_search_word</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Number of search results to show per page</conf_title>
+      <conf_description>Default is 25</conf_description>
+      <conf_group>25</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>search_per_page</conf_key>
+      <conf_default>25</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>View New Posts: Block Forums</conf_title>
+      <conf_description><![CDATA[Select the forums you <b>don't</b> wish to search for new posts when using either the 'get active topics' or 'view new posts' links. You may select more than one.]]></conf_description>
+      <conf_group>25</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>vnp_block_forums</conf_key>
+      <conf_default/>
+      <conf_extra>#show_forums#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['vnp_block_forums']) )
+	{
+		$_POST['vnp_block_forums'] = implode(",",$_POST['vnp_block_forums']);
+	}
+	else
+	{
+		$_POST['vnp_block_forums'] = "";
+	}
+	
+	$key = 'vnp_block_forums';
+}
+if ( $show == 1 )
+{
+$key = 'vnp_block_forums[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Hide manual search notice?</conf_title>
+      <conf_description>If you are using manual search and your SQL server supports fulltext searching, a note is shown on the admin home page.  You can manually hide it by changing this to yes.</conf_description>
+      <conf_group>25</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>hide_ftext_note</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Sphinx Server Address</conf_title>
+      <conf_description>The address of your Sphinx server, 127.0.0.1 by default.</conf_description>
+      <conf_group>25</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>search_sphinx_server</conf_key>
+      <conf_default>127.0.0.1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group>Sphinx Settings</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Sphinx Port</conf_title>
+      <conf_description>The port used to connect to your Sphinx server, 3312 by default.</conf_description>
+      <conf_group>25</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>search_sphinx_port</conf_key>
+      <conf_default>3312</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Sphinx Base Path</conf_title>
+      <conf_description>Base path for sphinx indexes and logs</conf_description>
+      <conf_group>25</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>sphinx_base_path</conf_key>
+      <conf_default>/var/sphinx</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>searchsetup</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_title_title>Security and Privacy</conf_title_title>
+      <conf_title_desc>These options allow you to adjust the security and privacy options for your board.</conf_title_desc>
+      <conf_title_tab>System</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Enable Captcha?</conf_title>
+      <conf_description><![CDATA["Completely Automated Public Turing Test to Tell Computers and Humans Apart": forces users to input a random code when registering and changing email address, etc to prevent bot's from spamming the forums.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>bot_antispam</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group><![CDATA[Security [Bot/Script Protection]]]></conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Captcha: Type</conf_title>
+      <conf_description><![CDATA[Please select which CAPTCHA method you'd like to use.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>bot_antispam_type</conf_key>
+      <conf_default>recaptcha</conf_default>
+      <conf_extra>none=None&#13;
+recaptcha=reCAPTCHA&#13;
+default=Default (Requires GD)</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Enable questions and answers?</conf_title>
+      <conf_description><![CDATA[You can <a href='<!--URL-->'>configure questions and answers</a> to add a unique challenge system to your registration process.  It is difficult for spam bots to bypass this sort of protection.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>registration_qanda</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp><![CDATA[if( $show == 1 )
+{
+ $r['conf_description'] = str_replace( '<!--URL-->', $this->settings['_base_url'] . 'app=core&module=tools&section=qanda', $r['conf_description'] );
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>captcha spam spambot questions registration security</conf_keywords>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Guest Posting Bot Control</conf_title>
+      <conf_description>Do you wish to require guests who post (where allowed) to input a code to confirm their post?</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>guest_captcha</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Captcha: Use Fonts</conf_title>
+      <conf_description><![CDATA[If 'yes', the captcha image will use a random font located in  the '/public/style_captcha/captcha_fonts' directory.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>captcha_allow_fonts</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group>Default CAPTCHA Options</conf_start_group>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>reCAPTCHA Public Key</conf_title>
+      <conf_description><![CDATA[You can use the popular reCAPTCHA service.  You must select it as your bot control option, and input your public API key here.  <a href='http://www.recaptcha.net'>Get an API Key</a>]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>recaptcha_public_key</conf_key>
+      <conf_default>6LcpWAMAAAAAAA4klDtDNuDH6LsGgBX5mBoJ3naK</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group>reCAPTCHA Options</conf_start_group>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>recaptcha, captcha</conf_keywords>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>reCAPTCHA Private Key</conf_title>
+      <conf_description><![CDATA[You can use the popular reCAPTCHA service.  You must select it as your bot control option, and input your private API key here.  <a href='http://www.recaptcha.net'>Get an API Key</a>]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>recaptcha_private_key</conf_key>
+      <conf_default>6LcpWAMAAAAAAETX5jHd9NlPtIHJA4G-ra3X2RQB</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>recaptcha, captcha</conf_keywords>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>reCAPTCHA Language</conf_title>
+      <conf_description>Select the language to use for reCAPTCHA</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>recaptcha_language</conf_key>
+      <conf_default>en</conf_default>
+      <conf_extra>en=English&#13;
+nl=Dutch&#13;
+fr=French&#13;
+de=German&#13;
+pt=Portuguese&#13;
+ru=Russian&#13;
+es=Spanish&#13;
+tr=Turkish</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>recaptcha</conf_keywords>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>reCAPTCHA Theme</conf_title>
+      <conf_description>Which reCAPTCHA theme would you like to use?</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>recaptcha_theme</conf_key>
+      <conf_default>clean</conf_default>
+      <conf_extra>clean=Clean&#13;
+red=Red&#13;
+white=White&#13;
+blackglass=Blackglass</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow dynamic images?</conf_title>
+      <conf_description><![CDATA[If 'yes' users can post links to images that appear to be dynamic urls.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>allow_dynamic_img</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>10</conf_position>
+      <conf_start_group><![CDATA[Security [General - High]]]></conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Enable X_FORWARDED_FOR IP matching?</conf_title>
+      <conf_description><![CDATA[If enabled, this will check the X_FORWARDED_FOR headers to match the user's IP address. This is useful in a intranet situation if the REMOTE_ADDR will be the same across the network. It will also help maintain AOL sessions but can be abused to forge incorrect headers to report an incorrect IP address. If unsure, leave off.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>xforward_matching</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>11</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Lost Password: Password Method</conf_title>
+      <conf_description><![CDATA[Please choose which lost password method you wish to use. We recommend using 'Email Random Password' as it's the most secure method.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>lp_method</conf_key>
+      <conf_default>random</conf_default>
+      <conf_extra>random=Email Random Password
+choose=Allow User to Enter New Password</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>12</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Member&#39;s log in key: Expiration]]></conf_title>
+      <conf_description><![CDATA[It is advised that a member's log in key (used in cookies for persistent log in) expires weekly if not used. This increases the security of your board by exposing log in data for a week limiting the time frame a hacker would have to use the key if stolen.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>login_key_expire</conf_key>
+      <conf_default>7</conf_default>
+      <conf_extra>0=Do not expire (not recommended)
+3=Expire after 3 days
+7=Expire after 7 days
+30=Expire after 30 days</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>13</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Reset member&#39;s log in key upon each log in?]]></conf_title>
+      <conf_description><![CDATA[If 'yes', each successful log in process will reset the member's auth key which is used in cookies as a password. This will make it impossible to remain logged into more than one computer.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>login_change_key</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>14</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Session Expiration (in seconds)</conf_title>
+      <conf_description>Removes inactive sessions over the limit you specify. The lower the number the less chance of a session being hijacked.</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>session_expiration</conf_key>
+      <conf_default>3600</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>15</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Match user&#39;s IP Address during session validation]]></conf_title>
+      <conf_description><![CDATA[If 'yes', the IP address of the user must match the one stored in the sessions table for security. Only use 'no' in an intranet environment where many users share the same IP address.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>match_ipaddress</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>16</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Match user&#39;s browser during session validation]]></conf_title>
+      <conf_description>This further reduces the risk of session hijacking and tampering but it does mean that a user will have their session terminated if they use another browser at the same time.</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>match_browser</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>17</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Lock user account after how many failed login attempts</conf_title>
+      <conf_description><![CDATA[How many failed login attempts should a user be allowed before the account is locked?<br />
+<b>Tip</b>: Set to 0 to disable]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ipb_bruteforce_attempts</conf_key>
+      <conf_default>3</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>18</conf_position>
+      <conf_start_group>Brute-force Account Locking</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Reset failed login attempts after how many minutes</conf_title>
+      <conf_description><![CDATA[Reset the login attempts after how many minutes?<br />
+<b>Tip</b>: Set to 0 to not reset failed login attempts until a succesful login occurs <!-- locked -->]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ipb_bruteforce_period</conf_key>
+      <conf_default>15</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>19</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Automatically unlock account?</conf_title>
+      <conf_description><![CDATA[If an account is locked due to failed login attempts, do you wish for the account to unlock after the defined time period has passed since their failed login attempt?<br />
+<b>Tip</b>: Setting this to no will require you to manually unlock accounts under the Management tab]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipb_bruteforce_unlock</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>20</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Use secure mail form for member to member mails?</conf_title>
+      <conf_description>Hides the email address from other users and prevents email harvesting bots from gathering your members email addresses.</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>use_mail_form</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>21</conf_position>
+      <conf_start_group><![CDATA[Security [General - Medium]]]></conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Disable flash</conf_title>
+      <conf_description>Globally disable flash videos from being used on the site.</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>disable_flash</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>22</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow images to be posted?</conf_title>
+      <conf_description>Advanced programmers can force images to run as scripts. IPB limits damage by this method however. This should only be disabled as an extreme measure.</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>allow_images</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>23</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Remove the ACP link from the board</conf_title>
+      <conf_description><![CDATA[If 'yes', the ACP link will not be displayed in the board header. This is useful if you rename the default 'admin' folder.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>security_remove_acp_link</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>24</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Use https for logins</conf_title>
+      <conf_description>This setting forces login requests to the https version of the forums.  You MUST first ensure SSL works for your domain (contact your host if unsure).</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>logins_over_https</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>25</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>New registration email validation?</conf_title>
+      <conf_description><![CDATA[Make an administrator manually preview all new accounts or make new users validate their email address. If "User then Admin" validation is selected, the user receives a validation email. On successful user validation, the user is entered into the administration approval queue.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>reg_auth_type</conf_key>
+      <conf_default>user</conf_default>
+      <conf_extra>admin_user=User then Admin Validation&#13;
+user=User Email Validation&#13;
+admin=Admin Validation&#13;
+0=None</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>26</conf_position>
+      <conf_start_group><![CDATA[Security [Managing Members]]]></conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Remove incomplete registration validations after [x] days]]></conf_title>
+      <conf_description><![CDATA[This will automatically remove all unvalidated members after the number of days you specify. Enter "0" to not automatically remove unvalidated members.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>validate_day_prune</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>27</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Get notified when a new user registers via email?</conf_title>
+      <conf_description>This will send an email to the root administrator when a new user successfully registers on the board.</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>new_reg_notify</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>28</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Get notified when a member is flagged for spamming?</conf_title>
+      <conf_description>This will send an email to the root administrator when a moderator flags a member for spamming.</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>spm_notify</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>29</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>When a member is flagged for spamming:</conf_title>
+      <conf_description>Choose what to do when a moderator flags a member for spamming.</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>spm_option</conf_key>
+      <conf_default>disable</conf_default>
+      <conf_extra>none=Do nothing&#13;
+disable=Disable Post/PM permission&#13;
+unapprove=Disable Post/PM and unapprove posts&#13;
+ban=Unapprove posts, empty profile and ban account</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>30</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>No. days worth of posts to (un)approve</conf_title>
+      <conf_description>Enter the number of days worth of posts that flagging a member as spam unapproves (if set above). Enter 0 to select all posts.</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>spm_post_days</conf_key>
+      <conf_default>3</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>31</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Force guests to log in before allowing access to the board?</conf_title>
+      <conf_description>If set to yes, any guest must either log in or register before they can view the board.</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>force_login</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>32</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Disable new registrations?</conf_title>
+      <conf_description><![CDATA[If set to "yes", this will not allow any guests to register an account on your board.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>no_reg</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>33</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Remove chr(0xCA) from input?</conf_title>
+      <conf_description><![CDATA[Can be used as a 'hidden' space to emulate registered names - but can cause problems in non Western character sets.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>strip_space_chr</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>34</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Disable &#39;Report this post to a moderator&#39; link?]]></conf_title>
+      <conf_description>Removes the ability for your members to report a post.</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>disable_reportpost</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>35</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Flood control delay (in seconds)</conf_title>
+      <conf_description><![CDATA[Make users wait before posting again<br>Can be left blank for no flood control and does not apply to members which belong to a group that can bypass flood control.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>flood_control</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>36</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allow users to browse the Active Users list?</conf_title>
+      <conf_description><![CDATA[If set to "yes", members and guests where allowed will be able to determine the whereabouts of each other on the online list. Topics and forums that the viewer doesn't have permission to see are not shown.]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>allow_online_list</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>37</conf_position>
+      <conf_start_group>Privacy</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Disable Anonymous Login</conf_title>
+      <conf_description><![CDATA[Do you wish to disable members' ability to login anonymously?]]></conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>disable_anonymous</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>38</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Disable admin groups viewing anonymous online users?</conf_title>
+      <conf_description>Anonymous users have an asterisk after their name</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>disable_admin_anon</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>39</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Display IPB version on your site?</conf_title>
+      <conf_description>Do you wish to display the version of Invision Power Board you are running in your copyright footer?</conf_description>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipb_display_version</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>40</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Disable admin groups viewing online users IP address in online user list?</conf_title>
+      <conf_description/>
+      <conf_group>26</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>disable_online_ip</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>41</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>securityandprivacy</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_title_title>Server Environment</conf_title_title>
+      <conf_title_desc><![CDATA[These settings help tailor your output based on your server's settings.]]></conf_title_desc>
+      <conf_title_tab/>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Document Character Set</conf_title>
+      <conf_description><![CDATA[This is the "charset" for all ACP and public documents. We strongly recommend UTF-8]]></conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>gb_char_set</conf_key>
+      <conf_default>UTF-8</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Use Safe Mode Skins?</conf_title>
+      <conf_description><![CDATA[This setting is automatically set during installation but you can override the setting here if you wish. Safe mode skins doesn't cache to PHP files and uses the database exclusively.]]></conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>safe_mode_skins</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Disable GZIP encoding?</conf_title>
+      <conf_description>GZIP enables faster page transfers and lower bandwidth use however some servers are not configured to allow it.</conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>disable_gzip</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>GD Version</conf_title>
+      <conf_description><![CDATA[GD is a graphics extension bundled with most PHP installations. Leave it at v2 if you're not sure which version you have installed.]]></conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>gd_version</conf_key>
+      <conf_default>2</conf_default>
+      <conf_extra>1=Version 1
+2=Version 2</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Print HTTP Headers?</conf_title>
+      <conf_description><![CDATA[Some NT installations will require this to be turned to 'no'.]]></conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>print_headers</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Print HTTP no-cache headers?</conf_title>
+      <conf_description><![CDATA[(This will stop browsers caching pages)<br /><b>Note</b>: The previous setting must be enabled for this to have any effect]]></conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>nocache</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Remove &#39;Thanks....&#39; redirect pages?]]></conf_title>
+      <conf_description><![CDATA[If set to "yes", this will remove any "Thanks...." redirection pages used to provide feedback to the user on their last action and will simply redirect without showing this page.]]></conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipb_remove_redirect_pages</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Immediate Redirect Type</conf_title>
+      <conf_description>Please select the method to use when immediately redirecting a page.</conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>header_redirect</conf_key>
+      <conf_default/>
+      <conf_extra>location=HTTP Header Location
+refresh=Windows Refresh Command
+html=HTML Meta Redirect</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Use sockets where possible?</conf_title>
+      <conf_description>If enabled, sockets will be used to GET remote files. Sockets are preferable as they do not have the caching issues other methods have.</conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>enable_sockets</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>HTTP Authentication: User</conf_title>
+      <conf_description>The username for any HTTP (.htaccess) authentication for this installation.</conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>http_auth_username</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>10</conf_position>
+      <conf_start_group>HTTP Authentication</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>HTTP Authentication: Password</conf_title>
+      <conf_description>The password for any HTTP (.htaccess) authentication for this installation.</conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>http_auth_password</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>11</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Redirect to new friendly URL format?</conf_title>
+      <conf_description>If enabled, a user accessing showxxxx=x type links will be automatically redirected to the new URL format.</conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>seo_r_on</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>12</conf_position>
+      <conf_start_group>Friendly URL Features</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Use &quot;301&quot; for friendly URL redirects?]]></conf_title>
+      <conf_description><![CDATA[If enabled, "301 Moved Permanently" response codes will be added to the header when redirecting the user from the old showxxxx=x to the new friendly URL format if you choose to redirect them.]]></conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>seo_r301</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>13</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>URL Type</conf_title>
+      <conf_description><![CDATA[If you're using PHP as an Apache module you can use 'path info' or you can use 'query string' if you're on Windows hosting or using PHP as a CGI module. Not sure?<br />
+Use 'query_string'.]]></conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>url_type</conf_key>
+      <conf_default>query_string</conf_default>
+      <conf_extra>path_info=Path Info&#13;
+query_string=Query String</conf_extra>
+      <conf_evalphp><![CDATA[if ( $show == 1 AND ! $this->settings['use_friendly_urls'] )
+{
+	$r['conf_description'] .= "<div style='color:red'>Note: FURLs are not enabled. Please edit your 'conf_global.php' and at the bottom add: <kbd>&#36;INFO['use_friendly_urls']            = '1';</kdb></div>";
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>14</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Use .htaccess mod_rewrite</conf_title>
+      <conf_description><![CDATA[If yes, add a file called .htaccess with the following contents.<br />
+<!-- MOD_REWITE_EXAMPLE -->]]></conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>htaccess_mod_rewrite</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp><![CDATA[if( $show == 1 )
+{
+	$r['conf_description'] = str_replace( '<!-- MOD_REWITE_EXAMPLE -->', nl2br( $this->registry->adminFunctions->fetchModRewrite() ), $r['conf_description'] );
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>15</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Incorrect Permalink Handling</conf_title>
+      <conf_description><![CDATA[If a user attempts to access a forum, topic or user (etc) with an incorrect permalink, ordinarily IP.Board will still show the page.
+<br />For example:<br />/forum/2/my-forum (and)<br />/forum/2/random-text<br />both show the same page.<br />You can choose to alter this behaviour.]]></conf_description>
+      <conf_group>45</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>seo_bad_url</conf_key>
+      <conf_default>nothing</conf_default>
+      <conf_extra><![CDATA[nothing=Do Nothing
+meta=Add a robots meta tag with: 'noindex, nofollow'
+redirect=Redirect to the correct link with a "301" header]]></conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>16</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>301, redirect, friendly urls</conf_keywords>
+      <conf_title_keyword>serverenvironment</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>boardoffline</conf_title_keyword>
+      <conf_title_title>System Offline / Online</conf_title_title>
+      <conf_title_desc>Use this setting to turn switch your IP.Board online or offline and leave a message for your visitors.</conf_title_desc>
+      <conf_title_tab>System</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Turn the board offline?</conf_title>
+      <conf_description><![CDATA[The board will still be accessable by those who have permission (settable from the Users & Groups section).]]></conf_description>
+      <conf_group>41</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>board_offline</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>boardoffline</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>The offline message to display</conf_title>
+      <conf_description/>
+      <conf_group>41</conf_group>
+      <conf_type>editor</conf_type>
+      <conf_key>offline_msg</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>0</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>boardoffline</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>xmlrpcapi</conf_title_keyword>
+      <conf_title_title>XML-RPC API</conf_title_title>
+      <conf_title_desc>Settings to manage your XML-RPC API interface</conf_title_desc>
+      <conf_title_tab>Advanced</conf_title_tab>
+      <conf_title_app>core</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Enable XML-RPC API System</conf_title>
+      <conf_description><![CDATA[If 'yes' then your API users will be able to use the XML-RPC interface.]]></conf_description>
+      <conf_group>32</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>xmlrpc_enable</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>xmlrpcapi</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>XML-RPC API Logging</conf_title>
+      <conf_description><![CDATA[Which type of logging do you wish to record? 'All' will record all API access, 'Failed' will only log failed API accesses.]]></conf_description>
+      <conf_group>32</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>xmlrpc_log_type</conf_key>
+      <conf_default>all</conf_default>
+      <conf_extra>all=All
+failed=Failed</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>xmlrpcapi</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>XML-RPC Log Expiration</conf_title>
+      <conf_description><![CDATA[Enter the maximum number of days you wish to keep logs for. For example, if you entered '30' all logs older than 30 days will be removed.]]></conf_description>
+      <conf_group>32</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>xmlrpc_log_expire</conf_key>
+      <conf_default>30</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>xmlrpcapi</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </settinggroup>
+</settingexport>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Forum Tools</grouptitle>
+		<items>
+			<item>
+				<key>ftools_deleteposts</key>
+				<string>Can delete all posts by a member?</string>
+			</item>
+			<item>
+				<key>ftools_deletesubscriptions</key>
+				<string>Can delete all of a member's email notification requests?</string>
+			</item>
+			<item>
+				<key>ftools_clearforumsubs</key>
+				<string>Can clear all of a forum's email notification requests?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

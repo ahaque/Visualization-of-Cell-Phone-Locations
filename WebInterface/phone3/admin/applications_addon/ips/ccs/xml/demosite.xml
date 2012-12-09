@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<demosite>
+  <ccs_blocks>
+    <block>
+      <block_id>1</block_id>
+      <block_active>1</block_active>
+      <block_name>IPS News Feed</block_name>
+      <block_description>Import content from any public RSS feed</block_description>
+      <block_key>ipsnews</block_key>
+      <block_type>feed</block_type>
+      <block_config><![CDATA[a:8:{s:4:"feed";s:3:"rss";s:7:"content";s:3:"rss";s:7:"filters";a:4:{s:8:"rss_feed";s:66:"http://forums./rss/forums/1-ips-news-and-updates/";s:11:"rss_charset";s:10:"ISO-8859-1";s:9:"rss_limit";i:6;s:8:"rss_html";i:1;}s:6:"sortby";N;s:9:"sortorder";N;s:8:"offset_a";N;s:8:"offset_b";N;s:10:"hide_empty";s:1:"0";}]]></block_config>
+      <block_content></block_content>
+      <block_cache_ttl>15</block_cache_ttl>
+      <block_cache_last>0</block_cache_last>
+      <block_position>1</block_position>
+      <block_category>0</block_category>
+    </block>
+    <block>
+      <block_id>2</block_id>
+      <block_active>1</block_active>
+      <block_name>Welcome Box</block_name>
+      <block_description>Displays a welcome block to the logged in user, or a login form if the user is a guest</block_description>
+      <block_key>welcome</block_key>
+      <block_type>plugin</block_type>
+      <block_config><![CDATA[a:3:{s:6:"plugin";s:13:"welcome_block";s:6:"custom";a:8:{s:6:"adsess";s:32:"9057ae3b53c1b06fed6d4c75850b9f49";s:3:"app";s:3:"ccs";s:6:"module";s:6:"blocks";s:7:"section";s:6:"wizard";s:2:"do";s:8:"continue";s:14:"wizard_session";s:32:"10a46d321edc5a331cf454f35974b50c";s:4:"step";s:1:"4";s:14:"request_method";s:3:"get";}s:10:"hide_empty";s:1:"0";}]]></block_config>
+      <block_content></block_content>
+      <block_cache_ttl></block_cache_ttl>
+      <block_cache_last>0</block_cache_last>
+      <block_position>2</block_position>
+      <block_category>0</block_category>
+    </block>
+    <block>
+      <block_id>3</block_id>
+      <block_active>1</block_active>
+      <block_name>Members</block_name>
+      <block_description>Pull member data from your site</block_description>
+      <block_key>members</block_key>
+      <block_type>feed</block_type>
+      <block_config><![CDATA[a:8:{s:4:"feed";s:7:"members";s:7:"content";s:7:"members";s:7:"filters";a:8:{s:13:"filter_groups";s:0:"";s:12:"filter_posts";i:0;s:15:"filter_bday_day";i:0;s:15:"filter_bday_mon";i:0;s:15:"filter_has_blog";i:0;s:18:"filter_has_gallery";i:0;s:17:"filter_min_rating";i:0;s:14:"filter_min_rep";i:0;}s:6:"sortby";s:6:"joined";s:9:"sortorder";s:4:"desc";s:8:"offset_a";i:0;s:8:"offset_b";i:6;s:10:"hide_empty";s:1:"0";}]]></block_config>
+      <block_content></block_content>
+      <block_cache_ttl></block_cache_ttl>
+      <block_cache_last>0</block_cache_last>
+      <block_position>3</block_position>
+      <block_category>0</block_category>
+    </block>
+    <block>
+      <block_id>4</block_id>
+      <block_active>1</block_active>
+      <block_name>Active Users</block_name>
+      <block_description>Display the active users on the board</block_description>
+      <block_key>activeusers</block_key>
+      <block_type>plugin</block_type>
+      <block_config><![CDATA[a:3:{s:6:"plugin";s:12:"online_users";s:6:"custom";a:8:{s:6:"adsess";s:32:"db8e0929e39f1b343873243001bdbc49";s:3:"app";s:3:"ccs";s:6:"module";s:6:"blocks";s:7:"section";s:6:"wizard";s:2:"do";s:8:"continue";s:14:"wizard_session";s:32:"dbe605f985cb0c561a82ed108944621b";s:4:"step";s:1:"4";s:14:"request_method";s:3:"get";}s:10:"hide_empty";s:1:"0";}]]></block_config>
+      <block_content></block_content>
+      <block_cache_ttl></block_cache_ttl>
+      <block_cache_last>0</block_cache_last>
+      <block_position>5</block_position>
+      <block_category>0</block_category>
+    </block>
+    <block>
+      <block_id>5</block_id>
+      <block_active>1</block_active>
+      <block_name>Demo Custom Block</block_name>
+      <block_description>A custom block</block_description>
+      <block_key>custom</block_key>
+      <block_type>custom</block_type>
+      <block_config><![CDATA[a:2:{s:4:"type";s:4:"html";s:10:"hide_empty";s:1:"0";}]]></block_config>
+      <block_content><![CDATA[<p id='custom' style='color: #2c8f80; border: 1px solid #327b70; padding: 10px; background: #ecf4f3'>
+This is a custom block that can be reused in any page or template. This is useful for site messages, advertising, or even including specialist CSS files on specific pages. Try editing this block from your Admin CP and notice how it automatically updates on all pages it is used on!
+</p>]]></block_content>
+      <block_cache_ttl></block_cache_ttl>
+      <block_cache_last>0</block_cache_last>
+      <block_position>6</block_position>
+      <block_category>0</block_category>
+    </block>
+    <block>
+      <block_id>6</block_id>
+      <block_active>1</block_active>
+      <block_name>Top Posters</block_name>
+      <block_description>Pull member data from your site</block_description>
+      <block_key>topposters</block_key>
+      <block_type>feed</block_type>
+      <block_config><![CDATA[a:8:{s:4:"feed";s:7:"members";s:7:"content";s:7:"members";s:7:"filters";a:8:{s:13:"filter_groups";s:0:"";s:12:"filter_posts";i:0;s:15:"filter_bday_day";i:0;s:15:"filter_bday_mon";i:0;s:15:"filter_has_blog";i:0;s:18:"filter_has_gallery";i:0;s:17:"filter_min_rating";i:0;s:14:"filter_min_rep";i:0;}s:6:"sortby";s:5:"posts";s:9:"sortorder";s:4:"desc";s:8:"offset_a";i:0;s:8:"offset_b";i:5;s:10:"hide_empty";s:1:"0";}]]></block_config>
+      <block_content></block_content>
+      <block_cache_ttl></block_cache_ttl>
+      <block_cache_last>0</block_cache_last>
+      <block_position>4</block_position>
+      <block_category>0</block_category>
+    </block>
+    <block>
+      <block_id>7</block_id>
+      <block_active>1</block_active>
+      <block_name>Image URL</block_name>
+      <block_description>This block is a simple variable that maps to the img_url setting in IPB</block_description>
+      <block_key>img_url</block_key>
+      <block_type>custom</block_type>
+      <block_config><![CDATA[a:2:{s:4:"type";s:3:"php";s:10:"hide_empty";s:1:"0";}]]></block_config>
+      <block_content><![CDATA[echo $this->settings['img_url'] . '/';]]></block_content>
+      <block_cache_ttl>10</block_cache_ttl>
+      <block_cache_last>0</block_cache_last>
+      <block_position>0</block_position>
+      <block_category>1</block_category>
+    </block>
+    <block>
+      <block_id>8</block_id>
+      <block_active>1</block_active>
+      <block_name>Board URL</block_name>
+      <block_description>This block is a simple variable that maps to the img_url setting in IPB</block_description>
+      <block_key>board_url</block_key>
+      <block_type>custom</block_type>
+      <block_config><![CDATA[a:2:{s:4:"type";s:3:"php";s:10:"hide_empty";s:1:"0";}]]></block_config>
+      <block_content><![CDATA[print $this->settings['board_url'];]]></block_content>
+      <block_cache_ttl>10</block_cache_ttl>
+      <block_cache_last>0</block_cache_last>
+      <block_position>0</block_position>
+      <block_category>1</block_category>
+    </block>
+  </ccs_blocks>
+  <ccs_containers>
+  	<container>
+  	   <container_id>1</container_id>
+	   <container_name>Variables</container_name>
+	   <container_type>block</container_type>
+	   <container_order>1</container_order>
+ 	</container>
+  </ccs_containers>
+  <ccs_folders>
+  	<folder>
+	   <folder_path>/assets</folder_path>
+	   <last_modified>{--time--}</last_modified>
+   </folder>
+  </ccs_folders>
+  <ccs_page_templates>
+  	<template>
+  	   <template_id>1</template_id>
+	   <template_name>Main Wrapper</template_name>
+	   <template_desc></template_desc>
+	   <template_key>main</template_key>
+	   <template_content><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+       <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+       <title>{ccs special_tag="page_title"}</title>
+       <link rel="stylesheet" type="text/css" media="screen" href="{$this->settings['base_url']}app=ccs&module=pages&section=pages&folder=assets&page=demo.css" />
+   </head>
+   <body>
+       <div id='wrapper'>
+           <div id='header'>
+               <img src='{parse block="board_url"}/ccs_files/header.png' alt='Logo' />
+           </div>
+           <div id='sidebar'>
+               {parse block="welcome"}
+               <hr />
+               <h3>Recent Members</h3>
+               {parse block="members"}
+               <hr />
+               
+               <h3>Top Posters</h3>
+               {parse block="topposters"}
+               <hr />
+               
+               <h3>Active Users</h3>
+               {parse block="activeusers"}
+               <hr />
+               
+               <h3>Custom Block Demo</h3>
+               {parse block="custom"}
+           </div>
+           <div id='content'>
+               {ccs special_tag="page_content"}
+           </div>
+       </div>
+       <div class='copyright'>
+       &copy; 2009 IPS, Inc.
+       </div>
+   </body>
+</html>]]></template_content>
+	   <template_updated>{--time--}</template_updated>
+	   <template_position>1</template_position>
+	   <template_category>0</template_category>
+   </template>
+  </ccs_page_templates>
+  <ccs_pages>
+  	<page>
+	   <page_name>demo.css</page_name>
+	   <page_seo_name>demo.css</page_seo_name>
+	   <page_description>The complete CSS for the demo site</page_description>
+	   <page_folder>/assets</page_folder>
+	   <page_type></page_type>
+	   <page_last_edited>{--time--}</page_last_edited>
+	   <page_template_used>0</page_template_used>
+	   <page_content><![CDATA[body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; } 
+table {    border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,th,var { font-style:normal; font-weight:normal; }
+ol,ul { list-style:none; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%;    font-weight:normal; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
+hr { display: none; }
+address{ display: inline; }
+
+/* ================================================= */
+
+body {
+   background-color: #f5f5f5;
+   font-family: arial, verdana, tahoma, sans-serif;
+   line-height: 150%;
+   padding-bottom: 30px;
+}
+
+hr {
+   display: block;
+   border-top: 1px solid #8593a1;
+   width: 90%;
+   margin: 10px auto;
+   height: 1px;
+}
+
+h1 {
+   font-size: 32px;
+   color: #192b40;
+   margin-bottom: 12px;
+}
+
+h2 {
+   font-size: 24px;
+   color: #192b40;
+   margin-bottom: 8px;
+}
+
+h3 {
+   font-size: 22px;
+   margin: 15px 0 12px;
+   color: #192b40;
+}
+
+#wrapper {
+   width: 1000px;
+   border-width: 1px 3px 3px 1px;
+   border-style: solid;
+   border-color: #a7b5bf;
+   margin: 40px auto 8px auto;
+   background: #fff;
+   overflow: hidden;
+}
+
+#header {
+   background: url( {parse block="board_url"}/ccs_files/header_bg.png ) repeat-x;
+   border-bottom: 10px solid #192b40;
+   padding: 0px;
+   height: 99px;
+}
+
+#sidebar {
+   background: #ecf0f4;
+   width: 290px;
+   padding: 20px;
+   float: right;
+}
+
+#content {
+   width: 620px;
+   padding: 30px 20px 30px;
+}
+
+.desctext {
+   font-size: 14px;
+   margin-left: 10px;
+   display: block;
+}
+
+.date {
+   font-size: 13px;
+   color: #8e9aa7;
+}
+
+#news, #news .date {
+   margin-left: 10px;
+}
+
+#news {
+   margin-top: 20px;
+}
+
+#news li, .members li {
+   margin: 10px 0;
+   line-height: 130%;
+}
+
+.members {
+   margin: 10px 0 0 0;
+}
+
+.members .photo, #welcome_block .photo {
+   float: left;
+   margin-right: 6px;
+   border: 1px solid #a7b5bf;
+}
+
+.members .member_block, #welcome_block .member_block {
+   margin-left: 62px;
+}
+
+#activeusers h4 {
+   font-size: 13px;
+   margin-top: -10px;
+}
+
+#activeusers .desctext {
+   color: #8e9aa7;
+   margin: 0;
+}
+
+#custom {
+   font-size: 13px;
+}
+
+#button {
+   display: block;
+   padding: 10px 30px;
+   margin: 0 auto;
+   background: #1b8272;
+   color: #fff;
+   text-decoration: none;
+   text-align: center;
+   -moz-border-radius: 6px;
+   -webkit-border-radius: 6px;
+   width: 50%;
+}
+
+#button:hover, .member_links a:hover {
+   background: #299f8d;
+}
+
+.copyright {
+   font-size: 13px;
+   color: #727272;
+   text-align: center;
+}
+
+.member_links {
+   text-align: center;
+   font-size: 13px;
+   margin: 10px 0;
+}
+
+.member_links a {
+   background: #1b8272;
+   color: #fff;
+   padding: 2px 8px;
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   text-decoration: none;
+}
+
+#welcome_block table {
+   font-size: 15px;
+}
+
+td.ft { width: 40%; }
+td.fc { width: 60%; }]]></page_content>
+	   <page_view_perms>*</page_view_perms>
+	   <page_cache_ttl>*</page_cache_ttl>
+	   <page_cache_last>0</page_cache_last>
+	   <page_content_only>0</page_content_only>
+	   <page_meta_keywords>0</page_meta_keywords>
+	   <page_meta_description>0</page_meta_description>
+	   <page_content_type>css</page_content_type>
+	   <page_template></page_template>
+	   <page_ipb_wrapper>0</page_ipb_wrapper>
+   </page>
+   <page>
+	   <page_name>Welcome to IP.CCS</page_name>
+	   <page_seo_name>index.html</page_seo_name>
+	   <page_description></page_description>
+	   <page_folder></page_folder>
+	   <page_type>html</page_type>
+	   <page_last_edited>{--time--}</page_last_edited>
+	   <page_template_used>1</page_template_used>
+	   <page_content><![CDATA[<h1>Welcome!</h1>
+<p>
+   Welcome to IP.Community Content System! This is a simple demo site that shows you just a few of the things that you can accomplish using IP.CCS - pulling in data from inside and outside of your community, page templates and more.
+</p>
+<br />
+<a href='{parse block="board_url"}/index.php?app=ccs&amp;module=pages&amp;section=pages&amp;folder=&amp;page=alternate.html' title='Alternate template' id='button'>See a different style of page &rarr;</a>
+<br />
+
+<h2>RSS News from IPS</h2>
+{parse block="ipsnews"}]]></page_content>
+	   <page_view_perms>*</page_view_perms>
+	   <page_cache_ttl>0</page_cache_ttl>
+	   <page_cache_last>0</page_cache_last>
+	   <page_content_only>1</page_content_only>
+	   <page_meta_keywords></page_meta_keywords>
+	   <page_meta_description></page_meta_description>
+	   <page_content_type>page</page_content_type>
+	   <page_template></page_template>
+	   <page_ipb_wrapper>0</page_ipb_wrapper>
+   </page>
+   <page>
+	   <page_name>Alternate Page</page_name>
+	   <page_seo_name>alternate.html</page_seo_name>
+	   <page_description>Shows a page using the IPB wrapper</page_description>
+	   <page_folder></page_folder>
+	   <page_type>html</page_type>
+	   <page_last_edited>{--time--}</page_last_edited>
+	   <page_template_used>0</page_template_used>
+	   <page_content><![CDATA[<h2>Welcome</h2>
+<p>
+   This page demonstrates using the IP.Board wrapper for your IP.CCS pages. This option is set on a per-page basis, so you can have some pages using the IP.Board wrapper, and others using a totally custom wrapper!
+   <br /><br />
+   Because the IP.Board wrapper is included, all of the IP.Board JS and CSS files are included too, so you can reuse styles without any additional work. 
+</p>
+<br /><br />
+
+<h2>Reusing our custom block...</h2>
+{parse block="custom"}
+<br /><br />
+
+<div class='topic_controls'>
+   <ul class='topic_buttons'>
+       <li style='float: left'>
+           <a href='{parse block="board_url"}/index.php?app=ccs&amp;module=pages&amp;section=pages&amp;folder=&amp;page=index.html' title='Go back to the main page'><img src='{parse block="img_url"}arrow_left.png' /> Back to the main demo page</a>
+       </li>
+   </ul>
+</div>]]></page_content>
+	   <page_view_perms>*</page_view_perms>
+	   <page_cache_ttl>0</page_cache_ttl>
+	   <page_cache_last>0</page_cache_last>
+	   <page_content_only>1</page_content_only>
+	   <page_meta_keywords></page_meta_keywords>
+	   <page_meta_description></page_meta_description>
+	   <page_content_type>page</page_content_type>
+	   <page_template></page_template>
+	   <page_ipb_wrapper>1</page_ipb_wrapper>
+   </page>
+  </ccs_pages>
+  <ccs_template_blocks>
+  	<tblock>
+  	   <tpb_id>9</tpb_id>
+	   <tpb_name>block__welcome_block_2</tpb_name>
+	   <tpb_params><![CDATA[$title='',$data=array()]]></tpb_params>
+	   <tpb_content><![CDATA[<if test="welcomeLoggedin:|:$this->memberData['member_id']">
+   <div id='welcome_block'>
+       <h3>Welcome, {$this->memberData['members_display_name']}!</h3>
+       <img src='{$this->memberData['pp_thumb_photo']}' alt="{$this->memberData['members_display_name']}{$this->lang->words['users_photo']}" width='{$this->memberData['pp_thumb_width']}' height='{$this->memberData['pp_thumb_height']}' class='photo' />
+       <div class='member_block'>
+           <table width='100%' cellpadding='0' cellspacing='0'>
+               <tr>
+                   <td class='ft'>Posts:</td>
+                   <td class='fc'>{parse format_number="$data['posts']"}</td>
+               </tr>
+               <tr>
+                   <td class='ft'>Topics:</td>
+                   <td class='fc'>{parse format_number="$data['topics']"}</td>
+               </tr>
+               <tr>
+                   <td class='ft'>Group:</td>
+                   <td class='fc'>{$data['group']}</td>
+               </tr>
+               <tr>
+                   <td class='ft'>Joined:</td>
+                   <td class='fc'>{parse date="$this->memberData['joined']" format="joined"}</td>
+               </tr>
+           </table>
+       </div>
+       <div class='member_links'>
+           <a href='{parse url="showuser={$this->memberData['member_id']}" base="public" template="showuser" seotitle="{$this->memberData['members_seo_name']}"}'>My Profile</a> &middot; <a href='{parse url="app=core&amp;module=usercp" base="public"}'>My Settings</a> &middot; <a href='{parse url="app=members&module=messaging&section=view&do=showFolder&folderID=new" base="public"}'>{$this->memberData['msg_count_new']} Messages</a>
+       </div>
+   </div>
+<else />
+   <div id='welcome_block' class='not_logged_in'>
+       <form action='{$this->settings['base_url']}app=core&module=global&section=login&do=process' method='post'>
+           <input type='hidden' name='return' value='http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}' />
+           <input type="text" class='input_text' size="20" name="username" id='welcome-username' onfocus="clearField('welcome-username');" value="{$this->lang->words['enter_name']}" />
+           <input type='password' class='input_text' size='20' name='password' id='welcome-password' onfocus="clearField('welcome-password');" value='{$this->lang->words['enter_name']}' />
+           <input type='submit' class='input_submit' value='{$this->lang->words['sign_in_button']}' />
+       </form>
+       <div class='member_links'>
+           <a href='{$this->settings['base_url']}app=core&module=global&section=login'>{$this->lang->words['welcome_login_link']}</a> {$this->lang->words['or']} <a href='{$this->settings['base_url']}app=core&module=global&section=register'>{$this->lang->words['welcome_register_link']}</a>
+       </div>
+   </div>
+</if>]]></tpb_content>
+ 	</tblock>
+  	<tblock>
+  	   <tpb_id>10</tpb_id>
+	   <tpb_name>feed__generic_1</tpb_name>
+	   <tpb_params><![CDATA[$title="",$records=array()]]></tpb_params>
+	   <tpb_content><![CDATA[<ul id='news'>
+   <if test="is_array( $records ) && count( $records )">
+       {parse striping="feed_striping" classes="row1,row2 altrow"}
+       <foreach loop="$records as $r">
+           <li class='hentry {parse striping="feed_striping"}'><a href='{$r['url']}' rel='bookmark' title='{$r['title']}'>{$r['title']}</a>
+               <br />
+               <span class='desctext'>{IPSText::truncate( strip_tags($r['content']), 150 )}</span>
+               <span class='date'><abbr class="published" title="{parse expression="date( 'c', $r['date'] )"}">{parse date="$r['date']" format="short"}</abbr></span>
+           </li>
+       </foreach>
+   </if>
+</ul>
+<br />]]></tpb_content>
+ 	</tblock>
+  	<tblock>
+  	   <tpb_id>11</tpb_id>
+	   <tpb_name>feed__generic_3</tpb_name>
+	   <tpb_params><![CDATA[$title="",$records=array()]]></tpb_params>
+	   <tpb_content><![CDATA[<ul id='members' class='members'>
+   <if test="is_array( $records ) && count( $records )">
+       {parse striping="feed_striping" classes="row1,row2 altrow"}
+       <foreach loop="$records as $r">
+           <li class='hentry {parse striping="feed_striping"}'>
+               <img src='{$r['pp_mini_photo']}' alt='Photo' class='photo' width='{$member['pp_mini_width']}' height='{$member['pp_mini_height']}' />
+               <div class='member_block'>
+                   <a href='{$r['url']}' rel='bookmark' title='{$r['title']}'>{$r['title']}</a>
+                   <br /><span class='date'><abbr class="published" title="{parse expression="date( 'c', $r['date'] )"}">{parse date="$r['date']" format="short"}</abbr></span>
+                   <span class='desctext'>{IPSText::truncate( strip_tags($r['content']), 32 )}</span>
+               </div>
+           </li>
+       </foreach>
+   </if>
+</ul>
+<br />]]></tpb_content>
+ 	</tblock>
+  	<tblock>
+  	   <tpb_id>12</tpb_id>
+	   <tpb_name>block__online_users_4</tpb_name>
+	   <tpb_params><![CDATA[$title="",$active=array()]]></tpb_params>
+	   <tpb_content><![CDATA[<div id='activeusers'>
+   <h4>{$active['TOTAL']} {$this->lang->words['active_users_text']} <span>{$this->lang->words['active_users']}</span></h4>
+   <div>
+       <span class='desctext'>{$active['GUESTS']} {$this->lang->words['guests']}, {$active['ANON']} {$this->lang->words['anon_users']}</span><br class='clear' />
+       <ul>
+           <li>{parse expression="implode( ", </li><li> ", $active['NAMES'] )"}</li>
+       </ul>
+   </div>
+</div>
+<br />]]></tpb_content>
+ 	</tblock>
+  	<tblock>
+  	   <tpb_id>13</tpb_id>
+	   <tpb_name>block__custom_5</tpb_name>
+	   <tpb_params><![CDATA[$title="",$content=""]]></tpb_params>
+	   <tpb_content><![CDATA[<p id='custom' style='color: #2c8f80; border: 1px solid #327b70; padding: 10px; background: #ecf4f3'>
+This is a custom block that can be reused in any page or template. This is useful for site messages, advertising, or even including specialist CSS files on specific pages. Try editing this block from your Admin CP and notice how it automatically updates on all pages it is used on!
+</p>]]></tpb_content>
+ 	</tblock>
+  	<tblock>
+  	   <tpb_id>14</tpb_id>
+	   <tpb_name>feed__generic_6</tpb_name>
+	   <tpb_params><![CDATA[$title="",$records=array()]]></tpb_params>
+	   <tpb_content><![CDATA[<ul id='topposters' class='members'>
+   <if test="is_array( $records ) && count( $records )">
+       {parse striping="feed_striping" classes="row1,row2 altrow"}
+       <foreach loop="$records as $r">
+           <li class='hentry {parse striping="feed_striping"}'>
+               <img src='{$r['pp_mini_photo']}' alt='Photo' class='photo' width='{$member['pp_mini_width']}' height='{$member['pp_mini_height']}' />
+               <div class='member_block'>
+                   <a href='{$r['url']}' rel='bookmark' title='{$r['title']}'>{$r['title']}</a> ({$r['posts']} posts)
+                   <br /><span class='date'><abbr class="published" title="{parse expression="date( 'c', $r['date'] )"}">{parse date="$r['date']" format="short"}</abbr></span>
+                   <span class='desctext'>{IPSText::truncate( strip_tags($r['content']), 32 )}</span>
+               </div>
+           </li>
+       </foreach>
+   </if>
+</ul>
+<br />]]></tpb_content>
+ 	</tblock>
+  	<tblock>
+  	   <tpb_id>15</tpb_id>
+	   <tpb_name>block__custom_7</tpb_name>
+	   <tpb_params><![CDATA[$title="",$content=""]]></tpb_params>
+	   <tpb_content><![CDATA[<php>ob_start();
+echo $this->settings['img_url'] . '/';
+$IPBHTML .= ob_get_contents();
+ob_end_clean();</php>]]></tpb_content>
+ 	</tblock>
+  	<tblock>
+  	   <tpb_id>16</tpb_id>
+	   <tpb_name>block__custom_8</tpb_name>
+	   <tpb_params><![CDATA[$title="",$content=""]]></tpb_params>
+	   <tpb_content><![CDATA[<php>ob_start();
+print $this->settings['board_url'];
+$IPBHTML .= ob_get_contents();
+ob_end_clean();</php>]]></tpb_content>
+ 	</tblock>
+  </ccs_template_blocks>
+  <ccs_template_cache>
+  	<cache>
+  	   <cache_type>template</cache_type>
+	   <cache_type_id>1</cache_type_id>
+	   <cache_content><![CDATA[/* -- main --*/
+function main() {
+$IPBHTML = "";
+
+if( !( $this->registry->isClassLoaded('pageBuilder') ) )
+{
+   require_once( IPSLib::getAppDir('ccs') . '/sources/pages.php' );
+   $this->registry->setClass('pageBuilder', new pageBuilder( $this->registry ) );
+}
+
+if( !( $this->registry->isClassLoaded('pageBuilder') ) )
+{
+   require_once( IPSLib::getAppDir('ccs') . '/sources/pages.php' );
+   $this->registry->setClass('pageBuilder', new pageBuilder( $this->registry ) );
+}
+
+if( !( $this->registry->isClassLoaded('pageBuilder') ) )
+{
+   require_once( IPSLib::getAppDir('ccs') . '/sources/pages.php' );
+   $this->registry->setClass('pageBuilder', new pageBuilder( $this->registry ) );
+}
+
+if( !( $this->registry->isClassLoaded('pageBuilder') ) )
+{
+   require_once( IPSLib::getAppDir('ccs') . '/sources/pages.php' );
+   $this->registry->setClass('pageBuilder', new pageBuilder( $this->registry ) );
+}
+
+if( !( $this->registry->isClassLoaded('pageBuilder') ) )
+{
+   require_once( IPSLib::getAppDir('ccs') . '/sources/pages.php' );
+   $this->registry->setClass('pageBuilder', new pageBuilder( $this->registry ) );
+}
+$IPBHTML .= "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">
+<html xml:lang=\"en\" lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">
+   <head>
+       <meta http-equiv=\"content-type\" content=\"text/html; charset=iso-8859-1\" />
+       <title>{ccs special_tag=\"page_title\"}</title>
+       <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"{$this->settings['base_url']}app=ccs&module=pages&section=pages&folder=assets&page=demo.css\" />
+   </head>
+   <body>
+       <div id='wrapper'>
+           <div id='header'>
+               <img src='ccs_files/header.png' alt='Logo' />
+           </div>
+           <div id='sidebar'>
+               " . $this->registry->getClass('pageBuilder')->getBlock('welcome')  . "
+               <hr />
+               <h3>Recent Members</h3>
+               " . $this->registry->getClass('pageBuilder')->getBlock('members')  . "
+               <hr />
+               
+               <h3>Top Posters</h3>
+               " . $this->registry->getClass('pageBuilder')->getBlock('topposters')  . "
+               <hr />
+               
+               <h3>Active Users</h3>
+               " . $this->registry->getClass('pageBuilder')->getBlock('activeusers')  . "
+               <hr />
+               
+               <h3>Custom Block Demo</h3>
+               " . $this->registry->getClass('pageBuilder')->getBlock('custom')  . "
+           </div>
+           <div id='content'>
+               {ccs special_tag=\"page_content\"}
+           </div>
+       </div>
+       <div class='copyright'>
+       &copy; 2009 IPS, Inc.
+       </div>
+   </body>
+</html>";
+return $IPBHTML;
+}]]></cache_content>
+  	</cache>
+  </ccs_template_cache>
+</demosite>

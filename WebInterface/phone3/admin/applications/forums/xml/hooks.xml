@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hooks>
+	<hook>
+		<file>recent_topics.xml</file>
+		<enabled>1</enabled>
+	</hook>
+	<hook>
+		<file>top_posters.xml</file>
+		<enabled>0</enabled>
+	</hook>
+	<hook>
+		<file>watched_items.xml</file>
+		<enabled>1</enabled>
+	</hook>
+</hooks>

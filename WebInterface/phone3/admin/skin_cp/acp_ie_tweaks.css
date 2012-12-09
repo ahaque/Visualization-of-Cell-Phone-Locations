@@ -1,0 +1,82 @@
+/**
+* IE Tweaks
+* (c) Invision Power Services, Inc
+* @author Matt Mecham
+*/
+
+.context_menu li a,
+.context_menu li span {
+	margin-right: 0px !important;
+}
+
+#navigation ul#section_buttons li a {
+	margin-right: 0px !important;
+}
+
+#navigation ul#section_buttons li {
+	margin-left: 0px !important;
+}
+
+/* PAGES */
+.checkbox
+{
+	border: 0px;
+}
+
+fieldset {
+	border: 1px solid #CCCCCC;
+	padding: 4px;
+}
+
+#acpNav
+{
+	zoom:1;
+}
+
+/* Navigation */
+#acpNav ul li
+{
+	background:none !important;
+	padding:0 !important;
+}
+
+#acpNav ul
+{
+	border:1px solid #bababa !important;
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+}
+
+#acpNav ul,
+#acpNav ul li,
+#acpNav ul a,
+#acpNav ul a span
+{
+	zoom:1;
+}
+
+#acpNav ul ul
+{
+	border:1px solid #bababa;
+}
+
+#acpNav ul li.parent
+{
+	margin-bottom:-3px;
+	height:24px;
+}
+
+#acpNav ul li.parent li.parent
+{
+	margin:0;
+}
+
+/* without this, the information boxes may not appear */
+#content-wrap
+{
+	zoom:1;
+}
+
+#acp_menu_menucontent {
+	margin-top: 0 !important;
+}

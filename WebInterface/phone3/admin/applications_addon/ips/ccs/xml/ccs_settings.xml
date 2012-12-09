@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settingexport>
+  <settinggroup>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>ccs_advanced</conf_title_keyword>
+      <conf_title_title>Advanced CCS Settings</conf_title_title>
+      <conf_title_desc>Advanced settings for CCS</conf_title_desc>
+      <conf_title_tab>IPS Apps</conf_title_tab>
+      <conf_title_app>ccs</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>URL to index.php</conf_title>
+      <conf_description><![CDATA[Specify the URL to the index.php file you are using (do not include "index.php" in the value).]]></conf_description>
+      <conf_group>40</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ccs_root_url</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ccs_advanced</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Gateway filename</conf_title>
+      <conf_description>If you rename index.php to something else, change the filename here.  Be aware that this may require some server environment changes to utilize, depending on the filename you choose.</conf_description>
+      <conf_group>40</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ccs_root_filename</conf_key>
+      <conf_default>index.php</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ccs_advanced</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Use .htaccess mod_rewrite</conf_title>
+      <conf_description><![CDATA[If yes, click the "Download .htaccess file" at the top of the screen to download the .htaccess file you will need to upload to the folder with index.php.]]></conf_description>
+      <conf_group>40</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ccs_mod_rewrite</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ccs_advanced</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>ccs</conf_title_keyword>
+      <conf_title_title>Community Content System</conf_title_title>
+      <conf_title_desc>Settings for the Community Content System</conf_title_desc>
+      <conf_title_tab>IPS Apps</conf_title_tab>
+      <conf_title_app>ccs</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>System online?</conf_title>
+      <conf_description>Should the pages be publicly accessible?</conf_description>
+      <conf_group>38</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ccs_online</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group>System Online</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>ccs, online, offline</conf_keywords>
+      <conf_title_keyword>ccs</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Offline Message</conf_title>
+      <conf_description>Enter a message to show users when the system is offline.</conf_description>
+      <conf_group>38</conf_group>
+      <conf_type>editor</conf_type>
+      <conf_key>ccs_offline_message</conf_key>
+      <conf_default>We apologize for the downtime, but the system will be back online as soon as possible!</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>offline, message, ccs</conf_keywords>
+      <conf_title_keyword>ccs</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Offline Access</conf_title>
+      <conf_description>Select which groups can access pages (where permitted) when the system is offline.</conf_description>
+      <conf_group>38</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>ccs_offline_groups</conf_key>
+      <conf_default/>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['ccs_offline_groups']) )
+	{
+		$_POST['ccs_offline_groups'] = implode(",",$_POST['ccs_offline_groups']);
+	}
+	else
+	{
+		$_POST['ccs_offline_groups'] = "";
+	}
+	
+	$key = 'ccs_offline_groups';
+}
+if ( $show == 1 )
+{
+    $key='ccs_offline_groups[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>offline, groups, access</conf_keywords>
+      <conf_title_keyword>ccs</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Default setting for &#39;Use IPB skin wrapper&#39;?]]></conf_title>
+      <conf_description>You can control per-page if you want to use the IPB wrapper.  This setting specifies the default to use during the page add and edit process.</conf_description>
+      <conf_group>38</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ccs_use_ipb_wrapper</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group>Display Settings</conf_start_group>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ccs</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Default home page</conf_title>
+      <conf_description>If no page is specified, which page should we try to load as the default?</conf_description>
+      <conf_group>38</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ccs_default_page</conf_key>
+      <conf_default>index.html</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group>Default Pages</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>index, default, home</conf_keywords>
+      <conf_title_keyword>ccs</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Default 404 error page</conf_title>
+      <conf_description>What page should we show if we cannot find the requested page?</conf_description>
+      <conf_group>38</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ccs_default_errorpage</conf_key>
+      <conf_default>404.html</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>10</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ccs</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Default error page</conf_title>
+      <conf_description>If left blank, standard IP.Board error page displayed</conf_description>
+      <conf_group>38</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>ccs_default_error</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>11</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>ccs</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </settinggroup>
+</settingexport>

@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates application="forums" templategroups="a:8:{s:11:&quot;skin_boards&quot;;s:5:&quot;exact&quot;;s:10:&quot;skin_forum&quot;;s:5:&quot;exact&quot;;s:12:&quot;skin_legends&quot;;s:5:&quot;exact&quot;;s:8:&quot;skin_mod&quot;;s:5:&quot;exact&quot;;s:9:&quot;skin_poll&quot;;s:5:&quot;exact&quot;;s:9:&quot;skin_post&quot;;s:5:&quot;exact&quot;;s:14:&quot;skin_printpage&quot;;s:5:&quot;exact&quot;;s:10:&quot;skin_topic&quot;;s:5:&quot;exact&quot;;}">
+  <templategroup group="skin_post">
+    <template>
+      <template_group>skin_post</template_group>
+      <template_content/>
+      <template_name>attachiFrame</template_name>
+      <template_data>$JSON, $id</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_post</template_group>
+      <template_content/>
+      <template_name>errors</template_name>
+      <template_data><![CDATA[$data=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_post</template_group>
+      <template_content/>
+      <template_name>pollBox</template_name>
+      <template_data><![CDATA[$max_poll_questions="",$max_poll_choices="",$poll_questions="",$poll_choices="",$poll_votes="",$show_open="",$poll_question="",$is_mod=0,$poll_multi="",$poll_only='', $poll_view_voters='', $total_votes=0]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_post</template_group>
+      <template_content/>
+      <template_name>postFormTemplate</template_name>
+      <template_data>$formData=array(), $form = array()</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_post</template_group>
+      <template_content/>
+      <template_name>preview</template_name>
+      <template_data><![CDATA[$data=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_post</template_group>
+      <template_content/>
+      <template_name>topicSummary</template_name>
+      <template_data>$posts=array()</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_post</template_group>
+      <template_content/>
+      <template_name>uploadForm</template_name>
+      <template_data><![CDATA[$post_key="",$type="",$stats=array(),$id="",$forum_id=0]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_printpage">
+    <template>
+      <template_group>skin_printpage</template_group>
+      <template_content/>
+      <template_name>choose_form</template_name>
+      <template_data><![CDATA[$fid="",$tid="",$title=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_printpage</template_group>
+      <template_content/>
+      <template_name>pp_end</template_name>
+      <template_data/>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_printpage</template_group>
+      <template_content/>
+      <template_name>pp_header</template_name>
+      <template_data><![CDATA[$forum_name="",$topic_title="",$topic_starter="",$fid="",$tid="",$css=array(),$IPS_DOC_CHAR_SET=IPS_DOC_CHAR_SET]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_printpage</template_group>
+      <template_content/>
+      <template_name>pp_postentry</template_name>
+      <template_data><![CDATA[$poster="",$entry=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_mod">
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>deleteTopicForm</template_name>
+      <template_data>$forum, $topic</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>editTopicTitle</template_name>
+      <template_data>$forum, $topic</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>editUserForm</template_name>
+      <template_data>$profile, $custom_fields=null</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>mergePostForm</template_name>
+      <template_data>$editor, $dates, $authors, $uploads</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>mergeTopicsForm</template_name>
+      <template_data>$forum, $topic</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>movePostForm</template_name>
+      <template_data><![CDATA[$forum, $topic, $posts, $error='']]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>moveTopicForm</template_name>
+      <template_data>$forum, $topic, $forum_jump</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>moveTopicsForm</template_name>
+      <template_data>$forum, $jump_html, $topics</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>pruneSplash</template_name>
+      <template_data><![CDATA[$forum="", $forums_html="", $confirm_data="", $complete_html=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>simplePage</template_name>
+      <template_data><![CDATA[$title="", $msg=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>splitPostForm</template_name>
+      <template_data>$forum, $topic, $posts, $jump</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>topicHistory</template_name>
+      <template_data>$topic, $avg_post, $mod_logs=array()</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>unsubscribeForm</template_name>
+      <template_data>$forum, $topic, $text</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>warnForm</template_name>
+      <template_data><![CDATA[$member, $tid=0, $st=0, $errors='', $modque=false, $postque=false, $ban=false, $editor_html='']]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>warnLogsAjaxWrapper</template_name>
+      <template_data>$output</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>warn_add_note_form</template_name>
+      <template_data><![CDATA[$id="",$name=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>warn_success</template_name>
+      <template_data>$topic=array()</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_mod</template_group>
+      <template_content/>
+      <template_name>warn_view_log</template_name>
+      <template_data><![CDATA[$member, $rows, $links='']]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_legends">
+    <template>
+      <template_group>skin_legends</template_group>
+      <template_content/>
+      <template_name>bbcodePopUpList</template_name>
+      <template_data>$rows</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_legends</template_group>
+      <template_content/>
+      <template_name>emoticonPopUpList</template_name>
+      <template_data>$editor_id, $rows</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_legends</template_group>
+      <template_content/>
+      <template_name>wrap_tag</template_name>
+      <template_data><![CDATA[$tag=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_forum">
+    <template>
+      <template_group>skin_forum</template_group>
+      <template_content><![CDATA[<forum>
+	<error>This is a password-protected forum</error>
+</forum>]]></template_content>
+      <template_name>forumPasswordLogIn</template_name>
+      <template_data><![CDATA[$fid=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_forum</template_group>
+      <template_content/>
+      <template_name>show_rules</template_name>
+      <template_data><![CDATA[$rules=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_forum</template_group>
+      <template_content><![CDATA[<if test="$text">
+	<prefix>{$text}</prefix>
+</if>]]></template_content>
+      <template_name>topicPrefixWrap</template_name>
+      <template_data>$text</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_forum</template_group>
+      <template_content/>
+      <template_name>topic_rating_image</template_name>
+      <template_data>$rating_id=1</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_forum</template_group>
+      <template_content/>
+      <template_name>who_link</template_name>
+      <template_data><![CDATA[$tid="",$posts=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_forum</template_group>
+      <template_content><![CDATA[<forum>
+		<name>{$forum_data['name']}</name>
+		<id>{$forum_data['id']}</id>
+		<url>{parse url="showforum={$forum_data['id']}" seotitle="{{$forum_data['name_seo']}" template="showforum" base="public"}</url>
+		
+<if test="$forum_data['show_rules'] == 2">
+		<rules>
+			<title>{$forum_data['rules_title']}</title>
+			<text>{$forum_data['rules_text']}</text>
+		</rules>
+</if>
+<if test="$forum_data['show_rules'] == 1">
+		<rules>
+			<title>{$forum_data['rules_title']}</title>
+			<url>{parse url="showforum={$forum_data['id']}&amp;act=SR" base="public"}</url>
+		</rules>
+</if>
+<if test="is_array( $sub_forum_data ) AND count( $sub_forum_data )">
+		<subforums>			
+	<foreach loop="subforums:$sub_forum_data as $_data">
+		<if test="is_array( $_data['forum_data'] ) AND count( $_data['forum_data'] )">					
+			<foreach loop="forums:$_data['forum_data'] as $forum_id => $forum_data">
+				<foreach loop="forums:$_data['forum_data'] as $forum_id => $forum_data">
+			<forum>
+				<id>{$forum_data['id']}</id>
+				<name>{$forum_data['name']}</name>
+				<url>{parse url="showforum={$forum_data['id']}" seotitle="{$forum_data['name_seo']}" template="showforum" base="public"}</url>
+				<description>{$forum_data['description']}</description>
+					<if test="$forum_data['redirect_on']">							
+				<type>redirect</type>
+					<else />
+				<type>{$forum_data['status']}</type>
+				<topics>{$forum_data['topics']}</topics>
+				<replies>{$forum_data['posts']}</replies>						
+				<lastpost>
+						<if test="$forum_data['hide_last_info']">
+					<name>{$this->lang->words['f_protected']}</name>
+						<else />
+					<date>{$forum_data['last_post']}</date>
+					<name>{$forum_data['last_title']}</name>
+					<id>{$forum_data['last_id']}</id>
+					<url>{parse url="showtopic={$forum_data['last_id']}&amp;view=getlastpost" base="public" template="showtopic" seotitle="{$forum_data['seo_last_title']}"}</url>
+					<user>
+							<if test="$forum_data['last_poster_id']">						
+						<id>{$forum_data['last_poster_id']}</id>
+						<name>{$forum_data['last_poster_name']}</name>
+						<url>{parse url="showuser={$forum_data['last_poster_id']}" template="showuser" seotitle="{$forum_data['seo_last_name']}" base="public"}</url>										
+							<else />
+						<id>0</id>
+						<name>{$this->settings['guest_name_pre']}{$forum_data['last_poster_name']}{$this->settings['guest_name_suf']}</name>
+						<url></url>
+							</if>
+					</user>
+						</if>
+				</lastpost>
+					</if>
+			</forum>
+				</foreach>
+			</foreach>
+		</if>
+	</foreach>
+		</subforums>
+</if>
+<if test="is_array( $announce_data ) AND count( $announce_data )">
+		<announcements>			
+	<foreach loop="announcements:$announce_data as $aid => $adata">
+			<announcement>
+				<id>{$adata['announce_id']}</id>
+				<title>{$adata['announce_title']}</title>
+				<url>{parse url="showannouncement={$adata['announce_id']}&amp;f={$forum_data['id']}" seotitle="%%{$adata['announce_title']}%%" template="showannouncement" base="public"}</url>
+				<user>
+					<id>{$adata['member_id']}</id>
+					<name>{$adata['member_name']}</name>
+					<url>{parse url="showuser={$adata['member_id']}" seotitle="{$adata['members_seo_name']}" template="showuser" base="public"}</url>
+				</user>
+			</announcement>
+	</foreach>
+		</announcements>
+</if>
+		<topics>
+<if test="is_array( $topic_data ) AND count( $topic_data )">
+	<foreach loop="topics:$topic_data as $tid => $data">
+			<topic>
+				<id>{$data['tid']}</id>
+				<icon>{$data['folder_img']}</icon>
+				<title>{$data['title']}</title>
+				<description>{$data['description']}</description>
+				<url>{parse url="showtopic={$data['tid']}" base="public" template="showtopic" seotitle="{$data['title_seo']}"}</url>
+				<user>
+					<id>{$data['starter_id']}</id>
+					<name>{$data['starter_name']}</name>
+					<url>{parse url="showuser={$data['starter_id']}" seotitle="{$data['seo_first_name']}" template="showuser" base="public"}</url>
+				</user>
+				<replies>{$data['_posts']}</replies>
+				<views>{$data['views']}</views>
+				<lastpost>
+					<date>{$data['last_post']}</date>
+					<url>{parse url="showtopic={$data['tid']}&amp;view=getlastpost" seotitle="{$data['title_seo']}" template="showtopic" base="public"}</url>
+					<user>
+						<id>{$data['last_poster_id']}</id>
+						<name>{$data['last_poster_name']}</name>
+						<url>{parse url="showuser={$data['last_poster_id']}" seotitle="{$data['seo_last_name']}" template="showuser" base="public"}</url>
+					</user>
+				</lastpost>
+		<if test="$data['topic_hasattach']">
+				<attachments>
+					<url>{$this->settings['base_url']}app=forums&amp;module=forums&amp;section=attach&amp;tid={$data['tid']}</url>
+					<count>{parse expression="intval($data['topic_hasattach'])"}</count>
+				</attachments>
+		</if>
+		<if test="is_array( $data['pages'] ) AND count( $data['pages'] )">
+			<pagination>
+			<foreach loop="$data['pages'] as $page">
+				<page>					
+					<url>{parse url="showtopic={$data['tid']}&amp;st={$page['st']}" seotitle="{$data['title_seo']}" template="showtopic" base="public"}</url>
+					<number>{$page['page']}</number>
+				</page>
+			</foreach>
+		</pagination>
+		</if>		
+			</topic>
+	</foreach>
+</if>
+		</topics>
+		
+		{$forum_data['SHOW_PAGES']}
+				
+<if test="!$this->settings['no_au_forum']">
+		<activeusers>
+			<total>{parse expression="($active_user_data['members'] + $active_user_data['guests'] + $active_user_data['anon'] )"}</total>
+			<guests>{$active_user_data['guests']}</guests>
+			<anonymous>{$active_user_data['anon']}</anonymous>
+			<users>
+	<if test="is_array( $active_user_data['names'] ) AND count( $active_user_data['names'] )">
+		<foreach loop="$active_user_data['names'] as $p => $r">
+				<user>
+					<id>{$r['id']}</id>
+					<name>{$r['p_start']}{$r['name']}{$r['p_end']}</name>
+					<url>{parse url="showuser={$r['id']}" seotitle="{$r['seo']}" template="showuser" base="public"}</url>
+				</user>
+		</foreach>
+	</if>
+		</users>
+</if>	
+		</activeusers>
+	</forum>]]></template_content>
+      <template_name>forumIndexTemplate</template_name>
+      <template_data>$forum_data, $announce_data, $topic_data, $other_data, $multi_mod_data, $sub_forum_data, $footer_filter, $active_user_data, $mod_data, $inforum=1</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_forum</template_group>
+      <template_content><![CDATA[<attachments>
+	<topic>{$title}</topic>
+	<id>{$this->request['tid']}</id>
+<foreach loop="attachments:$rows as $data">
+	<attachment>
+		<id>{$data['attach_id']}</id>
+		<thumbnail><if test="$data['attach_thumb_location']">{$this->settings['upload_url']}/{$data['attach_thumb_location']}</if></thumbnail>
+		<name>{$data['short_name']}</name>
+		<url>{parse url="app=core&amp;module=attach&amp;section=attach&amp;attach_rel_module=post&amp;attach_id={$data['attach_id']}" base="public"}</url>
+		<downloads>{$data['attach_hits']}</downloads>
+		<date>{$data['attach_date']}</date>
+		<size>{$data['real_size']}</size>
+		<post>{parse url="app=forums&amp;module=forums&amp;section=findpost&amp;pid={$data['pid']}" base="public"}</post>		
+	</attachment>
+</foreach>
+</attachments>]]></template_content>
+      <template_name>forumAttachments</template_name>
+      <template_data>$title, $rows</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_boards">
+    <template>
+      <template_group>skin_boards</template_group>
+      <template_content><![CDATA[<birthday>
+	<if test="$pyear"><year>$pyear</year></if>
+	<user>
+		<id>{$user['member_id']}</id>
+		<name>{$user['members_display_name']}</name>
+		<url>{parse url="showuser={$user['member_id']}" base="public"}</url>		
+	</user>
+</birthday>]]></template_content>
+      <template_name>birthday</template_name>
+      <template_data>$user, $pyear</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_boards</template_group>
+      <template_content><![CDATA[<if test="cats_forums:|:is_array( $cat_data ) AND count( $cat_data )">
+		<categories>
+		<foreach loop="categories:$cat_data as $_data">
+			<if test="cat_has_forums:|:is_array( $_data['forum_data'] ) AND count( $_data['forum_data'] )">
+			<category>
+				<id>{$_data['cat_data']['id']}</id>
+				<name>{$_data['cat_data']['name']}</name>
+				<url>{parse url="showforum={$_data['cat_data']['id']}" seotitle="{$_data['cat_data']['name_seo']}" template="showforum" base="public"}</url>
+				<forums>
+						<foreach loop="forums:$_data['forum_data'] as $forum_id => $forum_data">
+					<forum>
+						<id>{$forum_data['id']}</id>
+						<name>{$forum_data['name']}</name>
+						<url>{parse url="showforum={$forum_data['id']}" seotitle="{$forum_data['name_seo']}" template="showforum" base="public"}</url>
+						<description><!#^#|CDATA|{$forum_data['description']}|#^#]></description>
+							<if test="$forum_data['redirect_on']">							
+						<type>redirect</type>
+							<else />
+						<type>{$forum_data['status']}</type>
+						<topics>{$forum_data['topics']}</topics>
+						<replies>{$forum_data['posts']}</replies>
+						<lastpost>
+								<if test="$forum_data['hide_last_info']">
+							<name>{$this->lang->words['f_protected']}</name>
+								<else />
+							<date>{$forum_data['last_post']}</date>
+							<name>{$forum_data['last_title']}</name>
+							<id>{$forum_data['last_id']}</id>
+							<url>{parse url="showtopic={$forum_data['last_id']}&amp;view=getlastpost" base="public" template="showtopic" seotitle="{$forum_data['seo_last_title']}"}</url>
+							<user>
+								<if test="$forum_data['last_poster_id']">						
+								<id>{$forum_data['last_poster_id']}</id>
+								<name>{$forum_data['last_poster_name']}</name>
+								<url>{parse url="showuser={$forum_data['last_poster_id']}" template="showuser" seotitle="{$forum_data['seo_last_name']}" base="public"}</url>										
+									<else />
+								<id>0</id>
+								<name>{$this->settings['guest_name_pre']}{$forum_data['last_poster_name']}{$this->settings['guest_name_suf']}</name>
+								<url></url>
+								</if>
+							</user>
+								</if>
+						</lastpost>
+							</if>					
+										<if test="$forum_data['show_subforums'] AND count( $forum_data['subforums'] ) AND $forum_data['show_subforums']">
+						<subforums>
+											<foreach loop="subforums:$forum_data['subforums'] as $__id => $__data">
+							<subforum>
+								<id>{$__data[0]}</id>
+								<name>{$__data[1]}</name>
+								<url>{parse url="showforum=" seotitle="{$__data[2]}" template="showforum" base="public"}</url>
+							</subforum>
+											</foreach>
+						</subforums>
+										</if>
+					</forum>
+						</foreach>
+				</forums>
+			</category>
+			</if>
+		</foreach>
+		</categories>
+	</if>
+		<statistics>
+			<posts>{$stats['info']['total_posts']}</posts>
+			<members>{$stats['info']['mem_count']}</members>
+			<user>
+				<id>{$stats['info']['last_mem_id']}</id>
+				<name>{$stats['info']['last_mem_name']}</name>
+				<url>{parse url="{$stats['info']['last_mem_link']}" template="showuser" seotitle="%%{$stats['info']['last_mem_name']}%%" base="public"}</url>
+			</user>
+			<onlinerecord>{$stats['info']['most_online']}</onlinerecord>
+		</statistics>
+		<activeusers>
+			<total>{$stats['TOTAL']}</total>
+			<guests>{$stats['GUESTS']}</guests>
+			<anonymous>{$stats['ANON']}</anonymous>
+			<users>{parse expression="implode( ",", count($stats['NAMES']) ? $stats['NAMES'] : array() )"}</users>
+		</activeusers>
+		<events>
+			<if test="is_array( $calendar_events )">
+				{parse expression="implode( ",", count($calendar_events) ? $calendar_events : array() )"}
+			<else />
+				$calendar_events
+			</if>
+		</events>
+		<birthdays>
+		<if test="$birthdays !== FALSE AND is_array( $birthdays ) AND count( $birthdays )">
+			<total>{$birthdays['count']}</total>
+			<users>{parse expression="implode( ",", count($birthdays['users']) ? $birthdays['users'] : array() )"}</users>
+		</if>
+		</birthdays>]]></template_content>
+      <template_name>boardIndexTemplate</template_name>
+      <template_data><![CDATA[$lastvisit="", $stats=array(), $calendar_events=FALSE, $birthdays=FALSE, $chat_html='', $news_data=array(), $cat_data=array(), $show_side_blocks=true, $side_blocks=array()]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_boards</template_group>
+      <template_content/>
+      <template_name>hookRecentTopics</template_name>
+      <template_data>$topics</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_boards</template_group>
+      <template_content/>
+      <template_name>hookTopPosters</template_name>
+      <template_data>$posters</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_boards</template_group>
+      <template_content/>
+      <template_name>hookWatchedItems</template_name>
+      <template_data>$updatedTopics, $nUpdatedTopics, $updatedForums, $nUpdatedForums</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_boards</template_group>
+      <template_content/>
+      <template_name>whoschatting_empty</template_name>
+      <template_data/>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_boards</template_group>
+      <template_content/>
+      <template_name>whoschatting_show</template_name>
+      <template_data><![CDATA[$total="",$names=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+  <templategroup group="skin_topic">
+    <template>
+      <template_group>skin_topic</template_group>
+      <template_content><![CDATA[{parse js_module="topic"}
+<h2>{$this->lang->words['announce_title']}: {$announce['announce_title']}</h2>
+<ul class='topic_options'></ul>
+<div class='post_block first hentry announcement' id='announce_id_{$announce['announce_id']}'>
+	<div class='post_wrap'>
+		<if test="$author['member_id']">
+			<h3>
+		<else />
+			<h3 class='guest'>
+		</if>
+				<if test="$author['member_id']">
+					<if test="$author['_online']">
+						{parse replacement="user_online"}
+					<else />
+						{parse replacement="user_offline"}
+					</if> &nbsp;
+							<address class="author vcard"><a class="url fn" href='{parse url="showuser={$author['member_id']}" base="public"}'>{$author['members_display_name']}</a>{parse template="user_popup" group="global" params="$author['member_id']"}</address>
+				<else />
+					{$author['members_display_name']}
+				</if>
+			</h3>
+		<div class='author_info'>
+			{parse template="userInfoPane" group="global" params="$author, 'announcement', array()"}
+		</div>
+		<div class='post_body'>
+			<div class='post entry-content'>
+				{$announce['announce_post']}
+			</div>
+		</div>
+		<ul class='post_controls'></ul>
+	</div>			
+</div>]]></template_content>
+      <template_name>announcement_show</template_name>
+      <template_data><![CDATA[$announce="",$author=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_topic</template_group>
+      <template_content/>
+      <template_name>build_threaded</template_name>
+      <template_data>$post, $child</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_topic</template_group>
+      <template_content><![CDATA[<poll>
+	<title>{$poll['poll_question']}</title>
+	<if test="$showResults"><totalvotes>{$poll['_totalVotes']}</totalvotes></if>
+	<public>{$this->settings['poll_allow_public']}</public>
+	
+	<questions>
+<foreach loop="$pollData as $questionID => $questionData">			
+		<question>
+			<title>{$pollData[ $questionID ]['question']}</title>
+	<if test="! $this->settings['allow_result_view'] AND ! $this->memberData['member_id']">
+			<error>{$this->lang->words['poll_noview_guest']}</error>
+	<else />
+			<results>
+		<foreach loop="$pollData[ $questionID ]['choices'] as $choiceID => $choiceData">
+				<choice>{$choiceData['choice']}</choice>
+			<if test="$showResults">				
+				<selected><if test="is_array( $choiceData['voters'] ) AND in_array( $this->memberData['member_id'], array_keys( $choiceData['voters'] ) )">1<else />0</if></selected>
+				<votes>{$choiceData['votes']}</votes>
+				<percent>{$choiceData['percent']}%</percent>
+				
+				<if test="$poll['poll_view_voters'] AND is_array( $choiceData['voters'] ) AND $this->settings['poll_allow_public']">
+				<voters>					
+					<foreach loop="$choiceData['voters'] as $id => $member">
+					<user>
+						<id>{$member['member_id']}</id>
+						<name>{$member['members_colored_name']}</name>
+						<url>{parse url="showuser=" base="public" seotitle="{$member['members_seo_name']}" template="showuser"}</url>
+					</user>						
+					</foreach>
+				</voters>
+				</if>
+			</if>
+		</foreach>
+			</results>
+	</if>
+		</question>
+</foreach>
+	</questions>
+</poll>]]></template_content>
+      <template_name>pollDisplay</template_name>
+      <template_data>$poll, $topicData, $forumData, $pollData, $showResults</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_topic</template_group>
+      <template_content/>
+      <template_name>quickEditPost</template_name>
+      <template_data>$post</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_topic</template_group>
+      <template_content><![CDATA[<attachment>
+	<id>{$data['attach_id']}</id>
+	<thumbnail><if test="$data['attach_thumb_location']">{$this->settings['upload_url']}/{$data['attach_thumb_location']}</if></thumbnail>
+	<name>{$data['short_name']}</name>
+	<url>{parse url="app=core&amp;module=attach&amp;section=attach&amp;attach_rel_module=post&amp;attach_id={$data['attach_id']}" base="public"}</url>
+	<downloads>{$data['attach_hits']}</downloads>
+	<date>{$data['attach_date']}</date>
+	<size>{$data['real_size']}</size>
+	<post>{parse url="app=forums&amp;module=forums&amp;section=findpost&amp;pid={$data['pid']}" base="public"}</post>		
+</attachment>]]></template_content>
+      <template_name>Show_attachments</template_name>
+      <template_data><![CDATA[$data=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_topic</template_group>
+      <template_content><![CDATA[<attachment>
+	<url>{$this->settings['upload_url']}/$file_name</url>
+</attachment>]]></template_content>
+      <template_name>Show_attachments_img</template_name>
+      <template_data><![CDATA[$file_name=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_topic</template_group>
+      <template_content><![CDATA[<attachment>
+	<id>{$data['attach_id']}</id>
+	<thumbnail><if test="$data['attach_thumb_location']">{$this->settings['upload_url']}/{$data['attach_thumb_location']}</if></thumbnail>
+	<name>{$data['short_name']}</name>
+	<url>{parse url="app=core&amp;module=attach&amp;section=attach&amp;attach_rel_module=post&amp;attach_id={$data['attach_id']}" base="public"}</url>
+	<downloads>{$data['attach_hits']}</downloads>
+	<date>{$data['attach_date']}</date>
+	<size>{$data['real_size']}</size>
+	<post>{parse url="app=forums&amp;module=forums&amp;section=findpost&amp;pid={$data['pid']}" base="public"}</post>		
+</attachment>]]></template_content>
+      <template_name>Show_attachments_img_thumb</template_name>
+      <template_data>$data=array()</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_topic</template_group>
+      <template_content/>
+      <template_name>show_attachment_title</template_name>
+      <template_data><![CDATA[$title="",$data="",$type=""]]></template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+    <template>
+      <template_group>skin_topic</template_group>
+      <template_content><![CDATA[<forum>
+		<name>{$forum['name']}</name>
+		<id>{$forum['id']}</id>
+		<url>{parse url="showforum={$forum['id']}" seotitle="{{$forum['name_seo']}" template="showforum" base="public"}</url>
+		
+<if test="$forum['show_rules'] == 2">
+		<rules>
+			<title>{$forum['rules_title']}</title>
+			<text>{$forum['rules_text']}</text>
+		</rules>
+</if>
+<if test="$forum_data['show_rules'] == 1">
+		<rules>
+			<title>{$forum['rules_title']}</title>
+			<url>{parse url="showforum={$forum['id']}&amp;act=SR" base="public"}</url>
+		</rules>
+</if>
+	
+		<topic>
+			<id>{$topic['tid']}</id>
+			<title>{$topic['title']}</title>
+			<description>{$topic['description']}</description>
+			<url>{parse url="showtopic={$topic['tid']}" template="showtopic" seotitle="{$topic['title_seo']}" base="public"}</url>
+			
+			{$displayData['poll_data']}
+			
+			<posts>				
+<if test="is_array( $post_data ) AND count( $post_data )">
+	<foreach loop="post_data:$post_data as $pid => $post">
+				<post>
+					<id>{$post['post']['pid']}</id>
+					<date>{parse date="$post['post']['post_date']" format="long"}</date>
+					<url>{parse url="showtopic={$post['post']['topic_id']}&amp;view=findpost&amp;p={$post['post']['pid']}" template="showtopic" seotitle="{$topic['title_seo']}" base="public"}</url>
+					<text>{$post['post']['post']}{$post['post']['attachmentHtml']}</text>
+					<reputation>{$post['post']['rep_points']}</reputation>
+		<if test="$post['post']['icon_id']">
+					<icon>{$this->settings['public_dir']}style_extra/post_icons/icon{$post['post']['icon_id']}.gif</icon>
+		</if>					
+					<user>
+		<if test="$post['author']['member_id']">
+						<id>{$post['author']['member_id']}</id>
+						<name>{$post['author']['members_display_name']}</name>
+						<url>{parse url="showuser={$post['author']['member_id']}" base="public" template="showuser" seotitle="{$post['author']['members_seo_name']}"}</url>
+						<online>{$post['author']['_online']}</online>
+						{parse template="userInfoPane" group="global" params="$post['author'], $post['post']['pid'], array()"}
+		<else />
+						<id>0</id>
+						<name>{$post['author']['members_display_name']}</name>
+		</if>
+					</user>
+		<if test="$post['post']['edit_by']">
+					<edited>
+						<reason>{$post['post']['post_edit_reason']}</reason>
+						<by>{$post['post']['edit_by']}</by>
+					</edited>
+		</if>
+					<signature>
+						<!#^#|CDATA|
+						{$post['post']['signature']}
+						|#^#]>						
+					</signature>
+				</post>				
+	</foreach>
+</if>
+			</posts>
+			{$topic['SHOW_PAGES']}
+		</topic>
+	</forum>
+	
+<if test="is_array( $displayData['active_users'] ) AND count( $displayData['active_users'] )">
+		<activeusers>
+			<total>{parse expression="intval( $displayData['active_users']['members'] + $displayData['active_users']['guests'] + $displayData['active_users']['anon'] )"}</total>
+			<guests>{$displayData['active_users']['guests']}</guests>
+			<anonymous>{$displayData['active_users']['anon']}</anonymous>			
+	<if test="is_array( $displayData['active_users']['names'] ) AND count( $displayData['active_users']['names'] )">
+			<users>
+		<foreach loop="$displayData['active_users']['names'] as $p => $r">
+				<user>
+					<id>{$r['id']}</id>
+					<name>{$r['p_start']}{$r['name']}{$r['p_end']}</name>
+					<url>{parse url="showuser={$r['id']}" seotitle="{$r['seo']}" template="showuser" base="public"}</url>
+				</user>
+		</foreach>
+			</users>
+	</if>
+		</activeusers>
+</if>]]></template_content>
+      <template_name>topicViewTemplate</template_name>
+      <template_data>$forum, $topic, $post_data, $displayData</template_data>
+      <template_updated>1251817155</template_updated>
+      <template_removable>1</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+    </template>
+  </templategroup>
+</templates>

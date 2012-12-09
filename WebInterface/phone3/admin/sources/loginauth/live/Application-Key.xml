@@ -1,0 +1,11 @@
+<!--
+     It is strongly recommended that you store the Windows Live Login
+     settings file outside of the web-accessible area on your server.
+     The contents of this file should never be exposed externally.
+-->
+
+<windowslivelogin>
+  <appid>00167FFE80002700</appid>
+  <secret>ApplicationKey123</secret>
+  <securityalgorithm>wsignin1.0</securityalgorithm>
+</windowslivelogin>

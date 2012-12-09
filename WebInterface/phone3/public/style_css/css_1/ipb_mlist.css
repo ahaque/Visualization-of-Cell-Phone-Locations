@@ -1,0 +1,123 @@
+/************************************************************************/
+/* IP.Board 3 CSS - By Rikki Tissier - (c)2008 Invision Power Services	*/
+/************************************************************************/
+/* ipb_mlist.css - Member list styles									*/
+/************************************************************************/
+
+div#member_filters {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+	
+	div#member_filters fieldset.other_filters {
+		text-align: center;
+		padding: 6px;
+		margin-top: 10px;
+		clear: both;
+	}
+	
+	div#member_filters fieldset.submit {
+		background: #d5dde5;
+		padding: 6px;
+	}
+	
+	div#member_filters ul {
+		margin-bottom: 12px;
+		margin-top: 8px;
+		width: 49%;
+		float: left;
+	}
+	
+	div#member_filters li {
+		border-bottom: 1px solid #d5dde5;
+		margin-right: 20px;
+		padding: 8px 0 8px 0;
+		clear: both;
+	}
+	
+		div#member_filters li .desc {
+			margin: 0;
+			display: inline;
+		}
+	
+	div#member_filters label {	
+		text-align: right;
+		margin-right: 15px;
+		width: 150px;
+		display: block;
+		float: left;
+	}
+	
+	div#member_filters li.field.custom input,
+	div#member_filters li.field.custom textarea {
+		width: 50%;
+	}
+
+#member_alpha li {
+	padding: 2px 7px;
+}
+
+	#member_alpha li.active {
+		padding: 7px 15px;
+	}
+	
+.members li.member_entry {
+	position: relative;
+	min-height: 100px;
+}
+
+.members li .photo {
+	margin: 10px;
+	float: left;
+}
+
+.members li .user_controls {
+	text-align: left;
+	margin: 25px 10px;
+	min-width: 350px;
+	position: absolute;
+	left: 450px;
+	clear: none;
+}
+
+	.members li .user_controls .rating {
+		background: none;
+		margin-right: 10px;
+	}
+
+	.members li .user_controls a {
+		text-decoration: none;
+		font-size: 0.85em;
+	}
+	
+.members li .info {	
+	font-size: 0.9em;
+	line-height: 100%;
+	border-right: 1px solid #d5dde5;
+	margin: 10px;
+	left: 90px;
+	width: 350px;
+	position: absolute;
+}
+	.members li .info dt {
+		text-align: right;
+		width: 80px;
+	}
+
+	.members li .info dd {
+		width: 200px;
+	}
+
+.members li .reputation {
+	margin-top: 40px;
+}
+
+.members li p.rating {
+	margin: 10px;	
+	right: 0;
+	position: absolute;
+}
+
+.members li.general_box {
+	margin-bottom: 4px;
+}

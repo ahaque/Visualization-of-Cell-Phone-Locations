@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settingexport>
+  <settinggroup>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>calendar</conf_title_keyword>
+      <conf_title_title><![CDATA[Calendar &amp; Birthdays]]></conf_title_title>
+      <conf_title_desc>This section will allow you to set up the board calendar and its related options.</conf_title_desc>
+      <conf_title_tab>IPS Apps</conf_title_tab>
+      <conf_title_app>calendar</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Show birthdays on the main calendar view?</conf_title>
+      <conf_description><![CDATA[If set to "yes", the calendar will show the number of birthdays for that day.]]></conf_description>
+      <conf_group>42</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>show_bday_calendar</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>calendar</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Show Today&#39;s birthdays on the board view?]]></conf_title>
+      <conf_description><![CDATA[If set to "yes", this will show the day's birthdays on the board index view.]]></conf_description>
+      <conf_group>42</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>show_birthdays</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group><![CDATA[Today&#39;s Birthdays]]></conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>calendar</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Auto hide when no birthdays to show?</conf_title>
+      <conf_description><![CDATA[If set to "yes", this will remove the "Today's Birthdays" block from the board index when there is none to show.]]></conf_description>
+      <conf_group>42</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>autohide_bday</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>calendar</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Show forthcoming calendar events?</conf_title>
+      <conf_description><![CDATA[If set to "yes", this will show single forthcoming calendar events on the board index view. It will not show recurring events or ranged events.]]></conf_description>
+      <conf_group>42</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>show_calendar</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group>Forcoming Calendar Events</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>calendar</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Auto hide when no events to show?</conf_title>
+      <conf_description><![CDATA[If set to "yes", this will remove the forcoming calendar events block from the board index view if there are none to show.]]></conf_description>
+      <conf_group>42</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>autohide_calendar</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>calendar</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Show forthcoming events from today to [x] days ahead]]></conf_title>
+      <conf_description>Controls how far into the future events are shown on the forcoming events block on board index view.</conf_description>
+      <conf_group>42</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>calendar_limit</conf_key>
+      <conf_default>5</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>calendar</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Starting year for calendar &#39;Year&#39; drop down box]]></conf_title>
+      <conf_description>This applies to view calendar / post event.</conf_description>
+      <conf_group>42</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>start_year</conf_key>
+      <conf_default>2004</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>calendar</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Year end limit for &#39;Year&#39; drop down box]]></conf_title>
+      <conf_description><![CDATA[This applies to view calendar / post event.<br>Example: current year is 2002, you enter 5 - last choosable year = 2007]]></conf_description>
+      <conf_group>42</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>year_limit</conf_key>
+      <conf_default>5</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>calendar</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Start Calendar on Monday?</conf_title>
+      <conf_description>The default behavior for the calendar is to start the week on Sunday.  By setting this to yes, you will start the week on Monday instead.</conf_description>
+      <conf_group>42</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>ipb_calendar_mon</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group/>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>calendar</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </settinggroup>
+</settingexport>

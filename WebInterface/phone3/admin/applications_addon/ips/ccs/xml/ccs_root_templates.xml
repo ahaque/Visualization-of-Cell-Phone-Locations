@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates application="ccs" templategroups="a:1:{s:8:&quot;skin_ccs&quot;;s:8:&quot;contains&quot;;}">
+  <templategroup group="skin_ccs">
+    <template>
+      <template_group>skin_ccs</template_group>
+      <template_content><![CDATA[<span class='gutter'><img src='{$this->settings['public_dir']}style_extra/app_icons/ccs.png' alt='icon' /> {$this->lang->words['ccs_search_button']}</span>
+<div>
+	<div class='date' style='float:right;'>
+		{$this->lang->words['page_last_updated']}  {parse date="$r['updated']" format="short"}
+	</div>		
+</div>
+<h3><a href='{$r['formatted_url']}'>{$r['content_title']}</a></h3>
+<if test="resultcontent:|:!$resultAsTitle">
+<p>
+	{$r['content']}
+</p>
+</if>]]></template_content>
+      <template_name>pageSearchResult</template_name>
+      <template_data>$r, $resultAsTitle=false</template_data>
+      <template_updated>1240350234</template_updated>
+      <template_removable>0</template_removable>
+    </template>
+  </templategroup>
+</templates>

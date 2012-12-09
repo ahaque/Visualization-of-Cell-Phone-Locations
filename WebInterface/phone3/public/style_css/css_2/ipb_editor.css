@@ -1,0 +1,224 @@
+/***************************************************************/
+/* IP.Board 3 Editor CSS                                       */
+/* ___________________________________________________________ */
+/* By Rikki Tissier                                            */
+/* (c)2008 Invision Power Services                             */
+/***************************************************************/
+/* ipb_editor.css - Styles for the editor (colors in main css) */
+/***************************************************************/
+
+#ipboard_body .input_rte {
+	width: 100%;
+	height: 250px;
+}
+
+	#ipboard_body .ips_editor.lite_edition .input_rte {
+		height: 60px;
+	}
+
+#ipboard_body .ips_editor {
+	background-color: #d5dde5;
+	border: 1px solid #d5dde5;
+	margin: 8px;
+	padding: 6px;
+	position: relative;
+	line-height: 100% !important;
+}
+
+	#ipboard_body .ips_editor.with_sidebar .controls,
+	#ipboard_body .ips_editor.with_sidebar .editor {
+		margin-right: 200px;
+	}
+	
+	#ipboard_body .ips_editor .controls {
+		position: relative;
+	}
+	
+	/* Sidebar go bye-bye-bye (like Keith) */
+	#ipboard_body .ips_editor.with_sidebar .sidebar {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 194px;
+		bottom: 1px;
+		margin: 6px 6px 6px 0;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #f6f8fa #d5dde5 #d5dde5 #f6f8fa;
+	}
+		
+		#ipboard_body .ips_editor.with_sidebar .sidebar h4 {
+			background-color: #e4ebf2;
+			height: 25px;
+			color: #1d3652;
+			font-size: 10px;
+			font-weight: bold;
+		}
+		
+			#ipboard_body .ips_editor.with_sidebar .sidebar h4 span {
+				padding: 6px 0 0 6px;
+				display: block;
+			}
+		
+		#ipboard_body .ips_editor.with_sidebar .sidebar #emoticon_holder {
+			position: absolute;
+			top: 25px;
+			bottom: 1px;
+			width: 193px;
+			overflow: auto;
+		}
+		
+
+	#ipboard_body .ips_editor .toolbar {
+		height: 30px;
+		/*clear: both;*/
+		background: #e4ebf2 url(http://24.27.110.178/phone3/public/style_images/master/gradient_bg.png) repeat-x left 50%;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #f6f8fa #d5dde5 #d5dde5 #f6f8fa;
+	}
+		
+		#ipboard_body .ips_editor .toolbar li {
+			float: left;
+			padding: 3px;
+		}
+		
+			#ipboard_body .ips_editor .toolbar li.sep {
+				padding-right: 4px;
+				border-right: 1px solid #d5dde5;
+				margin-right: 4px;
+			}
+			
+			#ipboard_body .ips_editor .toolbar li.left {
+				float: left;
+			}
+			
+			#ipboard_body .ips_editor .toolbar li.right {
+				float: right;
+			}
+		
+		#ipboard_body .ips_editor .toolbar li span {
+			display: block;
+			padding: 3px;
+		}
+		
+	#ipboard_body .ips_editor ul.ipbmenu_content,
+	#ipboard_body .ips_editor ul.ipbmenu_content li {
+		display: block;
+		float: none;
+		background-color: #fff;
+	}
+		
+#ipboard_body .ips_editor .toolbar li .rte_menu.rte_control {
+	font-size: 11px;
+	height: 14px;
+	border: 1px solid #aeb9c5;
+	margin-top: 1px;
+	padding: 4px 15px 2px 7px;
+	background-color: #fff;
+	background-image: url(http://24.27.110.178/phone3/public/style_images/master/rte_icons/rte_arrow.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#ipboard_body .rte_title {
+	background-color: #d5dde5;
+	padding: 4px;
+	margin: -4px -4px 5px -4px;
+	color: #1d3652;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#ipboard_body .rte_fontsize {
+	min-width: 50px;
+}
+
+#ipboard_body .rte_font {
+	min-width: 85px;
+}
+
+#ipboard_body .rte_special {
+	min-width: 90px;
+}
+
+#ipboard_body .ipb_palette {
+	padding: 4px;
+	background-color: #eef3f8;
+	border-width: 1px 2px 2px 1px;
+	border-style: solid;
+	border-color: #d5dde5;
+	font-size: 11px;
+
+}
+
+	#ipboard_body .ipb_palette label {
+		display: block;
+		font-weight: bold;
+		clear: both;
+		width: auto !important;
+		float: none !important;
+		text-align: left !important;
+	}
+	
+	#ipboard_body .ipb_palette input {
+		clear: both;
+		width: 96%;
+		margin-bottom: 5px;
+		font-size: 11px;
+		margin-right: 6px;
+	}
+	
+	#ipboard_body .ipb_palette input[type="submit"] {
+		background-color: #d5dde5;
+		border: 1px solid #d5dde5;
+		margin: 5px auto 5px auto;
+		text-align: center;
+		padding: 2px;
+		color: #1d3652;
+		font-size: 11px;
+		display: block;
+		width: auto !important;
+	}
+	
+	#ipboard_body .ipb_palette.extended {
+		min-width: 250px;
+		max-width: 320px;
+	}
+	
+	#ipboard_body .ipb_palette pre {
+		padding: 5px 7px 10px 7px;
+	}
+
+#ipboard_body ul.fontsizes li {
+	padding: 0.3em 0px !important;
+}
+
+#ipboard_body .ipb_palette table.rte_colors {
+	border-collapse: separate;
+	background-color: #fff;
+	border-spacing: 1px;
+}
+
+#ipboard_body table.rte_colors td {
+	padding: 6px;
+	border: 1px solid #777;
+	margin: 1px;
+	font-size: 1px;
+	cursor: pointer;
+	height: 18px;
+}
+
+#ipboard_body .rte_control {
+	cursor: pointer;
+	border: 1px solid #e4ebf2;
+}		
+
+#ipboard_body .rte_hover {
+	background-color: #d5dde5;
+}
+
+#ipboard_body .rte_selected {
+	background-color: #d5dde5;
+	border: 1px solid #aeb9c5;
+}

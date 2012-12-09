@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Managing Members</grouptitle>
+		<items>
+			<item>
+				<key>member_add</key>
+				<string>Can add members?</string>
+			</item>
+			<item>
+				<key>member_add_admin</key>
+				<string>Can add ADMINS?</string>
+			</item>
+			<item>
+				<key>member_edit</key>
+				<string>Can edit members?</string>
+			</item>
+			<item>
+				<key>member_edit_admin</key>
+				<string>Can edit ADMINS?</string>
+			</item>
+			<item>
+				<key>member_delete</key>
+				<string>Can delete members?</string>
+			</item>
+			<item>
+				<key>member_delete_admin</key>
+				<string>Can delete ADMINS?</string>
+			</item>
+			<item>
+				<key>members_merge</key>
+				<string>Can merge two user accounts?</string>
+			</item>
+			<item>
+				<key>member_suspend</key>
+				<string>Can suspend and unsuspend members?</string>
+			</item>
+			<item>
+				<key>member_suspend_admin</key>
+				<string>Can suspend and unsuspend ADMINS?</string>
+			</item>
+			<item>
+				<key>member_prune</key>
+				<string>Can prune members?</string>
+			</item>
+			<item>
+				<key>member_prune_admin</key>
+				<string>Can prune ADMINS?</string>
+			</item>
+			<item>
+				<key>member_move</key>
+				<string>Can move members to other groups?</string>
+			</item>
+			<item>
+				<key>member_move_admin1</key>
+				<string>Can move ADMINS to other groups?</string>
+			</item>
+			<item>
+				<key>member_move_admin2</key>
+				<string>Can promote members to ADMIN?</string>
+			</item>
+			<item>
+				<key>member_ban</key>
+				<string>Can ban members?</string>
+			</item>
+			<item>
+				<key>member_ban_admin</key>
+				<string>Can ban ADMINS?</string>
+			</item>
+			<item>
+				<key>member_photo</key>
+				<string>Can upload new member photos and avatars?</string>
+			</item>
+			<item>
+				<key>member_photo_admin</key>
+				<string>Can upload new photos and avatars for ADMINS?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Member Tools</grouptitle>
+		<items>
+			<item>
+				<key>membertools_validating</key>
+				<string>Can manage validating members?</string>
+			</item>
+			<item>
+				<key>membertools_locked</key>
+				<string>Can manage locked members?</string>
+			</item>
+			<item>
+				<key>membertools_banned</key>
+				<string>Can manage banned members?</string>
+			</item>
+			<item>
+				<key>membertools_ip</key>
+				<string>Can use the IP address tools?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Member Ranks</grouptitle>
+		<items>
+			<item>
+				<key>ranks_add</key>
+				<string>Can add new member ranks?</string>
+			</item>
+			<item>
+				<key>ranks_edit</key>
+				<string>Can edit member ranks?</string>
+			</item>
+			<item>
+				<key>ranks_delete</key>
+				<string>Can delete member ranks?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Custom Profile Fields</grouptitle>
+		<items>
+			<item>
+				<key>profilefields_add</key>
+				<string>Can add new profile fields?</string>
+			</item>
+			<item>
+				<key>profilefields_edit</key>
+				<string>Can edit profile fields?</string>
+			</item>
+			<item>
+				<key>profilefields_delete</key>
+				<string>Can delete profile fields?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Managing Ban Filters</grouptitle>
+		<items>
+			<item>
+				<key>ban_manage</key>
+				<string>Can add/edit ban filters?</string>
+			</item>
+			<item>
+				<key>ban_remove</key>
+				<string>Can remove ban filters?</string>
+			</item>
+		</items>
+	</group>
+	<group>
+		<grouptitle>Member Reputation</grouptitle>
+		<items>
+			<item>
+				<key>reps_manage</key>
+				<string>Can add/edit reputation levels?</string>
+			</item>
+			<item>
+				<key>reps_delete</key>
+				<string>Can delete reputation levels?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

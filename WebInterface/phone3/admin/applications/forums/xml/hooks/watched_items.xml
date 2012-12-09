@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hookexport>
+  <hookdata>
+    <config>
+      <hook_name>Board Index Watched Content</hook_name>
+      <hook_desc>Shows watched forums and topics on the board index</hook_desc>
+      <hook_author>Invision Power Services, Inc</hook_author>
+      <hook_email>support@</hook_email>
+      <hook_website>http://</hook_website>
+      <hook_update_check/>
+      <hook_requirements><![CDATA[a:4:{s:20:"hook_ipb_version_min";i:0;s:20:"hook_ipb_version_max";i:0;s:20:"hook_php_version_min";s:0:"";s:20:"hook_php_version_max";s:0:"";}]]></hook_requirements>
+      <hook_version_human>1.0.0</hook_version_human>
+      <hook_version_long>10000</hook_version_long>
+      <hook_extra_data/>
+      <hook_key>watched_content</hook_key>
+    </config>
+  </hookdata>
+  <hookfiles>
+    <file>
+      <hook_file_real>boardIndexWatchedItems.php</hook_file_real>
+      <hook_type>templateHooks</hook_type>
+      <hook_classname>boardIndexWatchedItems</hook_classname>
+      <hook_data><![CDATA[a:6:{s:15:"classToOverload";s:0:"";s:9:"skinGroup";s:11:"skin_boards";s:12:"skinFunction";s:18:"boardIndexTemplate";s:4:"type";s:7:"foreach";s:2:"id";s:11:"side_blocks";s:8:"position";s:9:"outer.pre";}]]></hook_data>
+      <hooks_source><![CDATA[<?php
+
+class boardIndexWatchedItems
+{
+	public $registry;
+	public $member;
+	
+	public function __construct()
+	{
+		$this->registry = ipsRegistry::instance();
+		$this->member	= $this->registry->member();
+		$this->memberData =& $this->registry->member()->fetchMemberData();
+		$this->registry->class_localization->loadLanguageFile( array( 'public_topic' ), 'forums' );
+	}
+	
+	public function getOutput()
+	{
+		if( !$this->memberData['member_id'] )
+		{
+			return;
+		}
+
+		/* INIT */
+		$updatedTopics	= array();
+		$updatedForums	= array();
+		$nUpdatedTopics	= array();
+		$nUpdatedForums	= array();
+		
+		/* Get watched topics */
+		$this->registry->DB()->build( array(
+								'select'	=> 'tr.*',
+								'from'		=> array( 'tracker' => 'tr' ),
+								'where'		=> 'tr.member_id=' . $this->memberData['member_id'],
+								'order'		=> 't.last_post DESC',
+								'limit'		=> array( 0, 50 ),
+								'add_join'	=> array(
+													array(
+														'select'	=> 't.*',
+														'from'		=> array( 'topics' => 't' ),
+														'where'		=> 't.tid=tr.topic_id',
+														'type'		=> 'left'
+														),
+													array(
+														'select'	=> 'm.members_seo_name',
+														'from'		=> array( 'members' => 'm' ),
+														'where'		=> 'm.member_id=t.starter_id',
+														'type'		=> 'left'
+														)
+													)
+						)		);
+		$this->registry->DB()->execute();
+		
+		while( $r = $this->registry->DB()->fetch() )
+		{
+			if( !$r['tid'] )
+			{
+				continue;
+			}
+
+			$is_read	= $this->registry->classItemMarking->isRead( array( 'forumID' => $r['forum_id'], 'itemID' => $r['tid'], 'itemLastUpdate' => $r['last_post'] ), 'forums' );
+			
+			if( !$is_read )
+			{
+				$updatedTopics[ $r['topic_id'] ]	= $r;
+			}
+			else
+			{
+				$nUpdatedTopics[ $r['topic_id'] ]	= $r;
+			}
+		}
+		
+		/* Get watched forums */
+		$this->registry->DB()->build( array(
+								'select'	=> 'tr.*',
+								'from'		=> array( 'forum_tracker' => 'tr' ),
+								'order'		=> 'f.last_post DESC',
+								'where'		=> 'tr.member_id=' . $this->memberData['member_id'] . ' AND f.hide_last_info=0',
+								'limit'		=> array( 0, 50 ),
+								'add_join'	=> array(
+													array(
+														'select'	=> 'f.*',
+														'from'		=> array( 'forums' => 'f' ),
+														'where'		=> 'f.id=tr.forum_id',
+														'type'		=> 'left'
+														)
+													)
+						)		);
+		$this->registry->DB()->execute();
+		
+		while( $r = $this->registry->DB()->fetch() )
+		{
+			$last_time	= $this->registry->classItemMarking->fetchTimeLastMarked( array( 'forumID' => $r['forum_id'] ), 'forums' );
+			
+			if( $r['last_post'] > $last_time )
+			{
+				$updatedForums[ $r['forum_id'] ]	= $r;
+			}
+			else
+			{
+				$nUpdatedForums[ $r['forum_id'] ]	= $r;
+			}
+		}
+		
+		/*print_r($updatedTopics);
+		print_r($updatedForums);
+		print_r($nUpdatedTopics);
+		print_r($nUpdatedForums);*/
+		return $this->registry->output->getTemplate( 'boards' )->hookWatchedItems( $updatedTopics, $nUpdatedTopics, $updatedForums, $nUpdatedForums );
+	}	
+}]]></hooks_source>
+    </file>
+  </hookfiles>
+  <hookextras_settings/>
+  <hookextras_language/>
+  <hookextras_modules/>
+  <hookextras_help/>
+  <hookextras_templates/>
+  <hookextras_tasks/>
+  <hookextras_database_create/>
+  <hookextras_database_alter/>
+  <hookextras_database_update/>
+  <hookextras_database_insert/>
+</hookexport>

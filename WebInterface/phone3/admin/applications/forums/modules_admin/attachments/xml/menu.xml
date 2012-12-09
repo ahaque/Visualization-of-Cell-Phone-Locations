@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Attachment Types</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Attachment Types</subitemtitle>
+					<subsection>types</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Attachment Stats</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Attachment Stats</subitemtitle>
+					<subsection>stats</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Attachment Search</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Attachment Search</subitemtitle>
+					<subsection>search</subsection>
+					<subitemurl>do=overview</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>				
+	</tabitems>
+</menu>

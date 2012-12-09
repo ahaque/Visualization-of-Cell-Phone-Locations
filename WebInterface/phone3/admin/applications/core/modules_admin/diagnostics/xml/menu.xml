@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Overview</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Overview</subitemtitle>
+					<subsection>diagnostics</subsection>
+					<subitemurl></subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Version Checker</title>
+			<subitems>		
+				<subitem>
+					<subitemtitle>Version Checker</subitemtitle>
+					<subsection>diagnostics</subsection>
+					<subitemurl>do=fileversions</subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>				
+		<item>
+			<title>Whitespace Checker</title>
+			<subitems>				
+				<subitem>
+					<subitemtitle>Whitespace Checker</subitemtitle>
+					<subsection>diagnostics</subsection>
+					<subitemurl>do=whitespace</subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>				
+		<item>
+			<title>Permissions Checker</title>
+			<subitems>				
+				<subitem>
+					<subitemtitle>Permissions Checker</subitemtitle>
+					<subsection>diagnostics</subsection>
+					<subitemurl>do=filepermissions</subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>				
+		<item>
+			<title>Database Checker</title>
+			<subitems>				
+				<subitem>
+					<subitemtitle>Database Checker</subitemtitle>
+					<subsection>diagnostics</subsection>
+					<subitemurl>do=dbchecker</subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>				
+		<item>
+			<title>Database Index Checker</title>
+			<subitems>				
+				<subitem>
+					<subitemtitle>Database Index Checker</subitemtitle>
+					<subsection>diagnostics</subsection>
+					<subitemurl>do=dbindex</subitemurl>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>		
+	</tabitems>
+</menu>

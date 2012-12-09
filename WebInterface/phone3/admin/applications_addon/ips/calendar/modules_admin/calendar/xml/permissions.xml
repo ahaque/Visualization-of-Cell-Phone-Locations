@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Calendar Management</grouptitle>
+		<items>
+			<item>
+				<key>calendar_manage</key>
+				<string>Can add/edit calendars?</string>
+			</item>
+			<item>
+				<key>calendar_delete</key>
+				<string>Can delete calendars?</string>
+			</item>
+		</items>
+	</group>
+</permissions>

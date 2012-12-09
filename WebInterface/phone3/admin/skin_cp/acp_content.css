@@ -1,0 +1,60 @@
+/*******
+TEMP STYLES - WE SHOULD AIM TO ELIMINATE USE OF THESE BEFORE RELEASE,
+BUT THEY ARE KEPT HERE SO THE ACP REMAINS USABLE IN THE MEANTIME
+********/
+
+.tableborder {
+	border: 1px solid #777777;
+}
+
+.tablerow1 {
+	background: #f4f4f4;
+}
+
+.tablerow2 {
+	background: #fafafa;
+}
+
+.tabon,
+.taboff
+{
+	float:left;
+	background:#EEEEEE;
+	padding:6px;
+	margin-right:1px;
+}
+
+.tableheader,
+.tableheaderalt,
+.tableheaderalt_tabs
+{
+	font-size:12px;
+	vertical-align:middle;
+	font-weight:bold;
+	color:#FFF;
+	padding:5px;
+	/*background-image: url(images/folder_css_images/table_title_gradient.gif);
+	background-repeat: repeat-x;*/
+	background-color:#3b424c;
+}
+
+.tableheader a:link, 
+.tableheader a:visited, 
+.tableheader a:active,
+.tableheaderalt a:link, 
+.tableheaderalt a:visited, 
+.tableheaderalt a:active
+{
+	text-decoration:none;
+	color: #FFF;
+}
+
+.tablefooter,
+.tablesubheader
+{
+	background-color:#8d9cb1;
+	font-size:11px;
+	color: #3b424c;
+	font-weight:bold;
+	padding:8px;
+}

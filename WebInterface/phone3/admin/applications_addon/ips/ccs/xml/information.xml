@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<information>
+	<data>
+		<name>Community Content System</name>
+		<public_name>Pages</public_name>
+		<author>Invision Power Services, Inc.</author>
+		<description>Create pages for your website</description>
+		<ipskey>390af627d2d81fd343666e95fb782299</ipskey>
+		<templategroups>
+			<template match="contains">skin_ccs</template>
+		</templategroups>
+	</data>
+</information>
