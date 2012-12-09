@@ -1,7 +1,5 @@
 = Cell Phone Tracking, Surveillance, and Visualization
-Albert Haque, Alex Wang
-
-February 2010
+Albert Haque, Alex Wang, February 2010
 
 Video demo is available here: http://www.youtube.com/watch?v=0zoljdmw5D8
 
