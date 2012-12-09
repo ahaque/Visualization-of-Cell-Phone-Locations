@@ -1,10 +1,11 @@
 = Cell Phone Tracking, Surveillance, and Visualization
 Albert Haque, Alex Wang
+
 February 2010
 
 Video demo is available here: http://www.youtube.com/watch?v=0zoljdmw5D8
-Paper with more details: http://www.alberthaque.
-com/projects/ANovelApproachToCellularTrackingAndSurveillance.pdf
+
+Paper with more details: http://www.alberthaque.com/projects/ANovelApproachToCellularTrackingAndSurveillance.pdf
 
 == Overview
 The application is divided into three components: (i) mobile app, (ii) web interface, and (iii) back-end processing. We refer to the phone being monitored as the child phone and the supervisor as the parent. This project successfully identifies school zones, tracks movement speed, and prevents (provides a reminder) that texting while driving is dangerous.
